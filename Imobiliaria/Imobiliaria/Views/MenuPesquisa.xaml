@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<slide:SlideMenuView  xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Imobiliaria.Views.MenuPesquisa"
+              xmlns:slide="clr-namespace:SlideOverKit;assembly=SlideOverKit">
+    <Grid Padding="10, 30, 10, 10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Label Text="Menu Lateral" FontSize="18" Grid.ColumnSpan="2" XAlign="Center" YAlign="Center" TextColor="Black" />
+        <Entry Placeholder="Pesquisa..."  Grid.ColumnSpan="2" Grid.Row="1" HeightRequest="40" VerticalOptions="Center" />
+        <Grid Grid.Column="0" Grid.Row="2" BackgroundColor="#E15771">
+            <Label Text="Usuarios" HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+        </Grid>
+        <Grid Grid.Column="1" Grid.Row="2" BackgroundColor="#348ECA">
+            <Label Text="Administrador" HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+        </Grid>
+        <Grid Grid.Column="0" Grid.Row="3" BackgroundColor="#348ECA">
+            <Label Text="Configurações" HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+        </Grid>
+        <Grid Grid.Column="1" Grid.Row="3" BackgroundColor="#348ECA">
+            <Label Text="Fotos" HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+        </Grid>
+        <Grid Grid.Column="0" Grid.Row="4" BackgroundColor="#348ECA">
+            <Label Text="Videos" HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+        </Grid>
+        <Grid Grid.Column="1" Grid.Row="4" BackgroundColor="#3AAA70">
+            <Label Text="VIP" HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+        </Grid>
+        <Grid Grid.Column="0" Grid.Row="5" BackgroundColor="#348ECA">
+            <Label Text="Twitter" HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+        </Grid>
+        <Grid Grid.Column="1" Grid.Row="5" BackgroundColor="#348ECA">
+            <Label Text="Outros" HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+        </Grid>
+    </Grid>
+</slide:SlideMenuView>

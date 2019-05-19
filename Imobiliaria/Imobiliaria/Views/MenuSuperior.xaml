@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<slide:SlideMenuView  xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Imobiliaria.Views.MenuSuperior"
+             xmlns:slide="clr-namespace:SlideOverKit;assembly=SlideOverKit" >
+    <Grid Padding="10, 30, 10, 10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="9*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Label Text="Menu Inferior" FontSize="24" Grid.ColumnSpan="2" XAlign="Center" YAlign="Center" TextColor="White" />
+        <Label Text="Perdir mais bacon?" Grid.Column="1" Grid.Row="1" XAlign="Start" YAlign="Center" TextColor="White"/>
+        <Label Text="Acessar o netflix" Grid.Column="1" Grid.Row="2" XAlign="Start" YAlign="Center" TextColor="White"/>
+        <Label Text="Chamar o SAMU" Grid.Column="1" Grid.Row="3" XAlign="Start" YAlign="Center" TextColor="White"/>
+    </Grid>
+</slide:SlideMenuView>

@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<StackLayout xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Imobiliaria.Views.Maps"
+             xmlns:iconize="clr-namespace:Plugin.Iconize;assembly=Plugin.Iconize"
+             xmlns:carouse="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"           
+             xmlns:maps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
+             VerticalOptions="FillAndExpand">
+    <Grid VerticalOptions="FillAndExpand">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+        <ActivityIndicator Grid.Row="0" IsEnabled="True" IsRunning="True" IsVisible="{Binding IsBusy}" HorizontalOptions="Center" VerticalOptions="Center" />
+        <maps:Map
+                    
+                    x:Name="Mapa" 
+                    MapType="Street" 
+                    VerticalOptions="FillAndExpand" 
+                    IsShowingUser="true"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    ItemsSource="{Binding Imovels}"
+                    
+                    >
+            <maps:Map.ItemTemplate>
+                <DataTemplate >
+                    <maps:Pin 
+                        Position="{Binding position}" 
+                        Label="{Binding titulo}" 
+                        Tag="{Binding id}" 
+                        Address="logradouro" 
+                        Flat="False"  
+                        Icon="{Binding icon}"
+                        Clicked="Pin_Clicked"
+                        
+                        >
+                       
+
+                    </maps:Pin>
+                   
+                </DataTemplate>
+            </maps:Map.ItemTemplate>
+
+
+        </maps:Map>
+
+            <StackLayout  VerticalOptions="End"  Grid.Row="0" BackgroundColor="Accent" HeightRequest="200">
+
+            <carouse:CarouselViewControl  
+                
+                Grid.RowSpan="2" 
+                Grid.ColumnSpan="3" 
+                x:Name="caroussel" 
+                ArrowsTintColor="AliceBlue"  
+                IsSwipeEnabled="True" 
+                BackgroundColor="Azure"
+                Position="1" 
+                ArrowsBackgroundColor="Accent" 
+                Orientation="Horizontal" 
+                InterPageSpacing="1" 
+                ItemsSource="{Binding Imovels}" 
+                VerticalOptions="FillAndExpand"
+                PositionSelected="Caroussel_PositionSelected"
+                HorizontalOptions="FillAndExpand">
+
+                    <carouse:CarouselViewControl.ItemTemplate>
+                        <DataTemplate >
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="0.8*"></RowDefinition>
+                                <RowDefinition Height="0.1*"></RowDefinition>
+                                <RowDefinition Height="0.1*"></RowDefinition>
+                            </Grid.RowDefinitions>
+                           
+                                <Image 
+                                    Source="{Binding imagem  }" 
+                                    Grid.RowSpan="3" Aspect="AspectFill" />
+                                <BoxView 
+                                    Grid.Row="1"
+                                    Grid.RowSpan="2"
+                                    BackgroundColor="{StaticResource colorPrimary}">
+                                    
+                                </BoxView>
+                                <Label 
+                                    Grid.Row="1" 
+                                    FontAttributes="Bold"
+                                    Text="{Binding preco, StringFormat='{0:C}'} " 
+                                     TextColor="{StaticResource colorClara}"
+                                    HorizontalTextAlignment="Center">
+                                    
+                                </Label>
+                                <Label 
+                                    Grid.Row="2" 
+                                    TextColor="{StaticResource colorClara}"
+                                    Text="{Binding titulo} " 
+                                    HorizontalTextAlignment="Center">
+                                    
+                                </Label>
+                        </Grid>
+                        
+
+                        </DataTemplate>
+                    </carouse:CarouselViewControl.ItemTemplate>
+                </carouse:CarouselViewControl>
+
+            </StackLayout>
+
+            <!-- 
+                <StackLayout  VerticalOptions="End"  Grid.Row="0">
+                    <Frame CornerRadius="0" BackgroundColor="#00000000" >
+                        <renderedViews:HorizontalListView Grid.Row="3"
+                                  x:Name="ItemsListView"
+                                  Margin="-6,8"
+                                  CollectionPadding="8,8"
+                                  ItemSpacing="8"
+                                  ItemHeight="144"
+                                  ItemWidth="144"
+                                  ItemsSource="{Binding Imovels}"
+                                  SnapStyle="Center">
+                            <renderedViews:HorizontalListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <ContentView  Padding="5">
+                                            <Image Source="{Binding Imagem[0]}" Aspect="AspectFill" />
+                                        </ContentView>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </renderedViews:HorizontalListView.ItemTemplate>
+                        </renderedViews:HorizontalListView>
+                    </Frame>
+                </StackLayout>
+ -->
+        </Grid>
+
+   
+
+</StackLayout>

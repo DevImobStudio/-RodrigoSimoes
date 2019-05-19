@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Imobiliaria.Views.Menu.MasterDetailPage1"
+             xmlns:pages="clr-namespace:Imobiliaria.Views"
+             xmlns:pages2="clr-namespace:Imobiliaria.Views.Menu"
+             FlowDirection="LeftToRight"
+             >
+
+  <MasterDetailPage.Master  >
+    <pages2:MasterDetailPage1Master x:Name="MasterPage" />
+  </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <NavigationPage x:Name="navigation" BarBackgroundColor="{StaticResource colorPrimary}">
+            <x:Arguments>
+        <pages:TabbedPage1 />
+      </x:Arguments>
+    </NavigationPage>
+  </MasterDetailPage.Detail>
+</MasterDetailPage>
