@@ -2,13 +2,149 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Imobiliaria.Views.Favoritos"
+             xmlns:iconize="clr-namespace:Plugin.Iconize;assembly=Plugin.Iconize"
              Title="Favoritos"
              Icon="star.png">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Favoritos"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <ListView x:Name="ItemsListView"
+            ItemsSource="{Binding Imovel}"
+            VerticalOptions="FillAndExpand"
+            HasUnevenRows="true"
+            SeparatorVisibility="None"
+            RefreshCommand="{Binding LoadItemsCommand}"
+            IsPullToRefreshEnabled="true"
+            IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+            CachingStrategy="RecycleElement"
+             
+           >
+                <ListView.ItemTemplate >
+                    <DataTemplate >
+                        <ViewCell >
+                            <StackLayout Padding="2" Margin="0,0,4,2" BackgroundColor="{StaticResource colorClara}" >
+                                <Grid BackgroundColor="{StaticResource colorTelas}">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="0.4*" />
+                                        <ColumnDefinition Width="0.6*"/>
+                                    </Grid.ColumnDefinitions>
+
+
+                                    <Image 
+                                Source="{Binding imagem}" 
+                                Aspect="AspectFill" 
+                                Grid.Column="0" 
+                                WidthRequest="40"
+                                HeightRequest="40"
+                                />
+                                    <StackLayout 
+                                Grid.Column="1"
+                                Grid.Row="0">
+                                        <Label 
+                                FontAttributes="Bold"
+                                Text="{Binding enfase }" 
+                                FontSize="Micro"
+                                TextColor="{StaticResource colorPrimary}"
+                                LineBreakMode="WordWrap" 
+                                Style="{DynamicResource ListItemTextStyle}" 
+                             />
+                                        <Label 
+
+                                Text="{Binding descricao}" 
+                                FontSize="Micro"
+                                TextColor="{StaticResource colorPrimary}"
+                                LineBreakMode="WordWrap" 
+                                Style="{DynamicResource ListItemTextStyle}" 
+                             />
+
+
+                                        <Grid  Padding="3" VerticalOptions="Start" >
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="6*" />
+                                                <ColumnDefinition Width="1*"/>
+                                                <ColumnDefinition Width="1*"/>
+                                                <ColumnDefinition Width="1*"/>
+       
+
+                                            </Grid.ColumnDefinitions>
+
+                                            <Label
+                                        Grid.Column="0"
+                                        Text="{Binding  TargetNullValue='Consulte!' ,StringFormat='{0:C2}'} " 
+                                        FontSize="Small"
+                                        FontAttributes="Bold"
+                                        TextColor="{StaticResource colorPrimary}"  
+                                        LineBreakMode="TailTruncation" 
+                                        VerticalOptions="End"
+                                 />
+
+
+     
+                                            <iconize:IconButton
+                                    VerticalOptions="End"
+                                    Grid.Column="2"
+                                    Padding="0"
+                                    FontSize="Micro"
+                                    Text="fas-phone"   
+                                    HorizontalOptions="Center"
+                                    CornerRadius="5"
+                                    HeightRequest="20"
+                                    WidthRequest="20"
+                                     TextColor="{StaticResource colorClara}"
+                                     BackgroundColor="{StaticResource colorPrimary}"
+                                    Clicked="Contato_Clicked"
+                                    CommandParameter="{Binding .}"
+                                />
+                                            <iconize:IconButton
+                                    VerticalOptions="End"
+                                    Grid.Column="3"
+                                    Padding="0"
+                                    FontSize="Small"
+                                    FontAttributes="Bold"
+                                    Text="fab-whatsapp"   
+                                    HorizontalOptions="Center"
+                                     TextColor="{StaticResource colorClara}"
+                                     BackgroundColor="{StaticResource colorPrimary}"
+                                    CornerRadius="5"
+                                    HeightRequest="20"
+                                    WidthRequest="20"
+                                    Clicked="WhatsApp_Clicked"
+                                    CommandParameter="{Binding .}"
+                                />
+                                            <iconize:IconButton
+                                    VerticalOptions="End"
+                                    Grid.Column="4"
+                                    Padding="0"
+                                    FontSize="Small"
+                                    Text="fas-plus-circle"   
+                                    HorizontalOptions="Center"
+                                    TextColor="{StaticResource colorClara}"
+                                    BackgroundColor="{StaticResource colorPrimary}"
+                                    CornerRadius="5"
+                                    HeightRequest="20"
+                                    WidthRequest="20"
+                                    Clicked="Detalhes_Clicked"
+                                   CommandParameter="{Binding .}"
+                                
+                                />
+
+
+
+                                        </Grid>
+                                    </StackLayout>
+
+
+
+
+
+
+
+                                </Grid>
+
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

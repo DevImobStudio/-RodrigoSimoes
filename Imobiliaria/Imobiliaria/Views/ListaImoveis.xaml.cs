@@ -1,4 +1,5 @@
 ﻿using Imobiliaria.Models;
+using Imobiliaria.Services;
 using Imobiliaria.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -14,6 +15,7 @@ namespace Imobiliaria.Views
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class ListaImoveis : StackLayout
 	{
+
         Inicio Inicio { get; set; }
 		public ListaImoveis(Inicio Inicio)
 		{
@@ -30,10 +32,63 @@ namespace Imobiliaria.Views
             if (item == null)
                 return;
 
-            await Navigation.PushAsync(new ItemDetailPage(new ItemDetailViewModel(item)));
+           // await Navigation.PushAsync(new ItemDetailPage(new ItemDetailViewModel(item)));
 
             // Manually deselect item.
             ItemsListView.SelectedItem = null;
         }
+
+        private void Detalhes_Clicked(object sender, EventArgs e)
+        {
+            
+            var objeto =  ((sender as Button).CommandParameter) as Imovel;
+            if (objeto != null)
+            {
+                this.Inicio.paginaStack.Children.Clear();
+                this.Inicio.visiblePageSelected(false);
+                this.Inicio.paginaStack.Children.Add(new ItemDetailPage(new ItemDetailViewModel(objeto)));
+            }
+               
+        }
+
+        private void WhatsApp_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Contato_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private async void Favoritos_Clicked(object sender, EventArgs e)
+        {
+            var objeto = ((sender as Button).CommandParameter) as Imovel;
+            if (objeto != null)
+            {
+                
+                var favorito = Inicio.viewModel.favoritos.Where(p => p.idImovel == objeto.id).FirstOrDefault();
+                if (favorito == null)
+                {
+                    try
+                    {
+                        await Sistema.DATABASE.database.InsertAsync(new Models.Favoritos()
+                        {
+
+                            idImovel = objeto.id
+
+                        });
+                    }
+                    catch (Exception ex)
+                    {
+
+                    }
+                   
+                }
+                
+            }
+           
+        }
+       
     }
 }

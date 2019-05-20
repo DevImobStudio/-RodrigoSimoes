@@ -12,9 +12,9 @@
   </MasterDetailPage.Master>
     <MasterDetailPage.Detail>
         <NavigationPage x:Name="navigation" BarBackgroundColor="{StaticResource colorPrimary}">
-            <x:Arguments>
-        <pages:TabbedPage1 />
-      </x:Arguments>
+        <x:Arguments>
+            <pages:TabbedPage1 x:Name="tabbedpage"/>
+         </x:Arguments>
     </NavigationPage>
   </MasterDetailPage.Detail>
 </MasterDetailPage>

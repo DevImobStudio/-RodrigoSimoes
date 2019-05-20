@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.GoogleMaps;
+using Xamarin.Forms.Internals;
 using Xamarin.Forms.Xaml;
 
 namespace Imobiliaria.Views
@@ -28,8 +29,8 @@ namespace Imobiliaria.Views
            
              viewModel.Mapa = this.Mapa;
             // CarregarDados();
-           
-         
+
+          
             Mapa.MoveToRegion(MapSpan.FromCenterAndRadius(
                                               new Position(-23.0361979, -45.5570624),
 
@@ -49,6 +50,7 @@ namespace Imobiliaria.Views
 
             }
         }
+       
         public async  void CarregarDados()
         {
 
@@ -157,11 +159,19 @@ namespace Imobiliaria.Views
 
         }
 
-        private void Pin_Clicked(object sender, EventArgs e)
+        private async void Pin_Clicked(object sender, EventArgs e)
         {
-            if (e == null)
-                return;
-            caroussel.Position = Mapa.SelectedPin.ZIndex;
+
+
+           
+        }
+
+        private void Mapa_PinClicked(object sender, PinClickedEventArgs e)
+        {
+
+            Imovel imovel = viewModel.LstImoveis.Where(p => p.id == e.Pin.Address).FirstOrDefault();
+            caroussel.Position = viewModel.LstImoveis.IndexOf(imovel);
+            e.Handled = true;
 
         }
     }

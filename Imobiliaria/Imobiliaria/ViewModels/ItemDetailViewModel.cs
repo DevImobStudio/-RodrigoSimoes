@@ -13,7 +13,10 @@ namespace Imobiliaria.ViewModels
         public Imovel Imovel { get; set; }
         public Command LoadItemsCommand { get; set; }
         public ObservableCollection<string> Imagens { get; set; }
-        
+
+
+
+       
         public List<string> lstImagens { get; set; }
 
 
@@ -23,8 +26,13 @@ namespace Imobiliaria.ViewModels
             lstImagens = new List<string>();
             Imagens = new ObservableCollection<string>(lstImagens);
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
+          
 
         }
+      
+
+        
+
 
         async Task ExecuteLoadItemsCommand()
         {

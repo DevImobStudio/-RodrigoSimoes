@@ -28,8 +28,8 @@
                             <ColumnDefinition Width="0.3*" />
                             <ColumnDefinition Width="0.7*" />
                         </Grid.ColumnDefinitions>
-                        <iconize:IconLabel  Text="fas-search" Grid.Column="0"  FontSize="Small" VerticalOptions="Center" HorizontalOptions="End" TextColor="{StaticResource colorPrimary}"></iconize:IconLabel>
-                        <Label Text="procurar"  Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start" FontSize="Small" TextColor="{StaticResource colorPrimary}"/>
+                        <iconize:IconLabel x:Name="searchI" Text="fas-search" Grid.Column="0"  FontSize="Small" VerticalOptions="Center" HorizontalOptions="End" TextColor="{StaticResource colorPrimary}"></iconize:IconLabel>
+                        <Label Text="procurar" x:Name="searchL"  Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start" FontSize="Small" TextColor="{StaticResource colorPrimary}"/>
 
                     </Grid>
                     

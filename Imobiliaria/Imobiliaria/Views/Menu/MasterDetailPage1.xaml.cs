@@ -14,13 +14,23 @@ namespace Imobiliaria.Views.Menu
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MasterDetailPage1 : MasterDetailPage 
     {
+        public NavigationPage navi;
+        public TabbedPage1 pagina;
         public MasterDetailPage1()
         {
             InitializeComponent();
             MasterPage.ListView.ItemSelected += ListView_ItemSelected;
-           
-          
+            navi = navigation;
+            Sistema.FOOTER = tabbedpage;
+            pagina = tabbedpage;
+            Dados();
 
+        }
+        public async void  Dados()
+        {
+            Task dados = new DataBase().CriarTabelaConexao();
+
+            await dados;
         }
 
         private void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)

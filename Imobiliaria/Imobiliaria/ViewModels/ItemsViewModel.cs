@@ -11,6 +11,7 @@ using System.Collections.Generic;
 using Xamarin.Essentials;
 using Xamarin.Forms.GoogleMaps;
 using System.Linq;
+using Imobiliaria.Services;
 
 namespace Imobiliaria.ViewModels
 {
@@ -20,20 +21,23 @@ namespace Imobiliaria.ViewModels
         public ObservableCollection<Pin> Pins { get; set; }
         public Xamarin.Forms.GoogleMaps.Map Mapa { get; set; }
         public Command LoadItemsCommand { get; set; }
-        List<Imovel> LstImoveis { get; set; }
+        public List<Imovel> LstImoveis { get; set; }
         List<Pin> LstPins { get; set; }
+        public int selecionado { get; set; }
+        public List<Models.Favoritos> favoritos { get; set; } 
 
         public ItemsViewModel()
         {
             LstImoveis = new List<Imovel>();
             Imovels = new ObservableCollection<Imovel>(LstImoveis);
-
+            favoritos = new List<Models.Favoritos>();
             Title = "Imovéis";
-         
+            selecionado = 1;
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
-
           
+
         }
+      
 
         async Task ExecuteLoadItemsCommand()
         {
@@ -44,8 +48,10 @@ namespace Imobiliaria.ViewModels
 
             try
             {
+               
                 Imovels.Clear();
                 LstImoveis =  await Services.Sistema.RESTAPI.getAsync<List<Imovel>>("");
+                favoritos = await Services.Sistema.DATABASE.database.Table<Models.Favoritos>().ToListAsync();
                 // Imovels = new ObservableCollection<Imovel>(imo as List<Imovel>);
                 Geocoder coder = new Geocoder();
                 foreach (var i in LstImoveis)
@@ -60,9 +66,10 @@ namespace Imobiliaria.ViewModels
                         i.localizacao = loc;
                         i.position = new Position(a.ElementAt(0).Latitude, a.ElementAt(0).Longitude);
                         i.icon = BitmapDescriptorFactory.FromView(new ViewPin(i));
+                        i.uriImage = new UriImageSource { CachingEnabled = false, Uri = new Uri(i.imagem) };
                     }
 
-                    
+                  
                     Imovels.Add(i);
                 }
 

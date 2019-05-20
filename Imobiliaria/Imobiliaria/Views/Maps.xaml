@@ -20,8 +20,9 @@
                     IsShowingUser="true"
                     Grid.Row="0"
                     Grid.Column="0"
-                    ItemsSource="{Binding Imovels}"
-                    
+                    ItemsSource="{Binding Imovels, Mode=OneWay} "
+                    PinClicked="Mapa_PinClicked"
+                    SelectedPin="{Binding selecionado, Mode=TwoWay}"
                     >
             <maps:Map.ItemTemplate>
                 <DataTemplate >
@@ -29,7 +30,7 @@
                         Position="{Binding position}" 
                         Label="{Binding titulo}" 
                         Tag="{Binding id}" 
-                        Address="logradouro" 
+                        Address="{Binding id}" 
                         Flat="False"  
                         Icon="{Binding icon}"
                         Clicked="Pin_Clicked"
@@ -45,66 +46,65 @@
 
         </maps:Map>
 
-            <StackLayout  VerticalOptions="End"  Grid.Row="0" BackgroundColor="Accent" HeightRequest="200">
-
+        <StackLayout  VerticalOptions="End"  Grid.Row="0" BackgroundColor="Accent" HeightRequest="200">
             <carouse:CarouselViewControl  
                 
                 Grid.RowSpan="2" 
                 Grid.ColumnSpan="3" 
                 x:Name="caroussel" 
-                ArrowsTintColor="AliceBlue"  
+                ArrowsTintColor="{StaticResource colorPrimary}"  
                 IsSwipeEnabled="True" 
-                BackgroundColor="Azure"
-                Position="1" 
+                BackgroundColor="{StaticResource colorPrimary}"
+             
                 ArrowsBackgroundColor="Accent" 
                 Orientation="Horizontal" 
                 InterPageSpacing="1" 
-                ItemsSource="{Binding Imovels}" 
+                ItemsSource="{Binding Imovels ,Mode=TwoWay}" 
                 VerticalOptions="FillAndExpand"
                 PositionSelected="Caroussel_PositionSelected"
-                HorizontalOptions="FillAndExpand">
+                HorizontalOptions="FillAndExpand" 
+               >
 
-                    <carouse:CarouselViewControl.ItemTemplate>
-                        <DataTemplate >
+                <carouse:CarouselViewControl.ItemTemplate>
+                    <DataTemplate >
                         <Grid>
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="0.8*"></RowDefinition>
                                 <RowDefinition Height="0.1*"></RowDefinition>
                                 <RowDefinition Height="0.1*"></RowDefinition>
                             </Grid.RowDefinitions>
-                           
-                                <Image 
-                                    Source="{Binding imagem  }" 
+
+                            <Image 
+                                    Source="{Binding uriImage}" 
                                     Grid.RowSpan="3" Aspect="AspectFill" />
-                                <BoxView 
+                            <BoxView 
                                     Grid.Row="1"
                                     Grid.RowSpan="2"
                                     BackgroundColor="{StaticResource colorPrimary}">
-                                    
-                                </BoxView>
-                                <Label 
+
+                            </BoxView>
+                            <Label 
                                     Grid.Row="1" 
                                     FontAttributes="Bold"
-                                    Text="{Binding preco, StringFormat='{0:C}'} " 
+                                    Text="{Binding preco, TargetNullValue='Consulte!', StringFormat='{0:C}'} " 
                                      TextColor="{StaticResource colorClara}"
                                     HorizontalTextAlignment="Center">
-                                    
-                                </Label>
-                                <Label 
+
+                            </Label>
+                            <Label 
                                     Grid.Row="2" 
                                     TextColor="{StaticResource colorClara}"
                                     Text="{Binding titulo} " 
                                     HorizontalTextAlignment="Center">
-                                    
-                                </Label>
+
+                            </Label>
                         </Grid>
-                        
 
-                        </DataTemplate>
-                    </carouse:CarouselViewControl.ItemTemplate>
-                </carouse:CarouselViewControl>
 
-            </StackLayout>
+                    </DataTemplate>
+                </carouse:CarouselViewControl.ItemTemplate>
+            </carouse:CarouselViewControl>
+        </StackLayout>
 
             <!-- 
                 <StackLayout  VerticalOptions="End"  Grid.Row="0">

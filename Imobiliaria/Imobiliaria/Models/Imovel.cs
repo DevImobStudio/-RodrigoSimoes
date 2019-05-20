@@ -71,7 +71,7 @@ namespace Imobiliaria.Models
         }
         public string enfase => $"{negocio} -  {bairro} {cidade}-{uf}" ;
 
-
+        public UriImageSource uriImage { get; set; }
         /*
         public string Id { get; set; }
 

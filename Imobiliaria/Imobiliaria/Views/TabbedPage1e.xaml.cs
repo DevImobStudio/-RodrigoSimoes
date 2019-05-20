@@ -14,10 +14,12 @@ namespace Imobiliaria.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class TabbedPage1 : TabbedPage
     {
-        private ContentPage Inicio;
+        public Inicio Inicio;
         private ContentPage Entrar;
         private ContentPage Favoritos;
         private ContentPage Atendimento;
+
+        public Image logo;
 
         public TabbedPage1 ()
         {
@@ -27,9 +29,13 @@ namespace Imobiliaria.Views
             Children.Add(Favoritos = new Favoritos());
             Children.Add(Atendimento = new Atendimento());
             Children.Add(Entrar = new Entrar());
-          
+            logo = logotipo;
+        //    logo.Source = new UriImageSource { CachingEnabled = false, Uri = new Uri("https://www.rodrigosimoesimoveis.com.br/uploads/www.rodrigosimoesimoveis.com.br/logotipo.png")};
+            
+            ForceLayout();
         }
 
-       
+     
+
     }
 }

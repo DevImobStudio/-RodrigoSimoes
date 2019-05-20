@@ -9,7 +9,7 @@ using Imobiliaria.ViewModels;
 namespace Imobiliaria.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ItemDetailPage : ContentPage
+    public partial class ItemDetailPage : StackLayout
     {
         ItemDetailViewModel viewModel;
 
@@ -24,13 +24,16 @@ namespace Imobiliaria.Views
         }
 
 
-        protected async override void OnAppearing()
-        {
-            base.OnAppearing();
+        /*  protected async override void OnAppearing()
+          {
+              base.OnAppearing();
 
-            viewModel.LoadItemsCommand.Execute(null);
+              viewModel.LoadItemsCommand.Execute(null);
 
-        }
+          }
+          */
+
+       
 
     }
 }

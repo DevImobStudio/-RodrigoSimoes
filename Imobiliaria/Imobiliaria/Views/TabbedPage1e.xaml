@@ -4,6 +4,7 @@
              x:Class="Imobiliaria.Views.TabbedPage1"
            xmlns:local="clr-namespace:Imobiliaria.Views"
              BarTextColor="{StaticResource colorClara}"
+           
             BarBackgroundColor="{StaticResource colorSecundaria}"
             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
             NavigationPage.HasNavigationBar="True"
