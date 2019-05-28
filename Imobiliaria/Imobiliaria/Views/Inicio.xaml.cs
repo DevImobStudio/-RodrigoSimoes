@@ -16,18 +16,21 @@ using Xamarin.Forms.Xaml;
 namespace Imobiliaria.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Inicio : ContentPage
+	public partial class Inicio : MenuContainerPage
     {
 
         private Maps Maps { get; set; }
         private ListaImoveis ListaImoveis { get; set; }
         public ItemsViewModel viewModel { get; set; }
         public StackLayout paginaStack { get; set; }
+        public MenuPesquisa menuPesquisa { get; set; }
         public Inicio ()
 		{
             InitializeComponent();
-
+           
             viewModel = new ItemsViewModel();
+            menuPesquisa = new MenuPesquisa(this);
+            this.SlideMenu = menuPesquisa;
             paginaStack = pagina;
             Maps = new Maps(this);
             ListaImoveis = new ListaImoveis(this);
@@ -51,7 +54,7 @@ namespace Imobiliaria.Views
             base.OnAppearing();
 
             viewModel.LoadItemsCommand.Execute(null);
-            ForceLayout();
+           // ForceLayout();
 
 
 
@@ -82,8 +85,24 @@ namespace Imobiliaria.Views
         */
         public void visiblePageSelected(bool set)
         {
-            this.PageSelected.IsVisible = set;
+            if (set)
+            {
 
+              
+
+                PageSelected.TintColor = (Color)Application.Current.Resources["colorPrimary"];
+                PageSelected.DisabledColor = (Color)Application.Current.Resources["colorPrimary"];
+                PageSelected.DisabledColor = (Color)Application.Current.Resources["colorPrimary"];
+                PageSelected.SelectedTextColor = (Color)Application.Current.Resources["colorClara"];
+            }
+            else
+            {
+                PageSelected.TintColor = (Color)Application.Current.Resources["colorSecundaria"];
+                PageSelected.DisabledColor = (Color)Application.Current.Resources["colorSecundaria"];
+                PageSelected.DisabledColor = (Color)Application.Current.Resources["colorSecundaria"];
+                PageSelected.SelectedTextColor = (Color)Application.Current.Resources["colorSecundaria"];
+            }
+             
         }
 
 
@@ -96,6 +115,7 @@ namespace Imobiliaria.Views
             {
                 case 0:
                     pagina.Children.Add(Maps);
+                    Maps.ForceLayout();
                     break;
                 case 1:
                     pagina.Children.Add(ListaImoveis);
@@ -111,11 +131,48 @@ namespace Imobiliaria.Views
             var d = b.TabIndex;
             if ((b.GetType() != Maps.GetType()) && (b.GetType() != ListaImoveis.GetType()))
             {
-                pagina.Children.Clear();
-                pagina.Children.Add(ListaImoveis);
-                visiblePageSelected(true);
+                CarregarPagina();
             }
             return true;
         }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+
+           menuPesquisa.carregarDados();
+           menuPesquisa.ForceLayout();
+           this.ShowMenu();
+          
+
+
+        }
+
+        public async Task CarregarDetalhes(Imovel i)
+        {
+
+            this.visiblePageSelected(false);
+            pagina.Children.Clear();
+            this.paginaStack.Children.Add(new ItemDetailPage(new ItemDetailViewModel(i)));
+
+
+
+        }
+        public  void CarregarPagina()
+        {
+
+            pagina.Children.Clear();
+            if (PageSelected.SelectedSegment == 0)
+            {
+                pagina.Children.Add(Maps);
+            }
+            else
+            {
+                pagina.Children.Add(ListaImoveis);
+            }
+
+            visiblePageSelected(true);
+
+        }
+
     }
 }

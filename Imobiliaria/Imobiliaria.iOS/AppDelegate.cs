@@ -24,6 +24,8 @@ namespace Imobiliaria.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+            Rg.Plugins.Popup.Popup.Init();
+            Plugin.InputKit.Platforms.iOS.Config.Init();
             SegmentedControlRenderer.Init();
             Xamarin.FormsGoogleMaps.Init("AIzaSyCgA1ifQK-1Kn4EsTTyU8hGrKn1jQM9bus");
             Plugin.Iconize.Iconize.With(new Plugin.Iconize.Fonts.FontAwesomeBrandsModule())

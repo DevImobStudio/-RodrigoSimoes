@@ -20,28 +20,7 @@ namespace Imobiliaria.Models
         public string video { get; set; }
         public string categoria { get; set; }
         public string negocio { get; set; }
-        private string preco { get; set; }
-
-       /* public string preco
-        {
-            get
-            {
-                return Preco;
-            }
-            set
-            {
-                if (value == null)
-                {
-                    Preco = "Consulte!";
-                }
-                else
-                {
-                    Preco = value;
-                }
-
-            }
-        }
-        */
+        private string Preco { get; set; }
 
         public string preco_promocional { get; set; }
         public string preco_iptu { get; set; }
@@ -59,17 +38,59 @@ namespace Imobiliaria.Models
         public string areautil { get; set; }
         public double Longitude { get; set; }
         public double Latitude { get; set; }
-       
+        public double valor
+        {
+            get
+            {
+                try
+                {
+                    double a = (Convert.ToDouble(this.Preco.Split('.')[0]));
+                    return a;
+                }
+                catch
+                {
+                    return 0;
+                }
+
+            }
+            set
+            {
+                this.valor = value;
+            }
+        }
+
+        public string preco
+            {
+                get
+                {
+                    try
+                    {
+                        double a = (Convert.ToDouble(this.Preco.Split('.')[0]));
+                        if (a > 0)
+                            return  a.ToString("C2");
+                        else
+                            return "Consulte!";
+                }
+                    catch
+                    {
+                        return "Consulte!";
+                    }
+
+                }
+                set
+                {
+                    this.Preco = value;
+                }
+            }
+            
+
 
         public Location localizacao { get; set; }
         public Position position { get; set; }
         public BitmapDescriptor icon { get; set; }
 
-        private View ViewPin(object i)
-        {
-            throw new NotImplementedException();
-        }
-        public string enfase => $"{negocio} -  {bairro} {cidade}-{uf}" ;
+      
+        public string enfase => $"{categoria} - {negocio} -  {bairro} {cidade}-{uf}" ;
 
         public UriImageSource uriImage { get; set; }
         /*

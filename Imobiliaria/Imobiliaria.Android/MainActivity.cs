@@ -21,13 +21,15 @@ namespace Imobiliaria.Droid
         {
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
+            Plugin.InputKit.Platforms.Droid.Config.Init(this, savedInstanceState);
             Plugin.Iconize.Iconize.With(new Plugin.Iconize.Fonts.FontAwesomeBrandsModule())
                                   .With(new Plugin.Iconize.Fonts.FontAwesomeRegularModule())
                                   .With(new Plugin.Iconize.Fonts.FontAwesomeSolidModule());
-
+            Rg.Plugins.Popup.Popup.Init(this, savedInstanceState);
             base.OnCreate(savedInstanceState);
 
             CarouselViewRenderer.Init();
+            global::Xamarin.Forms.Forms.SetFlags("Shell_Experimental", "Visual_Experimental", "CollectionView_Experimental");
             Xamarin.FormsGoogleMaps.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
 

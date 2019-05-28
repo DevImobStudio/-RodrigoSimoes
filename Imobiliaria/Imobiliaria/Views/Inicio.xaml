@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<slideoverkit:MenuContainerPage
+    xmlns:slideoverkit="clr-namespace:SlideOverKit;assembly=SlideOverKit"
+    xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Imobiliaria.Views.Inicio"
              xmlns:maps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
@@ -22,21 +24,24 @@
                         <ColumnDefinition Width="0.5*"></ColumnDefinition>
                         <ColumnDefinition Width="0.2*"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
-
-                    <Grid Grid.Column="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Column="0" Grid.Row="0">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="0.3*" />
                             <ColumnDefinition Width="0.7*" />
                         </Grid.ColumnDefinitions>
-                        <iconize:IconLabel x:Name="searchI" Text="fas-search" Grid.Column="0"  FontSize="Small" VerticalOptions="Center" HorizontalOptions="End" TextColor="{StaticResource colorPrimary}"></iconize:IconLabel>
-                        <Label Text="procurar" x:Name="searchL"  Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start" FontSize="Small" TextColor="{StaticResource colorPrimary}"/>
-
+                        
+                        <iconize:IconLabel  x:Name="searchI" Text="fas-search" Grid.Column="0"  FontSize="Small" VerticalOptions="Center" HorizontalOptions="End" TextColor="{StaticResource colorPrimary}"></iconize:IconLabel>
+                        <Label  Text="procurar" x:Name="searchL"  Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start" FontSize="Small" TextColor="{StaticResource colorPrimary}"/>
+                        <Button Grid.ColumnSpan="2" Grid.Row="0" Grid.Column="0" BackgroundColor="Transparent" Clicked="Button_Clicked"></Button>
                     </Grid>
-                    
-                    <Button BackgroundColor="Transparent"  Grid.Column="0"></Button>
-                    <fee:SegmentedControl  x:Name="PageSelected"   DisabledColor="{StaticResource colorPrimary}" SelectedTextColor="{StaticResource colorClara}" ValueChanged="SegControl_ValueChanged" TintColor="{StaticResource colorPrimary}" SelectedSegment="0"  Grid.Column="1" Margin="10" >
+
+
+                    <fee:SegmentedControl  Grid.Row="0"  x:Name="PageSelected"     DisabledColor="{StaticResource colorPrimary}" SelectedTextColor="{StaticResource colorClara}" ValueChanged="SegControl_ValueChanged" TintColor="{StaticResource colorPrimary}" SelectedSegment="0"  Grid.Column="1" Margin="10" >
                         <fee:SegmentedControl.Children  >
-                            <fee:SegmentedControlOption Text="Mapa"  />
+                            <fee:SegmentedControlOption Text="Mapa"   />
                             <fee:SegmentedControlOption Text="Lista" />
                            
                         </fee:SegmentedControl.Children>
@@ -98,4 +103,4 @@
             </StackLayout>
 
     </ContentPage.Content>
-</ContentPage>
+</slideoverkit:MenuContainerPage>

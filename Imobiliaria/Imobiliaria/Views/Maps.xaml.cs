@@ -1,6 +1,7 @@
 ﻿using Imobiliaria.Models;
 using Imobiliaria.ViewModels;
 using Plugin.Geolocator;
+using Rg.Plugins.Popup.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,20 +18,19 @@ namespace Imobiliaria.Views
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Maps : StackLayout
 	{
-        public ItemsViewModel viewModel { get; set; }
         Inicio Inicio { get; set; }
+      
 
         public Maps (Inicio Inicio)
 		{
 			InitializeComponent ();
-            this.Inicio = Inicio;
-            this.viewModel = this.Inicio.viewModel;
-            BindingContext = this.viewModel;
-           
-             viewModel.Mapa = this.Mapa;
-            // CarregarDados();
 
-          
+            this.Inicio = Inicio;
+            BindingContext = this.Inicio.viewModel;
+            caroussel.ItemsSource = this.Inicio.viewModel.Imovels;
+            CarregarDados();
+
+
             Mapa.MoveToRegion(MapSpan.FromCenterAndRadius(
                                               new Position(-23.0361979, -45.5570624),
 
@@ -54,58 +54,20 @@ namespace Imobiliaria.Views
         public async  void CarregarDados()
         {
 
-           
-            if (viewModel.Imovels.Count > 0)
+            this.Inicio.viewModel.LoadItemsCommand.Execute(null);
+            if (this.Inicio.viewModel.Imovels.Count > 0)
             {
-               
-                LoadLocalizacoes();
+
+                Mapa.MoveToRegion(MapSpan.FromCenterAndRadius(
+                                       new Position(this.Inicio.viewModel.Imovels[0].localizacao.Latitude, this.Inicio.viewModel.Imovels[0].localizacao.Longitude),
+                                       Distance.FromMiles(0.5)));
             }
+            this.ForceLayout();
 
         }
 
 
-            public async void LoadLocalizacoes()
-            {
-           
-                foreach (Imovel i in viewModel.Imovels)
-                {
-
-                    Pin pin = new Pin
-                    {
-                        Type = PinType.Generic,
-
-                        Position = new Position(i.localizacao.Latitude, i.localizacao.Longitude),
-                        Label = i.titulo,
-                        Tag = i.id,
-                        Address = i.logradouro,
-                        Flat = true,
-                        Icon = BitmapDescriptorFactory.FromView(new ViewPin(i)),
-                        
-                        
-
-                    };
-                    if (pin != null)
-                    {
-                        pin.Clicked += (sender, e) => {
-                            //  DisplayAlert(i.Titulo, i.Descricao, "Ver Imóvel");
-                            //caroussel.PositionSelected = pin.
-                            // ItemDetalhe(i);
-                        };
-
-                    }
-                Mapa.Pins.Add(pin);
-            }
-
-
-
-              
-
-            
-              
-               
-            }
-
-
+          
 
         private async void GetUserPosition()
     {
@@ -132,13 +94,13 @@ namespace Imobiliaria.Views
 
         private void Caroussel_PositionSelected(object sender, CarouselView.FormsPlugin.Abstractions.PositionSelectedEventArgs e)
         {
-            if (!viewModel.IsBusy)
+            if (!this.Inicio.viewModel.IsBusy)
             {
-                if (viewModel.Imovels != null)
+                if (this.Inicio.viewModel.Imovels != null)
                 {
-                    if (viewModel.Imovels.Count > 0)
+                    if (this.Inicio.viewModel.Imovels.Count > 0)
                     {
-                        Imovel imovel = viewModel.Imovels[e.NewValue];
+                        Imovel imovel = this.Inicio.viewModel.Imovels[e.NewValue];
                         if (imovel == null)
                             return;
                          
@@ -154,25 +116,67 @@ namespace Imobiliaria.Views
           
         }
 
-        private void Caroussel_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+      
+
+        private async void Mapa_PinClicked(object sender, PinClickedEventArgs e)
         {
+            Imovel a = ((Imovel)e.Pin.BindingContext) ;
+         //   Imovel imovel = viewModel.LstImoveis.Where(p => p.id == a.id).FirstOrDefault();
+            if (a != null)
+            {
+              //  caroussel.Position = this.Inicio.viewModel.LstImoveis.IndexOf(a);
+                Mapa.MoveToRegion(MapSpan.FromCenterAndRadius(
+                                     new Position(a.localizacao.Latitude, a.localizacao.Longitude),
+                                     Distance.FromMiles(0.5)));
+            }
+           
+             //e.Handled = true;
+          
 
         }
 
         private async void Pin_Clicked(object sender, EventArgs e)
         {
-
-
-           
+            Pin b = sender as Pin;
+            Imovel a = ((Imovel)b.BindingContext);
+            if (a != null)
+             {
+                
+                await this.Inicio.CarregarDetalhes(a);
+             }
+             
         }
 
-        private void Mapa_PinClicked(object sender, PinClickedEventArgs e)
+       
+
+     
+     
+
+        private void Caroussel_ItemAppearing(PanCardView.CardsView view, PanCardView.EventArgs.ItemAppearingEventArgs args)
         {
+            Imovel imovel = args.Item as Imovel;
 
-            Imovel imovel = viewModel.LstImoveis.Where(p => p.id == e.Pin.Address).FirstOrDefault();
-            caroussel.Position = viewModel.LstImoveis.IndexOf(imovel);
-            e.Handled = true;
+            if (imovel != null)
+            {
+               
+                 Mapa.MoveToRegion(MapSpan.FromCenterAndRadius(
+                                       new Position(imovel.localizacao.Latitude, imovel.localizacao.Longitude),
+                                       Distance.FromMiles(0.5)));
+                    
+                
+            }
 
+
+        }
+
+        private async void Button_Clicked(object sender, EventArgs e)
+        {
+            var objeto = ((sender as Button).CommandParameter) as Imovel;
+            if (objeto != null)
+            {
+
+                await this.Inicio.CarregarDetalhes(objeto);
+            }
         }
     }
 }

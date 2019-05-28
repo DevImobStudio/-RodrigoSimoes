@@ -30,7 +30,7 @@ namespace Imobiliaria.Views.Menu
                 }
             };
 
-            this.SlideMenu = new MenuPesquisa();
+      //      this.SlideMenu = new MenuPesquisa(this);
         }
 
     

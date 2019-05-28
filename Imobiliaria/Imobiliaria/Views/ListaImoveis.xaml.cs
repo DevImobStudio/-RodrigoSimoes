@@ -6,8 +6,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Xamarin.Essentials;
 using Xamarin.Forms;
+using Xamarin.Forms.OpenWhatsApp;
 using Xamarin.Forms.Xaml;
 
 namespace Imobiliaria.Views
@@ -51,14 +52,36 @@ namespace Imobiliaria.Views
                
         }
 
-        private void WhatsApp_Clicked(object sender, EventArgs e)
+        private async void WhatsApp_Clicked(object sender, EventArgs e)
         {
-
+            try
+            {
+                Chat.Open("+55012991734478", "Olá vi este imóvel no aplicativo e gostaria de mais informações ");
+            }
+            catch (Exception ex)
+            {
+                
+            }
         }
 
         private void Contato_Clicked(object sender, EventArgs e)
         {
-
+            try
+            {
+                PhoneDialer.Open("+55012991734478");
+            }
+            catch (ArgumentNullException anEx)
+            {
+                // Number was null or white space
+            }
+            catch (FeatureNotSupportedException ex)
+            {
+                // Phone Dialer is not supported on this device.
+            }
+            catch (Exception ex)
+            {
+                // Other error has occurred.
+            }
         }
 
         private async void Favoritos_Clicked(object sender, EventArgs e)

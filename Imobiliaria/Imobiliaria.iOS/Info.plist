@@ -46,5 +46,9 @@
     <string>Esse aplicativo precisa acessar a sua localização.</string>
     <key>NSLocationWhenInUseUsageDescription</key>
     <string>Esse aplicativo precisa acessar a sua localização.</string>
+  <key>LSApplicationQueriesSchemes</key>
+  <array>
+    <string>whatsapp</string>
+  </array>
 </dict>
 </plist>

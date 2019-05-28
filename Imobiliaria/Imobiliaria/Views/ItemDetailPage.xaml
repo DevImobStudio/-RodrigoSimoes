@@ -83,7 +83,7 @@
 
                         <Label Text="DORMITÓRIOS" Grid.Column="0" Grid.Row="1" TextColor="{StaticResource colorClara}" HorizontalOptions="Center"  FontSize="Micro"/>
                         <Label Text="SUÍTES"  Grid.Column="1" Grid.Row="1" TextColor="{StaticResource colorClara}" HorizontalOptions="Center"  FontSize="Micro"/>
-                        <Label Text="GARAGE"  Grid.Column="2" Grid.Row="1" TextColor="{StaticResource colorClara}" HorizontalOptions="Center"  FontSize="Micro"/>
+                        <Label Text="GARAGEM"  Grid.Column="2" Grid.Row="1" TextColor="{StaticResource colorClara}" HorizontalOptions="Center"  FontSize="Micro"/>
                         <Label Text="ÁREA ÚTIL"  Grid.Column="3" Grid.Row="1" TextColor="{StaticResource colorClara}" HorizontalOptions="Center"  FontSize="Micro"/>
 
                         <Label Text="{Binding Imovel.dormitorios }" Grid.Column="0" Grid.Row="2" TextColor="{StaticResource colorClara}" HorizontalOptions="Center" FontSize="Small" FontAttributes="Bold"/>
@@ -248,7 +248,7 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
                 </Grid.RowDefinitions>
-                <Button BackgroundColor="{StaticResource colorPrimary}" Grid.ColumnSpan="2" CornerRadius="6" ></Button>
+                <BoxView BackgroundColor="{StaticResource colorPrimary}" Grid.ColumnSpan="2" CornerRadius="6" ></BoxView>
                 <iconize:IconLabel 
                    
                     Text="far-envelope" 
@@ -259,11 +259,11 @@
                     TextColor="{StaticResource colorClara}"/>
                 <Label 
                     Grid.Column="1" 
-                    Text="Clique aqui e receba o material compleo por e-mail ou whatsapp!"  
+                    Text="Clique aqui e receba o material completo por e-mail ou whatsapp!"  
                     TextColor="{StaticResource colorClara}" 
                     FontSize="Small"  
                     HorizontalOptions="Start" />
-                <Button BackgroundColor="Transparent" Grid.ColumnSpan="2"></Button>
+                <Button BackgroundColor="Transparent" Grid.ColumnSpan="2" CornerRadius="6" ></Button>
                 <iconize:IconButton
                     VerticalOptions="Center"
                     Grid.Column="2"
