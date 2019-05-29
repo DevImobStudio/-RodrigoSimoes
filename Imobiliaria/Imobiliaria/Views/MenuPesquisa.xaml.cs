@@ -40,6 +40,7 @@ namespace Imobiliaria.Views
 
         public  void carregarDados()
         {
+            this.ForceLayout();
             carregarDadosCidade();
             carregarDadosTipo();
             carregarDadosDormitorios();

@@ -24,7 +24,8 @@ namespace Imobiliaria.Views
         public ItemsViewModel viewModel { get; set; }
         public StackLayout paginaStack { get; set; }
         public MenuPesquisa menuPesquisa { get; set; }
-        public Inicio ()
+        public ItemDetailViewModel ImovelDetail{ get; set; }
+    public Inicio ()
 		{
             InitializeComponent();
            
@@ -152,8 +153,9 @@ namespace Imobiliaria.Views
 
             this.visiblePageSelected(false);
             pagina.Children.Clear();
-            this.paginaStack.Children.Add(new ItemDetailPage(new ItemDetailViewModel(i)));
-
+            this.ImovelDetail = new ItemDetailViewModel(i);
+            this.paginaStack.Children.Add(new ItemDetailPage(ImovelDetail));
+            this.ImovelDetail.LoadItemsCommand.Execute(null);
 
 
         }

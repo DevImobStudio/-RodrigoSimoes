@@ -46,8 +46,8 @@ namespace Imobiliaria.ViewModels
                 Imagens.Clear();
 
                 Imagens.Add(Imovel.imagem);
-                Imovel = await Services.Sistema.RESTAPI.getAsync<Imovel>("/content/" + Imovel.id);
-                lstImagens = await Services.Sistema.RESTAPI.getAsync<List<string>>("/content/itens/"+Imovel.id);
+            //    Imovel = await Services.Sistema.RESTAPI.getAsync<Imovel>("content/" + Imovel.id);
+                lstImagens = await Services.Sistema.RESTAPI.getAsync<List<string>>("content/itens/"+Imovel.id);
                 if (lstImagens.Count > 0)
                 {
                     Imagens.Clear();

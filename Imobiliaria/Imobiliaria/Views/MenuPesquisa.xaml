@@ -228,7 +228,7 @@
                 x:Name="Faixa" 
                 MinimumValue="500" 
                 MaximumValue="5000000" 
-                LowerValue="500"
+                LowerValue="0"
                 ActiveColor="{StaticResource colorPrimary}"
                 TextColor="{StaticResource colorPrimary}"
                 ShowTextAboveThumbs="True"
@@ -237,7 +237,7 @@
                 BarHeight="10"
                     
                 MaterialUI="True"
-                UpperValue="500000" 
+                UpperValue="5000000" 
                 StepValue="10" 
                 StepValueContinuously="true" 
                 VerticalOptions="Center" 

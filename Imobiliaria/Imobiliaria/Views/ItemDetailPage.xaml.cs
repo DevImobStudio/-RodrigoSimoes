@@ -11,29 +11,34 @@ namespace Imobiliaria.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ItemDetailPage : StackLayout
     {
-        ItemDetailViewModel viewModel;
+        ItemDetailViewModel viewModel { get; set; }
 
         public ItemDetailPage(ItemDetailViewModel viewModel)
         {
             InitializeComponent();
-
-            BindingContext = this.viewModel = viewModel;
-
+            this.viewModel = viewModel;
+            BindingContext = this.viewModel;
+            caroussel.ItemsSource = this.viewModel.Imagens;
             viewModel.LoadItemsCommand.Execute(null);
+            CarregarDados();
            
+        }
+        public async void CarregarDados()
+        {
+            viewModel.LoadItemsCommand.Execute(null);
         }
 
 
-        /*  protected async override void OnAppearing()
-          {
-              base.OnAppearing();
+            /*  protected async override void OnAppearing()
+              {
+                  base.OnAppearing();
 
-              viewModel.LoadItemsCommand.Execute(null);
+                  viewModel.LoadItemsCommand.Execute(null);
 
-          }
-          */
+              }
+              */
 
-       
 
-    }
+
+        }
 }

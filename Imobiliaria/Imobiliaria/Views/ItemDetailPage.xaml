@@ -4,11 +4,12 @@
              x:Class="Imobiliaria.Views.ItemDetailPage"
              xmlns:iconize="clr-namespace:Plugin.Iconize;assembly=Plugin.Iconize"
              xmlns:controls="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
-             >
+             xmlns:card="clr-namespace:PanCardView;assembly=PanCardView">
     <StackLayout>
-    <ScrollView  Padding="0">
+    <ScrollView  Padding="0" >
 
         <StackLayout   VerticalOptions="StartAndExpand" BackgroundColor="{StaticResource colorTelas}">
+                <ActivityIndicator Grid.Row="0" IsEnabled="True" IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}" HorizontalOptions="Center" VerticalOptions="Center" />
 
                 <Label 
                     TextColor="{StaticResource colorPrimary}"
@@ -32,8 +33,50 @@
                         <ColumnDefinition Width="0.15*" />
 
                     </Grid.ColumnDefinitions>
+                    
+             <card:CarouselView
+             
+                Grid.RowSpan="2" 
+                Grid.ColumnSpan="3" 
+                x:Name="caroussel" 
+                IsUserInteractionEnabled="True"
+                AreAnimationsEnabled="True"
+                IsViewCacheEnabled="True"
+                IsAutoNavigatingAimationEnabled="True"
+                IsPanSwipeEnabled="True"
+                
+             
+                ItemsSource="{Binding Imagens ,Mode=OneWay}" 
+                VerticalOptions="FillAndExpand"
+               
+                HorizontalOptions="FillAndExpand" 
+                
+               >
 
-                    <controls:CarouselViewControl 
+                            <card:CarouselView.ItemTemplate>
+                <DataTemplate >
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="6*"></RowDefinition>
+                            <RowDefinition Height="1*"></RowDefinition>
+                            <RowDefinition Height="1.3*"></RowDefinition>
+                            <RowDefinition Height="1*"></RowDefinition>
+                        </Grid.RowDefinitions>
+
+                        <Image 
+                                    Source="{Binding .}" 
+                                    Grid.RowSpan="4" Aspect="AspectFill" />
+                      
+
+                    </Grid>
+
+
+                </DataTemplate>
+                </card:CarouselView.ItemTemplate>
+       
+            </card:CarouselView>
+
+              <!--      <controls:CarouselViewControl 
                         Grid.RowSpan="2" 
                         Grid.ColumnSpan="3" 
                         x:Name="caroussel" 
@@ -58,7 +101,7 @@
                             </DataTemplate>
                         </controls:CarouselViewControl.ItemTemplate>
                     </controls:CarouselViewControl>
-
+-->
                 </Grid>
             </StackLayout>
 

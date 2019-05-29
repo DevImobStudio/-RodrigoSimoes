@@ -20,7 +20,7 @@ namespace Imobiliaria
         {
             InitializeComponent();
 
-            Services.Sistema.RESTAPI = new Services.Rest("http://api.rodrigosimoesimoveis.com.br/");
+            Services.Sistema.RESTAPI = new Services.Rest("http://www.api.rodrigosimoesimoveis.com.br/");
 
             Services.Sistema.DATABASE = new Services.DataBaseAsync();
 

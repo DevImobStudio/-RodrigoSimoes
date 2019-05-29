@@ -142,7 +142,7 @@ namespace Imobiliaria.Views
             if (a != null)
              {
                 
-                await this.Inicio.CarregarDetalhes(a);
+             //   await this.Inicio.CarregarDetalhes(a);
              }
              
         }
