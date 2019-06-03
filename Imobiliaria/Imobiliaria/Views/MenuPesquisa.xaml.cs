@@ -135,7 +135,7 @@ namespace Imobiliaria.Views
 
         private async void Button_Clicked(object sender, EventArgs e)
         {
-            this.Inicio.viewModel.Pesquisa.busca = Busca.Text;
+          /*  this.Inicio.viewModel.Pesquisa.busca = Busca.Text;
             if (Tipo.SelectedItem != null)
                 this.Inicio.viewModel.Pesquisa.tipo =  Tipo.SelectedItem.ToString();
             if (Cidade.SelectedItem != null)
@@ -148,9 +148,10 @@ namespace Imobiliaria.Views
                 this.Inicio.viewModel.Pesquisa.categoria = Locacao.Text;
             if (Venda.IsChecked)
                 this.Inicio.viewModel.Pesquisa.categoria = Venda.Text;
+                */
 
-            this.Inicio.viewModel.Pesquisa.faixa2 = Faixa.UpperValue;
-            this.Inicio.viewModel.Pesquisa.faixa1 = Faixa.LowerValue;
+       //     this.Inicio.viewModel.Pesquisa.faixa2 = Faixa.UpperValue;
+         //   this.Inicio.viewModel.Pesquisa.faixa1 = Faixa.LowerValue;
 
 
             this.Inicio.viewModel.LoadItemsCommandBusca.Execute(null);
@@ -178,11 +179,11 @@ namespace Imobiliaria.Views
         private void Button_Clicked_1(object sender, EventArgs e)
         {
             this.Inicio.viewModel.Pesquisa.busca = null;
-            this.Inicio.viewModel.Pesquisa.tipo = null;
+            this.Inicio.viewModel.Pesquisa.categoria = null;
             this.Inicio.viewModel.Pesquisa.cidade = null;
             this.Inicio.viewModel.Pesquisa.dormitorios = null;
-            this.Inicio.viewModel.Pesquisa.categoria = null;
-            this.Inicio.viewModel.Pesquisa.categoria = null;
+            this.Inicio.viewModel.Pesquisa.bairro = null;
+            this.Inicio.viewModel.Pesquisa.negocio = null;
             this.Inicio.viewModel.LoadItemsCommand.Execute(null);
             Tipo.SelectedItem = null;
             Cidade.SelectedItem = null;

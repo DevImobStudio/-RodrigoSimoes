@@ -15,13 +15,14 @@
             android:TabbedPage.BarSelectedItemColor="{StaticResource colorClara}">
 
     <NavigationPage.TitleView >
-        <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center" Margin="-40,0,0,0">
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center" >
 
-            <Image x:Name="logotipo" Source="https://www.rodrigosimoesimoveis.com.br/uploads/www.rodrigosimoesimoveis.com.br/logotipo.png" />
+            <Image HorizontalOptions="Center" x:Name="logotipo" Source="https://www.rodrigosimoesimoveis.com.br/uploads/www.rodrigosimoesimoveis.com.br/logotipo.png" />
         </StackLayout>
         
     </NavigationPage.TitleView>
 
 </TabbedPage>
+    
 
     

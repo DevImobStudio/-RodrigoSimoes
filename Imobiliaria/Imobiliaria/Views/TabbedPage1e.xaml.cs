@@ -24,7 +24,7 @@ namespace Imobiliaria.Views
         public TabbedPage1 ()
         {
             InitializeComponent();
-            
+   
             Children.Add(Inicio = new Inicio());
             Children.Add(Favoritos = new Favoritos());
             Children.Add(Atendimento = new Atendimento());
@@ -34,8 +34,8 @@ namespace Imobiliaria.Views
             
             ForceLayout();
         }
+       
 
-     
 
     }
 }

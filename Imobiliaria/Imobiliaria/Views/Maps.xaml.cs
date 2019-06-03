@@ -29,14 +29,6 @@ namespace Imobiliaria.Views
             BindingContext = this.Inicio.viewModel;
             caroussel.ItemsSource = this.Inicio.viewModel.Imovels;
             CarregarDados();
-
-
-            Mapa.MoveToRegion(MapSpan.FromCenterAndRadius(
-                                              new Position(-23.0361979, -45.5570624),
-
-                                              Distance.FromMiles(0.5)));
-
-
             Mapa.MyLocationEnabled = true;
 
   
@@ -147,10 +139,18 @@ namespace Imobiliaria.Views
              
         }
 
-       
+        public void Bind()
+        {
+           
+     //       Mapa.ItemsSource = this.Inicio.viewModel.Imovels;
+     //       BindingContext = this.Inicio.viewModel;
+         //   caroussel.ItemsSource = this.Inicio.viewModel.Imovels;
+            if (this.Inicio.viewModel.Imovels.Count > 0)
+            {
+                caroussel.SelectedIndex = 0;
+            }
 
-     
-     
+        }
 
         private void Caroussel_ItemAppearing(PanCardView.CardsView view, PanCardView.EventArgs.ItemAppearingEventArgs args)
         {

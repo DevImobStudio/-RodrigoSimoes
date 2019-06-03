@@ -38,6 +38,27 @@ namespace Imobiliaria.Models
         public string areautil { get; set; }
         public double Longitude { get; set; }
         public double Latitude { get; set; }
+
+        public int quartos
+        {
+            get
+            {
+                try
+                {
+                    int a = (Convert.ToInt32(this.dormitorios));
+                    return a;
+                }
+                catch
+                {
+                    return 0;
+                }
+            }
+            set
+            {
+                this.quartos = value;
+            }
+        }
+
         public double valor
         {
             get

@@ -24,8 +24,10 @@ namespace Imobiliaria.Views
         public ItemsViewModel viewModel { get; set; }
         public StackLayout paginaStack { get; set; }
         public MenuPesquisa menuPesquisa { get; set; }
+        public EnvioMaterial EnvioMaterial { get; set; }
         public ItemDetailViewModel ImovelDetail{ get; set; }
-    public Inicio ()
+
+        public Inicio ()
 		{
             InitializeComponent();
            
@@ -54,7 +56,7 @@ namespace Imobiliaria.Views
         {
             base.OnAppearing();
 
-            viewModel.LoadItemsCommand.Execute(null);
+       //     viewModel.LoadItemsCommand.Execute(null);
            // ForceLayout();
 
 
@@ -127,6 +129,12 @@ namespace Imobiliaria.Views
 
         protected  override bool OnBackButtonPressed()
         {
+            carregarPaginaInicial();
+            return true;
+        }
+
+        public void carregarPaginaInicial()
+        {
             var b = pagina.Children[0];
             var c = b.GetType();
             var d = b.TabIndex;
@@ -134,15 +142,15 @@ namespace Imobiliaria.Views
             {
                 CarregarPagina();
             }
-            return true;
         }
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-
-           menuPesquisa.carregarDados();
-           menuPesquisa.ForceLayout();
-           this.ShowMenu();
+       //     carregarPaginaInicial();
+            this.Navigation.PushAsync(new Pesquisa(this));
+        //   menuPesquisa.carregarDados();
+         //  menuPesquisa.ForceLayout();
+        //   this.ShowMenu();
           
 
 
@@ -154,7 +162,7 @@ namespace Imobiliaria.Views
             this.visiblePageSelected(false);
             pagina.Children.Clear();
             this.ImovelDetail = new ItemDetailViewModel(i);
-            this.paginaStack.Children.Add(new ItemDetailPage(ImovelDetail));
+            this.paginaStack.Children.Add(new ItemDetailPage(this, ImovelDetail));
             this.ImovelDetail.LoadItemsCommand.Execute(null);
 
 
@@ -165,7 +173,10 @@ namespace Imobiliaria.Views
             pagina.Children.Clear();
             if (PageSelected.SelectedSegment == 0)
             {
+               
                 pagina.Children.Add(Maps);
+                Maps.Bind();
+
             }
             else
             {
@@ -173,6 +184,23 @@ namespace Imobiliaria.Views
             }
 
             visiblePageSelected(true);
+
+        }
+        public void CarregarPesquisa()
+        {
+            CarregarPagina();
+            viewModel.LoadItemsCommandBusca.Execute(null);
+          
+        }
+       
+        public void CarregarPaginaEnvioMaterial(Imovel imovel)
+        {
+
+            pagina.Children.Clear();
+            
+            pagina.Children.Add(new EnvioMaterial(imovel));
+
+            visiblePageSelected(false);
 
         }
 

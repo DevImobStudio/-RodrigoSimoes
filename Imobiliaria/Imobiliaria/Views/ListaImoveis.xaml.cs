@@ -1,6 +1,7 @@
 ﻿using Imobiliaria.Models;
 using Imobiliaria.Services;
 using Imobiliaria.ViewModels;
+using Plugin.Toast;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -39,15 +40,13 @@ namespace Imobiliaria.Views
             ItemsListView.SelectedItem = null;
         }
 
-        private void Detalhes_Clicked(object sender, EventArgs e)
+        private async void Detalhes_Clicked(object sender, EventArgs e)
         {
             
             var objeto =  ((sender as Button).CommandParameter) as Imovel;
             if (objeto != null)
             {
-                this.Inicio.paginaStack.Children.Clear();
-                this.Inicio.visiblePageSelected(false);
-                this.Inicio.paginaStack.Children.Add(new ItemDetailPage(new ItemDetailViewModel(objeto)));
+                await this.Inicio.CarregarDetalhes(objeto);
             }
                
         }
@@ -56,32 +55,21 @@ namespace Imobiliaria.Views
         {
             try
             {
-                Chat.Open("+55012991734478", "Olá vi este imóvel no aplicativo e gostaria de mais informações ");
+                var objeto = ((sender as Button).CommandParameter) as Imovel;
+                if (objeto != null)
+                {
+                    Sistema.WhatsApp(objeto);
+                }
             }
             catch (Exception ex)
             {
-                
+                CrossToastPopUp.Current.ShowToastMessage(ex.Message, Plugin.Toast.Abstractions.ToastLength.Long);
             }
         }
 
         private void Contato_Clicked(object sender, EventArgs e)
         {
-            try
-            {
-                PhoneDialer.Open("+55012991734478");
-            }
-            catch (ArgumentNullException anEx)
-            {
-                // Number was null or white space
-            }
-            catch (FeatureNotSupportedException ex)
-            {
-                // Phone Dialer is not supported on this device.
-            }
-            catch (Exception ex)
-            {
-                // Other error has occurred.
-            }
+            Sistema.Contato("+552112991734478");
         }
 
         private async void Favoritos_Clicked(object sender, EventArgs e)
@@ -101,12 +89,17 @@ namespace Imobiliaria.Views
                             idImovel = objeto.id
 
                         });
+                        CrossToastPopUp.Current.ShowToastMessage("Imovel "+ objeto.titulo + "adicionado com sucesso", Plugin.Toast.Abstractions.ToastLength.Long);
                     }
                     catch (Exception ex)
                     {
-
+                        CrossToastPopUp.Current.ShowToastMessage(ex.Message, Plugin.Toast.Abstractions.ToastLength.Long);
                     }
                    
+                }
+                else
+                {
+                    CrossToastPopUp.Current.ShowToastMessage("Imovel " + objeto.titulo + "já pertence ao seus favoritos", Plugin.Toast.Abstractions.ToastLength.Long);
                 }
                 
             }

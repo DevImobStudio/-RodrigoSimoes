@@ -1,23 +1,147 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<StackLayout xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:iconize="clr-namespace:Plugin.Iconize;assembly=Plugin.Iconize"
-             x:Class="Imobiliaria.Views.EnvioMaterial">
-    <ContentPage.Content>
-        <StackLayout>
+             x:Class="Imobiliaria.Views.EnvioMaterial" 
+             BackgroundColor="{StaticResource colorTelas}"
+             VerticalOptions="FillAndExpand">
+            
+        <StackLayout Padding="10" >
+            <Grid Margin="0,10,10,20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition  Width="2*"/>
+                    <ColumnDefinition  Width="8*"/>
+                </Grid.ColumnDefinitions>
+        
             <iconize:IconLabel 
                     Text="far-envelope" 
                     Grid.Column="0" 
                     HorizontalOptions="Center"
                     VerticalOptions="Center" 
                     FontSize="Large"  
-                    TextColor="{StaticResource colorClara}"/>
+                    FontAttributes="Bold"
+                    TextColor="{StaticResource colorPrimary}"/>
             <Label 
                     Grid.Column="1" 
-                    Text="Olá"  
-                    TextColor="{StaticResource colorClara}" 
-                    FontSize="Small"  
-                    HorizontalOptions="Start" />
+                    Text="Olá preencha os campos abaixo e receba o material completo deste imóvel por E-mail ou Whatsapp"  
+                    TextColor="{StaticResource colorPrimary}" 
+                    FontSize="Default"  
+                    
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" />
+            </Grid>
+
+            <Grid  RowSpacing="0" ColumnSpacing="0" Margin="30,5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition  Width="1.3*"/>
+                    <ColumnDefinition  Width="8.2*"/>
+                </Grid.ColumnDefinitions>
+                <BoxView Grid.ColumnSpan="2"  CornerRadius="6" BackgroundColor="Transparent"></BoxView>
+                <Grid Grid.Column="0" BackgroundColor="{StaticResource colorSecundaria}"  >
+                    <iconize:IconLabel
+                    TextColor="{StaticResource colorPrimary}"
+                    HorizontalOptions="Center"
+                    Text="fas-user"
+                    
+                    FontSize="Medium"
+                    VerticalOptions="Center"
+                    />
+                </Grid>
+                <Grid Grid.Column="1" BackgroundColor="{StaticResource colorClara}"   >
+                    <Entry 
+                        TextColor="{StaticResource colorPrimary}"
+                        x:Name="Nome" 
+                        FontSize="Default"
+                        HorizontalTextAlignment="Start"
+                        Placeholder="Nome"
+                        PlaceholderColor="{StaticResource colorTelas}"
+                    />
+                </Grid>
+               
+            </Grid>
+
+            <Grid RowSpacing="0" ColumnSpacing="0" Margin="30,5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition  Width="1.3*"/>
+                    <ColumnDefinition  Width="8.2*"/>
+                </Grid.ColumnDefinitions>
+                <BoxView Grid.ColumnSpan="2"  CornerRadius="6" BackgroundColor="Transparent"></BoxView>
+                <Grid Grid.Column="0" BackgroundColor="{StaticResource colorSecundaria}"  >
+                    <iconize:IconLabel
+                    TextColor="{StaticResource colorPrimary}"
+                    HorizontalOptions="Center"
+                    Text="fab-whatsapp"
+                    FontAttributes="Bold"
+                    FontSize="Large"
+                    VerticalOptions="Center"
+                    />
+                </Grid>
+                <Grid Grid.Column="1" BackgroundColor="{StaticResource colorClara}"   >
+                    <Entry 
+                        TextColor="{StaticResource colorPrimary}"
+                        x:Name="Whatsapp" 
+                        FontSize="Default"
+                        HorizontalTextAlignment="Start"
+                        Placeholder="Whatsapp com DDD"
+                        PlaceholderColor="{StaticResource colorTelas}"
+                    />
+                </Grid>
+
+            </Grid>
+
+            <Grid RowSpacing="0" ColumnSpacing="0" Margin="30,5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition  Width="1.3*"/>
+                    <ColumnDefinition  Width="8.2*"/>
+                </Grid.ColumnDefinitions>
+                <BoxView Grid.ColumnSpan="2"  CornerRadius="6" BackgroundColor="Transparent"></BoxView>
+                <Grid Grid.Column="0" BackgroundColor="{StaticResource colorSecundaria}"  >
+                    <iconize:IconLabel
+                    TextColor="{StaticResource colorPrimary}"
+                    HorizontalOptions="Center"
+                    Text="fas-envelope"
+                    FontAttributes="Bold"
+                    FontSize="Large"
+                    VerticalOptions="Center"
+                    />
+                </Grid>
+                <Grid Grid.Column="1" BackgroundColor="{StaticResource colorClara}"   >
+                    <Entry 
+                        TextColor="{StaticResource colorPrimary}"
+                        x:Name="Email" 
+                        FontSize="Default"
+                        HorizontalTextAlignment="Start"
+                        Placeholder="E-mail"
+                        PlaceholderColor="{StaticResource colorTelas}"
+                    />
+                </Grid>
+
+            </Grid>
+
+            <Grid Margin="0,10,10,20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition  Width="2*"/>
+                    <ColumnDefinition  Width="8*"/>
+                </Grid.ColumnDefinitions>
+
+                <iconize:IconLabel 
+                    Text="fas-user-shield" 
+                    Grid.Column="0" 
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center" 
+                    FontSize="Large"  
+                    FontAttributes="Bold"
+                    TextColor="{StaticResource colorPrimary}"/>
+                <Label 
+                    Grid.Column="1" 
+                    Text="Pode ficar tranquilo, não enviamos spam ou mensagens promocionais não solicitamos nem compartilhamos seus dados. Voc~e esta protegido através de criptografia de alto nível"  
+                    TextColor="{StaticResource colorPrimary}" 
+                    FontSize="Default"  
+                    
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" />
+            </Grid>
+            
+
         </StackLayout>
-    </ContentPage.Content>
-</ContentPage>
+</StackLayout>

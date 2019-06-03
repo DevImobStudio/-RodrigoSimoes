@@ -6,9 +6,8 @@
              Icon="lock.png">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Login"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Button x:Name="btnFacebookLogin" Text="Facebook" Clicked="BtnFacebookLogin_Clicked"/>
+            <Label Text="Respota" x:Name="lblResposta" HorizontalOptions="CenterAndExpand"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -4,11 +4,7 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Imobiliaria.Views.Inicio"
-             xmlns:maps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
-             xmlns:listView="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
              xmlns:iconize="clr-namespace:Plugin.Iconize;assembly=Plugin.Iconize"
-             xmlns:local="clr-namespace:Imobiliaria.Views"
-             xmlns:fe="clr-namespace:FreshEssentials;assembly=FreshEssentials"
              xmlns:fee="clr-namespace:SegmentedControl.FormsPlugin.Abstractions;assembly=SegmentedControl.FormsPlugin.Abstractions"
              Title="Início"
              Icon="home.png">
@@ -20,9 +16,9 @@
             <StackLayout VerticalOptions="Start" BackgroundColor="{StaticResource colorSecundaria}" >
                 <Grid>
                     <Grid.ColumnDefinitions >
-                        <ColumnDefinition Width="0.3*"></ColumnDefinition>
-                        <ColumnDefinition Width="0.5*"></ColumnDefinition>
-                        <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                        <ColumnDefinition Width="0.25*"></ColumnDefinition>
+                        <ColumnDefinition Width="0.55*"></ColumnDefinition>
+                        <ColumnDefinition Width="0.20*"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*"/>
@@ -39,7 +35,7 @@
                     </Grid>
 
 
-                    <fee:SegmentedControl  Grid.Row="0"  x:Name="PageSelected"     DisabledColor="{StaticResource colorPrimary}" SelectedTextColor="{StaticResource colorClara}" ValueChanged="SegControl_ValueChanged" TintColor="{StaticResource colorPrimary}" SelectedSegment="0"  Grid.Column="1" Margin="10" >
+                    <fee:SegmentedControl  Grid.Row="0"  x:Name="PageSelected"     DisabledColor="{StaticResource colorPrimary}" SelectedTextColor="{StaticResource colorClara}" ValueChanged="SegControl_ValueChanged" TintColor="{StaticResource colorPrimary}" SelectedSegment="0"  Grid.Column="1" Margin="0,10" >
                         <fee:SegmentedControl.Children  >
                             <fee:SegmentedControlOption Text="Mapa"   />
                             <fee:SegmentedControlOption Text="Lista" />

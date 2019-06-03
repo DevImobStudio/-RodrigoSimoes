@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+                 xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup" 
+                 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                 xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
+                 xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
+                 x:Class="Imobiliaria.Views.ModalOneSelected"   
+                 HasSystemPadding="False"
+                BackgroundClicked="PopupPage_BackgroundClicked"
+                CloseWhenBackgroundIsClicked="True">
+    <pages:PopupPage.Animation>
+        <animations:ScaleAnimation 
+            PositionIn="Center"
+            PositionOut="Center"
+            ScaleIn="1.2"
+            ScaleOut="0.8"
+            DurationIn="400"
+            DurationOut="300"
+            
+            EasingIn="SinOut"
+            EasingOut="SinIn"
+            HasBackgroundAnimation="True"/>
+    </pages:PopupPage.Animation>
+    <StackLayout Padding="30" HorizontalOptions="Center" VerticalOptions="Center">
+        <Frame BackgroundColor="{StaticResource colorTelas}"  CornerRadius="10" >
+            <StackLayout>
+                <Label
+                    x:Name="Titulo"
+                    FontSize="Medium"
+                    FontAttributes="Bold"
+                    TextColor="{StaticResource colorPrimary}"
+                    />
+
+
+                <input:SelectionView 
+                    Margin="10"
+                    x:Name="Lista" 
+                    ColumnSpacing="2"
+                    RowSpacing="10"
+                    ColumnNumber="1" 
+                    SelectionType="RadioButton" 
+                    Color="{StaticResource colorPrimary}"
+                   >
+                       
+                </input:SelectionView>
+
+                <StackLayout VerticalOptions="EndAndExpand" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <Button 
+                        CornerRadius="6"
+                        Clicked="PopupPage_BackgroundClicked"
+                        HorizontalOptions="Start"
+                        Text="Cancelar" 
+                        BackgroundColor="{StaticResource colorPrimary}"
+                        TextColor="{StaticResource colorClara}"/>
+                    <Button
+                        CornerRadius="6"
+                        HorizontalOptions="End"
+                        Text="Confirmar"
+                        Clicked="Button_Clicked"
+                        BackgroundColor="{StaticResource colorPrimary}"
+                        TextColor="{StaticResource colorClara}"/>
+
+
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+
+
+    </StackLayout>
+    </pages:PopupPage>

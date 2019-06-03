@@ -14,7 +14,6 @@
             </Grid.RowDefinitions>
         
         <maps:Map
-                    
                     x:Name="Mapa" 
                     MapType="Street" 
                     VerticalOptions="FillAndExpand" 
@@ -50,7 +49,7 @@
 
         <StackLayout  Grid.Column="0"  VerticalOptions="EndAndExpand"  Grid.Row="0" HeightRequest="220" MinimumHeightRequest="220"  >
 
-            <card:CardsView
+            <card:CarouselView
              
                 Grid.RowSpan="2" 
                 Grid.ColumnSpan="3" 
@@ -60,7 +59,6 @@
                 IsViewCacheEnabled="True"
                 ItemAppearing="Caroussel_ItemAppearing"
                 IsAutoNavigatingAimationEnabled="True"
-                
              
                 ItemsSource="{Binding Imovels ,Mode=OneWay}" 
                 VerticalOptions="FillAndExpand"
@@ -69,20 +67,22 @@
                 
                >
 
-                <card:CardsView.ItemTemplate>
+                <card:CarouselView.ItemTemplate>
                 <DataTemplate >
-                    <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="6*"></RowDefinition>
-                            <RowDefinition Height="1*"></RowDefinition>
-                            <RowDefinition Height="1.3*"></RowDefinition>
-                            <RowDefinition Height="1*"></RowDefinition>
+                    <Grid RowSpacing="0">
+                        <Grid.RowDefinitions >
+                                <RowDefinition Height="6*" ></RowDefinition>
+                            
+                            <RowDefinition Height="auto"></RowDefinition>
+                            <RowDefinition Height="auto"></RowDefinition>
+                            <RowDefinition Height="auto"></RowDefinition>
                         </Grid.RowDefinitions>
 
                         <Image 
                                     Source="{Binding uriImage}" 
                                     Grid.RowSpan="4" Aspect="AspectFill" />
                         <BoxView 
+     
                                     Grid.Row="1"
                                     Grid.RowSpan="3"
                                     BackgroundColor="{StaticResource colorPrimary}">
@@ -90,220 +90,53 @@
                         </BoxView>
 
                         <Label 
-                                    Grid.Row="1" 
-                                    TextColor="{StaticResource colorClara}"
-                                    Text="{Binding titulo} " 
-                                    HorizontalTextAlignment="Center">
+            
+                            Grid.Row="1" 
+                            FontAttributes="Bold"
+                            TextColor="{StaticResource colorClara}"
+                            Text="{Binding titulo} " 
+                            FontSize="Small"
+                            HorizontalTextAlignment="Center"
+                            VerticalOptions="End">
 
                         </Label>
 
                         <Label 
-                                    Grid.Row="3" 
-                                    FontAttributes="Bold"
-                                    Text="{Binding preco} " 
-                                     TextColor="{StaticResource colorClara}"
-                                    HorizontalTextAlignment="Center">
+
+                            Grid.Row="3" 
+                            FontAttributes="Bold"
+                            Text="{Binding preco} " 
+                            TextColor="{StaticResource colorClara}"
+                            FontSize="Small"
+                            HorizontalTextAlignment="Center"
+                            VerticalOptions="Center">
 
                         </Label>
-                        <Label 
-                                    Grid.Row="2" 
-                                    FontSize="Micro"
-                                    Text="{Binding enfase} " 
-                                    TextColor="{StaticResource colorClara}"
-                                    HorizontalTextAlignment="Center"
-                                    VerticalOptions="Start">
+                        <Label
+ 
+                            Grid.Row="2" 
+                            FontSize="Micro"
+                            Text="{Binding enfase} " 
+                            TextColor="{StaticResource colorClara}"
+                            HorizontalTextAlignment="Center"
+                            VerticalOptions="Center">
 
                         </Label>
-                            <Button  CommandParameter="{Binding .}"  BackgroundColor="Transparent" Grid.Column="0" Grid.Row="1" Grid.RowSpan="3"  Clicked="Button_Clicked">
+                        <Button  CommandParameter="{Binding .}"  BackgroundColor="Transparent" Grid.Column="0" Grid.Row="1" Grid.RowSpan="3"  Clicked="Button_Clicked">
                                 
-                            </Button>
+                        </Button>
 
                     </Grid>
 
 
                 </DataTemplate>
-                </card:CardsView.ItemTemplate>
+                </card:CarouselView.ItemTemplate>
        
-            </card:CardsView>
-            <!--       <CarouselView 
-                Grid.RowSpan="2" 
-                Grid.ColumnSpan="3" 
-                x:Name="caroussel" 
-                ItemsSource="{Binding Imovels ,Mode=OneWay}" 
-                VerticalOptions="CenterAndExpand"
-                HorizontalOptions="Center" 
-                ItemSizingStrategy="MeasureFirstItem"
-               
-                ScrollToRequested="Caroussel_ScrollToRequested"
-               >
-                <CarouselView.ItemsLayout >
-                    <GridItemsLayout Orientation="Horizontal"
-                                     SnapPointsAlignment="Center" 
-                                     SnapPointsType="MandatorySingle"
-                                     Span="1"
-                                     PropertyChanged="GridItemsLayout_PropertyChanged"
-                                     
-                                     >
-                        
-                    </GridItemsLayout>
-
-                </CarouselView.ItemsLayout >
-                <CarouselView.ItemTemplate   >
-                    <DataTemplate >
-                        <Grid HorizontalOptions="EndAndExpand" x:Name="gridCarousel" WidthRequest="350" >
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="6*"></RowDefinition>
-                                <RowDefinition Height="1*"></RowDefinition>
-                                <RowDefinition Height="1.3*"></RowDefinition>
-                                <RowDefinition Height="1*"></RowDefinition>
-                            </Grid.RowDefinitions>
-                            <Image 
-                                    HorizontalOptions="CenterAndExpand"
-                                    Source="{Binding uriImage}" 
-                                    Grid.RowSpan="4" Aspect="AspectFill" />
-                                <BoxView 
-
-                                    Grid.Row="1"
-                                    Grid.RowSpan="3"
-                                    BackgroundColor="{StaticResource colorPrimary}">
-
-                                </BoxView>
-
-                                <Label 
-                                    Grid.Row="1" 
-
-                                    HorizontalOptions="FillAndExpand"
-                                    TextColor="{StaticResource colorClara}"
-                                    Text="{Binding titulo} " 
-                                    HorizontalTextAlignment="Center">
-
-                                </Label>
-
-                                <Label 
-                                    Grid.Row="3" 
-                                    FontAttributes="Bold"
-                                    Text="{Binding preco, TargetNullValue='Consulte!', StringFormat='{0:C}'} " 
-                                     TextColor="{StaticResource colorClara}"
-                                    HorizontalTextAlignment="Center">
-
-                                </Label>
-                                <Label 
-                                    Grid.Row="2" 
-                                    FontSize="Micro"
-                                    Text="{Binding enfase} " 
-                                    TextColor="{StaticResource colorClara}"
-                                    HorizontalTextAlignment="Center"
-                                    VerticalOptions="Start">
-
-                                </Label>
-                            </Grid>
-                    </DataTemplate>
-                </CarouselView.ItemTemplate>
-
-            </CarouselView>
-            -->
-            <!--
-           <carouse:CarouselViewControl  
-               AnimateTransition="True"
-                Grid.RowSpan="2" 
-                Grid.ColumnSpan="3" 
-                x:Name="caroussel" 
-                ArrowsTintColor="{StaticResource colorPrimary}"  
-                IsSwipeEnabled="True" 
-                BackgroundColor="{StaticResource colorPrimary}"
-                ShowArrows="True"
-                ArrowsBackgroundColor="Accent" 
-                Orientation="Horizontal" 
-                InterPageSpacing="1" 
-                ItemsSource="{Binding Imovels ,Mode=OneWay}" 
-                VerticalOptions="FillAndExpand"
-                PositionSelected="Caroussel_PositionSelected"
-                HorizontalOptions="FillAndExpand" 
-                
-               >
-
-                <carouse:CarouselViewControl.ItemTemplate>
-                    <DataTemplate >
-                        <Grid>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="6*"></RowDefinition>
-                                <RowDefinition Height="1*"></RowDefinition>
-                                <RowDefinition Height="1.3*"></RowDefinition>
-                                <RowDefinition Height="1*"></RowDefinition>
-                            </Grid.RowDefinitions>
-
-                            <Image 
-                                    Source="{Binding uriImage}" 
-                                    Grid.RowSpan="4" Aspect="AspectFill" />
-                            <BoxView 
-                                    Grid.Row="1"
-                                    Grid.RowSpan="3"
-                                    BackgroundColor="{StaticResource colorPrimary}">
-
-                            </BoxView>
-                            
-                            <Label 
-                                    Grid.Row="1" 
-                                    TextColor="{StaticResource colorClara}"
-                                    Text="{Binding titulo} " 
-                                    HorizontalTextAlignment="Center">
-
-                            </Label>
-
-                            <Label 
-                                    Grid.Row="3" 
-                                    FontAttributes="Bold"
-                                    Text="{Binding preco, TargetNullValue='Consulte!', StringFormat='{0:C}'} " 
-                                     TextColor="{StaticResource colorClara}"
-                                    HorizontalTextAlignment="Center">
-
-                            </Label>
-                            <Label 
-                                    Grid.Row="2" 
-                                    FontSize="Micro"
-                                    Text="{Binding enfase} " 
-                                    TextColor="{StaticResource colorClara}"
-                                    HorizontalTextAlignment="Center"
-                                    VerticalOptions="Start">
-
-                            </Label>
-                         
-   
-                        </Grid>
-
-
-                    </DataTemplate>
-                </carouse:CarouselViewControl.ItemTemplate>
-            </carouse:CarouselViewControl>
-            
-         -->
+            </card:CarouselView>
+    
         </StackLayout>
 
-            <!-- 
-                <StackLayout  VerticalOptions="End"  Grid.Row="0">
-                    <Frame CornerRadius="0" BackgroundColor="#00000000" >
-                        <renderedViews:HorizontalListView Grid.Row="3"
-                                  x:Name="ItemsListView"
-                                  Margin="-6,8"
-                                  CollectionPadding="8,8"
-                                  ItemSpacing="8"
-                                  ItemHeight="144"
-                                  ItemWidth="144"
-                                  ItemsSource="{Binding Imovels}"
-                                  SnapStyle="Center">
-                            <renderedViews:HorizontalListView.ItemTemplate>
-                                <DataTemplate>
-                                    <ViewCell>
-                                        <ContentView  Padding="5">
-                                            <Image Source="{Binding Imagem[0]}" Aspect="AspectFill" />
-                                        </ContentView>
-                                    </ViewCell>
-                                </DataTemplate>
-                            </renderedViews:HorizontalListView.ItemTemplate>
-                        </renderedViews:HorizontalListView>
-                    </Frame>
-                </StackLayout>
- -->
+          
         <ActivityIndicator Grid.Row="0" IsEnabled="True" IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}" HorizontalOptions="Center" VerticalOptions="Center" />
 
     </Grid>

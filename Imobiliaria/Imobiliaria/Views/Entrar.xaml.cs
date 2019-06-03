@@ -16,5 +16,15 @@ namespace Imobiliaria.Views
 		{
 			InitializeComponent ();
 		}
-	}
+
+        public static Task ExibirResposta(string aMensagem)
+        {
+            throw new NotImplementedException(aMensagem);
+        }
+
+        private async void BtnFacebookLogin_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Login());
+        }
+    }
 }

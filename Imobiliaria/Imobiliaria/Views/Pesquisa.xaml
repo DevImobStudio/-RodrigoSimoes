@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
+             xmlns:iconize="clr-namespace:Plugin.Iconize;assembly=Plugin.Iconize"
+             xmlns:converterPack="clr-namespace:Xamarin.Forms.ConvertersPack;assembly=Xamarin.Forms.ConvertersPack"
+             x:Class="Imobiliaria.Views.Pesquisa"
+             Title="Busca Avançada">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converterPack:CurrencyConverter x:Key="CurrencyConverter" />
+            <converterPack:UpperTextConverter x:Key="UpperTextConverter" />
+            <converterPack:LowerTextConverter x:Key="LowerTextConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="{StaticResource colorSecundaria}">
+        <ScrollView VerticalOptions="FillAndExpand" >
+            <Grid Padding="10, 10, 10, 10"  ColumnSpacing="0">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="9*" />
+                </Grid.ColumnDefinitions>
+
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto"  />
+                    <RowDefinition Height="auto"  />
+                    <RowDefinition Height="auto"  />
+                    <RowDefinition Height="auto"  />
+                    <RowDefinition Height="auto"  />
+                    <RowDefinition Height="auto"  />
+                    <RowDefinition Height="auto"  />
+                    <RowDefinition Height="auto"  />
+                    <RowDefinition Height="auto"  />
+                    <RowDefinition Height="auto"  />
+                    <RowDefinition Height="auto"  />
+                </Grid.RowDefinitions>
+
+               
+
+                <Grid Grid.Column="0" Grid.Row="1" BackgroundColor="{StaticResource colorPrimary}" ColumnSpacing="0" >
+                    <iconize:IconLabel
+                        TextColor="{StaticResource colorClara}"
+                        Text="fas-search"
+                        FontSize="Small"
+                        VerticalTextAlignment="Center"
+                        HorizontalTextAlignment="Center"
+                        
+                     />
+
+                </Grid>
+                <Grid Grid.Column="1" Grid.Row="1" ColumnSpacing="0" BackgroundColor="{StaticResource colorClara}" >
+                    <Entry 
+                        x:Name="Busca"
+                        Placeholder="Digite ..." 
+                        FontSize="Default"
+                        BindingContext="{Binding Pesquisa.busca, Mode=OneWay}"
+                        TextColor="{StaticResource colorPrimary}"
+                        
+           
+                        VerticalOptions="Center"
+                    />
+                </Grid>
+                <Grid Grid.ColumnSpan="2" Grid.Row="2"  Margin="4" VerticalOptions="Center"  HorizontalOptions="Center">
+                      
+                       
+                     <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="3.2*"/>
+                            <ColumnDefinition Width="3.2*"/>
+                            <ColumnDefinition Width="3.6*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions >
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+                        <input:RadioButton 
+                            x:Name="Venda"
+                            Grid.Column="0"
+                            Clicked="Venda_Clicked"
+                            Grid.Row="0"
+                            Text="Venda"      
+                            TextColor="{StaticResource colorPrimary}"    
+                            TextFontSize="14"
+                            Color="{StaticResource colorPrimary}"
+                            CircleColor="{StaticResource colorPrimary}" 
+                         />
+                        <input:RadioButton 
+                            x:Name="Locacao"
+                            Clicked="Locacao_Clicked"
+                            Grid.Row="0"
+                            TextFontSize="14"
+                            Grid.Column="1"
+                            Text="Locação"            
+                            TextColor="{StaticResource colorPrimary}"    
+                            Color="{StaticResource colorPrimary}"
+                            CircleColor="{StaticResource colorPrimary}" 
+                            />
+
+                        <input:RadioButton 
+                            x:Name="Lancamento"
+                            Grid.Row="0"
+                            TextFontSize="14"
+                            Grid.Column="2"
+                            Text="Lançamento"      
+                            Clicked="Lancamento_Clicked"
+                            TextColor="{StaticResource colorPrimary}"    
+                            Color="{StaticResource colorPrimary}"
+                            CircleColor="{StaticResource colorPrimary}" 
+                            />
+
+                        </Grid>
+              
+                </Grid>
+                    
+
+
+                <Grid Grid.ColumnSpan="2" Grid.Row="3"  Margin="4" VerticalOptions="Center"  HorizontalOptions="FillAndExpand">
+                    <Grid ColumnSpacing="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="9*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions >
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+
+                        
+                        <Grid Grid.Column="0" Grid.Row="0" ColumnSpacing="0" BackgroundColor="{StaticResource colorClara}" >
+                            <Label 
+                                Text="Tipo"
+                                FontSize="Small"
+                                TextColor="{StaticResource colorPrimary}"
+                                VerticalTextAlignment="Center"
+                                HorizontalTextAlignment="Center"
+                                VerticalOptions="Center"
+                                x:Name="Categoria"                            />
+                        </Grid>
+
+                        <Grid Grid.Column="1" Grid.Row="0" BackgroundColor="{StaticResource colorPrimary}" ColumnSpacing="0" RowSpacing="0" >
+                            <iconize:IconButton
+                                Clicked="Tipo_Clicked"
+                                TextColor="{StaticResource colorClara}"
+                                BackgroundColor="{StaticResource colorPrimary}"
+                                Text="fas-sort-down"
+                                FontSize="Medium"
+
+                            />
+                            
+                        </Grid>
+                        <Button 
+                            Grid.ColumnSpan="2" 
+                            BackgroundColor="Transparent"
+                            Clicked="Tipo_Clicked" />
+
+
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.ColumnSpan="2" Grid.Row="4"  Margin="4" VerticalOptions="Center"  HorizontalOptions="FillAndExpand">
+                    <Grid ColumnSpacing="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="9*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions >
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+
+
+                        <Grid Grid.Column="0" Grid.Row="0" ColumnSpacing="0" BackgroundColor="{StaticResource colorClara}" >
+                            <Label 
+                                Text="Cidade"
+                                FontSize="Small"
+                                TextColor="{StaticResource colorPrimary}"
+                                VerticalTextAlignment="Center"
+                                HorizontalTextAlignment="Center"
+                                VerticalOptions="Center"
+                                x:Name="Cidade"     
+                            />
+                        </Grid>
+
+                        <Grid Grid.Column="1" Grid.Row="0" BackgroundColor="{StaticResource colorPrimary}" ColumnSpacing="0" RowSpacing="0" >
+                            <iconize:IconButton
+                                Clicked="Cidade_Clicked"
+                                TextColor="{StaticResource colorClara}"
+                                BackgroundColor="{StaticResource colorPrimary}"
+                                Text="fas-sort-down"
+                                FontSize="Medium"
+
+                            />
+                            
+                        </Grid>
+                        <Button Grid.ColumnSpan="2" BackgroundColor="Transparent" Clicked="Cidade_Clicked">
+
+                        </Button>
+                    </Grid>
+                </Grid>
+
+
+                <Grid Grid.ColumnSpan="2" Grid.Row="5" x:Name="GridBairro" Margin="4" VerticalOptions="Center"  HorizontalOptions="FillAndExpand">
+                    <Grid ColumnSpacing="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="9*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions >
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+
+
+                        <Grid Grid.Column="0" Grid.Row="0" ColumnSpacing="0" BackgroundColor="{StaticResource colorClara}" >
+                            <Label 
+                                Text="Bairro"
+                                FontSize="Small"
+                                TextColor="{StaticResource colorPrimary}"
+                                VerticalTextAlignment="Center"
+                                HorizontalTextAlignment="Center"
+                                VerticalOptions="Center"
+                                x:Name="Bairro"     
+                            />
+                        </Grid>
+
+                        <Grid Grid.Column="1" Grid.Row="0" BackgroundColor="{StaticResource colorPrimary}" ColumnSpacing="0" RowSpacing="0" >
+                            <iconize:IconButton
+                                Clicked="Bairro_Clicked"
+                                TextColor="{StaticResource colorClara}"
+                                BackgroundColor="{StaticResource colorPrimary}"
+                                Text="fas-sort-down"
+                                FontSize="Medium"
+
+                            />
+                           
+                        </Grid>
+                        <Button 
+                            Grid.ColumnSpan="2" 
+                            BackgroundColor="Transparent" 
+                            Clicked="Bairro_Clicked"/>
+
+
+                    </Grid>
+                </Grid>
+                <Grid Grid.ColumnSpan="2" Grid.Row="6" Margin="4" RowSpacing="0" >
+                    <Label 
+                        Grid.Column="0"
+                        Text="Dormitórios" 
+                        Margin="2"
+                        TextColor="{StaticResource colorPrimary}"
+                        FontSize="Small"
+                       />
+                </Grid>
+
+                <Grid RowSpacing="0" Grid.ColumnSpan="2" Grid.Row="7" Margin="4" VerticalOptions="Center"  HorizontalOptions="FillAndExpand" BackgroundColor="Accent">
+                  
+                    <input:SelectionView 
+                        x:Name="Lista" 
+                        ColumnSpacing="5"
+                        Grid.ColumnSpan="2"
+                        RowSpacing="0"
+                        HorizontalOptions="FillAndExpand"
+                        ColumnNumber="5" 
+                        SelectionType="MultipleButton" 
+                        Color="{StaticResource colorPrimary}"
+                        ItemsSource="{Binding dormitorios}" 
+                   >
+
+                    </input:SelectionView>
+                </Grid>
+
+                <Label 
+                    
+                    Grid.Row="8" 
+                    Grid.ColumnSpan="2"
+                    Text="Faixa de Preço" 
+                    Margin="5"
+                    TextColor="{StaticResource colorPrimary}" 
+                    FontSize="Small"
+                    VerticalOptions="End"/>
+
+                <Grid Grid.ColumnSpan="2"  Grid.Row="9" Padding="2">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="5*"/>
+                            <ColumnDefinition Width="5*"/>
+
+                        </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto" />
+                            </Grid.RowDefinitions>
+                        <Grid Grid.Column="0"  BackgroundColor="{StaticResource colorClara}" >
+                            <Entry
+                                Placeholder="R$ Min"
+                                PlaceholderColor="{StaticResource colorSecundaria}"
+                                TextColor="{StaticResource colorPrimary}"
+                                FontSize="Medium"
+                                Text="{Binding faixa1,  Converter={StaticResource CurrencyConverter}}">
+                                
+                            </Entry>
+                        </Grid>
+                        <Grid Grid.Column="1"  BackgroundColor="{StaticResource colorClara}" >
+                            <Entry 
+                                Placeholder="R$ Max"
+                                PlaceholderColor="{StaticResource colorSecundaria}"   
+                                TextColor="{StaticResource colorPrimary}"
+                                FontSize="Medium"
+                                Text="{Binding faixa1, ConverterParameter={StaticResource CurrencyConverter},  Converter={StaticResource CurrencyConverter}}"
+                                >
+
+                            </Entry>
+                        </Grid>
+
+                    </Grid>
+                    
+                    
+                </Grid>
+                
+              
+
+
+            </Grid>
+
+
+
+            </ScrollView>
+
+        <Grid  Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="10" VerticalOptions="EndAndExpand" RowSpacing="0" ColumnSpacing="0" Padding="10" >
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="12*" />
+                <ColumnDefinition Width="35*" />
+                <ColumnDefinition Width="6*" />
+                <ColumnDefinition Width="12*" />
+                <ColumnDefinition Width="35*" />
+
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+
+
+
+            <Grid  Grid.Column="0" Grid.Row="0"  >
+                <iconize:IconLabel
+                        BackgroundColor="{StaticResource colorPrimary}"
+                        VerticalTextAlignment="Center"
+                        HorizontalTextAlignment="Center"
+                        Text="fas-times" 
+                        TextColor="{StaticResource colorClara}"/>
+            </Grid>
+            <Grid  Grid.Column="1" Grid.Row="0" >
+                <Label 
+                        Text="Cancelar"
+                        VerticalTextAlignment="Center"
+                        HorizontalTextAlignment="Center"
+                        TextColor="{StaticResource colorPrimary}"
+                        BackgroundColor="{StaticResource colorClara}"/>
+            </Grid>
+            <Button  
+
+                    CornerRadius="6" 
+                    BackgroundColor="Transparent"  
+                    Grid.Column="0" 
+                    Grid.ColumnSpan="2"
+                    Grid.Row="0"
+                    Clicked="Cancelar_Clicked"/>
+
+
+            <Grid  Grid.Column="3" Grid.Row="0" >
+                <iconize:IconLabel
+                        BackgroundColor="{StaticResource colorPrimary}"
+                        VerticalTextAlignment="Center"
+                        HorizontalTextAlignment="Center"
+                        Text="fas-check" 
+                        TextColor="{StaticResource colorClara}"/>
+            </Grid>
+            <Grid  Grid.Column="4" Grid.Row="0">
+                <Label 
+                    Text="Aplicar"
+                        
+                    VerticalTextAlignment="Center"
+                    HorizontalTextAlignment="Center"
+                    TextColor="{StaticResource colorPrimary}"
+                    BackgroundColor="{StaticResource colorClara}"/>
+            </Grid>
+            <Button  
+                    CornerRadius="6" 
+                    BackgroundColor="Transparent"  
+                    Grid.Column="3" 
+                    Grid.ColumnSpan="2"
+                    Grid.Row="0"
+                    Clicked="Confirmar_Clicked"/>
+
+
+        </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

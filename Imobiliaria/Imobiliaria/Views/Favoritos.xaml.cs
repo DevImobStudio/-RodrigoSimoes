@@ -1,4 +1,8 @@
-﻿using System;
+﻿using Imobiliaria.Models;
+using Imobiliaria.Services;
+using Imobiliaria.ViewModels;
+using Plugin.Toast;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -67,16 +71,36 @@ namespace Imobiliaria.Views
         private void Detalhes_Clicked(object sender, EventArgs e)
         {
 
-           
+            var objeto = ((sender as Button).CommandParameter) as Imovel;
+            if (objeto != null)
+            {
+              
+            }
 
         }
 
         private void WhatsApp_Clicked(object sender, EventArgs e)
         {
-
+            try
+            {
+                var objeto = ((sender as Button).CommandParameter) as Imovel;
+                if (objeto != null)
+                {
+                    Sistema.WhatsApp(objeto);
+                }
+            }
+            catch (Exception ex)
+            {
+                CrossToastPopUp.Current.ShowToastMessage(ex.Message, Plugin.Toast.Abstractions.ToastLength.Long);
+            }
         }
 
         private void Contato_Clicked(object sender, EventArgs e)
+        {
+            Sistema.Contato("+552112991734478");
+        }
+
+        private void Remove_Clicked(object sender, EventArgs e)
         {
 
         }

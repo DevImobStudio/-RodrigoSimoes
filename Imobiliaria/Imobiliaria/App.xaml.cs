@@ -7,6 +7,8 @@ using System.Collections.Generic;
 using Xamarin.Forms.PlatformConfiguration;
 using Xamarin.Forms.PlatformConfiguration.AndroidSpecific;
 using Imobiliaria.Views;
+using System.Threading.Tasks;
+using Imobiliaria.Services;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Imobiliaria
@@ -23,16 +25,23 @@ namespace Imobiliaria
             Services.Sistema.RESTAPI = new Services.Rest("http://www.api.rodrigosimoesimoveis.com.br/");
 
             Services.Sistema.DATABASE = new Services.DataBaseAsync();
-
+            Dados();
             GerarConfiguracao();
             // page = new MasterDetailPage1();
             page = new TabbedPage1();
+            Services.Sistema.TABBEDPAGE = page;
             npage = new NavigationPage(page);
             MainPage = npage;//page; //NavigationPage(new TabbedPage1()) ;// ;
 
           
 
 
+        }
+        public async void Dados()
+        {
+            Task dados = new DataBase().CriarTabelaConexao();
+
+            await dados;
         }
 
         protected override void OnStart()

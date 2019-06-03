@@ -5,6 +5,8 @@ using Xamarin.Forms.Xaml;
 
 using Imobiliaria.Models;
 using Imobiliaria.ViewModels;
+using Imobiliaria.Services;
+using Plugin.Toast;
 
 namespace Imobiliaria.Views
 {
@@ -12,10 +14,12 @@ namespace Imobiliaria.Views
     public partial class ItemDetailPage : StackLayout
     {
         ItemDetailViewModel viewModel { get; set; }
+        Inicio inicio { get; set; }
 
-        public ItemDetailPage(ItemDetailViewModel viewModel)
+        public ItemDetailPage(Inicio inicio , ItemDetailViewModel viewModel)
         {
             InitializeComponent();
+            this.inicio = inicio;
             this.viewModel = viewModel;
             BindingContext = this.viewModel;
             caroussel.ItemsSource = this.viewModel.Imagens;
@@ -28,17 +32,64 @@ namespace Imobiliaria.Views
             viewModel.LoadItemsCommand.Execute(null);
         }
 
+        private void BtnWhatsapp_Clicked(object sender, EventArgs e)
+        {
+            Sistema.WhatsApp(this.viewModel.Imovel);
+        }
+        private async void BtnFavoritos_Clicked(object sender, EventArgs e)
+        {
+            
+            if (this.viewModel.Imovel != null)
+            {
 
-            /*  protected async override void OnAppearing()
-              {
-                  base.OnAppearing();
+                var favorito = await Sistema.DATABASE.database.Table<Models.Favoritos>().Where(p => p.idImovel == this.viewModel.Imovel.id).FirstOrDefaultAsync();
+                if (favorito == null)
+                {
+                    try
+                    {
+                        await Sistema.DATABASE.database.InsertAsync(new Models.Favoritos()
+                        {
 
-                  viewModel.LoadItemsCommand.Execute(null);
+                            idImovel = this.viewModel.Imovel.id
 
-              }
-              */
+                        });
+                        CrossToastPopUp.Current.ShowToastMessage("Imovel " + this.viewModel.Imovel.titulo + "adicionado com sucesso", Plugin.Toast.Abstractions.ToastLength.Long);
+                    }
+                    catch (Exception ex)
+                    {
+                        CrossToastPopUp.Current.ShowToastMessage(ex.Message, Plugin.Toast.Abstractions.ToastLength.Long);
+                    }
 
+                }
+                else
+                {
+                    CrossToastPopUp.Current.ShowToastMessage("Imovel " + this.viewModel.Imovel.titulo + "já pertence ao seus favoritos", Plugin.Toast.Abstractions.ToastLength.Long);
+                }
 
+            }
+        }
+        private void BtnTelefone_Clicked(object sender, EventArgs e)
+        {
+            Sistema.Contato("+552112991734478");
+        }
+
+        private async void EnvioMaterial_Clicked(object sender, EventArgs e)
+        {
+             this.inicio.CarregarPaginaEnvioMaterial(this.viewModel.Imovel);
 
         }
+
+
+        /*  protected async override void OnAppearing()
+          {
+              base.OnAppearing();
+
+              viewModel.LoadItemsCommand.Execute(null);
+
+          }
+          */
+
+
+
+    }
 }

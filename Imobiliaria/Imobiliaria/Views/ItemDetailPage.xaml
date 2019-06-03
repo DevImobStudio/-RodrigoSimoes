@@ -14,7 +14,7 @@
                 <Label 
                     TextColor="{StaticResource colorPrimary}"
                     Text="{Binding Imovel.enfase}" 
-                    FontSize="Medium"
+                    FontSize="Small"
                     FontAttributes="Bold"
                     HorizontalTextAlignment="Center"
                         />
@@ -103,7 +103,15 @@
                     </controls:CarouselViewControl>
 -->
                 </Grid>
-            </StackLayout>
+                    <Label 
+                    TextColor="{StaticResource colorPrimary}"
+                    Text="{Binding Imovel.titulo}" 
+                    FontSize="Medium"
+                    FontAttributes="Bold"
+                    HorizontalTextAlignment="Center"
+                        />
+
+                </StackLayout>
 
             <StackLayout Margin="10">
                     <Grid   >
@@ -114,25 +122,26 @@
                                 <ColumnDefinition Width="2.5*"/>
                         </Grid.ColumnDefinitions>
                         <Grid.RowDefinitions>
-                                <RowDefinition Height="auto" />
-                                <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
                             <RowDefinition Height="auto" />
                         </Grid.RowDefinitions>
-                        <BoxView Grid.ColumnSpan="4" Grid.RowSpan="3" CornerRadius="6" BackgroundColor="{StaticResource colorPrimary}"></BoxView>
-                        <iconize:IconLabel Text="fas-bed" Grid.Column="0" Grid.Row="0" TextColor="{StaticResource colorClara}" HorizontalOptions="Center" />
-                        <iconize:IconLabel Text="fas-bath" Grid.Column="1" Grid.Row="0" TextColor="{StaticResource colorClara}" HorizontalOptions="Center"/>
-                        <iconize:IconLabel Text="fas-car" Grid.Column="2" Grid.Row="0" TextColor="{StaticResource colorClara}" HorizontalOptions="Center"/>
-                        <iconize:IconLabel Text="fas-ruler-combined" Grid.Column="3" Grid.Row="0" TextColor="{StaticResource colorClara}" HorizontalOptions="Center"/>
+                        <BoxView Grid.ColumnSpan="4" Grid.RowSpan="4" CornerRadius="6" BackgroundColor="{StaticResource colorPrimary}"></BoxView>
+                        <iconize:IconLabel Text="fas-bed" Grid.Column="0" Grid.Row="1" TextColor="{StaticResource colorClara}" HorizontalOptions="Center" />
+                        <iconize:IconLabel Text="fas-bath" Grid.Column="1" Grid.Row="1" TextColor="{StaticResource colorClara}" HorizontalOptions="Center"/>
+                        <iconize:IconLabel Text="fas-car" Grid.Column="2" Grid.Row="1" TextColor="{StaticResource colorClara}" HorizontalOptions="Center"/>
+                        <iconize:IconLabel Text="fas-ruler-combined" Grid.Column="3" Grid.Row="1" TextColor="{StaticResource colorClara}" HorizontalOptions="Center"/>
 
-                        <Label Text="DORMITÓRIOS" Grid.Column="0" Grid.Row="1" TextColor="{StaticResource colorClara}" HorizontalOptions="Center"  FontSize="Micro"/>
-                        <Label Text="SUÍTES"  Grid.Column="1" Grid.Row="1" TextColor="{StaticResource colorClara}" HorizontalOptions="Center"  FontSize="Micro"/>
-                        <Label Text="GARAGEM"  Grid.Column="2" Grid.Row="1" TextColor="{StaticResource colorClara}" HorizontalOptions="Center"  FontSize="Micro"/>
-                        <Label Text="ÁREA ÚTIL"  Grid.Column="3" Grid.Row="1" TextColor="{StaticResource colorClara}" HorizontalOptions="Center"  FontSize="Micro"/>
+                        <Label Text="DORMITÓRIOS" Grid.Column="0" Grid.Row="2" TextColor="{StaticResource colorClara}" HorizontalOptions="Center"  FontSize="Micro"/>
+                        <Label Text="SUÍTES"  Grid.Column="1" Grid.Row="2" TextColor="{StaticResource colorClara}" HorizontalOptions="Center"  FontSize="Micro"/>
+                        <Label Text="GARAGEM"  Grid.Column="2" Grid.Row="2" TextColor="{StaticResource colorClara}" HorizontalOptions="Center"  FontSize="Micro"/>
+                        <Label Text="ÁREA ÚTIL"  Grid.Column="3" Grid.Row="2" TextColor="{StaticResource colorClara}" HorizontalOptions="Center"  FontSize="Micro"/>
 
-                        <Label Text="{Binding Imovel.dormitorios }" Grid.Column="0" Grid.Row="2" TextColor="{StaticResource colorClara}" HorizontalOptions="Center" FontSize="Small" FontAttributes="Bold"/>
-                        <Label Text="{Binding Imovel.suites }"   Grid.Column="1" Grid.Row="2" TextColor="{StaticResource colorClara}" HorizontalOptions="Center" FontSize="Small" FontAttributes="Bold"/>
-                        <Label Text="{Binding Imovel.vagas }"  Grid.Column="2" Grid.Row="2" TextColor="{StaticResource colorClara}" HorizontalOptions="Center" FontSize="Small" FontAttributes="Bold"/>
-                        <Label Text="{Binding Imovel.areautil }"  Grid.Column="3" Grid.Row="2" TextColor="{StaticResource colorClara}" HorizontalOptions="Center" FontSize="Small" FontAttributes="Bold"/>
+                        <Label Text="{Binding Imovel.dormitorios }" Grid.Column="0" Grid.Row="3" TextColor="{StaticResource colorClara}" HorizontalOptions="Center" FontSize="Small" FontAttributes="Bold"/>
+                        <Label Text="{Binding Imovel.suites }"   Grid.Column="1" Grid.Row="3" TextColor="{StaticResource colorClara}" HorizontalOptions="Center" FontSize="Small" FontAttributes="Bold"/>
+                        <Label Text="{Binding Imovel.vagas }"  Grid.Column="2" Grid.Row="3" TextColor="{StaticResource colorClara}" HorizontalOptions="Center" FontSize="Small" FontAttributes="Bold"/>
+                        <Label Text="{Binding Imovel.areautil }"  Grid.Column="3" Grid.Row="3" TextColor="{StaticResource colorClara}" HorizontalOptions="Center" FontSize="Small" FontAttributes="Bold"/>
                        
                     </Grid>
                         <Label 
@@ -142,24 +151,58 @@
                         HorizontalTextAlignment="Start"
                         />
 
-                <StackLayout Orientation="Horizontal" >
+                <StackLayout>
+                       
+                        <Grid  BackgroundColor="{StaticResource colorClara}">
+                            <Grid.ColumnDefinitions >
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="10*"/>
+                            </Grid.ColumnDefinitions>
+                         
+                            <Grid Grid.Column="0" BackgroundColor="{StaticResource colorPrimary}"  Padding="4">
+                                <Label 
+                                Text=" R$ "
+                                
+                                FontAttributes="Bold" 
+                                FontSize="Large" 
+                                TextColor="{StaticResource colorClara}" 
+                                />
+                            </Grid>
+                            <Grid Grid.Column="1"  BackgroundColor="{StaticResource colorClara}" HorizontalOptions="CenterAndExpand"  Padding="4" >
+                                <Label 
+                                Text="{Binding Imovel.preco, FallbackValue=' Consulte!' ,TargetNullValue=' Consulte!', Mode=OneWay}"  
+                               
+                                FontAttributes="Bold" 
+                                FontSize="Large" 
+                                HorizontalTextAlignment="Center"
+                                TextColor="{StaticResource colorPrimary}" 
+                                />
+                            </Grid>
+                           
 
-                    <Label LineBreakMode="WordWrap" BackgroundColor="{StaticResource colorClara} " HorizontalOptions="FillAndExpand">
-                        <Label.FormattedText>
-                            <FormattedString>
-                                <Span 
+
+                            <!--
+                            <Label LineBreakMode="WordWrap" BackgroundColor="{StaticResource colorClara} " HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span 
                                     Text=" R$ " 
+                                    
                                     FontSize="Large" 
                                     TextColor="{StaticResource colorClara}" 
                                     FontAttributes="Bold" 
                                     BackgroundColor="{StaticResource colorPrimary}"  />
-                                <Span  
+                                        <Span  
                                     Text="{Binding Imovel.preco, FallbackValue=' Consulte!' ,TargetNullValue=' Consulte!', Mode=OneWay}"  
+                                    
                                     TextColor="{StaticResource colorPrimary}" 
                                     FontSize="Large" />
-                            </FormattedString>
-                        </Label.FormattedText>
-                    </Label>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            -->
+                        </Grid>
+                    
                     
                 </StackLayout>
                 <StackLayout Orientation="Horizontal">
@@ -306,21 +349,31 @@
                     TextColor="{StaticResource colorClara}" 
                     FontSize="Small"  
                     HorizontalOptions="Start" />
-                <Button BackgroundColor="Transparent" Grid.ColumnSpan="2" CornerRadius="6" ></Button>
+                <!--Botão para a tela de envio de material-->
+                <Button 
+                    BackgroundColor="Transparent" 
+                    Grid.ColumnSpan="2" 
+                    CornerRadius="6"
+                    Clicked="EnvioMaterial_Clicked"
+                    />
+
+
                 <iconize:IconButton
                     VerticalOptions="Center"
                     Grid.Column="2"
                     Padding="0"
+                    Clicked="BtnFavoritos_Clicked"
                     FontSize="Micro"
                     Text="fas-star"   
                     HorizontalOptions="Center"
                     CornerRadius="5"
-                    HeightRequest="20"
-                    WidthRequest="20"
+                    HeightRequest="40"
+                    WidthRequest="40"
                     TextColor="{StaticResource colorClara}"
-                        BackgroundColor="{StaticResource colorPrimary}"
+                    BackgroundColor="{StaticResource colorPrimary}"
                                 />
                 <iconize:IconButton
+                    Clicked="BtnTelefone_Clicked"
                     VerticalOptions="Center"
                     Grid.Column="3"
                     Padding="0"
@@ -328,8 +381,8 @@
                     Text="fas-phone"   
                     HorizontalOptions="Center"
                     CornerRadius="5"
-                    HeightRequest="20"
-                    WidthRequest="20"
+                    HeightRequest="40"
+                    WidthRequest="40"
                     TextColor="{StaticResource colorClara}"
                     BackgroundColor="{StaticResource colorPrimary}"
                                 />
@@ -337,15 +390,16 @@
                     VerticalOptions="Center"
                     Grid.Column="4"
                     Padding="0"
-                    FontSize="Small"
+                    Clicked="BtnWhatsapp_Clicked"
+                    FontSize="Medium"
                     FontAttributes="Bold"
                     Text="fab-whatsapp"   
                     HorizontalOptions="Center"
                     TextColor="{StaticResource colorClara}"
                     BackgroundColor="{StaticResource colorPrimary}"
                     CornerRadius="5"
-                    HeightRequest="20"
-                    WidthRequest="20"
+                   HeightRequest="40"
+                    WidthRequest="40"
                                 />
             </Grid>
   
