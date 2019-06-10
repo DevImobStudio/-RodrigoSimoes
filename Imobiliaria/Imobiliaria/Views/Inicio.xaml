@@ -7,13 +7,14 @@
              xmlns:iconize="clr-namespace:Plugin.Iconize;assembly=Plugin.Iconize"
              xmlns:fee="clr-namespace:SegmentedControl.FormsPlugin.Abstractions;assembly=SegmentedControl.FormsPlugin.Abstractions"
              Title="Início"
-             Icon="home.png">
-   
+             Icon="home.png"
+             >
+     
 
     <ContentPage.Content>
        
         <StackLayout Margin="0" >
-            <StackLayout VerticalOptions="Start" BackgroundColor="{StaticResource colorSecundaria}" >
+            <StackLayout VerticalOptions="Start" BackgroundColor="{StaticResource colorSecundaria}" x:Name="Consulta">
                 <Grid>
                     <Grid.ColumnDefinitions >
                         <ColumnDefinition Width="0.25*"></ColumnDefinition>
@@ -42,22 +43,7 @@
                            
                         </fee:SegmentedControl.Children>
                     </fee:SegmentedControl>
-                    <!--
-                    <fe:SegmentedButtonGroup cli x:Name="PageSelected"  IsClippedToBounds="True"   OnColor="{StaticResource colorPrimary}" CornerRadius="15" Margin="10" OffColor="{StaticResource colorSecundaria}" SelectedIndex="{Binding SelectIndex, Mode=TwoWay}"  Grid.Column="1">
-                        <fe:SegmentedButtonGroup.LabelStyle>
-                            <Style TargetType="Label">
-                                <Setter Property="FontSize" Value="12" />
-                                <Setter Property="FontAttributes" Value="Bold" />
-                            </Style>
-                        </fe:SegmentedButtonGroup.LabelStyle>
-                        <fe:SegmentedButtonGroup.SegmentedButtons >
-                            
-                            <fe:SegmentedButton Title="Mapa"  />
-                            <fe:SegmentedButton Title="Lista"/>
-                        </fe:SegmentedButtonGroup.SegmentedButtons>
-                    </fe:SegmentedButtonGroup>
-                        -->
-
+                  
                 </Grid>
              
                 
@@ -66,37 +52,8 @@
             </StackLayout >
             <StackLayout Margin="0,-6,0,0" VerticalOptions="FillAndExpand" x:Name="pagina">
                 
-              
-           
-                        <!-- 
-                <StackLayout  VerticalOptions="End"  Grid.Row="0">
-                    <Frame CornerRadius="0" BackgroundColor="#00000000" >
-                        <renderedViews:HorizontalListView Grid.Row="3"
-                                  x:Name="ItemsListView"
-                                  Margin="-6,8"
-                                  CollectionPadding="8,8"
-                                  ItemSpacing="8"
-                                  ItemHeight="144"
-                                  ItemWidth="144"
-                                  ItemsSource="{Binding Imovels}"
-                                  SnapStyle="Center">
-                            <renderedViews:HorizontalListView.ItemTemplate>
-                                <DataTemplate>
-                                    <ViewCell>
-                                        <ContentView  Padding="5">
-                                            <Image Source="{Binding Imagem[0]}" Aspect="AspectFill" />
-                                        </ContentView>
-                                    </ViewCell>
-                                </DataTemplate>
-                            </renderedViews:HorizontalListView.ItemTemplate>
-                        </renderedViews:HorizontalListView>
-                    </Frame>
-                </StackLayout>
- -->
-                 
-
-                </StackLayout>
             </StackLayout>
+        </StackLayout>
 
     </ContentPage.Content>
 </slideoverkit:MenuContainerPage>

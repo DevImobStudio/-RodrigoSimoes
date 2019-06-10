@@ -10,7 +10,9 @@ using Android.Support.V4.Content;
 using Android;
 using Android.Support.V4.App;
 using CarouselView.FormsPlugin.Android;
-
+using Xamarin.Facebook;
+using Xamarin.Forms;
+using Xamarin.Facebook.Login;
 
 namespace Imobiliaria.Droid
 {
@@ -22,6 +24,9 @@ namespace Imobiliaria.Droid
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
             Plugin.InputKit.Platforms.Droid.Config.Init(this, savedInstanceState);
+            FacebookSdk.SdkInitialize(this);
+            FacebookSdk.ApplicationId = "456228191618171";
+            global::Xamarin.Auth.Presenters.XamarinAndroid.AuthenticationConfiguration.Init(this, savedInstanceState);
             Plugin.Iconize.Iconize.With(new Plugin.Iconize.Fonts.FontAwesomeBrandsModule())
                                   .With(new Plugin.Iconize.Fonts.FontAwesomeRegularModule())
                                   .With(new Plugin.Iconize.Fonts.FontAwesomeSolidModule());
@@ -58,6 +63,9 @@ namespace Imobiliaria.Droid
 
             LoadApplication(new App());
         }
+
+        
+
     }
 
 }

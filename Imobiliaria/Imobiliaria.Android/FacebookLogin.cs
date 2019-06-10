@@ -1,5 +1,7 @@
 ﻿using Android.App;
 using Android.Content;
+using Imobiliaria.Droid;
+using Imobiliaria.Views;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
@@ -8,20 +10,22 @@ using System.Text;
 using Xamarin.Auth;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
-
+//[assembly: ExportRenderer(typeof(ProviderLoginPage), typeof(FacebookLogin))]
 namespace Imobiliaria.Droid
 {
     public class FacebookLogin : PageRenderer
     {
         public FacebookLogin(Context context) : base(context)
         {
+   
             var activity = this.Context as Activity;
+           
 
             var auth = new OAuth2Authenticator(
-                clientId: "334399370606956",
+                clientId: "456228191618171",
                 scope: "",
                 authorizeUrl: new Uri("https://m.facebook.com/dialog/oauth/"),
-                redirectUrl: new Uri("http://www.facebook.com/connect/login_success.html"));
+                redirectUrl: new Uri("https://www.facebook.com/connect/login_success.html"));
 
             auth.Completed += async (sender, eventArgs) => {
                 if (eventArgs.IsAuthenticated)
@@ -36,14 +40,18 @@ namespace Imobiliaria.Droid
 
                     var id = obj["id"].ToString().Replace("\"", "");
                     var name = obj["name"].ToString().Replace("\"", "");
-
-                    await Views.Entrar.ExibirResposta(string.Format("Olá {0}, seja bem-vindo", name));
+                  
+                    Views.Entrar.ExibirResposta(string.Format("Olá {0}, seja bem-vindo", name));
+                    
                 }
                 else
                 {
-                    await Views.Entrar.ExibirResposta("O usuário Cancelou o login");
+                    Views.Entrar.ExibirResposta("O usuário Cancelou o login");
+                    
                 }
             };
+
+            activity.StartActivity (auth.GetUI(activity));	
         }
     }
 }

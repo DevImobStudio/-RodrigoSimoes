@@ -56,7 +56,7 @@ namespace Imobiliaria.Views
         {
             base.OnAppearing();
 
-       //     viewModel.LoadItemsCommand.Execute(null);
+            viewModel.LoadItemsCommand.Execute(null);
            // ForceLayout();
 
 
@@ -90,9 +90,6 @@ namespace Imobiliaria.Views
         {
             if (set)
             {
-
-              
-
                 PageSelected.TintColor = (Color)Application.Current.Resources["colorPrimary"];
                 PageSelected.DisabledColor = (Color)Application.Current.Resources["colorPrimary"];
                 PageSelected.DisabledColor = (Color)Application.Current.Resources["colorPrimary"];
@@ -105,8 +102,9 @@ namespace Imobiliaria.Views
                 PageSelected.DisabledColor = (Color)Application.Current.Resources["colorSecundaria"];
                 PageSelected.SelectedTextColor = (Color)Application.Current.Resources["colorSecundaria"];
             }
-             
-        }
+
+
+    }
 
 
 
@@ -202,6 +200,13 @@ namespace Imobiliaria.Views
 
             visiblePageSelected(false);
 
+        }
+
+
+        public void CarregarMenu()
+        {
+
+            this.ShowMenu();
         }
 
     }

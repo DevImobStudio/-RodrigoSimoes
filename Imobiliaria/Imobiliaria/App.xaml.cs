@@ -30,7 +30,12 @@ namespace Imobiliaria
             // page = new MasterDetailPage1();
             page = new TabbedPage1();
             Services.Sistema.TABBEDPAGE = page;
+            
             npage = new NavigationPage(page);
+            
+            OAuthConfig._NavigationPage = npage;
+            OAuthConfig._TabbedPage = page;
+
             MainPage = npage;//page; //NavigationPage(new TabbedPage1()) ;// ;
 
           

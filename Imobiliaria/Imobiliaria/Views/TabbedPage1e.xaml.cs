@@ -1,11 +1,12 @@
 ﻿using Imobiliaria.Services;
+using Plugin.Toast;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Windows.Input;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -21,21 +22,46 @@ namespace Imobiliaria.Views
 
         public Image logo;
 
-        public TabbedPage1 ()
+        public TabbedPage1()
         {
             InitializeComponent();
-   
+
             Children.Add(Inicio = new Inicio());
             Children.Add(Favoritos = new Favoritos());
             Children.Add(Atendimento = new Atendimento());
             Children.Add(Entrar = new Entrar());
             logo = logotipo;
-        //    logo.Source = new UriImageSource { CachingEnabled = false, Uri = new Uri("https://www.rodrigosimoesimoveis.com.br/uploads/www.rodrigosimoesimoveis.com.br/logotipo.png")};
-            
+            //    logo.Source = new UriImageSource { CachingEnabled = false, Uri = new Uri("https://www.rodrigosimoesimoveis.com.br/uploads/www.rodrigosimoesimoveis.com.br/logotipo.png")};
+
             ForceLayout();
+            
         }
-       
 
+        public void CriarToolbar()
+        {
+            OAuthConfig._NavigationPage.ToolbarItems.Add(new ToolbarItem()
+            {
+                IconImageSource = "star.png",
 
+                Command = ChamarMenu(),
+            });
+
+        }
+
+        private ICommand ChamarMenu()
+        {
+           return new Command(async () => await ExecuteLoadItemsCommand());
+           
+
+        }
+        async Task ExecuteLoadItemsCommand()
+        {
+           CrossToastPopUp.Current.ShowToastMessage("Menu");
+        }
+
+        private void MenuItem1_Clicked(object sender, EventArgs e)
+        {
+            this.Inicio.CarregarMenu();
+        }
     }
 }

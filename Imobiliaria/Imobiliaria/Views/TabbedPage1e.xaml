@@ -13,13 +13,22 @@
             android:TabbedPage.ToolbarPlacement="Bottom"
             android:TabbedPage.BarItemColor="{StaticResource colorPrimary}"
             android:TabbedPage.BarSelectedItemColor="{StaticResource colorClara}">
-
+    <TabbedPage.ToolbarItems>
+        <ToolbarItem 
+            Name="MenuItem1" 
+            Order="Primary" 
+            Icon="menu.png" 
+            Text="Item 1" 
+            Priority="0" 
+            Clicked="MenuItem1_Clicked"
+    />
+    </TabbedPage.ToolbarItems>
     <NavigationPage.TitleView >
         <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center" >
 
             <Image HorizontalOptions="Center" x:Name="logotipo" Source="https://www.rodrigosimoesimoveis.com.br/uploads/www.rodrigosimoesimoveis.com.br/logotipo.png" />
         </StackLayout>
-        
+
     </NavigationPage.TitleView>
 
 </TabbedPage>

@@ -1,14 +1,164 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
+             xmlns:iconize="clr-namespace:Plugin.Iconize;assembly=Plugin.Iconize"
              x:Class="Imobiliaria.Views.Atendimento"
              Title="Atendimento"
-             Icon="dialog.png">
+             Icon="dialog.png"
+             BackgroundColor="{StaticResource colorTelas}">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Atendimento"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Grid VerticalOptions="FillAndExpand">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="auto" />
+                </Grid.RowDefinitions>
+
+               
+
+                <StackLayout VerticalOptions="CenterAndExpand"  Grid.Row="0" Orientation="Horizontal" HorizontalOptions="StartAndExpand" Margin="10">
+                    <iconize:IconLabel
+                        VerticalOptions="Start"
+                        FontSize="Medium"
+                        Text="fas-comments"   
+                        HorizontalOptions="Start"
+                        TextColor="{StaticResource colorPrimary}"
+                     />
+                    <Label  
+                        Text="Atendimento"
+                        TextColor="{StaticResource colorPrimary}"
+                        FontSize="Large"/>
+
+
+                </StackLayout>
+
+                <maps:Map
+                    x:Name="Mapa" 
+                    MapType="Street" 
+                    VerticalOptions="FillAndExpand" 
+                    IsShowingUser="true"
+                    Grid.Row="1"
+                    ItemsSource="{Binding Atendimento, Mode=OneWay} "
+                  
+                    >
+                    <maps:Map.ItemTemplate>
+                        <DataTemplate >
+                            <maps:Pin 
+                                Position="{Binding position}" 
+                                Label="{Binding titulo}" 
+                                Address="{Binding enfase}" 
+                                Flat="true"  
+                                Icon="{Binding icon}"
+                                >
+                            </maps:Pin>
+                        </DataTemplate>
+                    </maps:Map.ItemTemplate>
+                </maps:Map>
+                <StackLayout VerticalOptions="EndAndExpand"  Grid.Row="2"  Margin="10">
+                    <Grid VerticalOptions="FillAndExpand">
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.5*"/>
+                            <ColumnDefinition Width="0.5*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackLayout Grid.Column="0" Grid.Row="0" VerticalOptions="CenterAndExpand" >
+                            <StackLayout Orientation="Horizontal" VerticalOptions="StartAndExpand" >
+                                <iconize:IconLabel
+                                    VerticalOptions="Start"
+                                    FontSize="Large"
+                                    Text="fab-whatsapp"   
+                                    HorizontalOptions="Start"
+                                    TextColor="{StaticResource colorPrimary}"
+                                 />
+                                <Label  
+                                    Text="12 99152-0448"
+                                    TextColor="{StaticResource colorPrimary}"
+                                    FontSize="Small"/>
+
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand">
+                                <iconize:IconLabel
+                                    VerticalOptions="Start"
+                                    FontSize="Medium"
+                                    Text="fas-phone"   
+                                    HorizontalOptions="Start"
+                                    TextColor="{StaticResource colorPrimary}"
+                                 />
+                                <Label  
+                                    Text="12 99152-0448"
+                                    TextColor="{StaticResource colorPrimary}"
+                                    FontSize="Small"/>
+
+                            </StackLayout>
+                        </StackLayout>
+
+
+                        <StackLayout Grid.Column="1" Grid.Row="0" >
+                            <StackLayout>
+                                
+                                <Label  
+                                    Text="Nossas Redes Sociais"
+                                    HorizontalOptions="CenterAndExpand"
+                                    TextColor="{StaticResource colorPrimary}"
+                                    FontSize="Small"/>
+
+                            </StackLayout>
+                            <StackLayout >
+                                <Grid RowSpacing="0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="0.33*"/>
+                                        <ColumnDefinition Width="0.33*"/>
+                                        <ColumnDefinition Width="0.33*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Button 
+                                        BackgroundColor="Transparent"
+                                        ImageSource="facebook.png"
+                                        Grid.Column="0"/>
+                                    <Button 
+                                         BackgroundColor="Transparent"
+                                        ImageSource="instagram.png"
+                                        Grid.Column="1"/>
+                                    <Button 
+                                         BackgroundColor="Transparent"
+                                        ImageSource="youtube.png"
+                                        Grid.Column="2"/>
+
+                                </Grid>
+                               
+                            </StackLayout>
+                        </StackLayout>
+                      
+
+                    </Grid>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                        <iconize:IconLabel
+                                    VerticalOptions="Start"
+                                    FontSize="Medium"
+                                    Text="fas-clock"   
+                                    HorizontalOptions="Start"
+                                    TextColor="{StaticResource colorPrimary}"
+                                 />
+                        <Label  
+                                    Text="de Sengunda à sexta das 9h às 18h"
+                                    TextColor="{StaticResource colorPrimary}"
+                                    FontSize="Small"/>
+
+                    </StackLayout>
+
+                </StackLayout>
+
+
+                <ActivityIndicator Grid.Row="0" IsEnabled="True" IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}" HorizontalOptions="Center" VerticalOptions="Center" />
+
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

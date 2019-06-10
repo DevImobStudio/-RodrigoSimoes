@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Imobiliaria.Models;
+using Imobiliaria.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +17,16 @@ namespace Imobiliaria.Views
         public Login()
         {
             InitializeComponent();
+        }
+        void LoginClick(object sender, EventArgs args)
+        {
+            Button btncontrol = (Button)sender;
+            string providername = btncontrol.Text;
+            if (Sistema.USUARIO == null)
+            {
+                Navigation.PushModalAsync(new ProviderLoginPage(providername));
+                //Need to create ProviderLoginPage so follow Step 4 and Step 5  
+            }
         }
     }
 }
