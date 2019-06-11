@@ -23,7 +23,7 @@ namespace Imobiliaria.Views
         private ListaImoveis ListaImoveis { get; set; }
         public ItemsViewModel viewModel { get; set; }
         public StackLayout paginaStack { get; set; }
-        public MenuPesquisa menuPesquisa { get; set; }
+        public MenuSuperior menuSuperior { get; set; }
         public EnvioMaterial EnvioMaterial { get; set; }
         public ItemDetailViewModel ImovelDetail{ get; set; }
 
@@ -32,8 +32,8 @@ namespace Imobiliaria.Views
             InitializeComponent();
            
             viewModel = new ItemsViewModel();
-            menuPesquisa = new MenuPesquisa(this);
-            this.SlideMenu = menuPesquisa;
+            menuSuperior = new MenuSuperior();
+            this.SlideMenu = menuSuperior;
             paginaStack = pagina;
             Maps = new Maps(this);
             ListaImoveis = new ListaImoveis(this);
@@ -56,7 +56,7 @@ namespace Imobiliaria.Views
         {
             base.OnAppearing();
 
-            viewModel.LoadItemsCommand.Execute(null);
+          //  viewModel.LoadItemsCommand.Execute(null);
            // ForceLayout();
 
 
@@ -128,6 +128,7 @@ namespace Imobiliaria.Views
         protected  override bool OnBackButtonPressed()
         {
             carregarPaginaInicial();
+            this.HideMenu();
             return true;
         }
 
@@ -209,5 +210,9 @@ namespace Imobiliaria.Views
             this.ShowMenu();
         }
 
+
+       
+
     }
+
 }

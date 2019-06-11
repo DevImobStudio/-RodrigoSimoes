@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -17,16 +17,18 @@ namespace Imobiliaria.Views
 		{
 			InitializeComponent ();
 
-            this.HeightRequest = 250;
+            this.HeightRequest = DeviceDisplay.MainDisplayInfo.Height /6 ;
 
             this.IsFullScreen = true;
             this.MenuOrientations = MenuOrientation.TopToBottom;
 
-            this.BackgroundColor = Color.Black;
             this.BackgroundViewColor = Color.Transparent;
 
             if (Device.RuntimePlatform == Device.Android)
                 this.HeightRequest += 50;
         }
-	}
+
+
+       
+    }
 }

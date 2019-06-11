@@ -134,7 +134,7 @@
                     TextColor="{StaticResource colorPrimary}"/>
                 <Label 
                     Grid.Column="1" 
-                    Text="Pode ficar tranquilo, não enviamos spam ou mensagens promocionais não solicitamos nem compartilhamos seus dados. Voc~e esta protegido através de criptografia de alto nível"  
+                    Text="Pode ficar tranquilo, não enviamos spam ou mensagens promocionais não solicitamos nem compartilhamos seus dados. Você esta protegido através de criptografia de alto nível"  
                     TextColor="{StaticResource colorPrimary}" 
                     FontSize="Default"  
                     
