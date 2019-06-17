@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Imobiliaria.Models
 {
-    public class Pesquisa
+    public class MPesquisa
     {
         public string cidade { get; set; }
         public List<string> bairro { get; set; }

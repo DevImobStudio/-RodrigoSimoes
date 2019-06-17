@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
+
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Imobiliaria.Views.TabbedPage1"
@@ -7,6 +8,7 @@
            
             BarBackgroundColor="{StaticResource colorSecundaria}"
             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            xmlns:slideoverkit="clr-namespace:SlideOverKit;assembly=SlideOverKit"
             NavigationPage.HasNavigationBar="True"
             android:TabbedPage.IsSmoothScrollEnabled="False"
             android:TabbedPage.IsSwipePagingEnabled="False"
@@ -26,7 +28,7 @@
     <NavigationPage.TitleView >
         <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center" >
 
-            <Image HorizontalOptions="Center" x:Name="logotipo" Source="https://www.rodrigosimoesimoveis.com.br/uploads/www.rodrigosimoesimoveis.com.br/logotipo.png" />
+            <Image HorizontalOptions="Center" x:Name="logotipo"  />
         </StackLayout>
 
     </NavigationPage.TitleView>

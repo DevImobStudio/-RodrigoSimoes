@@ -30,11 +30,11 @@ namespace Imobiliaria.Views
             Titulo.Text = titulo;
             if (tipo.Equals("CIDADE"))
             {
-                Lista.SelectedItem = this.pesquisa.Inicio.viewModel.Pesquisa.cidade;
+                Lista.SelectedItem = this.pesquisa.Inicio.viewModel.mPesquisa.cidade;
             }
             if (tipo.Equals("TIPO"))
             {
-                Lista.SelectedItem = this.pesquisa.Inicio.viewModel.Pesquisa.categoria;
+                Lista.SelectedItem = this.pesquisa.Inicio.viewModel.mPesquisa.categoria;
             }
             
         }
@@ -51,13 +51,13 @@ namespace Imobiliaria.Views
             {
                 if (tipo.Equals("CIDADE"))
                 {
-                    this.pesquisa.Inicio.viewModel.Pesquisa.cidade = a;
+                    this.pesquisa.Inicio.viewModel.mPesquisa.cidade = a;
                     
 
                 }
                 if (tipo.Equals("TIPO"))
                 {
-                     this.pesquisa.Inicio.viewModel.Pesquisa.categoria = a;
+                     this.pesquisa.Inicio.viewModel.mPesquisa.categoria = a;
                 }
             }
             this.pesquisa.AtualizarPesquisa();

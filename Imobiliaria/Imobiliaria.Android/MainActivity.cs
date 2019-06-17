@@ -26,7 +26,8 @@ namespace Imobiliaria.Droid
             Plugin.InputKit.Platforms.Droid.Config.Init(this, savedInstanceState);
             FacebookSdk.SdkInitialize(this);
             FacebookSdk.ApplicationId = "456228191618171";
-            global::Xamarin.Auth.Presenters.XamarinAndroid.AuthenticationConfiguration.Init(this, savedInstanceState);
+            
+       //     global::Xamarin.Auth.Presenters.XamarinAndroid.AuthenticationConfiguration.Init(this, savedInstanceState);
             Plugin.Iconize.Iconize.With(new Plugin.Iconize.Fonts.FontAwesomeBrandsModule())
                                   .With(new Plugin.Iconize.Fonts.FontAwesomeRegularModule())
                                   .With(new Plugin.Iconize.Fonts.FontAwesomeSolidModule());
@@ -34,6 +35,7 @@ namespace Imobiliaria.Droid
             base.OnCreate(savedInstanceState);
 
             CarouselViewRenderer.Init();
+            Forms.SetFlags("FastRenderers_Experimental");
             global::Xamarin.Forms.Forms.SetFlags("Shell_Experimental", "Visual_Experimental", "CollectionView_Experimental");
             Xamarin.FormsGoogleMaps.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);

@@ -18,6 +18,7 @@ namespace Imobiliaria.Services
         public static DataBaseAsync DATABASE { get; set; }
         public static TabbedPage1 TABBEDPAGE { get; set; }
         public static Usuario USUARIO { get; set; }
+        public static MenuSuperior menuSuperior { get; set; }
 
 
 

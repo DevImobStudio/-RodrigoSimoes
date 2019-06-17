@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<slideoverkit:MenuContainerPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:maps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
              xmlns:iconize="clr-namespace:Plugin.Iconize;assembly=Plugin.Iconize"
+            xmlns:slideoverkit="clr-namespace:SlideOverKit;assembly=SlideOverKit" 
+        
              x:Class="Imobiliaria.Views.Atendimento"
              Title="Atendimento"
              Icon="dialog.png"
@@ -121,15 +123,18 @@
                                     <Button 
                                         BackgroundColor="Transparent"
                                         ImageSource="facebook.png"
-                                        Grid.Column="0"/>
+                                        Grid.Column="0"
+                                        Clicked="facebook_Clicked"/>
                                     <Button 
                                          BackgroundColor="Transparent"
                                         ImageSource="instagram.png"
-                                        Grid.Column="1"/>
+                                        Grid.Column="1"
+                                        Clicked="instagram_Clicked"/>
                                     <Button 
                                          BackgroundColor="Transparent"
                                         ImageSource="youtube.png"
-                                        Grid.Column="2"/>
+                                        Grid.Column="2"
+                                        Clicked="youtube_Clicked"/>
 
                                 </Grid>
                                
@@ -161,4 +166,4 @@
             </Grid>
         </StackLayout>
     </ContentPage.Content>
-</ContentPage>
+</slideoverkit:MenuContainerPage>

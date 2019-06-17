@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Imobiliaria.Views.Erro"
+             xmlns:iconize="clr-namespace:Plugin.Iconize;assembly=Plugin.Iconize">
+    <ContentPage.Content>
+        
+        <StackLayout Margin="20" VerticalOptions="Center">
+            <iconize:IconLabel Text="far-times-circle" TextColor="Red" HorizontalOptions="Center" FontSize="60"/>
+            
+            <Label Text="Para usar este aplicativo é necessário estar conectado a internet." FontSize="Medium" />
+            <Label Text=" Verifique sua conexão com a internet." FontSize="Medium" />
+           
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

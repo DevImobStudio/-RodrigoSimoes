@@ -1,11 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:customcontrols="clr-namespace:Imobiliaria.Views"
-             xmlns:iconize="clr-namespace:Plugin.Iconize;assembly=Plugin.Iconize"
-             x:Class="Imobiliaria.Views.Entrar"
-             Title="Entrar"
-             Icon="lock.png">
+<slideoverkit:MenuContainerPage
+    xmlns:slideoverkit="clr-namespace:SlideOverKit;assembly=SlideOverKit"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:customcontrols="clr-namespace:Imobiliaria.Views"
+    xmlns:iconize="clr-namespace:Plugin.Iconize;assembly=Plugin.Iconize"
+    x:Class="Imobiliaria.Views.Entrar"
+    Title="Entrar"
+    Icon="lock.png">
     <ContentPage.Content >
         <StackLayout Margin="20">
             <Grid ColumnSpacing="0">
@@ -55,13 +57,39 @@
                         VerticalOptions="Center" 
                         HorizontalOptions="Center" />
                 </Grid>
-                <Button  Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0" Clicked="LoginClick"  BackgroundColor="Transparent"/>
+                <Button x:Name="FaceBook" TextColor="Transparent" Text="FaceBook" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0" Clicked="LoginClick"  BackgroundColor="Transparent"/>
             </Grid>
-           
 
 
-               
-                <Label 
+            <Grid ColumnSpacing="0" Margin="0,20" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition  Width="2*"/>
+                    <ColumnDefinition  Width="8*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0" Grid.Row="0" ColumnSpacing="0" BackgroundColor="{StaticResource colorSecundaria}" >
+                    <iconize:IconLabel 
+                    Text="fab-facebook-f" 
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center" 
+                    FontSize="Large"  
+                    FontAttributes="Bold"
+                    TextColor="{StaticResource colorPrimary}"/>
+                </Grid>
+                <Grid Grid.Column="1" Grid.Row="0" ColumnSpacing="0" BackgroundColor="{StaticResource colorPrimary}" >
+                    <Label 
+                        Text="Conecte-se com o Google"  
+                        TextColor="{StaticResource colorClara}" 
+                        FontSize="Default"  
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Center" />
+                </Grid>
+                <Button x:Name="Google" TextColor="Transparent" Text="Google" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0" Clicked="LoginClick"  BackgroundColor="Transparent"/>
+            </Grid>
+
+
+
+
+            <Label 
                     Text="Ao utilizar este aplicativo você concorda com os Termos de uso e a Política de Privacidade."  
                     TextColor="{StaticResource colorPrimary}" 
                     FontSize="Default"  
@@ -71,4 +99,4 @@
 
         </StackLayout>
     </ContentPage.Content>
-</ContentPage>
+</slideoverkit:MenuContainerPage>

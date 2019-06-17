@@ -43,8 +43,9 @@ namespace Imobiliaria.Droid
                 
 
                 OAuthProviderSetting oauth = new OAuthProviderSetting();
-                var auth = oauth.LoginWithProvider(providername);
 
+                var auth = oauth.LoginWithProvider(providername);
+            
                         // After facebook,google and all identity provider login completed 
                         auth.Completed += async (sender, eventArgs) =>
                         {

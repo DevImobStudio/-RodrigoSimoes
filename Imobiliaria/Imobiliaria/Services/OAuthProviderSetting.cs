@@ -34,12 +34,14 @@ namespace Imobiliaria.Services
                         auth = new OAuth2Authenticator(
                                     // For Google login, for configure refer http://www.c-sharpcorner.com/article/register-identity-provider-for-new-oauth-application/
                                     "759941497164-sihog7v5sf14lq30r76nr9tmgsf6e9nh.apps.googleusercontent.com",
-                                   string.Empty,
-                                   "https://www.googleapis.com/auth/plus.login",
+                                   "imobiliaria-239615",
+                                   "https://www.googleapis.com/auth/admin.directory.customer.readonly",
                                    new Uri("https://accounts.google.com/o/oauth2/auth"),
-                                   new Uri("//localhost"),
-                                   new Uri("https://www.googleapis.com/drive/v2/files?access_token"),
+                                   new Uri("urn:ietf:wg:oauth:2.0:oob"),
+                                   new Uri("https://oauth2.googleapis.com/token"),
                                    isUsingNativeUI: true
+                                  
+                                   
                                     );
 
                         break;
@@ -59,5 +61,7 @@ namespace Imobiliaria.Services
             return auth;
 
         }
+
+       
     }
 }

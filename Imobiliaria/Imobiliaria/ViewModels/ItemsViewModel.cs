@@ -26,14 +26,14 @@ namespace Imobiliaria.ViewModels
         public List<Imovel> LstImoveis { get; set; }
      //   List<Pin> LstPins { get; set; }
         public List<Models.Favoritos> favoritos { get; set; }
-        public Models.Pesquisa Pesquisa { get; set; }
+        public Models.MPesquisa mPesquisa { get; set; }
 
         public ItemsViewModel()
         {
             LstImoveis = new List<Imovel>();
             Imovels = new ObservableCollection<Imovel>(LstImoveis);
             favoritos = new List<Models.Favoritos>();
-            Pesquisa = new Models.Pesquisa();
+            mPesquisa = new Models.MPesquisa();
             Title = "Imovéis";
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
             LoadItemsCommandBusca = new Command(async () => await ExecuteLoadItemsBuscaCommand());
@@ -103,54 +103,54 @@ namespace Imobiliaria.ViewModels
 
                 List<Imovel> FiltroImoveis = LstImoveis;
 
-                if (Pesquisa.categoria != null)
+                if (mPesquisa.categoria != null)
                 {
-                    FiltroImoveis = FiltroImoveis.Where(p => p.categoria == Pesquisa.categoria).ToList();
+                    FiltroImoveis = FiltroImoveis.Where(p => p.categoria == mPesquisa.categoria).ToList();
                 }
                 
-                if (Pesquisa.negocio != null )
+                if (mPesquisa.negocio != null )
                 {
-                    FiltroImoveis = FiltroImoveis.Where(p => p.negocio == Pesquisa.negocio).ToList();
+                    FiltroImoveis = FiltroImoveis.Where(p => p.negocio == mPesquisa.negocio).ToList();
 
                 }
 
-                if (Pesquisa.cidade != null)
+                if (mPesquisa.cidade != null)
                 {
-                    FiltroImoveis = FiltroImoveis.Where(p => p.cidade == Pesquisa.cidade).ToList();
+                    FiltroImoveis = FiltroImoveis.Where(p => p.cidade == mPesquisa.cidade).ToList();
                 }
 
-                if (Pesquisa.bairro != null)
+                if (mPesquisa.bairro != null)
                 {
-                    if (Pesquisa.bairro.Count > 0)
+                    if (mPesquisa.bairro.Count > 0)
                     {
-                        FiltroImoveis = FiltroImoveis.Where(p => Pesquisa.bairro.Contains(p.bairro)).ToList();
+                        FiltroImoveis = FiltroImoveis.Where(p => mPesquisa.bairro.Contains(p.bairro)).ToList();
                     }
 
                 }
 
-                if (Pesquisa.busca != null)
+                if (mPesquisa.busca != null)
                 {
-                    if (Pesquisa.busca != "")
+                    if (mPesquisa.busca != "")
                     {
-                        FiltroImoveis = FiltroImoveis.Where(p => p.descricao.Contains(Pesquisa.busca) || p.descricao_longa.Contains(Pesquisa.busca) || p.titulo.Contains(Pesquisa.busca)).ToList();
+                        FiltroImoveis = FiltroImoveis.Where(p => (p.descricao.Contains(mPesquisa.busca)) || (p.titulo.Contains(mPesquisa.busca))).ToList();
                     }
 
                 }
 
-                if (Pesquisa.dormitorios != null)
+                if (mPesquisa.dormitorios != null)
                 {
-                    if (Pesquisa.dormitorios.Count > 0)
+                    if (mPesquisa.dormitorios.Count > 0)
                     {
                         
-                        FiltroImoveis = FiltroImoveis.Where(p => Pesquisa.dormitorios.Contains(p.dormitorios)).ToList();
+                        FiltroImoveis = FiltroImoveis.Where(p => mPesquisa.dormitorios.Contains(p.dormitorios)).ToList();
 
                     }
    
                 }
 
-                if (Pesquisa.faixa1 > 0 && Pesquisa.faixa2 >0)
+                if (mPesquisa.faixa1 > 0 && mPesquisa.faixa2 >0)
                 {
-                    FiltroImoveis = FiltroImoveis.Where(p => p.valor >= Pesquisa.faixa1 && p.valor <= Pesquisa.faixa2).ToList();
+                    FiltroImoveis = FiltroImoveis.Where(p => p.valor >= mPesquisa.faixa1 && p.valor <= mPesquisa.faixa2).ToList();
 
                 }
 
@@ -166,6 +166,11 @@ namespace Imobiliaria.ViewModels
             catch (Exception ex)
             {
                 Debug.WriteLine(ex);
+                foreach (var i in LstImoveis)
+                {
+                    Imovels.Add(i);
+                }
+                CrossToastPopUp.Current.ShowToastMessage("Erro ao gerar busca", Plugin.Toast.Abstractions.ToastLength.Long);
             }
             finally
             {

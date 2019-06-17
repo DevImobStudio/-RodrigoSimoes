@@ -1,5 +1,6 @@
 ﻿using Imobiliaria.Services;
 using Plugin.Toast;
+using SlideOverKit;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,52 +17,66 @@ namespace Imobiliaria.Views
     public partial class TabbedPage1 : TabbedPage
     {
         public Inicio Inicio;
-        private ContentPage Entrar;
-        private ContentPage Favoritos;
-        private ContentPage Atendimento;
-
+        public Entrar Entrar;
+        public Favoritos Favoritos;
+        public Atendimento Atendimento;
+        public MenuContainerPage menuContainerPage { get; set; }
         public Image logo;
+        bool show = false;
 
         public TabbedPage1()
         {
             InitializeComponent();
-
+            menuContainerPage = new MenuContainerPage();
+            Services.Sistema.menuSuperior = new MenuSuperior();
+            this.menuContainerPage.SlideMenu = Services.Sistema.menuSuperior;
             Children.Add(Inicio = new Inicio());
             Children.Add(Favoritos = new Favoritos());
             Children.Add(Atendimento = new Atendimento());
             Children.Add(Entrar = new Entrar());
+
             logo = logotipo;
+            
             //    logo.Source = new UriImageSource { CachingEnabled = false, Uri = new Uri("https://www.rodrigosimoesimoveis.com.br/uploads/www.rodrigosimoesimoveis.com.br/logotipo.png")};
 
             ForceLayout();
-            
+
+
         }
 
-        public void CriarToolbar()
+        public void Bind()
         {
-            OAuthConfig._NavigationPage.ToolbarItems.Add(new ToolbarItem()
-            {
-                IconImageSource = "star.png",
-
-                Command = ChamarMenu(),
-            });
-
+            InitializeComponent();
         }
 
-        private ICommand ChamarMenu()
-        {
-           return new Command(async () => await ExecuteLoadItemsCommand());
-           
 
-        }
-        async Task ExecuteLoadItemsCommand()
-        {
-           CrossToastPopUp.Current.ShowToastMessage("Menu");
-        }
 
         private void MenuItem1_Clicked(object sender, EventArgs e)
         {
-            this.Inicio.CarregarMenu();
+           
+            this.menuContainerPage = this.CurrentPage as MenuContainerPage;
+            if (show)
+            {
+                this.menuContainerPage.HideMenu();
+                this.show = false;
+            }
+            else
+            {
+                this.menuContainerPage.ShowMenu();
+                this.show = true;
+                ForceLayout();
+            }
+            
+           
         }
+
+        protected async override void OnCurrentPageChanged()
+        {
+            base.OnCurrentPageChanged();
+            this.menuContainerPage.HideMenu();
+            this.show = false;
+        }
+
+     
     }
 }

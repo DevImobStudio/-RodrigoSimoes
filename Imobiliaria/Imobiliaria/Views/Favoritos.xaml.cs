@@ -2,6 +2,7 @@
 using Imobiliaria.Services;
 using Imobiliaria.ViewModels;
 using Plugin.Toast;
+using SlideOverKit;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,13 +15,17 @@ using Xamarin.Forms.Xaml;
 namespace Imobiliaria.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Favoritos : ContentPage
-	{
+	public partial class Favoritos : MenuContainerPage
+    {
         Inicio inicio { get; set; }
-		public Favoritos ()
+        public MenuSuperior menuSuperior { get; set; }
+
+        public Favoritos ()
 		{
 			InitializeComponent ();
-           // LoadFavoritos();
+            // LoadFavoritos();
+            menuSuperior = new MenuSuperior();
+            this.SlideMenu = menuSuperior;
 
 
         }
@@ -51,6 +56,24 @@ namespace Imobiliaria.Views
                 }
                 ItemsListView.ItemsSource = imovelsFavoritos;
                 BindingContext = imovelsFavoritos;
+
+                if (imovelsFavoritos.Count < 1)
+                {
+                    var Configuracao = new Configuracao();
+                    var LayoutVazio = new StackLayout();
+                    var lblListaVazia = new Label
+                    {
+                        Text = "Nenhum imóvel favorito definido",
+                        TextColor = Color.FromHex(Services.Sistema.CONFIG.cor_padrao),
+                        FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
+                        VerticalOptions = LayoutOptions.CenterAndExpand,
+                        HorizontalOptions = LayoutOptions.CenterAndExpand
+                    };
+                    LayoutVazio.Children.Add(lblListaVazia);
+                    Content = LayoutVazio;
+                }
+            
+
             }
             catch(Exception on)
             {
@@ -78,6 +101,12 @@ namespace Imobiliaria.Views
             }
 
         }
+
+        public void Bind()
+        {
+            InitializeComponent();
+        }
+
 
         private void WhatsApp_Clicked(object sender, EventArgs e)
         {

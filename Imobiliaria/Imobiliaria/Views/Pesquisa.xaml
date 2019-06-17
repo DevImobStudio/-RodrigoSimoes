@@ -1,18 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
+            xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
              xmlns:iconize="clr-namespace:Plugin.Iconize;assembly=Plugin.Iconize"
-             xmlns:converterPack="clr-namespace:Xamarin.Forms.ConvertersPack;assembly=Xamarin.Forms.ConvertersPack"
              x:Class="Imobiliaria.Views.Pesquisa"
              Title="Busca Avançada">
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <converterPack:CurrencyConverter x:Key="CurrencyConverter" />
-            <converterPack:UpperTextConverter x:Key="UpperTextConverter" />
-            <converterPack:LowerTextConverter x:Key="LowerTextConverter" />
-        </ResourceDictionary>
-    </ContentPage.Resources>
+    
     <ContentPage.Content>
         <StackLayout BackgroundColor="{StaticResource colorSecundaria}">
         <ScrollView VerticalOptions="FillAndExpand" >
@@ -52,19 +45,20 @@
                      />
 
                 </Grid>
-                <Grid Grid.Column="1" Grid.Row="1" ColumnSpacing="0" BackgroundColor="{StaticResource colorClara}" >
-                    <Entry 
-                        x:Name="Busca"
-                        Placeholder="Digite ..." 
-                        FontSize="Default"
-                        BindingContext="{Binding Pesquisa.busca, Mode=OneWay}"
-                        TextColor="{StaticResource colorPrimary}"
-                        
-           
-                        VerticalOptions="Center"
-                    />
-                </Grid>
-                <Grid Grid.ColumnSpan="2" Grid.Row="2"  Margin="4" VerticalOptions="Center"  HorizontalOptions="Center">
+            <Grid Grid.Column="1" Grid.Row="1" ColumnSpacing="0" BackgroundColor="{StaticResource colorClara}" >
+                        <Entry
+                            x:Name="Busca"
+                            Placeholder="Digite ..." 
+                            Keyboard="Text"
+                            FontSize="Default"
+                            TextColor="{StaticResource colorPrimary}"
+                            VerticalOptions="Center"
+                        ></Entry>
+                    </Grid>
+            
+
+                  
+                    <Grid Grid.ColumnSpan="2" Grid.Row="2"  Margin="4" VerticalOptions="Center"  HorizontalOptions="Center">
                       
                        
                      <Grid>
@@ -295,17 +289,19 @@
                                 PlaceholderColor="{StaticResource colorSecundaria}"
                                 TextColor="{StaticResource colorPrimary}"
                                 FontSize="Medium"
-                                Text="{Binding faixa1,  Converter={StaticResource CurrencyConverter}}">
+                                x:Name="Faixa1"
+                                Text="{Binding mPesquisa.faixa1}">
                                 
                             </Entry>
                         </Grid>
                         <Grid Grid.Column="1"  BackgroundColor="{StaticResource colorClara}" >
                             <Entry 
+                                x:Name="Faixa2"
                                 Placeholder="R$ Max"
                                 PlaceholderColor="{StaticResource colorSecundaria}"   
                                 TextColor="{StaticResource colorPrimary}"
                                 FontSize="Medium"
-                                Text="{Binding faixa1, ConverterParameter={StaticResource CurrencyConverter},  Converter={StaticResource CurrencyConverter}}"
+                                Text="{Binding mPesquisa.faixa2}"
                                 >
 
                             </Entry>

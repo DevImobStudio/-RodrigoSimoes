@@ -22,9 +22,20 @@ namespace Imobiliaria.Views
         
         public Pesquisa (Inicio inicio)
 		{
-			InitializeComponent ();
+			InitializeComponent();
             this.Inicio = inicio;
             BindingContext = this.Inicio.viewModel;
+
+            this.Busca.Text = this.Inicio.viewModel.mPesquisa.busca;
+            if (this.Inicio.viewModel.mPesquisa.faixa2 > 0)
+            {
+                this.Faixa2.Text = this.Inicio.viewModel.mPesquisa.faixa2.ToString("C2");
+            }
+            if (this.Inicio.viewModel.mPesquisa.faixa2 > 0)
+            {
+                this.Faixa2.Text = this.Inicio.viewModel.mPesquisa.faixa2.ToString("C2");
+            }
+
 
             cidades = new List<string>();
             categoria = new List<string>();
@@ -33,22 +44,23 @@ namespace Imobiliaria.Views
            
             carregarDados();
             AtualizarPesquisa();
+          
         }
 
         public void carregarDados()
         {
-            this.ForceLayout();
+            
             carregarDadosCidade();
             carregarDadosTipo();
             carregarDadosDormitorios();
         
-            if (this.Inicio.viewModel.Pesquisa.cidade == null)
+            if (this.Inicio.viewModel.mPesquisa.cidade == null)
             {
                 GridBairro.IsEnabled = false;
             }
             else
             {
-                if (this.Inicio.viewModel.Pesquisa.cidade == "")
+                if (this.Inicio.viewModel.mPesquisa.cidade == "")
                     GridBairro.IsEnabled = false;
                 else
                     GridBairro.IsEnabled = true;
@@ -107,10 +119,10 @@ namespace Imobiliaria.Views
            
             bairros.Clear();
             List<string> a = new List<string>();
-            if (this.Inicio.viewModel.Pesquisa.cidade != null)
+            if (this.Inicio.viewModel.mPesquisa.cidade != null)
             {
                 
-                foreach (var i in Inicio.viewModel.LstImoveis.Where(p => p.cidade == this.Inicio.viewModel.Pesquisa.cidade).ToList())
+                foreach (var i in Inicio.viewModel.LstImoveis.Where(p => p.cidade == this.Inicio.viewModel.mPesquisa.cidade).ToList())
                 {
                     a.Add(i.bairro);
                 }
@@ -141,18 +153,18 @@ namespace Imobiliaria.Views
 
         public void AtualizarPesquisa()
         {
-            if (this.Inicio.viewModel.Pesquisa.cidade != null)
+            if (this.Inicio.viewModel.mPesquisa.cidade != null)
             {
-                Cidade.Text = this.Inicio.viewModel.Pesquisa.cidade;
+                Cidade.Text = this.Inicio.viewModel.mPesquisa.cidade;
 
                 GridBairro.IsEnabled = true;
 
                 carregarDadosBairro();
             }
-            if (this.Inicio.viewModel.Pesquisa.bairro != null)
+            if (this.Inicio.viewModel.mPesquisa.bairro != null)
             {
                 Bairro.Text = "";
-                foreach (var i in this.Inicio.viewModel.Pesquisa.bairro)
+                foreach (var i in this.Inicio.viewModel.mPesquisa.bairro)
                 {
                     if (Bairro.Text.Length > 100)
                     {
@@ -162,22 +174,22 @@ namespace Imobiliaria.Views
                 }
                
             }
-            if (this.Inicio.viewModel.Pesquisa.categoria != null)
+            if (this.Inicio.viewModel.mPesquisa.categoria != null)
             {
-                Categoria.Text = this.Inicio.viewModel.Pesquisa.categoria;
+                Categoria.Text = this.Inicio.viewModel.mPesquisa.categoria;
             }
         }
 
         private async void Confirmar_Clicked(object sender, EventArgs e)
         {
-            this.Inicio.viewModel.Pesquisa.busca = Busca.Text;
+           this.Inicio.viewModel.mPesquisa.busca = Busca.Text;
 
-            Inicio.viewModel.Pesquisa.dormitorios = new List<string>();
+            Inicio.viewModel.mPesquisa.dormitorios = new List<string>();
             if (Lista.SelectedItems != null)
             {
                 foreach (var i in Lista.SelectedItems)
                 {
-                    Inicio.viewModel.Pesquisa.dormitorios.Add(i.ToString());
+                    Inicio.viewModel.mPesquisa.dormitorios.Add(i.ToString());
                 }
             }
 
@@ -202,14 +214,14 @@ namespace Imobiliaria.Views
 
         private void Cancelar_Clicked(object sender, EventArgs e)
         {
-            this.Inicio.viewModel.Pesquisa.busca = null;
-            this.Inicio.viewModel.Pesquisa.categoria = null;
-            this.Inicio.viewModel.Pesquisa.cidade = null;
-            this.Inicio.viewModel.Pesquisa.dormitorios = null;
-            this.Inicio.viewModel.Pesquisa.negocio = null;
-            this.Inicio.viewModel.Pesquisa.bairro = null;
+            this.Inicio.viewModel.mPesquisa.busca = null;
+            this.Inicio.viewModel.mPesquisa.categoria = null;
+            this.Inicio.viewModel.mPesquisa.cidade = null;
+            this.Inicio.viewModel.mPesquisa.dormitorios = null;
+            this.Inicio.viewModel.mPesquisa.negocio = null;
+            this.Inicio.viewModel.mPesquisa.bairro = null;
             this.Inicio.viewModel.LoadItemsCommand.Execute(null);
-            Busca.Text = "";
+         //   Busca.Text = "";
 
             this.Navigation.PopAsync();
        
@@ -217,10 +229,10 @@ namespace Imobiliaria.Views
 
         public void SetarBairro(List<Opcao> opcaos)
         {
-            this.Inicio.viewModel.Pesquisa.bairro = new List<string>();
+            this.Inicio.viewModel.mPesquisa.bairro = new List<string>();
             foreach (var i in opcaos.FindAll(p => p.check))
             {
-                this.Inicio.viewModel.Pesquisa.bairro.Add(i.opcao);
+                this.Inicio.viewModel.mPesquisa.bairro.Add(i.opcao);
             }
            
         }
@@ -247,7 +259,7 @@ namespace Imobiliaria.Views
             {
                 Locacao.IsChecked = false;
                 Lancamento.IsChecked = false;
-                this.Inicio.viewModel.Pesquisa.negocio = "Venda";
+                this.Inicio.viewModel.mPesquisa.negocio = "Venda";
             }
         }
 
@@ -257,7 +269,7 @@ namespace Imobiliaria.Views
             {
                 Venda.IsChecked = false;
                 Lancamento.IsChecked = false;
-                this.Inicio.viewModel.Pesquisa.negocio = "Locação";
+                this.Inicio.viewModel.mPesquisa.negocio = "Locação";
             }
         }
 
@@ -267,7 +279,7 @@ namespace Imobiliaria.Views
             {
                 Locacao.IsChecked = false;
                 Venda.IsChecked = false;
-                this.Inicio.viewModel.Pesquisa.negocio = "Lançamento";
+                this.Inicio.viewModel.mPesquisa.negocio = "Lançamento";
             }
         }
     }

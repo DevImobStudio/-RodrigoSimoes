@@ -9,6 +9,7 @@ using Xamarin.Forms.PlatformConfiguration.AndroidSpecific;
 using Imobiliaria.Views;
 using System.Threading.Tasks;
 using Imobiliaria.Services;
+using Xamarin.Essentials;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Imobiliaria
@@ -17,29 +18,41 @@ namespace Imobiliaria
     {
         TabbedPage1 page { get; set; }
         NavigationPage npage { get; set; }
+       
 
         public App()
         {
-            InitializeComponent();
+           
 
-            Services.Sistema.RESTAPI = new Services.Rest("http://www.api.rodrigosimoesimoveis.com.br/");
+            var current = Connectivity.NetworkAccess;
 
-            Services.Sistema.DATABASE = new Services.DataBaseAsync();
-            Dados();
-            GerarConfiguracao();
-            // page = new MasterDetailPage1();
-            page = new TabbedPage1();
-            Services.Sistema.TABBEDPAGE = page;
-            
-            npage = new NavigationPage(page);
-            
-            OAuthConfig._NavigationPage = npage;
-            OAuthConfig._TabbedPage = page;
+            if (current != NetworkAccess.Internet)
+            {
+                MainPage = new  Erro();
+            //    System.Diagnostics.Process.GetCurrentProcess().Kill();
+            }
+            else
+            {
 
-            MainPage = npage;//page; //NavigationPage(new TabbedPage1()) ;// ;
-
-          
-
+                Services.Sistema.RESTAPI = new Services.Rest("http://www.api.rodrigosimoesimoveis.com.br/");
+    
+                Services.Sistema.DATABASE = new Services.DataBaseAsync();
+                Dados();
+                InitializeComponent();
+                GerarConfiguracao();
+                // page = new MasterDetailPage1();
+                page = new TabbedPage1();
+                Services.Sistema.TABBEDPAGE = page;
+                
+                npage = new NavigationPage(page);
+                
+                OAuthConfig._NavigationPage = npage;
+                OAuthConfig._TabbedPage = page;
+    
+                MainPage = npage;//page; //NavigationPage(new TabbedPage1()) ;// ;
+    
+            }
+           
 
         }
         public async void Dados()
@@ -104,7 +117,11 @@ namespace Imobiliaria
                     if (page != null)
                     {
                         npage.BarBackgroundColor = Color.FromHex(Services.Sistema.CONFIG.cor_padrao);
-
+                        Services.Sistema.menuSuperior.Bind();
+                       // page.Inicio.Bind();
+                        page.Atendimento.Bind();
+                        page.Favoritos.Bind();
+                        page.Entrar.Bind();
                         if (page.logo != null)
                         {
                             page.logo.Source = new UriImageSource { CachingEnabled = false, Uri = new Uri(Services.Sistema.CONFIG.logotipo) };

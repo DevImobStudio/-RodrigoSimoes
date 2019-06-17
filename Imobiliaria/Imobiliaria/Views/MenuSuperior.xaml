@@ -91,7 +91,7 @@
             VerticalOptions="Center"
             FontSize="Medium"
             TextColor="{StaticResource colorPrimary}"
-           Text="12 99152-0448"/>
+            Text="{Binding whatsapp}"/>
 
         <Button 
             BorderColor="{StaticResource colorPrimary}"
@@ -116,7 +116,7 @@
             VerticalOptions="Center"
             FontSize="Medium"
             TextColor="{StaticResource colorPrimary}"
-            Text="12 99152-0448"/>
+            Text="{Binding telefone}"/>
 
 
         <StackLayout Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="4" Padding="10,0" VerticalOptions="CenterAndExpand">
@@ -138,15 +138,18 @@
                 <ImageButton 
                     BackgroundColor="Transparent"
                     Source="facebook.png"
-                    Grid.Column="1"/>
+                    Grid.Column="1"
+                    Clicked="facebook_Clicked"/>
                 <ImageButton 
                     BackgroundColor="Transparent"
                     Source="instagram.png"
-                    Grid.Column="2"/>
+                    Grid.Column="2"
+                    Clicked="instagram_Clicked"/>
                 <ImageButton 
                     BackgroundColor="Transparent"
                     Source="youtube.png"
-                    Grid.Column="3"/>
+                    Grid.Column="3"
+                    Clicked="youtube_Clicked"/>
 
             </Grid>
 

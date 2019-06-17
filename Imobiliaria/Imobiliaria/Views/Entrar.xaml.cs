@@ -1,4 +1,5 @@
 ﻿using Imobiliaria.Services;
+using SlideOverKit;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,13 +12,15 @@ using Xamarin.Forms.Xaml;
 namespace Imobiliaria.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Entrar : ContentPage
-	{
+	public partial class Entrar : MenuContainerPage
+    {
         static string nome { get; set; }
-		public Entrar ()
+
+        public Entrar ()
 		{
 			InitializeComponent ();
-		}
+            this.SlideMenu = Services.Sistema.menuSuperior;
+        }
 
         public static void  ExibirResposta(string aMensagem)
         {
@@ -27,6 +30,11 @@ namespace Imobiliaria.Views
 
 
 
+        }
+
+        public void Bind()
+        {
+            InitializeComponent();
         }
 
       

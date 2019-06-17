@@ -32,7 +32,7 @@ namespace Imobiliaria.Views
             InitializeComponent();
            
             viewModel = new ItemsViewModel();
-            menuSuperior = new MenuSuperior();
+            menuSuperior = Services.Sistema.menuSuperior;
             this.SlideMenu = menuSuperior;
             paginaStack = pagina;
             Maps = new Maps(this);
@@ -62,6 +62,13 @@ namespace Imobiliaria.Views
 
 
         }
+
+        public void Bind()
+        {
+            InitializeComponent();
+        }
+
+
         public void setarCor()
         {
             PageSelected.TintColor = Color.FromHex(Services.Sistema.CONFIG.cor_padrao);
