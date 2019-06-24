@@ -260,6 +260,7 @@
 
                     <iconize:IconButton 
                         Text="fas-map-marked-alt" 
+                        Clicked="Map_Clicked"
                         FontSize="Large" 
                        CornerRadius="6"
                         BackgroundColor="{StaticResource colorClara}"      

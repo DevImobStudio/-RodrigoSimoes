@@ -7,7 +7,7 @@
              Title="Favoritos"
              Icon="star.png">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout x:Name="pagina">
             <ListView x:Name="ItemsListView"
             ItemsSource="{Binding Imovel}"
             VerticalOptions="FillAndExpand"

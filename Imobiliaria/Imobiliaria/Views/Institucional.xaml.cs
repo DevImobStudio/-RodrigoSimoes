@@ -1,5 +1,4 @@
-﻿using Imobiliaria.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,17 +9,13 @@ using Xamarin.Forms.Xaml;
 
 namespace Imobiliaria.Views
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class ViewPin : StackLayout
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class Institucional : ContentPage
     {
-        private Imovel Imovel;
-
-        public ViewPin()
+        public Institucional()
         {
             InitializeComponent();
+            this.BindingContext = Services.Sistema.CONFIG;
         }
-
-
     }
-
 }

@@ -5,6 +5,13 @@ using Xamarin.Auth;
 
 namespace Imobiliaria.Services
 {
+    public class AuthenticationState
+    {
+        public static OAuth2Authenticator Authenticator;
+    }
+
+
+
     public class OAuthProviderSetting
     {
         public string ClientId { get; private set; }
@@ -14,6 +21,9 @@ namespace Imobiliaria.Services
         public string AccessTokenUrl { get; private set; }
         public string AuthorizeUrl { get; private set; }
         public string CallbackUrl { get; private set; }
+
+     
+
 
         public enum OauthIdentityProvider
         {

@@ -1,4 +1,6 @@
-﻿using SlideOverKit;
+﻿using Imobiliaria.Services;
+using Plugin.Toast;
+using SlideOverKit;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -61,6 +63,28 @@ namespace Imobiliaria.Views
         {
             var urlStore = Device.OnPlatform(Services.Sistema.CONFIG.instagram, Services.Sistema.CONFIG.instagram, Services.Sistema.CONFIG.instagram); //iOS,Android,Windows Device.OpenUri(new Uri(urlStore));
             Device.OpenUri(new Uri(urlStore));
+        }
+
+        private void Institucional_Clicked(object sender, EventArgs e)
+        {
+            this.Navigation.PushAsync(new Institucional());
+        }
+
+        private void WhatsApp_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+               Sistema.WhatsApp();
+            }
+            catch (Exception ex)
+            {
+                CrossToastPopUp.Current.ShowToastMessage(ex.Message, Plugin.Toast.Abstractions.ToastLength.Long);
+            }
+        }
+
+        private void Contato_Clicked(object sender, EventArgs e)
+        {
+            Sistema.Contato();
         }
     }
 }

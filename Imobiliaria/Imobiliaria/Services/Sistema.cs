@@ -25,11 +25,11 @@ namespace Imobiliaria.Services
 
 
 
-        public static void Contato(string numero)
+        public static void Contato()
         {
             try
             {
-                PhoneDialer.Open(numero);
+                PhoneDialer.Open(Sistema.CONFIG.telefone);
             }
             catch (ArgumentNullException anEx)
             {
@@ -48,9 +48,15 @@ namespace Imobiliaria.Services
 
         public static void WhatsApp(Imovel imovel)
         {
-            Chat.Open("+55012991734478",
+            Chat.Open("+55" + Sistema.CONFIG.whatsapp,
                 "Gostaria de mais informações sobre o " + imovel.tipo + " - "
-                + imovel.enfase + " referencia: " + imovel.id + " Desde já obrigada!");
+                + imovel.enfase + " referência: " + imovel.id + " Desde já obrigada!");
+        }
+
+        public static void WhatsApp()
+        {
+            Chat.Open("+55"+Sistema.CONFIG.whatsapp,
+                "Olá gostaria de mais informações sobre alguns imóveis");
         }
 
     }

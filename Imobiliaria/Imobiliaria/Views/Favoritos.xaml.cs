@@ -19,6 +19,7 @@ namespace Imobiliaria.Views
     {
         Inicio inicio { get; set; }
         public MenuSuperior menuSuperior { get; set; }
+        public ItemDetailViewModel ImovelDetail { get; set; }
 
         public Favoritos ()
 		{
@@ -97,7 +98,10 @@ namespace Imobiliaria.Views
             var objeto = ((sender as Button).CommandParameter) as Imovel;
             if (objeto != null)
             {
-              
+                pagina.Children.Clear();
+                this.ImovelDetail = new ItemDetailViewModel(objeto);
+                this.pagina.Children.Add(new ItemDetailPage(this, ImovelDetail));
+                this.ImovelDetail.LoadItemsCommand.Execute(null);
             }
 
         }
@@ -126,12 +130,35 @@ namespace Imobiliaria.Views
 
         private void Contato_Clicked(object sender, EventArgs e)
         {
-            Sistema.Contato("+552112991734478");
+            Sistema.Contato();
         }
 
-        private void Remove_Clicked(object sender, EventArgs e)
+        private async void Remove_Clicked(object sender, EventArgs e)
         {
+            var objeto = ((sender as Button).CommandParameter) as Imovel;
+            if (objeto != null)
+            {
+                var favorito = await Sistema.DATABASE.database.Table<Models.Favoritos>().Where(p => p.idImovel == objeto.id).FirstOrDefaultAsync();
+                if (favorito != null)
+                {
+                    try
+                    {
+                        await Sistema.DATABASE.database.DeleteAsync<Models.Favoritos>(favorito.id);
+                        Bind();
 
+                        CrossToastPopUp.Current.ShowToastMessage("Imóvel " + objeto.titulo + " removido com sucesso", Plugin.Toast.Abstractions.ToastLength.Long);
+                    }
+                    catch (Exception ex)
+                    {
+                        CrossToastPopUp.Current.ShowToastMessage(ex.Message, Plugin.Toast.Abstractions.ToastLength.Long);
+                    }
+
+                }
+                else
+                {
+                    CrossToastPopUp.Current.ShowToastMessage("Imovel " + objeto.titulo + " não encontrado nos seus favoritos", Plugin.Toast.Abstractions.ToastLength.Long);
+                }
+            }
         }
     }
 }

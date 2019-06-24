@@ -40,7 +40,26 @@ namespace Imobiliaria.Views
             //    logo.Source = new UriImageSource { CachingEnabled = false, Uri = new Uri("https://www.rodrigosimoesimoveis.com.br/uploads/www.rodrigosimoesimoveis.com.br/logotipo.png")};
 
             ForceLayout();
+            this.CurrentPageChanged += (object sender, EventArgs e) => {
 
+                var i = this.Children.IndexOf(this.CurrentPage);
+                switch (i)
+                {
+                    case 0:
+                        this.Inicio.carregarPaginaInicial();
+                        break;
+                    case 1:
+                        this.Favoritos.Bind();
+                        break;
+                    case 2:
+                        this.Atendimento.Bind();
+                        break;
+                    case 3:
+                        this.Entrar.Bind();
+                        break;
+                }
+
+            };
 
         }
 

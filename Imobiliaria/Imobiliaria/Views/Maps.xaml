@@ -69,7 +69,7 @@
 
                 <card:CarouselView.ItemTemplate>
                 <DataTemplate >
-                    <Grid RowSpacing="0">
+                    <Grid RowSpacing="0" BackgroundColor="{StaticResource colorPrimary}">
                         <Grid.RowDefinitions >
                                 <RowDefinition Height="6*" ></RowDefinition>
                             

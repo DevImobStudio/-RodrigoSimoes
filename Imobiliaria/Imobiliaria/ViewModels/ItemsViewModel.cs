@@ -67,7 +67,7 @@ namespace Imobiliaria.ViewModels
                         loc.Longitude = a.ElementAt(0).Longitude;
                         i.localizacao = loc;
                         i.position = new Position(a.ElementAt(0).Latitude, a.ElementAt(0).Longitude);
-                        i.icon = BitmapDescriptorFactory.FromView(new ViewPin(i));
+                        i.icon = BitmapDescriptorFactory.FromView(new ViewPin());
                         i.uriImage = new UriImageSource { CachingEnabled = false, Uri = new Uri(i.imagem) };
                     }
 

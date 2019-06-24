@@ -39,6 +39,9 @@ namespace Imobiliaria
                 Services.Sistema.DATABASE = new Services.DataBaseAsync();
                 Dados();
                 InitializeComponent();
+
+             
+
                 GerarConfiguracao();
                 // page = new MasterDetailPage1();
                 page = new TabbedPage1();
@@ -50,7 +53,11 @@ namespace Imobiliaria
                 OAuthConfig._TabbedPage = page;
     
                 MainPage = npage;//page; //NavigationPage(new TabbedPage1()) ;// ;
-    
+
+               
+
+
+
             }
            
 
@@ -80,6 +87,8 @@ namespace Imobiliaria
         async void GerarConfiguracao()
         {
             List<Configuracao> l = await Services.Sistema.RESTAPI.getAsync<List<Configuracao>>("config/");
+            Sistema.USUARIO = await Services.Sistema.DATABASE.database.Table<Models.Usuario>().FirstOrDefaultAsync();
+
             if (l != null)
             {
                 if (l.Count > 0)

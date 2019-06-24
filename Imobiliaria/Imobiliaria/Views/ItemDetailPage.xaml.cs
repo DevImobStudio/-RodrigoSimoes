@@ -15,6 +15,7 @@ namespace Imobiliaria.Views
     {
         ItemDetailViewModel viewModel { get; set; }
         Inicio inicio { get; set; }
+        Favoritos favoritos { get; set; }
 
         public ItemDetailPage(Inicio inicio , ItemDetailViewModel viewModel)
         {
@@ -26,6 +27,18 @@ namespace Imobiliaria.Views
             viewModel.LoadItemsCommand.Execute(null);
             CarregarDados();
            
+        }
+
+        public ItemDetailPage(Favoritos favoritos, ItemDetailViewModel viewModel)
+        {
+            InitializeComponent();
+            this.favoritos = favoritos;
+            this.viewModel = viewModel;
+            BindingContext = this.viewModel;
+            caroussel.ItemsSource = this.viewModel.Imagens;
+            viewModel.LoadItemsCommand.Execute(null);
+            CarregarDados();
+
         }
         public async void CarregarDados()
         {
@@ -53,7 +66,8 @@ namespace Imobiliaria.Views
                             idImovel = this.viewModel.Imovel.id
 
                         });
-                        CrossToastPopUp.Current.ShowToastMessage("Imovel " + this.viewModel.Imovel.titulo + "adicionado com sucesso", Plugin.Toast.Abstractions.ToastLength.Long);
+
+                        CrossToastPopUp.Current.ShowToastMessage("Imovel " + this.viewModel.Imovel.titulo + " adicionado com sucesso", Plugin.Toast.Abstractions.ToastLength.Long);
                     }
                     catch (Exception ex)
                     {
@@ -70,13 +84,18 @@ namespace Imobiliaria.Views
         }
         private void BtnTelefone_Clicked(object sender, EventArgs e)
         {
-            Sistema.Contato("+552112991734478");
+            Sistema.Contato();
         }
 
         private async void EnvioMaterial_Clicked(object sender, EventArgs e)
         {
              this.inicio.CarregarPaginaEnvioMaterial(this.viewModel.Imovel);
 
+        }
+
+        private void Map_Clicked(object sender, EventArgs e)
+        {
+           Navigation.PushAsync(new DetalheMaps(this.viewModel.Imovel));
         }
 
 
@@ -88,6 +107,8 @@ namespace Imobiliaria.Views
 
           }
           */
+
+
 
 
 

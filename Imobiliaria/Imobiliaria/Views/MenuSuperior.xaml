@@ -49,6 +49,7 @@
             CornerRadius="0"
             Grid.ColumnSpan="2"
             Grid.Row="1" 
+            Clicked="Institucional_Clicked"
             HorizontalOptions="FillAndExpand" 
             VerticalOptions="StartAndExpand"
             BackgroundColor="Transparent"/>

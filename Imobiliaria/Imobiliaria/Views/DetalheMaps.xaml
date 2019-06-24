@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
+             
+             xmlns:fee="clr-namespace:SegmentedControl.FormsPlugin.Abstractions;assembly=SegmentedControl.FormsPlugin.Abstractions"
+           
+             x:Class="Imobiliaria.Views.DetalheMaps">
+    <ContentPage.Content>
+        <StackLayout>
+
+
+           
+  
+    
+            <maps:Map
+                    x:Name="Mapa" 
+                    MapType="Street" 
+                    VerticalOptions="FillAndExpand" 
+                    IsShowingUser="true"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                   
+                   
+
+                    >
+                <maps:Map.ItemTemplate>
+                    <DataTemplate >
+
+
+
+                    </DataTemplate>
+                </maps:Map.ItemTemplate>
+
+
+            </maps:Map>
+            <fee:SegmentedControl    
+                                 
+                                  x:Name="PageSelected"     
+                                  DisabledColor="{StaticResource colorPrimary}" 
+                                  SelectedTextColor="{StaticResource colorClara}" 
+                                  ValueChanged="SegControl_ValueChanged" 
+                                  TintColor="{StaticResource colorPrimary}" 
+                                  SelectedSegment="0"  >
+                <fee:SegmentedControl.Children  >
+                    <fee:SegmentedControlOption Text="Mapa"   />
+                    <fee:SegmentedControlOption Text="Satélite" />
+                </fee:SegmentedControl.Children>
+            </fee:SegmentedControl>
+
+           
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

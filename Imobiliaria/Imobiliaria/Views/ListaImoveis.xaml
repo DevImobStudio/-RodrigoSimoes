@@ -23,14 +23,16 @@
                                 <ColumnDefinition Width="0.4*" />
                                 <ColumnDefinition Width="0.6*"/>
                             </Grid.ColumnDefinitions>
-                           
+                          
+                               
 
                             <Image 
                                 Source="{Binding imagem}" 
-                                Aspect="AspectFill" 
+                                Aspect="AspectFit" 
                                 Grid.Column="0" 
-                                WidthRequest="40"
                                 HeightRequest="40"
+                                WidthRequest="40"
+                               
                                 />
                             <StackLayout 
                                 Grid.Column="1"

@@ -12,10 +12,17 @@ using Imobiliaria.Services;
 using Xamarin.Auth;
 using Newtonsoft.Json.Linq;
 using Xamarin.Facebook;
+using Android.Content.PM;
 
 [assembly: ExportRenderer(typeof(ProviderLoginPage), typeof(LoginRender))]
 namespace Imobiliaria.Droid
 {
+    [Activity(Label = "CustomUrlSchemeInterceptorActivity", NoHistory = true, LaunchMode = LaunchMode.SingleTop)]
+    [IntentFilter(
+       new[] { Intent.ActionView },
+       Categories = new[] { Intent.CategoryDefault, Intent.CategoryBrowsable },
+       DataSchemes = new[] { "759941497164-sihog7v5sf14lq30r76nr9tmgsf6e9nh.apps.googleusercontent.com" },
+       DataPath = "/oauth2redirect")]
     public class LoginRender : PageRenderer
     {
         bool showLogin = true;

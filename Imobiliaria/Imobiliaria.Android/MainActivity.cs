@@ -13,6 +13,7 @@ using CarouselView.FormsPlugin.Android;
 using Xamarin.Facebook;
 using Xamarin.Forms;
 using Xamarin.Facebook.Login;
+using Xamarin.Auth;
 
 namespace Imobiliaria.Droid
 {
@@ -26,8 +27,8 @@ namespace Imobiliaria.Droid
             Plugin.InputKit.Platforms.Droid.Config.Init(this, savedInstanceState);
             FacebookSdk.SdkInitialize(this);
             FacebookSdk.ApplicationId = "456228191618171";
-            
-       //     global::Xamarin.Auth.Presenters.XamarinAndroid.AuthenticationConfiguration.Init(this, savedInstanceState);
+
+            Xamarin.Auth.Presenters.XamarinAndroid.AuthenticationConfiguration.Init(this, savedInstanceState);
             Plugin.Iconize.Iconize.With(new Plugin.Iconize.Fonts.FontAwesomeBrandsModule())
                                   .With(new Plugin.Iconize.Fonts.FontAwesomeRegularModule())
                                   .With(new Plugin.Iconize.Fonts.FontAwesomeSolidModule());
@@ -36,10 +37,11 @@ namespace Imobiliaria.Droid
 
             CarouselViewRenderer.Init();
             Forms.SetFlags("FastRenderers_Experimental");
-            global::Xamarin.Forms.Forms.SetFlags("Shell_Experimental", "Visual_Experimental", "CollectionView_Experimental");
+            Forms.SetFlags("Shell_Experimental", "Visual_Experimental", "CollectionView_Experimental");
             Xamarin.FormsGoogleMaps.Init(this, savedInstanceState);
-            global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
-
+            CustomTabsConfiguration.CustomTabsClosingMessage = null;
+            Forms.Init(this, savedInstanceState);
+           
 
             if ((ContextCompat.CheckSelfPermission(this, Manifest.Permission.AccessCoarseLocation) != Permission.Granted)
                  || (ContextCompat.CheckSelfPermission(this, Manifest.Permission.AccessFineLocation) != Permission.Granted)

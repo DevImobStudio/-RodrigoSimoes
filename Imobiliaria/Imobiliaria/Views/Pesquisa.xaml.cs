@@ -224,7 +224,9 @@ namespace Imobiliaria.Views
          //   Busca.Text = "";
 
             this.Navigation.PopAsync();
-       
+            this.Inicio.CarregarPagina();
+
+
         }
 
         public void SetarBairro(List<Opcao> opcaos)

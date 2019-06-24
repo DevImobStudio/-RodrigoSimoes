@@ -21,8 +21,10 @@ namespace Imobiliaria.Views
         Inicio Inicio { get; set; }
 		public ListaImoveis(Inicio Inicio)
 		{
-			InitializeComponent ();
 
+
+			InitializeComponent ();
+            
             this.Inicio = Inicio;
             BindingContext = this.Inicio.viewModel;
 
@@ -69,7 +71,7 @@ namespace Imobiliaria.Views
 
         private void Contato_Clicked(object sender, EventArgs e)
         {
-            Sistema.Contato("+552112991734478");
+            Sistema.Contato();
         }
 
         private async void Favoritos_Clicked(object sender, EventArgs e)
@@ -89,7 +91,7 @@ namespace Imobiliaria.Views
                             idImovel = objeto.id
 
                         });
-                        CrossToastPopUp.Current.ShowToastMessage("Imovel "+ objeto.titulo + "adicionado com sucesso", Plugin.Toast.Abstractions.ToastLength.Long);
+                        CrossToastPopUp.Current.ShowToastMessage("Imovel "+ objeto.titulo + " adicionado com sucesso", Plugin.Toast.Abstractions.ToastLength.Long);
                     }
                     catch (Exception ex)
                     {

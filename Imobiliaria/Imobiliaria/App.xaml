@@ -16,13 +16,15 @@
             <Color x:Key="colorTelas">#e1e5e8</Color>
 
             <Color x:Key="colorClara">#fcfcfc</Color>
+            
+            <x:Int16 x:Key="IHeight">40</x:Int16>
+            <x:Int16 x:Key="IWidth">40</x:Int16>
 
             <Style TargetType="NavigationPage">
                 <Setter Property="BarBackgroundColor" Value="{StaticResource colorPrimary}" />
                 <Setter Property="BarTextColor" Value="White" />
             </Style>
 
-         
 
 
         </ResourceDictionary>
