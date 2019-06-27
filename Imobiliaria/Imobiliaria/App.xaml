@@ -6,7 +6,7 @@
         <ResourceDictionary>
             <!--Global Styles-->
             <Color x:Key="NavigationPrimary">#1b4000</Color>
-            <Color x:Key="colorPrimary">#ab4063</Color>
+            <Color x:Key="colorPrimary">#1E3246</Color>
             <Color x:Key="colorPrimaryDark">#222e38</Color>
             <Color x:Key="colorAccent">#1b4063</Color>
 

@@ -32,54 +32,62 @@ namespace Imobiliaria.Views
         }
         private async void LoadFavoritos()
         {
-            try
-            {
-                List<Models.Favoritos> favoritos = await Services.Sistema.DATABASE.database.Table<Models.Favoritos>().ToListAsync();
-                List<Models.Imovel> imovels = await Services.Sistema.RESTAPI.getAsync<List<Models.Imovel>>("");
-                List<Models.Imovel> imovelsFavoritos = new List<Models.Imovel>();
-             
-                foreach(var i in favoritos)
+          
+                try
                 {
-                    Models.Imovel imovel = imovels.Where(p => p.id == i.idImovel).FirstOrDefault();
-                    if (imovel != null)
+                List<Models.Favoritos> favoritos = new List<Models.Favoritos>();
+                if (Sistema.USUARIO != null)
+                {
+                    favoritos = await Services.Sistema.DATABASE.database.Table<Models.Favoritos>().Where(p => p.idUsuario == Sistema.USUARIO.cod).ToListAsync();
+                }
+
+                
+                    List<Models.Imovel> imovels = await Services.Sistema.RESTAPI.getAsync<List<Models.Imovel>>("");
+                    List<Models.Imovel> imovelsFavoritos = new List<Models.Imovel>();
+
+                    foreach (var i in favoritos)
                     {
-                        imovelsFavoritos.Add(imovel);
-                    }
-                    else
-                    {
-                        imovelsFavoritos.Add(new Models.Imovel()
+                        Models.Imovel imovel = imovels.Where(p => p.id == i.idImovel).FirstOrDefault();
+                        if (imovel != null)
                         {
-                            id = i.idImovel,
-                            titulo = "Indisponível"
-                        });
+                            imovelsFavoritos.Add(imovel);
+                        }
+                        else
+                        {
+                            imovelsFavoritos.Add(new Models.Imovel()
+                            {
+                                id = i.idImovel,
+                                titulo = "Indisponível"
+                            });
+                        }
+
                     }
-                   
-                }
-                ItemsListView.ItemsSource = imovelsFavoritos;
-                BindingContext = imovelsFavoritos;
+                    ItemsListView.ItemsSource = imovelsFavoritos;
+                    BindingContext = imovelsFavoritos;
 
-                if (imovelsFavoritos.Count < 1)
-                {
-                    var Configuracao = new Configuracao();
-                    var LayoutVazio = new StackLayout();
-                    var lblListaVazia = new Label
+                    if (imovelsFavoritos.Count < 1)
                     {
-                        Text = "Nenhum imóvel favorito definido",
-                        TextColor = Color.FromHex(Services.Sistema.CONFIG.cor_padrao),
-                        FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
-                        VerticalOptions = LayoutOptions.CenterAndExpand,
-                        HorizontalOptions = LayoutOptions.CenterAndExpand
-                    };
-                    LayoutVazio.Children.Add(lblListaVazia);
-                    Content = LayoutVazio;
+                        var Configuracao = new Configuracao();
+                        var LayoutVazio = new StackLayout();
+                        var lblListaVazia = new Label
+                        {
+                            Text = "Nenhum imóvel favorito definido",
+                            TextColor = Color.FromHex(Services.Sistema.CONFIG.cor_padrao),
+                            FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
+                            VerticalOptions = LayoutOptions.CenterAndExpand,
+                            HorizontalOptions = LayoutOptions.CenterAndExpand
+                        };
+                        LayoutVazio.Children.Add(lblListaVazia);
+                        Content = LayoutVazio;
+                    }
                 }
-            
+                catch (Exception on)
+                {
 
-            }
-            catch(Exception on)
-            {
-
-            }
+                }
+          
+           
+           
            
         }
         protected async override void OnAppearing()
@@ -109,6 +117,7 @@ namespace Imobiliaria.Views
         public void Bind()
         {
             InitializeComponent();
+            LoadFavoritos();
         }
 
 
@@ -138,7 +147,7 @@ namespace Imobiliaria.Views
             var objeto = ((sender as Button).CommandParameter) as Imovel;
             if (objeto != null)
             {
-                var favorito = await Sistema.DATABASE.database.Table<Models.Favoritos>().Where(p => p.idImovel == objeto.id).FirstOrDefaultAsync();
+                var favorito = await Sistema.DATABASE.database.Table<Models.Favoritos>().Where(p => p.idImovel == objeto.id && Sistema.USUARIO.cod == p.idUsuario).FirstOrDefaultAsync();
                 if (favorito != null)
                 {
                     try

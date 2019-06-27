@@ -12,9 +12,10 @@ namespace Imobiliaria.Views
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Erro : ContentPage
 	{
-		public Erro ()
+		public Erro (string mensagem)
 		{
 			InitializeComponent ();
+            Mensagem1.Text = mensagem;
 		}
 	}
 }

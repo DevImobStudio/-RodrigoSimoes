@@ -53,7 +53,16 @@ namespace Imobiliaria.Views
 
         private void SegControl_ValueChanged(object sender, SegmentedControl.FormsPlugin.Abstractions.ValueChangedEventArgs e)
         {
+            switch (e.NewValue)
+            {
+                case 0:
+                    Mapa.MapType = MapType.Street;
+                    break;
+                case 1:
+                    Mapa.MapType = MapType.Satellite;
+                    break;
 
+            }
         }
     }
 }

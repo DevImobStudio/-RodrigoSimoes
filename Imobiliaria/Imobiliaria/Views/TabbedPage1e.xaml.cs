@@ -49,7 +49,16 @@ namespace Imobiliaria.Views
                         this.Inicio.carregarPaginaInicial();
                         break;
                     case 1:
-                        this.Favoritos.Bind();
+                        if (Sistema.USUARIO != null)
+                        {
+                            this.Favoritos.Bind();
+                        }
+                         else
+                        {
+                            CrossToastPopUp.Current.ShowToastMessage("Faça o login primeiro para ver seus imóveis no favoritos");
+                            OAuthConfig.IndexPage = 1;
+                            Sistema.TABBEDPAGE.CurrentPage = Sistema.TABBEDPAGE.Entrar;
+                        }
                         break;
                     case 2:
                         this.Atendimento.Bind();
@@ -66,6 +75,25 @@ namespace Imobiliaria.Views
         public void Bind()
         {
             InitializeComponent();
+        }
+
+        public void trocarPagina()
+        {
+            switch (OAuthConfig.IndexPage)
+            {
+                case 0:
+                    this.CurrentPage = Inicio;
+                    break;
+                case 1:
+                    this.CurrentPage = Favoritos;
+                    break;
+                case 2:
+                    this.CurrentPage = Atendimento;
+                    break;
+                case 3:
+                    this.CurrentPage = Entrar;
+                    break;
+            }
         }
 
 

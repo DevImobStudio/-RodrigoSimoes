@@ -76,36 +76,48 @@ namespace Imobiliaria.Views
 
         private async void Favoritos_Clicked(object sender, EventArgs e)
         {
-            var objeto = ((sender as Button).CommandParameter) as Imovel;
-            if (objeto != null)
+            if (Sistema.USUARIO != null)
             {
-                
-                var favorito = Inicio.viewModel.favoritos.Where(p => p.idImovel == objeto.id).FirstOrDefault();
-                if (favorito == null)
+                var objeto = ((sender as Button).CommandParameter) as Imovel;
+                if (objeto != null)
                 {
-                    try
+
+                    var favorito = Inicio.viewModel.favoritos.Where(p => p.idImovel == objeto.id && p.idUsuario == Sistema.USUARIO.cod).FirstOrDefault();
+                    if (favorito == null)
                     {
-                        await Sistema.DATABASE.database.InsertAsync(new Models.Favoritos()
+                        try
                         {
+                            await Sistema.DATABASE.database.InsertAsync(new Models.Favoritos()
+                            {
+                                idUsuario = Sistema.USUARIO.cod,
+                                idImovel = objeto.id
 
-                            idImovel = objeto.id
+                            });
+                            CrossToastPopUp.Current.ShowToastMessage("Imovel " + objeto.titulo + " adicionado com sucesso", Plugin.Toast.Abstractions.ToastLength.Long);
+                        }
+                        catch (Exception ex)
+                        {
+                            CrossToastPopUp.Current.ShowToastMessage(ex.Message, Plugin.Toast.Abstractions.ToastLength.Long);
+                        }
 
-                        });
-                        CrossToastPopUp.Current.ShowToastMessage("Imovel "+ objeto.titulo + " adicionado com sucesso", Plugin.Toast.Abstractions.ToastLength.Long);
                     }
-                    catch (Exception ex)
+                    else
                     {
-                        CrossToastPopUp.Current.ShowToastMessage(ex.Message, Plugin.Toast.Abstractions.ToastLength.Long);
+                        CrossToastPopUp.Current.ShowToastMessage("Imovel " + objeto.titulo + "já pertence ao seus favoritos", Plugin.Toast.Abstractions.ToastLength.Long);
                     }
-                   
+
                 }
-                else
-                {
-                    CrossToastPopUp.Current.ShowToastMessage("Imovel " + objeto.titulo + "já pertence ao seus favoritos", Plugin.Toast.Abstractions.ToastLength.Long);
-                }
-                
+               
             }
-           
+            else
+            {
+                OAuthConfig.IndexPage = 0;
+                CrossToastPopUp.Current.ShowToastMessage("Faça o login primeiro para adicionar o imóvel ao seus favoritos");
+                Sistema.TABBEDPAGE.CurrentPage = Sistema.TABBEDPAGE.Entrar;
+
+            }
+
+
         }
        
     }

@@ -53,7 +53,11 @@ namespace Imobiliaria.ViewModels
                
                 Imovels.Clear();
                 LstImoveis =  await Services.Sistema.RESTAPI.getAsync<List<Imovel>>("");
-                favoritos = await Services.Sistema.DATABASE.database.Table<Models.Favoritos>().ToListAsync();
+                if (Sistema.USUARIO != null)
+                {
+                    favoritos = await Services.Sistema.DATABASE.database.Table<Models.Favoritos>().Where(p => p.idUsuario == Sistema.USUARIO.cod).ToListAsync();
+                }
+               
                // Imovels = new ObservableCollection<Imovel>(imo as List<Imovel>);
                 Geocoder coder = new Geocoder();
                 foreach (var i in LstImoveis)

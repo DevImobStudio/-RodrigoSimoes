@@ -22,13 +22,18 @@ namespace Imobiliaria.Views
 		{
 			InitializeComponent ();
             this.imovel = imovel;
-		}
+            this.Nome.Text = Services.Sistema.USUARIO.nome;
+            this.Email.Text = Services.Sistema.USUARIO.email;
+            this.Whatsapp.Text = Services.Sistema.USUARIO.whatsapp;
+        }
 
        
 
         private async void Enviar_Clicked(object sender, EventArgs e)
         {
-            //Sample post to a restful api url, remember to use the namespace System.Net.Http for HttpClient()
+            Services.Sistema.USUARIO.whatsapp = this.Whatsapp.Text;
+            Services.Sistema.DATABASE.database.UpdateAsync(Services.Sistema.USUARIO);
+       
             var myHttpClient = new HttpClient();
             var uri = new Uri("https://www.api.rodrigosimoesimoveis.com.br/post/lead/");
 

@@ -16,6 +16,7 @@ namespace Imobiliaria.Models
         public string gender { get; set; }
         public string id { get; set; }
         public string name { get; set; }
+        public string whatsapp { get; set; }
         public string link { get; set; }
         public string picture { get; set; }
         public string TwitterId { get; set; }

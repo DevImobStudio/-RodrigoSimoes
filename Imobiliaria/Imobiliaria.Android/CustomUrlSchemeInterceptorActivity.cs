@@ -14,11 +14,17 @@ namespace Imobiliaria.Droid
                 new[] { Intent.ActionView },
                 Categories = new[] { Intent.CategoryDefault, Intent.CategoryBrowsable },
 
+       DataHosts = new[]
+                    {
+                        "localhost",
+                        "authorize",                // Facebook in fb1889013594699403://authorize 
+					},
 
         DataSchemes = new[]
                     {
                         "com.googleusercontent.apps.759941497164-n4813q2uu99ij9ravbn8erl5uss3of78",
                         "com.imobstudio.Imobiliaria",
+                        "fb334399370606956",
                         /*
                         "urn:ietf:wg:oauth:2.0:oob",
                         "urn:ietf:wg:oauth:2.0:oob.auto",
@@ -30,8 +36,17 @@ namespace Imobiliaria.Droid
                         "https://[::1]:PORT", 
                         */
                     },
-            
-                DataPath = "/oauth2redirect")]
+
+
+                     DataPaths = new[]
+                    {
+                        "/",                        // Facebook
+						"/oauth2redirect",          // Google
+                        "/oauth2redirectpath",      // MeetUp
+					},
+            AutoVerify = true
+        )]
+
         public class CustomUrlSchemeInterceptorActivity : Activity
         {
             protected override void OnCreate(Bundle savedInstanceState)

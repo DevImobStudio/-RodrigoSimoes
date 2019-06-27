@@ -58,7 +58,7 @@
                         VerticalOptions="Center" 
                         HorizontalOptions="Center" />
                 </Grid>
-                <Button x:Name="FaceBook" TextColor="Transparent" Text="FaceBook" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0" Clicked="LoginClick"  BackgroundColor="Transparent"/>
+                <Button x:Name="FaceBook" TextColor="Transparent" Text="FaceBook" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0" Clicked="LoginClickFacebook"  BackgroundColor="Transparent"/>
             </Grid>
 
 

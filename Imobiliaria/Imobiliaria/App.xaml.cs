@@ -28,7 +28,7 @@ namespace Imobiliaria
 
             if (current != NetworkAccess.Internet)
             {
-                MainPage = new  Erro();
+                MainPage = new  Erro("Para usar este aplicativo é necessário estar conectado a internet.");
             //    System.Diagnostics.Process.GetCurrentProcess().Kill();
             }
             else
@@ -40,9 +40,19 @@ namespace Imobiliaria
                 Dados();
                 InitializeComponent();
 
-             
+                try
+                {
+                    GerarConfiguracao();
+                }
+                catch (Exception ex)
+                {
+                    MainPage = new Erro("Não foi possível acessar os dados!");
+                    return;
+                }
+                   
+            
 
-                GerarConfiguracao();
+               
                 // page = new MasterDetailPage1();
                 page = new TabbedPage1();
                 Services.Sistema.TABBEDPAGE = page;

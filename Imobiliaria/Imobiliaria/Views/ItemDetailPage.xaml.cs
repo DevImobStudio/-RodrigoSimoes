@@ -49,36 +49,46 @@ namespace Imobiliaria.Views
         {
             Sistema.WhatsApp(this.viewModel.Imovel);
         }
+
         private async void BtnFavoritos_Clicked(object sender, EventArgs e)
         {
-            
-            if (this.viewModel.Imovel != null)
-            {
-
-                var favorito = await Sistema.DATABASE.database.Table<Models.Favoritos>().Where(p => p.idImovel == this.viewModel.Imovel.id).FirstOrDefaultAsync();
-                if (favorito == null)
+            if (Sistema.USUARIO != null) {
+                if (this.viewModel.Imovel != null)
                 {
-                    try
+
+                    var favorito = await Sistema.DATABASE.database.Table<Models.Favoritos>().Where(p => p.idImovel == this.viewModel.Imovel.id && p.idUsuario == Sistema.USUARIO.cod).FirstOrDefaultAsync();
+                    if (favorito == null)
                     {
-                        await Sistema.DATABASE.database.InsertAsync(new Models.Favoritos()
+                        try
                         {
+                            await Sistema.DATABASE.database.InsertAsync(new Models.Favoritos()
+                            {
+                                idUsuario = Sistema.USUARIO.cod,
+                                idImovel = this.viewModel.Imovel.id
 
-                            idImovel = this.viewModel.Imovel.id
+                            });
 
-                        });
+                            CrossToastPopUp.Current.ShowToastMessage("Imovel " + this.viewModel.Imovel.titulo + " adicionado com sucesso", Plugin.Toast.Abstractions.ToastLength.Long);
+                        }
+                        catch (Exception ex)
+                        {
+                            CrossToastPopUp.Current.ShowToastMessage(ex.Message, Plugin.Toast.Abstractions.ToastLength.Long);
+                        }
 
-                        CrossToastPopUp.Current.ShowToastMessage("Imovel " + this.viewModel.Imovel.titulo + " adicionado com sucesso", Plugin.Toast.Abstractions.ToastLength.Long);
                     }
-                    catch (Exception ex)
+                    else
                     {
-                        CrossToastPopUp.Current.ShowToastMessage(ex.Message, Plugin.Toast.Abstractions.ToastLength.Long);
+                        CrossToastPopUp.Current.ShowToastMessage("Imovel " + this.viewModel.Imovel.titulo + "já pertence ao seus favoritos", Plugin.Toast.Abstractions.ToastLength.Long);
                     }
+                }
+               
 
-                }
-                else
-                {
-                    CrossToastPopUp.Current.ShowToastMessage("Imovel " + this.viewModel.Imovel.titulo + "já pertence ao seus favoritos", Plugin.Toast.Abstractions.ToastLength.Long);
-                }
+            }
+            else
+            {
+                OAuthConfig.IndexPage = 0;
+                CrossToastPopUp.Current.ShowToastMessage("Faça o login primeiro para adicionar o imóvel ao seus favoritos");
+                Sistema.TABBEDPAGE.CurrentPage = Sistema.TABBEDPAGE.Entrar;
 
             }
         }

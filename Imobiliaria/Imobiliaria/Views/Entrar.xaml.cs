@@ -23,7 +23,7 @@ namespace Imobiliaria.Views
         public Entrar()
         {
             this.Bind();
-           
+
             this.SlideMenu = Services.Sistema.menuSuperior;
         }
 
@@ -54,11 +54,30 @@ namespace Imobiliaria.Views
                 Email.Text = Sistema.USUARIO.email;
                 Image.Source = new UriImageSource { CachingEnabled = true, Uri = new Uri(Sistema.USUARIO.picture) };
             }
-            InitializeComponent();
         }
 
+        void LoginClickFacebook(object sender, EventArgs args)
+        {
+            Button btncontrol = (Button)sender;
+            string providername = btncontrol.Text;
+            var Authenticator = new OAuth2Authenticator(
+                        clientId: "334399370606956",
+                        scope: "",
+                        authorizeUrl: new Uri("https://m.facebook.com/dialog/oauth/"), 
+                        redirectUrl: new Uri("fb334399370606956://authorize"),
+                        isUsingNativeUI: true
+                         );
 
-        void LoginClick(object sender, EventArgs args)
+            Authenticator.Completed += OnAuthCompleted;
+            Authenticator.Error += OnAuthError;
+            AuthenticationState.Authenticator = Authenticator;
+            var presenter = new Xamarin.Auth.Presenters.OAuthLoginPresenter();
+            presenter.Login(Authenticator);
+    }
+
+    
+    
+    void LoginClick(object sender, EventArgs args)
         {
             Button btncontrol = (Button)sender;
             string providername = btncontrol.Text;
@@ -122,17 +141,25 @@ namespace Imobiliaria.Views
                    
                     string userJson = await response.GetResponseTextAsync();
                     user = JsonConvert.DeserializeObject<Usuario>(userJson);
-                    await Sistema.DATABASE.database.QueryAsync<Usuario>("UPDATE Usuario set logado = 1");
+                    await Sistema.DATABASE.database.QueryAsync<Usuario>("UPDATE Usuario set logado = 0");
                     user.logado = true;
                     await Sistema.DATABASE.database.InsertAsync(user);
                     Sistema.USUARIO = user;
-                    this.Bind();
+                    Services.Sistema.TABBEDPAGE.trocarPagina();
 
                 }
 
                 
             }
         }
+
+        protected async override void OnAppearing()
+        {
+            base.OnAppearing();
+            this.Bind();
+
+        }
+
 
         void OnAuthError(object sender, AuthenticatorErrorEventArgs e)
             {

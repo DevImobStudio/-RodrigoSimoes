@@ -86,5 +86,10 @@ namespace Imobiliaria.Views
         {
             Sistema.Contato();
         }
+
+        private void User_Clicked(object sender, EventArgs e)
+        {
+            Sistema.TABBEDPAGE.CurrentPage = Sistema.TABBEDPAGE.Entrar;
+        }
     }
 }

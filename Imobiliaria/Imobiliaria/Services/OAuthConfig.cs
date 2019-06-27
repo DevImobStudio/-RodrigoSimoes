@@ -10,9 +10,10 @@ namespace Imobiliaria.Services
     public class OAuthConfig
     {
 
-        public static Entrar _HomePage;
+        public static Page _HomePage;
         public static NavigationPage _NavigationPage;
         public static TabbedPage1 _TabbedPage;
+        public static int IndexPage;
         public static Usuario User;
 
         public static Action SuccessfulLoginAction

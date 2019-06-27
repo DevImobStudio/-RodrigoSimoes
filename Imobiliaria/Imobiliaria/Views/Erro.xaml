@@ -8,8 +8,8 @@
         <StackLayout Margin="20" VerticalOptions="Center">
             <iconize:IconLabel Text="far-times-circle" TextColor="Red" HorizontalOptions="Center" FontSize="60"/>
             
-            <Label Text="Para usar este aplicativo é necessário estar conectado a internet." FontSize="Medium" />
-            <Label Text=" Verifique sua conexão com a internet." FontSize="Medium" />
+            <Label x:Name="Mensagem1" Text="Para usar este aplicativo é necessário estar conectado a internet." FontSize="Medium" />
+            <Label x:Name="Mensagem2" Text=" Verifique sua conexão com a internet." FontSize="Medium" />
            
         </StackLayout>
     </ContentPage.Content>
