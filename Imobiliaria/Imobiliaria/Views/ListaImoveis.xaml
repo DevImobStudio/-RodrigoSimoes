@@ -94,10 +94,11 @@
                                     Grid.Column="1"
                                     Padding="0"
                                     FontSize="Medium"
-                                    Text="fas-star"   
+                                    Text="fas-heart"   
+                                    
                                     HorizontalOptions="Center"
                                     CornerRadius="5"
-                                    TextColor="{StaticResource colorClara}"
+                                    TextColor="{Binding favorito,TargetNullValue='White'}"
                                     BackgroundColor="{StaticResource colorPrimary}"
                                     Clicked="Favoritos_Clicked"
                                     CommandParameter="{Binding .}"

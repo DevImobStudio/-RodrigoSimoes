@@ -40,7 +40,7 @@ namespace Imobiliaria.Views
             //    logo.Source = new UriImageSource { CachingEnabled = false, Uri = new Uri("https://www.rodrigosimoesimoveis.com.br/uploads/www.rodrigosimoesimoveis.com.br/logotipo.png")};
 
             ForceLayout();
-            this.CurrentPageChanged += (object sender, EventArgs e) => {
+            this.CurrentPageChanged += async (object sender, EventArgs e) => {
 
                 var i = this.Children.IndexOf(this.CurrentPage);
                 switch (i)
@@ -49,6 +49,7 @@ namespace Imobiliaria.Views
                         this.Inicio.carregarPaginaInicial();
                         break;
                     case 1:
+                        Sistema.USUARIO = await  Services.Sistema.DATABASE.database.Table<Models.Usuario>().Where(p => p.logado).FirstOrDefaultAsync();
                         if (Sistema.USUARIO != null)
                         {
                             this.Favoritos.Bind();
@@ -65,17 +66,29 @@ namespace Imobiliaria.Views
                         break;
                     case 3:
                         this.Entrar.Bind();
+                        this.Inicio.viewModel.LoadItemsCommand.Execute(null);
                         break;
                 }
 
             };
 
+           
+
+
         }
+
+       
 
         public void Bind()
         {
             InitializeComponent();
         }
+
+        private void ButtonContentPage_OnClicked(object sender, EventArgs e)
+        {
+            MessagingCenter.Send(this, "Teste");
+        }
+
 
         public void trocarPagina()
         {
@@ -120,10 +133,16 @@ namespace Imobiliaria.Views
         protected async override void OnCurrentPageChanged()
         {
             base.OnCurrentPageChanged();
+            
             this.menuContainerPage.HideMenu();
             this.show = false;
         }
 
-     
+
+        
+        
+
+
+
     }
 }

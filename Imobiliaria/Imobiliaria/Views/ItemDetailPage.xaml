@@ -365,7 +365,7 @@
                     Padding="0"
                     Clicked="BtnFavoritos_Clicked"
                     FontSize="Micro"
-                    Text="fas-star"   
+                    Text="fas-heart"   
                     HorizontalOptions="Center"
                     CornerRadius="5"
                     HeightRequest="40"

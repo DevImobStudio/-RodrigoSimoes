@@ -73,6 +73,7 @@
         <Button 
             BorderColor="{StaticResource colorPrimary}"
              BorderWidth="0.2"
+            Clicked="WhatsApp_Clicked"
             CornerRadius="0"
             Grid.ColumnSpan="2"
             Grid.Row="2" 
@@ -99,6 +100,7 @@
             BorderColor="{StaticResource colorPrimary}"
             BorderWidth="0.2"
             CornerRadius="0"
+            Clicked="Contato_Clicked"
             Grid.ColumnSpan="2"
             Grid.Row="3" 
             HorizontalOptions="FillAndExpand" 
@@ -130,7 +132,7 @@
                     <ColumnDefinition Width="0.13*"/>
                 </Grid.ColumnDefinitions>
                 <Label  
-                    Text="Nossas Redes Sociais"
+                    Text="Clique nos ícones e acesse nossas canais de atendimento"
                     HorizontalOptions="CenterAndExpand"
                     VerticalOptions="CenterAndExpand"
                     TextColor="{StaticResource colorPrimary}"

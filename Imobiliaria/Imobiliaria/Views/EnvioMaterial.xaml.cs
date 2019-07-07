@@ -1,4 +1,5 @@
 ﻿using Imobiliaria.Models;
+using Imobiliaria.Services;
 using Plugin.Toast;
 using System;
 using System.Collections.Generic;
@@ -20,11 +21,22 @@ namespace Imobiliaria.Views
 
         public EnvioMaterial (Imovel imovel)
 		{
-			InitializeComponent ();
-            this.imovel = imovel;
-            this.Nome.Text = Services.Sistema.USUARIO.nome;
-            this.Email.Text = Services.Sistema.USUARIO.email;
-            this.Whatsapp.Text = Services.Sistema.USUARIO.whatsapp;
+			InitializeComponent ();            
+            if (Services.Sistema.USUARIO != null)
+            {
+                this.imovel = imovel;
+                this.Nome.Text = Services.Sistema.USUARIO.nome;
+                this.Email.Text = Services.Sistema.USUARIO.email;
+                this.Whatsapp.Text = Services.Sistema.USUARIO.whatsapp;
+            }
+         //   else
+        //    {
+                
+       //         CrossToastPopUp.Current.ShowToastMessage("Faça o login primeiro para ver seus imóveis no favoritos");
+       //         Services.OAuthConfig.IndexPage = 0;
+       //         Services.Sistema.TABBEDPAGE.CurrentPage = Services.Sistema.TABBEDPAGE.Entrar;
+       //     }
+          
         }
 
        
@@ -56,6 +68,7 @@ namespace Imobiliaria.Views
                 if (respContent.Contains("200"))
                 {
                     CrossToastPopUp.Current.ShowToastMessage("Dados enviados com sucesso!");
+                    Sistema.TABBEDPAGE.CurrentPage = Sistema.TABBEDPAGE.Inicio;
                 }
                 else
                 {

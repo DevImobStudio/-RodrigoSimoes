@@ -41,12 +41,12 @@ namespace Imobiliaria.Droid
                     var id = obj["id"].ToString().Replace("\"", "");
                     var name = obj["name"].ToString().Replace("\"", "");
                   
-                    Views.Entrar.ExibirResposta(string.Format("Olá {0}, seja bem-vindo", name));
+ 
                     
                 }
                 else
                 {
-                    Views.Entrar.ExibirResposta("O usuário Cancelou o login");
+                  
                     
                 }
             };

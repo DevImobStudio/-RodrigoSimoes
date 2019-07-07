@@ -118,7 +118,7 @@
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
 
-                    <Image x:Name="Image" Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" />
+                    <Image  x:Name="Image" Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" WidthRequest="200" HeightRequest="200"/>
                     <Label 
                         Grid.Column="1" 
                         Text="Nome"

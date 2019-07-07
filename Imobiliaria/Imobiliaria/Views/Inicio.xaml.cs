@@ -59,8 +59,6 @@ namespace Imobiliaria.Views
           //  viewModel.LoadItemsCommand.Execute(null);
            // ForceLayout();
 
-
-
         }
 
         public void Bind()
@@ -187,6 +185,7 @@ namespace Imobiliaria.Views
             else
             {
                 pagina.Children.Add(ListaImoveis);
+                viewModel.LoadItemsCommand.Execute(null);
             }
 
             visiblePageSelected(true);

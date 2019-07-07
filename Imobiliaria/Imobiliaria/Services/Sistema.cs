@@ -49,8 +49,8 @@ namespace Imobiliaria.Services
         public static void WhatsApp(Imovel imovel)
         {
             Chat.Open("+55" + Sistema.CONFIG.whatsapp,
-                "Gostaria de mais informações sobre o " + imovel.tipo + " - "
-                + imovel.enfase + " referência: " + imovel.id + " Desde já obrigada!");
+                "Gostaria de mais informações sobre o " + imovel.titulo + 
+                " referência: " + imovel.id + " Desde já obrigada!");
         }
 
         public static void WhatsApp()

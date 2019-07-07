@@ -13,41 +13,26 @@ namespace Imobiliaria.Droid
         [IntentFilter(
                 new[] { Intent.ActionView },
                 Categories = new[] { Intent.CategoryDefault, Intent.CategoryBrowsable },
-
-       DataHosts = new[]
-                    {
-                        "localhost",
-                        "authorize",                // Facebook in fb1889013594699403://authorize 
-					},
-
-        DataSchemes = new[]
+                DataSchemes = new[]
                     {
                         "com.googleusercontent.apps.759941497164-n4813q2uu99ij9ravbn8erl5uss3of78",
                         "com.imobstudio.Imobiliaria",
-                        "fb334399370606956",
-                        /*
-                        "urn:ietf:wg:oauth:2.0:oob",
-                        "urn:ietf:wg:oauth:2.0:oob.auto",
-                        "http://localhost:PORT",
-                        "https://localhost:PORT",
-                        "http://127.0.0.1:PORT",
-                        "https://127.0.0.1:PORT",              
-                        "http://[::1]:PORT", 
-                        "https://[::1]:PORT", 
-                        */
                     },
-
-
-                     DataPaths = new[]
+                DataPaths = new[]
                     {
-                        "/",                        // Facebook
-						"/oauth2redirect",          // Google
-                        "/oauth2redirectpath",      // MeetUp
+                         "/oauth2redirect",          // Google
 					},
+                AutoVerify = true
+        )]
+    [IntentFilter(new[] { Intent.ActionView },
+            Categories = new[] { Intent.CategoryDefault, Intent.CategoryBrowsable },
+            DataSchemes = new[]{"com.imobstudio.Imobiliaria","fb334399370606956",},
+            DataHosts = new[]{"authorize", },               // Facebook in fb1889013594699403://authorize 
+            DataPaths = new[]{"/", },  // Facebook
             AutoVerify = true
         )]
 
-        public class CustomUrlSchemeInterceptorActivity : Activity
+    public class CustomUrlSchemeInterceptorActivity : Activity
         {
             protected override void OnCreate(Bundle savedInstanceState)
             {

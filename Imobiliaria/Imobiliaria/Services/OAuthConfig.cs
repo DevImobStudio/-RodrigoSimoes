@@ -15,6 +15,7 @@ namespace Imobiliaria.Services
         public static TabbedPage1 _TabbedPage;
         public static int IndexPage;
         public static Usuario User;
+        public static string TipoOAuth;
 
         public static Action SuccessfulLoginAction
         {

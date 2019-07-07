@@ -21,6 +21,7 @@ namespace Imobiliaria.Models
         public string categoria { get; set; }
         public string negocio { get; set; }
         private string Preco { get; set; }
+        public string favorito { get; set; }
 
         public string preco_promocional { get; set; }
         public string preco_iptu { get; set; }

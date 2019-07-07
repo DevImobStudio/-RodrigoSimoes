@@ -4,7 +4,6 @@ using System.Linq;
 using CarouselView.FormsPlugin.iOS;
 using Foundation;
 using SegmentedControl.FormsPlugin.iOS;
-using SuaveControls.FloatingActionButton.iOS.Renderers;
 using UIKit;
 
 namespace Imobiliaria.iOS

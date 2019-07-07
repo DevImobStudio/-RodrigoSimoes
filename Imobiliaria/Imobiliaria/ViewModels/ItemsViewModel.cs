@@ -53,6 +53,8 @@ namespace Imobiliaria.ViewModels
                
                 Imovels.Clear();
                 LstImoveis =  await Services.Sistema.RESTAPI.getAsync<List<Imovel>>("");
+                Sistema.USUARIO = await Services.Sistema.DATABASE.database.Table<Models.Usuario>().Where(p => p.logado).FirstOrDefaultAsync();
+                favoritos.Clear();
                 if (Sistema.USUARIO != null)
                 {
                     favoritos = await Services.Sistema.DATABASE.database.Table<Models.Favoritos>().Where(p => p.idUsuario == Sistema.USUARIO.cod).ToListAsync();
@@ -62,7 +64,17 @@ namespace Imobiliaria.ViewModels
                 Geocoder coder = new Geocoder();
                 foreach (var i in LstImoveis)
                 {
-              
+                    if (favoritos != null)
+                    {
+                        if (favoritos.Where(p=> p.idImovel.Equals(i.id)).Count() > 0)
+                        {
+                            i.favorito = "Red";
+                        }
+                        else
+                        {
+                            i.favorito = "White";
+                        }
+                    }
                     Location loc = new Location();
                     var a = await coder.GetPositionsForAddressAsync(i.logradouro + "," + i.bairro + "," + i.cidade + "-" + i.uf + "," + i.cep);
                     if (a.Any())

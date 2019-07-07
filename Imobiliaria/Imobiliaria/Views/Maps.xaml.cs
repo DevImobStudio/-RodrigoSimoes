@@ -24,7 +24,9 @@ namespace Imobiliaria.Views
         public Maps (Inicio Inicio)
 		{
 			InitializeComponent ();
-
+            Mapa.MoveToRegion(MapSpan.FromCenterAndRadius(
+                                    new Position(-23.0860544, -45.7872443),
+                                    Distance.FromMiles(0.5))); 
             this.Inicio = Inicio;
             BindingContext = this.Inicio.viewModel;
             caroussel.ItemsSource = this.Inicio.viewModel.Imovels;

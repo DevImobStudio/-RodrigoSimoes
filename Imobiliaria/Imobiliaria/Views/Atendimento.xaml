@@ -110,7 +110,7 @@
                             <StackLayout>
                                 
                                 <Label  
-                                    Text="Nossas Redes Sociais"
+                                    Text="Clique nos ícones e acesse nossas canais de atendimento"
                                     HorizontalOptions="CenterAndExpand"
                                     TextColor="{StaticResource colorPrimary}"
                                     FontSize="Small"/>

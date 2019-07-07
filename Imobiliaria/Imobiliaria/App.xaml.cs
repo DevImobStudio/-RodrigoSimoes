@@ -22,8 +22,8 @@ namespace Imobiliaria
 
         public App()
         {
-           
 
+            App.Current.Resources["colorPrimaryTransparente"] = Color.FromHex("#1E3246").MultiplyAlpha(0.5);
             var current = Connectivity.NetworkAccess;
 
             if (current != NetworkAccess.Internet)
@@ -97,7 +97,7 @@ namespace Imobiliaria
         async void GerarConfiguracao()
         {
             List<Configuracao> l = await Services.Sistema.RESTAPI.getAsync<List<Configuracao>>("config/");
-            Sistema.USUARIO = await Services.Sistema.DATABASE.database.Table<Models.Usuario>().FirstOrDefaultAsync();
+            Sistema.USUARIO = await Services.Sistema.DATABASE.database.Table<Models.Usuario>().Where(p=> p.logado).FirstOrDefaultAsync();
 
             if (l != null)
             {
@@ -105,6 +105,7 @@ namespace Imobiliaria
                 {
                     Services.Sistema.CONFIG = l[0];
                     App.Current.Resources["colorPrimary"] = Color.FromHex(Services.Sistema.CONFIG.cor_padrao);
+                    App.Current.Resources["colorPrimaryTransparente"] = Color.FromHex(Services.Sistema.CONFIG.cor_padrao).MultiplyAlpha(0.5);
                     App.Current.Resources["colorAccent"] = Color.FromHex(Services.Sistema.CONFIG.cor_padrao);
                     App.Current.Resources["NavigationPrimary"] = Color.FromHex(Services.Sistema.CONFIG.cor_texto);
                     App.Current.Resources["colorPrimaryDark"] = Color.FromHex(Services.Sistema.CONFIG.cor_texto);

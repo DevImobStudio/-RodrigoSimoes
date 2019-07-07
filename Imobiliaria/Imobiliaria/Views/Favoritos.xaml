@@ -5,7 +5,7 @@
              x:Class="Imobiliaria.Views.Favoritos"
              xmlns:iconize="clr-namespace:Plugin.Iconize;assembly=Plugin.Iconize"
              Title="Favoritos"
-             Icon="star.png">
+             Icon="heart.png">
     <ContentPage.Content>
         <StackLayout x:Name="pagina">
             <ListView x:Name="ItemsListView"
@@ -97,7 +97,7 @@
                                     Grid.Column="1"
                                     Padding="0"
                                     FontSize="Medium"
-                                    Text="far-trash-alt"   
+                                    Text="fas-heart"   
                                     HorizontalOptions="Center"
                                     CornerRadius="5"
                                     TextColor="{StaticResource colorClara}"

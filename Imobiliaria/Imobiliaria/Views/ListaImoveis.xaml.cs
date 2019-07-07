@@ -1,6 +1,7 @@
 ﻿using Imobiliaria.Models;
 using Imobiliaria.Services;
 using Imobiliaria.ViewModels;
+using Plugin.Iconize;
 using Plugin.Toast;
 using System;
 using System.Collections.Generic;
@@ -29,6 +30,8 @@ namespace Imobiliaria.Views
             BindingContext = this.Inicio.viewModel;
 
         }
+
+        
 
         async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
         {
@@ -76,13 +79,13 @@ namespace Imobiliaria.Views
 
         private async void Favoritos_Clicked(object sender, EventArgs e)
         {
+            IconButton icon = sender as IconButton;
             if (Sistema.USUARIO != null)
             {
                 var objeto = ((sender as Button).CommandParameter) as Imovel;
                 if (objeto != null)
                 {
-
-                    var favorito = Inicio.viewModel.favoritos.Where(p => p.idImovel == objeto.id && p.idUsuario == Sistema.USUARIO.cod).FirstOrDefault();
+                    var favorito = await Sistema.DATABASE.database.Table<Models.Favoritos>().Where(p => p.idImovel == objeto.id && p.idUsuario == Sistema.USUARIO.cod).FirstOrDefaultAsync();
                     if (favorito == null)
                     {
                         try
@@ -94,6 +97,11 @@ namespace Imobiliaria.Views
 
                             });
                             CrossToastPopUp.Current.ShowToastMessage("Imovel " + objeto.titulo + " adicionado com sucesso", Plugin.Toast.Abstractions.ToastLength.Long);
+                            this.Inicio.viewModel.Imovels[this.Inicio.viewModel.Imovels.IndexOf(objeto)].favorito = "Red";
+                            icon.TextColor = Color.Red;
+
+
+
                         }
                         catch (Exception ex)
                         {
@@ -103,7 +111,7 @@ namespace Imobiliaria.Views
                     }
                     else
                     {
-                        CrossToastPopUp.Current.ShowToastMessage("Imovel " + objeto.titulo + "já pertence ao seus favoritos", Plugin.Toast.Abstractions.ToastLength.Long);
+                        CrossToastPopUp.Current.ShowToastMessage("Imovel " + objeto.titulo + " já pertence ao seus favoritos", Plugin.Toast.Abstractions.ToastLength.Long);
                     }
 
                 }

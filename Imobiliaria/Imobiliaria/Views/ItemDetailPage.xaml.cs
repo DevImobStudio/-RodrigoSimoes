@@ -52,6 +52,7 @@ namespace Imobiliaria.Views
 
         private async void BtnFavoritos_Clicked(object sender, EventArgs e)
         {
+
             if (Sistema.USUARIO != null) {
                 if (this.viewModel.Imovel != null)
                 {
@@ -78,7 +79,7 @@ namespace Imobiliaria.Views
                     }
                     else
                     {
-                        CrossToastPopUp.Current.ShowToastMessage("Imovel " + this.viewModel.Imovel.titulo + "já pertence ao seus favoritos", Plugin.Toast.Abstractions.ToastLength.Long);
+                        CrossToastPopUp.Current.ShowToastMessage("Imovel " + this.viewModel.Imovel.titulo + " já pertence ao seus favoritos", Plugin.Toast.Abstractions.ToastLength.Long);
                     }
                 }
                

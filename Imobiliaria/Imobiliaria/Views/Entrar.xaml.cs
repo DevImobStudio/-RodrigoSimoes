@@ -27,16 +27,7 @@ namespace Imobiliaria.Views
             this.SlideMenu = Services.Sistema.menuSuperior;
         }
 
-        public static void ExibirResposta(string aMensagem)
-        {
-            nome = aMensagem;
-            Sistema.USUARIO = new Models.Usuario();
-            Sistema.USUARIO.nome = nome;
-
-
-
-        }
-
+     
         public void Bind()
         {
             InitializeComponent();
@@ -52,7 +43,11 @@ namespace Imobiliaria.Views
                 Logout.IsVisible = true;
                 Nome.Text = Sistema.USUARIO.name;
                 Email.Text = Sistema.USUARIO.email;
-                Image.Source = new UriImageSource { CachingEnabled = true, Uri = new Uri(Sistema.USUARIO.picture) };
+                if (Sistema.USUARIO.imagem != null)
+                {
+                    Image.Source = new UriImageSource { CachingEnabled = true, Uri = new Uri(Sistema.USUARIO.imagem) };
+                }
+                
             }
         }
 
@@ -60,6 +55,7 @@ namespace Imobiliaria.Views
         {
             Button btncontrol = (Button)sender;
             string providername = btncontrol.Text;
+            OAuthConfig.TipoOAuth = "facebook";
             var Authenticator = new OAuth2Authenticator(
                         clientId: "334399370606956",
                         scope: "",
@@ -81,6 +77,7 @@ namespace Imobiliaria.Views
         {
             Button btncontrol = (Button)sender;
             string providername = btncontrol.Text;
+            OAuthConfig.TipoOAuth = "google";
             /*  OAuthConfig._HomePage = this;
               if (OAuthConfig.User == null)
               {
@@ -88,6 +85,7 @@ namespace Imobiliaria.Views
               }
               */
 
+  
             var Authenticator = new OAuth2Authenticator(
                                     "759941497164-n4813q2uu99ij9ravbn8erl5uss3of78.apps.googleusercontent.com",
                                    null,
@@ -131,19 +129,63 @@ namespace Imobiliaria.Views
             }
 
             Usuario user = null;
+            Response response = null;
             if (e.IsAuthenticated)
             {
                 
-                var request = new OAuth2Request("GET", new Uri("https://www.googleapis.com/oauth2/v2/userinfo"), null, e.Account);
-                var response = await request.GetResponseAsync();
+                if (OAuthConfig.TipoOAuth == "facebook")
+                {
+                    var request = new OAuth2Request("GET", new Uri("https://graph.facebook.com/me?fields=email,name,first_name,last_name,picture"), null, e.Account);
+
+                    response = await request.GetResponseAsync();
+
+                    if (response != null)
+                    {
+
+                        string userJson = await response.GetResponseTextAsync();
+                        user = JsonConvert.DeserializeObject<Usuario>(userJson);
+                        if (user.picture != null)
+                        {
+                            if (user.picture.data != null)
+                            {
+                                user.imagem = user.picture.data.url;
+                            }
+                        }
+                    }
+                    
+                }
+                if (OAuthConfig.TipoOAuth == "google")
+                {
+                    var request = new OAuth2Request("GET", new Uri("https://www.googleapis.com/userinfo/v2/me"), null, e.Account);
+                    response = await request.GetResponseAsync();
+                    if (response != null)
+                    {
+
+                        string userJson = await response.GetResponseTextAsync();
+                        UserGoogle user2 = JsonConvert.DeserializeObject<UserGoogle>(userJson);
+                        user = new Usuario();
+                        user.name = user2.name;
+                        user.imagem = user2.picture;
+                        user.id = user2.id;
+                        user.email = user2.email;
+
+                    }
+
+                }
                 if (response != null)
                 {
-                   
-                    string userJson = await response.GetResponseTextAsync();
-                    user = JsonConvert.DeserializeObject<Usuario>(userJson);
                     await Sistema.DATABASE.database.QueryAsync<Usuario>("UPDATE Usuario set logado = 0");
                     user.logado = true;
-                    await Sistema.DATABASE.database.InsertAsync(user);
+                    Usuario userCadastrados = await Sistema.DATABASE.database.Table<Usuario>().Where(p=> p.id == user.id).FirstOrDefaultAsync();
+                    if (userCadastrados== null)
+                    {
+                        await Sistema.DATABASE.database.InsertAsync(user);
+                    }
+                    else
+                    {
+                        await Sistema.DATABASE.database.UpdateAsync(user);
+                    }
+                   
                     Sistema.USUARIO = user;
                     Services.Sistema.TABBEDPAGE.trocarPagina();
 
@@ -173,8 +215,9 @@ namespace Imobiliaria.Views
             Debug.WriteLine("Authentication error: " + e.Message);
             }
 
-        private void Sair_Clicked(object sender, EventArgs e)
+        private async void Sair_Clicked(object sender, EventArgs e)
         {
+            await Sistema.DATABASE.database.QueryAsync<Usuario>("UPDATE Usuario set logado = 0");
             Sistema.USUARIO = null;
             Login.IsVisible = true;
             Logout.IsVisible = false;
