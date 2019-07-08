@@ -4,7 +4,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Imobiliaria.Views.Favoritos"
              xmlns:iconize="clr-namespace:Plugin.Iconize;assembly=Plugin.Iconize"
-             Title="Favoritos"
+    xmlns:abstractions="clr-namespace:SVG.Forms.Plugin.Abstractions;assembly=SVG.Forms.Plugin.Abstractions"
+    Title="Favoritos"
              Icon="heart.png">
     <ContentPage.Content>
         <StackLayout x:Name="pagina">
@@ -91,25 +92,39 @@
                                 </Grid>
                                 <StackLayout Orientation="Horizontal" BackgroundColor="{StaticResource colorPrimary}" Margin="0,-6,0,0">
 
-
-                                    <iconize:IconButton
+                                    <Button
+                                        VerticalOptions="Center"
+                                        Grid.Column="1"
+                                        Padding="0"
+                                        FontSize="Medium"
+                                        
+                                        ImageSource="heartbrokenB.png"
+                                        HorizontalOptions="Center"
+                                        CornerRadius="5"
+                                        TextColor="{StaticResource colorClara}"
+                                        BackgroundColor="{StaticResource colorPrimary}"
+                                        Clicked="Remove_Clicked"
+                                        CommandParameter="{Binding .}"
+                                        >
+                                    </Button>
+                  <!--                  <iconize:IconButton
                                     VerticalOptions="Center"
                                     Grid.Column="1"
                                     Padding="0"
                                     FontSize="Medium"
-                                    Text="fas-heart"   
+                                    Text="fas-heart-broken"   
                                     HorizontalOptions="Center"
                                     CornerRadius="5"
                                     TextColor="{StaticResource colorClara}"
                                     BackgroundColor="{StaticResource colorPrimary}"
                                     Clicked="Remove_Clicked"
                                     CommandParameter="{Binding .}"
-                                />
+                                />-->
                                     <iconize:IconButton
                                     VerticalOptions="Center"
                                     Grid.Column="2"
                                     Padding="0"
-                                    FontSize="Medium"
+                                    FontSize="large"
                                     Text="fas-phone"   
                                     HorizontalOptions="Center"
                                     CornerRadius="5"
@@ -136,7 +151,7 @@
                                     VerticalOptions="Center"
                                     Grid.Column="4"
                                     Padding="0"
-                                    FontSize="Medium"
+                                    FontSize="Large"
                                     Text="fas-plus-circle"   
                                     HorizontalOptions="Center"
                                     TextColor="{StaticResource colorClara}"

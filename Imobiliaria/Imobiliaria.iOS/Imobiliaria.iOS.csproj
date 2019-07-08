@@ -176,6 +176,9 @@
     <PackageReference Include="Xam.Plugin.Iconize.FontAwesome">
       <Version>3.4.0.100</Version>
     </PackageReference>
+    <PackageReference Include="Xam.Plugins.Forms.Svg">
+      <Version>1.0.0.27</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Auth">
       <Version>1.6.0.4</Version>
     </PackageReference>
