@@ -33,7 +33,8 @@ namespace Imobiliaria.Views
             CarregarDados();
             Mapa.MyLocationEnabled = true;
 
-  
+        
+
 
             try
             {
@@ -44,6 +45,8 @@ namespace Imobiliaria.Views
 
             }
         }
+        
+
        
         public async  void CarregarDados()
         {
@@ -118,7 +121,8 @@ namespace Imobiliaria.Views
          //   Imovel imovel = viewModel.LstImoveis.Where(p => p.id == a.id).FirstOrDefault();
             if (a != null)
             {
-              //  caroussel.Position = this.Inicio.viewModel.LstImoveis.IndexOf(a);
+
+                caroussel.SelectedItem = a;// this.Inicio.viewModel.LstImoveis.IndexOf(a);
                 Mapa.MoveToRegion(MapSpan.FromCenterAndRadius(
                                      new Position(a.localizacao.Latitude, a.localizacao.Longitude),
                                      Distance.FromMiles(0.5)));
@@ -171,13 +175,25 @@ namespace Imobiliaria.Views
 
         }
 
-        private async void Button_Clicked(object sender, EventArgs e)
+        private void Button_Clicked(object sender, EventArgs e)
         {
             var objeto = ((sender as Button).CommandParameter) as Imovel;
             if (objeto != null)
             {
 
-                await this.Inicio.CarregarDetalhes(objeto);
+                this.Inicio.CarregarDetalhes(objeto);
+            }
+        }
+
+        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+           // var args = (TappedEventArgs)e;
+            Imovel objeto =((TappedEventArgs)e).Parameter as Imovel;
+           
+            if (objeto != null)
+            {
+
+                this.Inicio.CarregarDetalhes(objeto);
             }
         }
     }

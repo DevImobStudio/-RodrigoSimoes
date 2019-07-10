@@ -20,12 +20,14 @@ namespace Imobiliaria.Views
         public ItemDetailPage(Inicio inicio , ItemDetailViewModel viewModel)
         {
             InitializeComponent();
+           
             this.inicio = inicio;
             this.viewModel = viewModel;
-            BindingContext = this.viewModel;
-            caroussel.ItemsSource = this.viewModel.Imagens;
-            viewModel.LoadItemsCommand.Execute(null);
-            CarregarDados();
+          //  this.viewModel.LoadItemsCommand.Execute(null);
+            BindingContext = this.inicio.ImovelDetail;
+            caroussel.ItemsSource = this.inicio.ImovelDetail.Imagens;
+            
+           // CarregarDados();
            
         }
 
@@ -36,13 +38,13 @@ namespace Imobiliaria.Views
             this.viewModel = viewModel;
             BindingContext = this.viewModel;
             caroussel.ItemsSource = this.viewModel.Imagens;
-            viewModel.LoadItemsCommand.Execute(null);
-            CarregarDados();
+            this.viewModel.LoadItemsCommand.Execute(null);
+       //     CarregarDados();
 
         }
         public async void CarregarDados()
         {
-            viewModel.LoadItemsCommand.Execute(null);
+            this.viewModel.LoadItemsCommand.Execute(null);
         }
 
         private void BtnWhatsapp_Clicked(object sender, EventArgs e)

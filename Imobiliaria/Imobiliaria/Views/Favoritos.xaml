@@ -48,7 +48,6 @@
                                 FontSize="Default"
                                 TextColor="{StaticResource colorPrimary}"
                                 LineBreakMode="WordWrap" 
-                                Style="{DynamicResource ListItemTextStyle}" 
                              />
                                         <Label 
                                 FontAttributes="Bold"
@@ -56,7 +55,7 @@
                                 FontSize="Micro"
                                 TextColor="{StaticResource colorPrimary}"
                                 LineBreakMode="WordWrap" 
-                                Style="{DynamicResource ListItemTextStyle}" 
+                              
                              />
                                         <Label 
 
@@ -64,14 +63,14 @@
                                 FontSize="Micro"
                                 TextColor="{StaticResource colorPrimary}"
                                 LineBreakMode="WordWrap" 
-                                Style="{DynamicResource ListItemTextStyle}" 
+                               
                              />
 
 
 
                                         <Label
                   
-                                        Text="{Binding preco} " 
+                                        Text="{Binding preco } " 
                                         FontSize="Small"
                                         FontAttributes="Bold"
                                         TextColor="{StaticResource colorPrimary}"  
@@ -97,7 +96,6 @@
                                         Grid.Column="1"
                                         Padding="0"
                                         FontSize="Medium"
-                                        
                                         ImageSource="heartbrokenB.png"
                                         HorizontalOptions="Center"
                                         CornerRadius="5"
@@ -124,7 +122,7 @@
                                     VerticalOptions="Center"
                                     Grid.Column="2"
                                     Padding="0"
-                                    FontSize="large"
+                                    FontSize="Large"
                                     Text="fas-phone"   
                                     HorizontalOptions="Center"
                                     CornerRadius="5"

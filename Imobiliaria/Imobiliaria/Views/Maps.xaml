@@ -59,29 +59,38 @@
                 IsViewCacheEnabled="True"
                 ItemAppearing="Caroussel_ItemAppearing"
                 IsAutoNavigatingAimationEnabled="True"
-             
+                
                 ItemsSource="{Binding Imovels ,Mode=OneWay}" 
                 VerticalOptions="FillAndExpand"
                
                 HorizontalOptions="FillAndExpand" 
                 
                >
-
+               
                 <card:CarouselView.ItemTemplate>
                 <DataTemplate >
                         <Grid RowSpacing="0" BackgroundColor="{StaticResource colorPrimaryTransparente}">
-                        <Grid.RowDefinitions >
+                            <Grid.RowDefinitions >
                                 <RowDefinition Height="6*" ></RowDefinition>
-                            
-                            <RowDefinition Height="auto"></RowDefinition>
-                            <RowDefinition Height="auto"></RowDefinition>
-                            <RowDefinition Height="auto"></RowDefinition>
-                        </Grid.RowDefinitions>
 
-                        <Image 
-                                    Source="{Binding uriImage}" 
-                                    Grid.RowSpan="4" Aspect="AspectFit" />
-                        <BoxView 
+                                <RowDefinition Height="auto"></RowDefinition>
+                                <RowDefinition Height="auto"></RowDefinition>
+                                <RowDefinition Height="auto"></RowDefinition>
+                            </Grid.RowDefinitions>
+
+                            <Image 
+                                Source="{Binding uriImage}" 
+                                Grid.RowSpan="4" Aspect="AspectFit"
+                                
+                                >
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer
+                                        Tapped="TapGestureRecognizer_Tapped"
+                                        NumberOfTapsRequired="2" 
+                                        CommandParameter="{Binding .}"/> 
+                                </Image.GestureRecognizers>
+                            </Image>
+                            <BoxView 
      
                                     Grid.Row="1"
                                     Grid.RowSpan="3"

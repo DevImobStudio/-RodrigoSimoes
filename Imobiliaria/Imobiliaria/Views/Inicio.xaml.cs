@@ -27,12 +27,12 @@ namespace Imobiliaria.Views
         public EnvioMaterial EnvioMaterial { get; set; }
         public ItemDetailViewModel ImovelDetail{ get; set; }
 
-        public Inicio ()
+        public Inicio (ItemsViewModel viewModel)
 		{
             InitializeComponent();
-           
-            viewModel = new ItemsViewModel();
-            menuSuperior = Services.Sistema.menuSuperior;
+            this.viewModel = viewModel;
+             //viewModel = new ItemsViewModel();
+             menuSuperior = Services.Sistema.menuSuperior;
             this.SlideMenu = menuSuperior;
             paginaStack = pagina;
             Maps = new Maps(this);
@@ -160,14 +160,16 @@ namespace Imobiliaria.Views
 
         }
 
-        public async Task CarregarDetalhes(Imovel i)
+        public void CarregarDetalhes(Imovel i)
         {
 
             this.visiblePageSelected(false);
-            pagina.Children.Clear();
+          
             this.ImovelDetail = new ItemDetailViewModel(i);
-            this.paginaStack.Children.Add(new ItemDetailPage(this, ImovelDetail));
             this.ImovelDetail.LoadItemsCommand.Execute(null);
+            pagina.Children.Clear();
+            this.paginaStack.Children.Add(new ItemDetailPage(this, this.ImovelDetail));
+           
 
 
         }

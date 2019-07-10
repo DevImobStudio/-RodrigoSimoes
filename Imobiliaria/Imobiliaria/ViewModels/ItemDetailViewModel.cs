@@ -22,7 +22,8 @@ namespace Imobiliaria.ViewModels
 
         public ItemDetailViewModel(Imovel item = null)
         {
-            Imovel = item;
+            Imovel = new Imovel(); 
+            this.Imovel = item;
             lstImagens = new List<string>();
             Imagens = new ObservableCollection<string>(lstImagens);
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
@@ -50,7 +51,7 @@ namespace Imobiliaria.ViewModels
                 lstImagens = await Services.Sistema.RESTAPI.getAsync<List<string>>("content/itens/"+Imovel.id);
                 if (lstImagens.Count > 0)
                 {
-                    Imagens.Clear();
+                    //Imagens.Clear();
                     foreach (var i in lstImagens)
                     {
 

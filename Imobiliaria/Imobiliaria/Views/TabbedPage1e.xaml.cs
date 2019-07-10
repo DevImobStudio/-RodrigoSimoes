@@ -1,4 +1,5 @@
 ﻿using Imobiliaria.Services;
+using Imobiliaria.ViewModels;
 using Plugin.Toast;
 using SlideOverKit;
 using System;
@@ -21,16 +22,19 @@ namespace Imobiliaria.Views
         public Favoritos Favoritos;
         public Atendimento Atendimento;
         public MenuContainerPage menuContainerPage { get; set; }
+        public ItemsViewModel viewModel { get; set; }
         public Image logo;
         bool show = false;
 
         public TabbedPage1()
         {
             InitializeComponent();
+            viewModel = new ItemsViewModel();
+            viewModel.LoadItemsCommand.Execute(null);
             menuContainerPage = new MenuContainerPage();
             Services.Sistema.menuSuperior = new MenuSuperior();
             this.menuContainerPage.SlideMenu = Services.Sistema.menuSuperior;
-            Children.Add(Inicio = new Inicio());
+            Children.Add(Inicio = new Inicio(viewModel));
             Children.Add(Favoritos = new Favoritos());
             Children.Add(Atendimento = new Atendimento());
             Children.Add(Entrar = new Entrar());

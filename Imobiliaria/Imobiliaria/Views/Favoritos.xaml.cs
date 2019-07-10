@@ -67,7 +67,6 @@ namespace Imobiliaria.Views
 
                     if (imovelsFavoritos.Count < 1)
                     {
-                        var Configuracao = new Configuracao();
                         var LayoutVazio = new StackLayout();
                         var lblListaVazia = new Label
                         {

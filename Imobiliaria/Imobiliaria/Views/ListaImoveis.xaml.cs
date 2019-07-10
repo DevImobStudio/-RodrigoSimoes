@@ -45,13 +45,13 @@ namespace Imobiliaria.Views
             ItemsListView.SelectedItem = null;
         }
 
-        private async void Detalhes_Clicked(object sender, EventArgs e)
+        private void Detalhes_Clicked(object sender, EventArgs e)
         {
             
             var objeto =  ((sender as Button).CommandParameter) as Imovel;
             if (objeto != null)
             {
-                await this.Inicio.CarregarDetalhes(objeto);
+                this.Inicio.CarregarDetalhes(objeto);
             }
                
         }
