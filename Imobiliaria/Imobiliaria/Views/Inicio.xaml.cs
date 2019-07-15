@@ -52,14 +52,14 @@ namespace Imobiliaria.Views
 
         }
 
-        protected async override void OnAppearing()
-        {
-            base.OnAppearing();
+       // protected async override void OnAppearing()
+       // {
+           // base.OnAppearing();
 
           //  viewModel.LoadItemsCommand.Execute(null);
            // ForceLayout();
 
-        }
+       // }
 
         public void Bind()
         {
@@ -139,6 +139,12 @@ namespace Imobiliaria.Views
 
         public void carregarPaginaInicial()
         {
+            if (pagina.Children.Count > 1)
+            {
+                CarregarPagina();
+            }
+
+
             var b = pagina.Children[0];
             var c = b.GetType();
             var d = b.TabIndex;
@@ -160,16 +166,16 @@ namespace Imobiliaria.Views
 
         }
 
-        public void CarregarDetalhes(Imovel i)
+       public async  Task CarregarDetalhes(Imovel i)
         {
 
             this.visiblePageSelected(false);
-          
+            
             this.ImovelDetail = new ItemDetailViewModel(i);
             this.ImovelDetail.LoadItemsCommand.Execute(null);
-            pagina.Children.Clear();
+            View v = pagina.Children[0];
+            pagina.Children[0].IsVisible = false;
             this.paginaStack.Children.Add(new ItemDetailPage(this, this.ImovelDetail));
-           
 
 
         }
@@ -177,9 +183,10 @@ namespace Imobiliaria.Views
         {
 
             pagina.Children.Clear();
+            Maps.IsVisible = true;
             if (PageSelected.SelectedSegment == 0)
             {
-               
+                
                 pagina.Children.Add(Maps);
                 Maps.Bind();
 

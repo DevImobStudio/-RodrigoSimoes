@@ -6,7 +6,8 @@
              xmlns:carouse="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"           
              xmlns:card="clr-namespace:PanCardView;assembly=PanCardView"
              xmlns:maps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
-             VerticalOptions="FillAndExpand">
+             VerticalOptions="FillAndExpand"
+            >
     <Grid VerticalOptions="FillAndExpand" RowSpacing="0">
 
             <Grid.RowDefinitions>
@@ -68,7 +69,9 @@
                >
                
                 <card:CarouselView.ItemTemplate>
+                    
                 <DataTemplate >
+
                         <Grid RowSpacing="0" BackgroundColor="{StaticResource colorPrimaryTransparente}">
                             <Grid.RowDefinitions >
                                 <RowDefinition Height="6*" ></RowDefinition>
@@ -77,26 +80,32 @@
                                 <RowDefinition Height="auto"></RowDefinition>
                                 <RowDefinition Height="auto"></RowDefinition>
                             </Grid.RowDefinitions>
+                           
 
                             <Image 
                                 Source="{Binding uriImage}" 
                                 Grid.RowSpan="4" Aspect="AspectFit"
-                                
                                 >
-                                <Image.GestureRecognizers>
+                                <Image.GestureRecognizers >
                                     <TapGestureRecognizer
-                                        Tapped="TapGestureRecognizer_Tapped"
+                                        CommandParameter="{Binding . , Mode=OneTime}"
                                         NumberOfTapsRequired="2" 
-                                        CommandParameter="{Binding .}"/> 
+                                        Tapped="TapGestureRecognizer_Tapped"
+
+                                       
+                                        />
+                                    
+
                                 </Image.GestureRecognizers>
                             </Image>
+                          
                             <BoxView 
      
                                     Grid.Row="1"
                                     Grid.RowSpan="3"
                                     BackgroundColor="{StaticResource colorPrimaryTransparente}">
-
-                        </BoxView>
+                                
+                            </BoxView>
 
                         <Label 
             
@@ -134,8 +143,8 @@
                         <Button  CommandParameter="{Binding .}"  BackgroundColor="Transparent" Grid.Column="0" Grid.Row="1" Grid.RowSpan="3"  Clicked="Button_Clicked">
                                 
                         </Button>
-
-                    </Grid>
+                           
+                        </Grid>
 
 
                 </DataTemplate>

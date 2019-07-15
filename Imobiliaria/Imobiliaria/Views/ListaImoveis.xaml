@@ -98,7 +98,7 @@
                                     
                                     HorizontalOptions="Center"
                                     CornerRadius="5"
-                                    TextColor="{Binding favorito,TargetNullValue='White'}"
+                                    TextColor="{Binding favorito,TargetNullValue='White', Mode=TwoWay}"
                                     BackgroundColor="{StaticResource colorPrimary}"
                                     Clicked="Favoritos_Clicked"
                                     CommandParameter="{Binding .}"

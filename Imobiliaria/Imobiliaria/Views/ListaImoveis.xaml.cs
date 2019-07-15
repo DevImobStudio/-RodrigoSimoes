@@ -82,7 +82,7 @@ namespace Imobiliaria.Views
             IconButton icon = sender as IconButton;
             if (Sistema.USUARIO != null)
             {
-                var objeto = ((sender as Button).CommandParameter) as Imovel;
+                var objeto = (icon.CommandParameter) as Imovel;
                 if (objeto != null)
                 {
                     var favorito = await Sistema.DATABASE.database.Table<Models.Favoritos>().Where(p => p.idImovel == objeto.id && p.idUsuario == Sistema.USUARIO.cod).FirstOrDefaultAsync();
@@ -98,7 +98,8 @@ namespace Imobiliaria.Views
                             });
                             CrossToastPopUp.Current.ShowToastMessage("Imovel " + objeto.titulo + " adicionado com sucesso", Plugin.Toast.Abstractions.ToastLength.Long);
                             this.Inicio.viewModel.Imovels[this.Inicio.viewModel.Imovels.IndexOf(objeto)].favorito = "Red";
-                            icon.TextColor = Color.Red;
+                            BindingContext = this.Inicio.viewModel.Imovels;
+                       //     icon.TextColor = Color.Red;
 
 
 

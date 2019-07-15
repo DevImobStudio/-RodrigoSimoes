@@ -25,15 +25,15 @@ namespace Imobiliaria.Views
 		{
 			InitializeComponent ();
             Mapa.MoveToRegion(MapSpan.FromCenterAndRadius(
-                                    new Position(-23.0860544, -45.7872443),
+                                    new Position(-23.0210053, -45.5572689),
                                     Distance.FromMiles(0.5))); 
             this.Inicio = Inicio;
             BindingContext = this.Inicio.viewModel;
             caroussel.ItemsSource = this.Inicio.viewModel.Imovels;
             CarregarDados();
             Mapa.MyLocationEnabled = true;
-
-        
+ 
+           
 
 
             try
@@ -139,9 +139,10 @@ namespace Imobiliaria.Views
             Imovel a = ((Imovel)b.BindingContext);
             if (a != null)
              {
-                
-             //   await this.Inicio.CarregarDetalhes(a);
-             }
+
+                    Inicio.CarregarDetalhes(a);
+
+            }
              
         }
 
@@ -168,7 +169,7 @@ namespace Imobiliaria.Views
                  Mapa.MoveToRegion(MapSpan.FromCenterAndRadius(
                                        new Position(imovel.localizacao.Latitude, imovel.localizacao.Longitude),
                                        Distance.FromMiles(0.5)));
-                    
+               
                 
             }
 
@@ -180,21 +181,40 @@ namespace Imobiliaria.Views
             var objeto = ((sender as Button).CommandParameter) as Imovel;
             if (objeto != null)
             {
-
-                this.Inicio.CarregarDetalhes(objeto);
+              
+                Inicio.CarregarDetalhes(objeto);
             }
         }
 
-        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        /*     private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+             {
+                 // var args = (TappedEventArgs)e;
+                 Imovel objeto = new Imovel();
+                 objeto =((TappedEventArgs)e).Parameter as Imovel;
+
+                 if (objeto != null)
+                 {
+
+                     await Inicio.CarregarDetalhes(objeto);
+
+                 }
+             }
+             */
+
+
+
+
+        private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-           // var args = (TappedEventArgs)e;
-            Imovel objeto =((TappedEventArgs)e).Parameter as Imovel;
-           
+            Imovel objeto = new Imovel();
+            objeto = ((TappedEventArgs)e).Parameter as Imovel;
+
             if (objeto != null)
             {
-
-                this.Inicio.CarregarDetalhes(objeto);
+                Inicio.CarregarDetalhes(objeto);
             }
         }
+
+       
     }
 }

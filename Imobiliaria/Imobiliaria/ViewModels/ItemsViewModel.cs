@@ -37,9 +37,9 @@ namespace Imobiliaria.ViewModels
             Title = "Imovéis";
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
             LoadItemsCommandBusca = new Command(async () => await ExecuteLoadItemsBuscaCommand());
-
         }
-      
+
+
 
         async Task ExecuteLoadItemsCommand()
         {

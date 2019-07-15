@@ -13,53 +13,57 @@ namespace Imobiliaria.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ItemDetailPage : StackLayout
     {
-        ItemDetailViewModel viewModel { get; set; }
+        ItemDetailViewModel ImovelDetail { get; set; }
         Inicio inicio { get; set; }
         Favoritos favoritos { get; set; }
 
-        public ItemDetailPage(Inicio inicio , ItemDetailViewModel viewModel)
+        public ItemDetailPage(Inicio inicio , ItemDetailViewModel ImovelDetail)
         {
             InitializeComponent();
            
             this.inicio = inicio;
-            this.viewModel = viewModel;
-          //  this.viewModel.LoadItemsCommand.Execute(null);
-            BindingContext = this.inicio.ImovelDetail;
-            caroussel.ItemsSource = this.inicio.ImovelDetail.Imagens;
+            this.ImovelDetail = ImovelDetail;
+            this.ImovelDetail.LoadItemsCommand.Execute(null);
+            BindingContext = this.ImovelDetail;
+            if (this.ImovelDetail.Imagens != null)
+            {
+                caroussel.ItemsSource = this.ImovelDetail.Imagens;
+            }
             
-           // CarregarDados();
+            
+        //    CarregarDados();
            
         }
 
-        public ItemDetailPage(Favoritos favoritos, ItemDetailViewModel viewModel)
+        public ItemDetailPage(Favoritos favoritos, ItemDetailViewModel ImovelDetail)
         {
             InitializeComponent();
             this.favoritos = favoritos;
-            this.viewModel = viewModel;
-            BindingContext = this.viewModel;
-            caroussel.ItemsSource = this.viewModel.Imagens;
-            this.viewModel.LoadItemsCommand.Execute(null);
+            this.ImovelDetail = ImovelDetail;
+            BindingContext = this.ImovelDetail;
+            caroussel.ItemsSource = this.ImovelDetail.Imagens;
+            this.ImovelDetail.LoadItemsCommand.Execute(null);
        //     CarregarDados();
 
         }
         public async void CarregarDados()
         {
-            this.viewModel.LoadItemsCommand.Execute(null);
+            this.ImovelDetail.LoadItemsCommand.Execute(null);
         }
 
         private void BtnWhatsapp_Clicked(object sender, EventArgs e)
         {
-            Sistema.WhatsApp(this.viewModel.Imovel);
+            Sistema.WhatsApp(this.ImovelDetail.Imovel);
         }
 
         private async void BtnFavoritos_Clicked(object sender, EventArgs e)
         {
 
             if (Sistema.USUARIO != null) {
-                if (this.viewModel.Imovel != null)
+                if (this.ImovelDetail.Imovel != null)
                 {
 
-                    var favorito = await Sistema.DATABASE.database.Table<Models.Favoritos>().Where(p => p.idImovel == this.viewModel.Imovel.id && p.idUsuario == Sistema.USUARIO.cod).FirstOrDefaultAsync();
+                    var favorito = await Sistema.DATABASE.database.Table<Models.Favoritos>().Where(p => p.idImovel == this.ImovelDetail.Imovel.id && p.idUsuario == Sistema.USUARIO.cod).FirstOrDefaultAsync();
                     if (favorito == null)
                     {
                         try
@@ -67,11 +71,11 @@ namespace Imobiliaria.Views
                             await Sistema.DATABASE.database.InsertAsync(new Models.Favoritos()
                             {
                                 idUsuario = Sistema.USUARIO.cod,
-                                idImovel = this.viewModel.Imovel.id
+                                idImovel = this.ImovelDetail.Imovel.id
 
                             });
 
-                            CrossToastPopUp.Current.ShowToastMessage("Imovel " + this.viewModel.Imovel.titulo + " adicionado com sucesso", Plugin.Toast.Abstractions.ToastLength.Long);
+                            CrossToastPopUp.Current.ShowToastMessage("Imovel " + this.ImovelDetail.Imovel.titulo + " adicionado com sucesso", Plugin.Toast.Abstractions.ToastLength.Long);
                         }
                         catch (Exception ex)
                         {
@@ -81,7 +85,7 @@ namespace Imobiliaria.Views
                     }
                     else
                     {
-                        CrossToastPopUp.Current.ShowToastMessage("Imovel " + this.viewModel.Imovel.titulo + " já pertence ao seus favoritos", Plugin.Toast.Abstractions.ToastLength.Long);
+                        CrossToastPopUp.Current.ShowToastMessage("Imovel " + this.ImovelDetail.Imovel.titulo + " já pertence ao seus favoritos", Plugin.Toast.Abstractions.ToastLength.Long);
                     }
                 }
                
@@ -102,13 +106,13 @@ namespace Imobiliaria.Views
 
         private async void EnvioMaterial_Clicked(object sender, EventArgs e)
         {
-             this.inicio.CarregarPaginaEnvioMaterial(this.viewModel.Imovel);
+             this.inicio.CarregarPaginaEnvioMaterial(this.ImovelDetail.Imovel);
 
         }
 
         private void Map_Clicked(object sender, EventArgs e)
         {
-           Navigation.PushAsync(new DetalheMaps(this.viewModel.Imovel));
+           Navigation.PushAsync(new DetalheMaps(this.ImovelDetail.Imovel));
         }
 
 
