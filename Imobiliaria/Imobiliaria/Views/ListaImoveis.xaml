@@ -11,7 +11,8 @@
             RefreshCommand="{Binding LoadItemsCommandBusca}"
             IsPullToRefreshEnabled="true"
             IsRefreshing="{Binding IsBusy, Mode=OneWay}"
-            CachingStrategy="RecycleElement"
+            Refreshing="ItemsListView_Refreshing"
+            CachingStrategy="RecycleElementAndDataTemplate"
              
            >
         <ListView.ItemTemplate >
@@ -34,56 +35,51 @@
                                 WidthRequest="40"
                                
                                 />
-                            <StackLayout 
-                                Grid.Column="1"
-                                Grid.Row="0">
+                            <Grid Grid.Column="1"
+                                        Grid.Row="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.4*" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+                                <Label
+                                    Grid.Row="0"
+                                    FontAttributes="Bold"
+                                    HorizontalTextAlignment="Center"    
+                                    Text="{Binding titulo}" 
+                                    FontSize="Small"
+                                    TextColor="{StaticResource colorPrimary}"/>
                                 <Label 
-                                HorizontalOptions="Center"
-                                FontAttributes="Bold"
-                                Text="{Binding titulo }" 
-                                FontSize="Default"
-                                TextColor="{StaticResource colorPrimary}"
-                                LineBreakMode="WordWrap" 
-                                Style="{DynamicResource ListItemTextStyle}" 
-                             />
+                                    FontAttributes="Bold"
+                                    Grid.Row="1"
+                                    Text="{Binding enfase }" 
+                                    FontSize="Micro"
+                                    TextColor="{StaticResource colorPrimary}"/>
                                 <Label 
-                                FontAttributes="Bold"
-                                Text="{Binding enfase }" 
-                                FontSize="Micro"
-                                TextColor="{StaticResource colorPrimary}"
-                                LineBreakMode="WordWrap" 
-                                Style="{DynamicResource ListItemTextStyle}" 
-                             />
-                                <Label 
+                                    Grid.Row="2"
+                                    Text="{Binding descricao}" 
+                                    FontSize="Micro"
+                                    TextColor="{StaticResource colorPrimary}"/>
 
-                                Text="{Binding descricao}" 
-                                FontSize="Micro"
-                                TextColor="{StaticResource colorPrimary}"
-                                LineBreakMode="WordWrap" 
-                                Style="{DynamicResource ListItemTextStyle}" 
-                             />
-
+                                <Label
+                                               
+                                    Grid.Row="3"
+                                    Text="{Binding preco} " 
+                                     HorizontalTextAlignment="Center"           
+                                    FontSize="Small"
+                                    FontAttributes="Bold"
+                                    TextColor="{StaticResource colorPrimary}" />
+                            </Grid>
 
 
-                                    <Label
-                  
-                                        Text="{Binding preco} " 
-                                        FontSize="Small"
-                                        FontAttributes="Bold"
-                                        TextColor="{StaticResource colorPrimary}"  
-                                        LineBreakMode="TailTruncation" 
-                                        VerticalOptions="End"
-                                        HorizontalOptions="Center"
-                                 />
 
 
-                            </StackLayout>
-                           
-                            
-                        
 
 
-                            
 
                         </Grid>
                         <StackLayout Orientation="Horizontal" BackgroundColor="{StaticResource colorPrimary}" Margin="0,-6,0,0">

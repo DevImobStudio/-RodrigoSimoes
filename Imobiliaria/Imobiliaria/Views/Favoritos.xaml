@@ -38,50 +38,45 @@
                                 WidthRequest="40"
                                 HeightRequest="40"
                                 />
-                                    <StackLayout 
-                                Grid.Column="1"
-                                Grid.Row="0">
+                                    <Grid Grid.Column="1"
+                                        Grid.Row="0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="0.4*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="auto"/>
+                                        </Grid.RowDefinitions>
+                                        <Label
+                                                Grid.Row="0"
+                                                FontAttributes="Bold"
+                                                Text="{Binding titulo}" 
+                                                FontSize="Small"
+                                                TextColor="{StaticResource colorPrimary}"/>
                                         <Label 
-                                HorizontalOptions="Center"
-                                FontAttributes="Bold"
-                                Text="{Binding titulo }" 
-                                FontSize="Default"
-                                TextColor="{StaticResource colorPrimary}"
-                                LineBreakMode="WordWrap" 
-                             />
+                                                FontAttributes="Bold"
+                                                Grid.Row="1"
+                                                Text="{Binding enfase }" 
+                                                FontSize="Micro"
+                                                TextColor="{StaticResource colorPrimary}"/>
                                         <Label 
-                                FontAttributes="Bold"
-                                Text="{Binding enfase }" 
-                                FontSize="Micro"
-                                TextColor="{StaticResource colorPrimary}"
-                                LineBreakMode="WordWrap" 
-                              
-                             />
-                                        <Label 
-
-                                Text="{Binding descricao}" 
-                                FontSize="Micro"
-                                TextColor="{StaticResource colorPrimary}"
-                                LineBreakMode="WordWrap" 
-                               
-                             />
-
-
+                                                Grid.Row="2"
+                                                Text="{Binding descricao}" 
+                                                FontSize="Micro"
+                                                TextColor="{StaticResource colorPrimary}"/>
 
                                         <Label
-                  
-                                        Text="{Binding preco } " 
-                                        FontSize="Small"
-                                        FontAttributes="Bold"
-                                        TextColor="{StaticResource colorPrimary}"  
-                                        LineBreakMode="TailTruncation" 
-                                        VerticalOptions="End"
-                                        HorizontalOptions="Center"
-                                 />
-
-
-                                    </StackLayout>
-
+                                               
+                                                Grid.Row="3"
+                                                Text="{Binding preco ,Mode=TwoWay} " 
+                                                FontSize="Small"
+                                                FontAttributes="Bold"
+                                                TextColor="{StaticResource colorPrimary}"  
+                                                VerticalOptions="End"
+                                                HorizontalOptions="CenterAndExpand"/>
+                                    </Grid>
 
 
 

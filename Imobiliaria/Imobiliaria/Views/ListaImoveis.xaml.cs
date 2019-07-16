@@ -96,10 +96,13 @@ namespace Imobiliaria.Views
                                 idImovel = objeto.id
 
                             });
-                            CrossToastPopUp.Current.ShowToastMessage("Imovel " + objeto.titulo + " adicionado com sucesso", Plugin.Toast.Abstractions.ToastLength.Long);
+                            
                             this.Inicio.viewModel.Imovels[this.Inicio.viewModel.Imovels.IndexOf(objeto)].favorito = "Red";
-                            BindingContext = this.Inicio.viewModel.Imovels;
-                       //     icon.TextColor = Color.Red;
+                            BindingContext = this.Inicio.viewModel;
+                            this.ItemsListView.ItemsSource = this.Inicio.viewModel.Imovels;
+                            CrossToastPopUp.Current.ShowToastMessage("Imovel " + objeto.titulo + " adicionado com sucesso", Plugin.Toast.Abstractions.ToastLength.Long);
+                            
+
 
 
 
@@ -128,6 +131,10 @@ namespace Imobiliaria.Views
 
 
         }
-       
+
+        private void ItemsListView_Refreshing(object sender, EventArgs e)
+        {
+            BindingContext = this.Inicio.viewModel;
+        }
     }
 }

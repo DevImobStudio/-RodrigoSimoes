@@ -121,6 +121,7 @@ namespace Imobiliaria.Views
             {
                 case 0:
                     pagina.Children.Add(Maps);
+                    Maps.IsVisible = true;
                     Maps.ForceLayout();
                     break;
                 case 1:
@@ -139,6 +140,7 @@ namespace Imobiliaria.Views
 
         public void carregarPaginaInicial()
         {
+            Maps.IsVisible = true;
             if (pagina.Children.Count > 1)
             {
                 CarregarPagina();
@@ -184,6 +186,7 @@ namespace Imobiliaria.Views
 
             pagina.Children.Clear();
             Maps.IsVisible = true;
+            ListaImoveis.IsVisible = true;
             if (PageSelected.SelectedSegment == 0)
             {
                 
