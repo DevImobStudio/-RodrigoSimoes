@@ -136,5 +136,16 @@ namespace Imobiliaria.Views
         {
             BindingContext = this.Inicio.viewModel;
         }
+
+        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            Imovel objeto = new Imovel();
+            objeto = ((TappedEventArgs)e).Parameter as Imovel;
+
+            if (objeto != null)
+            {
+                Inicio.CarregarDetalhes(objeto);
+            }
+        }
     }
 }

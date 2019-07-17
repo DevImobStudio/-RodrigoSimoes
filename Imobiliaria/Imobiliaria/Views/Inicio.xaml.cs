@@ -141,19 +141,22 @@ namespace Imobiliaria.Views
         public void carregarPaginaInicial()
         {
             Maps.IsVisible = true;
-            if (pagina.Children.Count > 1)
-            {
-                CarregarPagina();
-            }
+            ListaImoveis.IsVisible = true;
+            CarregarPagina();
+            /*  if (pagina.Children.Count > 1)
+              {
+                  CarregarPagina();
+              }
 
 
-            var b = pagina.Children[0];
-            var c = b.GetType();
-            var d = b.TabIndex;
-            if ((b.GetType() != Maps.GetType()) && (b.GetType() != ListaImoveis.GetType()))
-            {
-                CarregarPagina();
-            }
+              var b = pagina.Children[0];
+              var c = b.GetType();
+              var d = b.TabIndex;
+              if ((b.GetType() != Maps.GetType()) && (b.GetType() != ListaImoveis.GetType()))
+              {
+                  CarregarPagina();
+              }
+              */
         }
 
         private void Button_Clicked(object sender, EventArgs e)
@@ -186,6 +189,7 @@ namespace Imobiliaria.Views
 
             pagina.Children.Clear();
             Maps.IsVisible = true;
+            ListaImoveis.IsVisible = true;
             ListaImoveis.IsVisible = true;
             if (PageSelected.SelectedSegment == 0)
             {

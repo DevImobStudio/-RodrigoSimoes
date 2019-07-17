@@ -47,32 +47,7 @@ namespace Imobiliaria.Views
             this.CurrentPageChanged += async (object sender, EventArgs e) => {
 
                 var i = this.Children.IndexOf(this.CurrentPage);
-                switch (i)
-                {
-                    case 0:
-                        this.Inicio.carregarPaginaInicial();
-                        break;
-                    case 1:
-                        Sistema.USUARIO = await  Services.Sistema.DATABASE.database.Table<Models.Usuario>().Where(p => p.logado).FirstOrDefaultAsync();
-                        if (Sistema.USUARIO != null)
-                        {
-                            this.Favoritos.Bind();
-                        }
-                         else
-                        {
-                            CrossToastPopUp.Current.ShowToastMessage("Faça o login primeiro para ver seus imóveis no favoritos");
-                            OAuthConfig.IndexPage = 1;
-                            Sistema.TABBEDPAGE.CurrentPage = Sistema.TABBEDPAGE.Entrar;
-                        }
-                        break;
-                    case 2:
-                        this.Atendimento.Bind();
-                        break;
-                    case 3:
-                        this.Entrar.Bind();
-                        this.Inicio.viewModel.LoadItemsCommand.Execute(null);
-                        break;
-                }
+                TrocarDePagina(i);
 
             };
 
@@ -81,6 +56,35 @@ namespace Imobiliaria.Views
 
         }
 
+        public async void  TrocarDePagina(int page)
+        {
+            switch (page)
+            {
+                case 0:
+                    this.Inicio.carregarPaginaInicial();
+                    break;
+                case 1:
+                    Sistema.USUARIO = await Services.Sistema.DATABASE.database.Table<Models.Usuario>().Where(p => p.logado).FirstOrDefaultAsync();
+                    if (Sistema.USUARIO != null)
+                    {
+                        this.Favoritos.Bind();
+                    }
+                    else
+                    {
+                        CrossToastPopUp.Current.ShowToastMessage("Faça o login primeiro para ver seus imóveis no favoritos");
+                        OAuthConfig.IndexPage = 1;
+                        Sistema.TABBEDPAGE.CurrentPage = Sistema.TABBEDPAGE.Entrar;
+                    }
+                    break;
+                case 2:
+                    this.Atendimento.Bind();
+                    break;
+                case 3:
+                    this.Entrar.Bind();
+                    this.Inicio.viewModel.LoadItemsCommand.Execute(null);
+                    break;
+            }
+        }
        
 
         public void Bind()
@@ -94,21 +98,40 @@ namespace Imobiliaria.Views
         }
 
 
-        public void trocarPagina()
+        public  async void trocarPagina()
         {
             switch (OAuthConfig.IndexPage)
             {
                 case 0:
-                    this.CurrentPage = Inicio;
+                    Sistema.TABBEDPAGE.CurrentPage = Sistema.TABBEDPAGE.Inicio;
+                    this.Inicio.carregarPaginaInicial();
                     break;
                 case 1:
-                    this.CurrentPage = Favoritos;
+                    if (Sistema.USUARIO == null)
+                    {
+                        Sistema.USUARIO = await Services.Sistema.DATABASE.database.Table<Models.Usuario>().Where(p => p.logado).FirstOrDefaultAsync();
+                    }
+                    
+                    if (Sistema.USUARIO != null)
+                    {
+                        this.Favoritos.Bind();
+                        Sistema.TABBEDPAGE.CurrentPage = Sistema.TABBEDPAGE.Favoritos;
+                    }
+                    else
+                    {
+                        CrossToastPopUp.Current.ShowToastMessage("Faça o login primeiro para ver seus imóveis no favoritos");
+                        OAuthConfig.IndexPage = 1;
+                        Sistema.TABBEDPAGE.CurrentPage = Sistema.TABBEDPAGE.Entrar;
+                    }
                     break;
                 case 2:
-                    this.CurrentPage = Atendimento;
+                    this.Atendimento.Bind();
+                    Sistema.TABBEDPAGE.CurrentPage = Sistema.TABBEDPAGE.Atendimento;
                     break;
                 case 3:
-                    this.CurrentPage = Entrar;
+                    this.Entrar.Bind();
+                    Sistema.TABBEDPAGE.CurrentPage = Sistema.TABBEDPAGE.Entrar;
+                    this.Inicio.viewModel.LoadItemsCommand.Execute(null);
                     break;
             }
         }

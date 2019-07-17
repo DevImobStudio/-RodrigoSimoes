@@ -177,13 +177,19 @@ namespace Imobiliaria.Views
                     await Sistema.DATABASE.database.QueryAsync<Usuario>("UPDATE Usuario set logado = 0");
                     user.logado = true;
                     Usuario userCadastrados = await Sistema.DATABASE.database.Table<Usuario>().Where(p=> p.id == user.id).FirstOrDefaultAsync();
+                    
                     if (userCadastrados== null)
                     {
                         await Sistema.DATABASE.database.InsertAsync(user);
                     }
                     else
                     {
-                        await Sistema.DATABASE.database.UpdateAsync(user);
+                        userCadastrados.logado = true;
+                        userCadastrados.name = user.name;
+                        userCadastrados.email = user.email;
+                        userCadastrados.imagem = user.imagem;
+
+                        await Sistema.DATABASE.database.UpdateAsync(userCadastrados);
                     }
                    
                     Sistema.USUARIO = user;

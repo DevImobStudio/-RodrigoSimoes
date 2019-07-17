@@ -78,9 +78,17 @@
                                                 HorizontalOptions="CenterAndExpand"/>
                                     </Grid>
 
+                                    <Grid.GestureRecognizers >
+                                        <TapGestureRecognizer
+                                        CommandParameter="{Binding . , Mode=OneTime}"
+                                        NumberOfTapsRequired="2" 
+                                        Tapped="TapGestureRecognizer_Tapped"
+
+                                       
+                                        />
 
 
-
+                                    </Grid.GestureRecognizers>
 
 
                                 </Grid>

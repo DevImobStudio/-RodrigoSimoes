@@ -20,6 +20,9 @@
                 <ViewCell >
                     <StackLayout Padding="2" Margin="0,0,6,2" BackgroundColor="{StaticResource colorClara}" >
                         <Grid BackgroundColor="{StaticResource colorTelas}">
+                            
+                            
+                            
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="0.4*" />
                                 <ColumnDefinition Width="0.6*"/>
@@ -49,7 +52,6 @@
                                 <Label
                                     Grid.Row="0"
                                     FontAttributes="Bold"
-                                    HorizontalTextAlignment="Center"    
                                     Text="{Binding titulo}" 
                                     FontSize="Small"
                                     TextColor="{StaticResource colorPrimary}"/>
@@ -76,7 +78,17 @@
                             </Grid>
 
 
+                            <Grid.GestureRecognizers >
+                                <TapGestureRecognizer
+                                        CommandParameter="{Binding . , Mode=OneTime}"
+                                        NumberOfTapsRequired="2" 
+                                        Tapped="TapGestureRecognizer_Tapped"
 
+                                       
+                                        />
+
+
+                            </Grid.GestureRecognizers>
 
 
 

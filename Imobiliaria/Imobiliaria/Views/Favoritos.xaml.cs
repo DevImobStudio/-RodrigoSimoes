@@ -32,8 +32,15 @@ namespace Imobiliaria.Views
         }
         private async void LoadFavoritos()
         {
-          
-                try
+            if  (pagina.Children.Count > 1)
+            {
+                pagina.Children.Clear();
+                InitializeComponent();
+            }
+
+            pagina.Children[0].IsVisible = true;
+
+            try
                 {
                 List<Models.Favoritos> favoritos = new List<Models.Favoritos>();
                 if (Sistema.USUARIO != null)
@@ -115,7 +122,6 @@ namespace Imobiliaria.Views
 
         public void Bind()
         {
-            InitializeComponent();
             LoadFavoritos();
         }
 
@@ -166,6 +172,22 @@ namespace Imobiliaria.Views
                 {
                     CrossToastPopUp.Current.ShowToastMessage("Imovel " + objeto.titulo + " não encontrado nos seus favoritos", Plugin.Toast.Abstractions.ToastLength.Long);
                 }
+            }
+        }
+
+        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            Imovel objeto = new Imovel();
+            objeto = ((TappedEventArgs)e).Parameter as Imovel;
+
+            
+            if (objeto != null)
+            {
+                //   pagina.Children.Clear();
+                pagina.Children[0].IsVisible = false;
+                this.ImovelDetail = new ItemDetailViewModel(objeto);
+                this.pagina.Children.Add(new ItemDetailPage(this, ImovelDetail));
+                this.ImovelDetail.LoadItemsCommand.Execute(null);
             }
         }
     }
