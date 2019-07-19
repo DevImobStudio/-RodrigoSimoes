@@ -50,5 +50,36 @@
   <array>
     <string>whatsapp</string>
   </array>
+
+
+  <key>CFBundleVersion</key>
+  <string>1.0</string>
+  <key>FacebookAppID</key>
+  <string>your-facebook-id</string>
+  <key>FacebookDisplayName</key>
+  <string>your-app-name</string>
+  <key>LSApplicationQueriesSchemes</key>
+  <array>
+    <string>fbapi</string>
+    <string>fb-messenger-api</string>
+    <string>fbauth2</string>
+    <string>fbshareextension</string>
+    <string>fb</string>
+  </array>
+  <key>CFBundleURLTypes</key>
+  <array>
+    <dict>
+      <key>CFBundleURLSchemes</key>
+      <array>
+        <string>fb[facebookid]</string>
+      </array>
+    </dict>
+  </array>
+  <key>NSAppTransportSecurity</key>
+  <dict>
+    <key>NSAllowsArbitraryLoads</key>
+    <true/>
+  </dict>
+
 </dict>
 </plist>

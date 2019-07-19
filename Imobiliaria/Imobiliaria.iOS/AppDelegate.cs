@@ -26,6 +26,8 @@ namespace Imobiliaria.iOS
             global::Xamarin.Forms.Forms.Init();
             Rg.Plugins.Popup.Popup.Init();
             Plugin.InputKit.Platforms.iOS.Config.Init();
+            Xamarians.FacebookLogin.iOS.DS.FacebookLogin.Init();
+
             global::Xamarin.Auth.Presenters.XamarinIOS.AuthenticationConfiguration.Init();
             SegmentedControlRenderer.Init();
          

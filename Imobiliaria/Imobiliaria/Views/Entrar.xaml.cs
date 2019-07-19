@@ -6,12 +6,16 @@ using SlideOverKit;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarians.FacebookLogin;
+using Xamarians.Media;
 using Xamarin.Auth;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+
 
 namespace Imobiliaria.Views
 {
@@ -199,6 +203,55 @@ namespace Imobiliaria.Views
 
                 
             }
+        }
+
+
+
+        private string GenerateFilePath()
+        {
+            return Path.Combine(MediaService.Instance.GetPublicDirectoryPath(), MediaService.Instance.GenerateUniqueFileName("jpg"));
+        }
+
+        private async void FbSignInClicked(object sender, EventArgs e)
+        {
+            var result = await DependencyService.Get<IFacebookLogin>().SignIn();
+            if (result.Status == Xamarians.FacebookLogin.Platforms.FBStatus.Success)
+            {
+                await DisplayAlert("Success", "Welcome " + result.Name, "Ok");
+            }
+            else
+            {
+                await DisplayAlert("Error", result.Message, "Ok");
+            }
+
+        }
+
+        private async void FbSignOutClicked(object sender, EventArgs e)
+        {
+            var result = await DependencyService.Get<IFacebookLogin>().SignOut();
+            if (result.Status == Xamarians.FacebookLogin.Platforms.FBStatus.Success)
+            {
+                await DisplayAlert("Success", result.Message, "Ok");
+            }
+            else
+            {
+                await DisplayAlert("Error", result.Message, "Ok");
+            }
+        }
+
+        private async void FbImageShareClicked(object sender, EventArgs e)
+        {
+            DependencyService.Get<IFacebookLogin>().ShareImageOnFacebook("Hi, This is demo text", "image-filePath");
+        }
+
+        private void FbTextShareClicked(object sender, EventArgs e)
+        {
+            DependencyService.Get<IFacebookLogin>().ShareTextOnFacebook("Hi, This is a demo text");
+        }
+
+        private void FbLinkShareClicked(object sender, EventArgs e)
+        {
+            DependencyService.Get<IFacebookLogin>().ShareLinkOnFacebook("your Link", "Hi, this is demo text", "http://www.google.com");
         }
 
         protected async override void OnAppearing()
