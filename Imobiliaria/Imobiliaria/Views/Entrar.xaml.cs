@@ -8,9 +8,11 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarians.FacebookLogin;
+using Xamarians.GoogleLogin.Interface;
 using Xamarians.Media;
 using Xamarin.Auth;
 using Xamarin.Forms;
@@ -217,7 +219,35 @@ namespace Imobiliaria.Views
             var result = await DependencyService.Get<IFacebookLogin>().SignIn();
             if (result.Status == Xamarians.FacebookLogin.Platforms.FBStatus.Success)
             {
-                await DisplayAlert("Success", "Welcome " + result.Name, "Ok");
+                Usuario user = new Usuario();
+                user.name = result.Name;
+                user.nome = "facebook";
+               // user.imagem = result..picture;
+                user.id = result.UserId;
+                user.email = result.Email;
+
+                await Sistema.DATABASE.database.QueryAsync<Usuario>("UPDATE Usuario set logado = 0");
+                user.logado = true;
+                Usuario userCadastrados = await Sistema.DATABASE.database.Table<Usuario>().Where(p => p.id == user.id).FirstOrDefaultAsync();
+
+                if (userCadastrados == null)
+                {
+                    await Sistema.DATABASE.database.InsertAsync(user);
+                }
+                else
+                {
+                    userCadastrados.logado = true;
+                    userCadastrados.name = user.name;
+                    userCadastrados.email = user.email;
+                    userCadastrados.imagem = user.imagem;
+
+                    await Sistema.DATABASE.database.UpdateAsync(userCadastrados);
+                }
+
+                Sistema.USUARIO = user;
+                Services.Sistema.TABBEDPAGE.trocarPagina();
+
+
             }
             else
             {
@@ -226,7 +256,7 @@ namespace Imobiliaria.Views
 
         }
 
-        private async void FbSignOutClicked(object sender, EventArgs e)
+        private async void FbSignOutClicked()
         {
             var result = await DependencyService.Get<IFacebookLogin>().SignOut();
             if (result.Status == Xamarians.FacebookLogin.Platforms.FBStatus.Success)
@@ -238,6 +268,19 @@ namespace Imobiliaria.Views
                 await DisplayAlert("Error", result.Message, "Ok");
             }
         }
+
+
+        private async void OnLoginButtonClicked(object sender, EventArgs e)
+        {
+            var result = await DependencyService.Get<IGoogleLogin>().SignIn();
+            if (result.IsSuccess)
+            {
+                //imgProfile.Source = result.Image;
+                var name = result.Name;
+                await DisplayAlert("", "Account Name -" + name, "Ok");
+            }
+        }
+
 
         private async void FbImageShareClicked(object sender, EventArgs e)
         {
@@ -277,6 +320,12 @@ namespace Imobiliaria.Views
         private async void Sair_Clicked(object sender, EventArgs e)
         {
             await Sistema.DATABASE.database.QueryAsync<Usuario>("UPDATE Usuario set logado = 0");
+
+            if (Sistema.USUARIO.nome == "facebook")
+            {
+                FbSignOutClicked();
+            }
+
             Sistema.USUARIO = null;
             Login.IsVisible = true;
             Logout.IsVisible = false;

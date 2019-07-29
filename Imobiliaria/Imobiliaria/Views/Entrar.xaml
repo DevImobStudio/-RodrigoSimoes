@@ -11,8 +11,7 @@
     <ContentPage.Content >
         <StackLayout Margin="20">
 
-            <Button Text="Sign In" BackgroundColor="Aqua" Clicked="FbSignInClicked"></Button>
-            <Button Text="Sign Out" BackgroundColor="Aqua" Clicked="FbSignOutClicked"></Button>
+         
 
             <StackLayout x:Name="Login" >
                 
@@ -63,7 +62,7 @@
                         VerticalOptions="Center" 
                         HorizontalOptions="Center" />
                 </Grid>
-                <Button x:Name="FaceBook" TextColor="Transparent" Text="FaceBook" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0" Clicked="LoginClickFacebook"  BackgroundColor="Transparent"/>
+                    <Button x:Name="FaceBook" TextColor="Transparent" Text="FaceBook" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0" Clicked="FbSignInClicked"  BackgroundColor="Transparent"/>
             </Grid>
 
 
@@ -89,7 +88,7 @@
                         VerticalOptions="Center" 
                         HorizontalOptions="Center" />
                 </Grid>
-                <Button x:Name="Google" TextColor="Transparent" Text="Google" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0" Clicked="LoginClick"  BackgroundColor="Transparent"/>
+                <Button x:Name="Google" TextColor="Transparent" Text="Google" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0" Clicked="OnLoginButtonClicked"  BackgroundColor="Transparent"/>
             </Grid>
 
 

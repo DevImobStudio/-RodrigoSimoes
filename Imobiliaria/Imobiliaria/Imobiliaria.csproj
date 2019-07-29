@@ -27,6 +27,7 @@
     <PackageReference Include="Xam.Plugin.Iconize.FontAwesome" Version="3.4.0.100" />
     <PackageReference Include="Xam.Plugins.Forms.Svg" Version="1.0.0.27" />
     <PackageReference Include="Xamarians.FacebookSdk" Version="1.0.2" />
+    <PackageReference Include="Xamarians.GoogleLogin" Version="1.0.4" />
     <PackageReference Include="Xamarians.Media" Version="1.0.3" />
     <PackageReference Include="Xamarin.Auth" Version="1.6.0.4" />
     <PackageReference Include="Xamarin.Essentials" Version="1.0.0" />

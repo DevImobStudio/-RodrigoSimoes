@@ -182,6 +182,9 @@
     <PackageReference Include="Xamarians.FacebookSdk">
       <Version>1.0.2</Version>
     </PackageReference>
+    <PackageReference Include="Xamarians.GoogleLogin">
+      <Version>1.0.4</Version>
+    </PackageReference>
     <PackageReference Include="Xamarians.Media">
       <Version>1.0.3</Version>
     </PackageReference>

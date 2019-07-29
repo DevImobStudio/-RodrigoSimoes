@@ -10629,6 +10629,2161 @@ namespace Imobiliaria.Droid
 			global::Xamarians.FacebookLogin.Droid.Resource.Styleable.com_facebook_profile_picture_view = global::Imobiliaria.Droid.Resource.Styleable.com_facebook_profile_picture_view;
 			global::Xamarians.FacebookLogin.Droid.Resource.Styleable.com_facebook_profile_picture_view_com_facebook_is_cropped = global::Imobiliaria.Droid.Resource.Styleable.com_facebook_profile_picture_view_com_facebook_is_cropped;
 			global::Xamarians.FacebookLogin.Droid.Resource.Styleable.com_facebook_profile_picture_view_com_facebook_preset_size = global::Imobiliaria.Droid.Resource.Styleable.com_facebook_profile_picture_view_com_facebook_preset_size;
+			global::Xamarians.GoogleLogin.Droid.Resource.Animation.abc_fade_in = global::Imobiliaria.Droid.Resource.Animation.abc_fade_in;
+			global::Xamarians.GoogleLogin.Droid.Resource.Animation.abc_fade_out = global::Imobiliaria.Droid.Resource.Animation.abc_fade_out;
+			global::Xamarians.GoogleLogin.Droid.Resource.Animation.abc_grow_fade_in_from_bottom = global::Imobiliaria.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
+			global::Xamarians.GoogleLogin.Droid.Resource.Animation.abc_popup_enter = global::Imobiliaria.Droid.Resource.Animation.abc_popup_enter;
+			global::Xamarians.GoogleLogin.Droid.Resource.Animation.abc_popup_exit = global::Imobiliaria.Droid.Resource.Animation.abc_popup_exit;
+			global::Xamarians.GoogleLogin.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom = global::Imobiliaria.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom;
+			global::Xamarians.GoogleLogin.Droid.Resource.Animation.abc_slide_in_bottom = global::Imobiliaria.Droid.Resource.Animation.abc_slide_in_bottom;
+			global::Xamarians.GoogleLogin.Droid.Resource.Animation.abc_slide_in_top = global::Imobiliaria.Droid.Resource.Animation.abc_slide_in_top;
+			global::Xamarians.GoogleLogin.Droid.Resource.Animation.abc_slide_out_bottom = global::Imobiliaria.Droid.Resource.Animation.abc_slide_out_bottom;
+			global::Xamarians.GoogleLogin.Droid.Resource.Animation.abc_slide_out_top = global::Imobiliaria.Droid.Resource.Animation.abc_slide_out_top;
+			global::Xamarians.GoogleLogin.Droid.Resource.Animation.design_bottom_sheet_slide_in = global::Imobiliaria.Droid.Resource.Animation.design_bottom_sheet_slide_in;
+			global::Xamarians.GoogleLogin.Droid.Resource.Animation.design_bottom_sheet_slide_out = global::Imobiliaria.Droid.Resource.Animation.design_bottom_sheet_slide_out;
+			global::Xamarians.GoogleLogin.Droid.Resource.Animation.design_snackbar_in = global::Imobiliaria.Droid.Resource.Animation.design_snackbar_in;
+			global::Xamarians.GoogleLogin.Droid.Resource.Animation.design_snackbar_out = global::Imobiliaria.Droid.Resource.Animation.design_snackbar_out;
+			global::Xamarians.GoogleLogin.Droid.Resource.Animator.design_appbar_state_list_animator = global::Imobiliaria.Droid.Resource.Animator.design_appbar_state_list_animator;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionBarDivider = global::Imobiliaria.Droid.Resource.Attribute.actionBarDivider;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionBarItemBackground = global::Imobiliaria.Droid.Resource.Attribute.actionBarItemBackground;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionBarPopupTheme = global::Imobiliaria.Droid.Resource.Attribute.actionBarPopupTheme;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionBarSize = global::Imobiliaria.Droid.Resource.Attribute.actionBarSize;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionBarSplitStyle = global::Imobiliaria.Droid.Resource.Attribute.actionBarSplitStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionBarStyle = global::Imobiliaria.Droid.Resource.Attribute.actionBarStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionBarTabBarStyle = global::Imobiliaria.Droid.Resource.Attribute.actionBarTabBarStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionBarTabStyle = global::Imobiliaria.Droid.Resource.Attribute.actionBarTabStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionBarTabTextStyle = global::Imobiliaria.Droid.Resource.Attribute.actionBarTabTextStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionBarTheme = global::Imobiliaria.Droid.Resource.Attribute.actionBarTheme;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionBarWidgetTheme = global::Imobiliaria.Droid.Resource.Attribute.actionBarWidgetTheme;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionButtonStyle = global::Imobiliaria.Droid.Resource.Attribute.actionButtonStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionDropDownStyle = global::Imobiliaria.Droid.Resource.Attribute.actionDropDownStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionLayout = global::Imobiliaria.Droid.Resource.Attribute.actionLayout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionMenuTextAppearance = global::Imobiliaria.Droid.Resource.Attribute.actionMenuTextAppearance;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionMenuTextColor = global::Imobiliaria.Droid.Resource.Attribute.actionMenuTextColor;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionModeBackground = global::Imobiliaria.Droid.Resource.Attribute.actionModeBackground;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionModeCloseButtonStyle = global::Imobiliaria.Droid.Resource.Attribute.actionModeCloseButtonStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionModeCloseDrawable = global::Imobiliaria.Droid.Resource.Attribute.actionModeCloseDrawable;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionModeCopyDrawable = global::Imobiliaria.Droid.Resource.Attribute.actionModeCopyDrawable;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionModeCutDrawable = global::Imobiliaria.Droid.Resource.Attribute.actionModeCutDrawable;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionModeFindDrawable = global::Imobiliaria.Droid.Resource.Attribute.actionModeFindDrawable;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionModePasteDrawable = global::Imobiliaria.Droid.Resource.Attribute.actionModePasteDrawable;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionModePopupWindowStyle = global::Imobiliaria.Droid.Resource.Attribute.actionModePopupWindowStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionModeSelectAllDrawable = global::Imobiliaria.Droid.Resource.Attribute.actionModeSelectAllDrawable;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionModeShareDrawable = global::Imobiliaria.Droid.Resource.Attribute.actionModeShareDrawable;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionModeSplitBackground = global::Imobiliaria.Droid.Resource.Attribute.actionModeSplitBackground;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionModeStyle = global::Imobiliaria.Droid.Resource.Attribute.actionModeStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionModeWebSearchDrawable = global::Imobiliaria.Droid.Resource.Attribute.actionModeWebSearchDrawable;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionOverflowButtonStyle = global::Imobiliaria.Droid.Resource.Attribute.actionOverflowButtonStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionOverflowMenuStyle = global::Imobiliaria.Droid.Resource.Attribute.actionOverflowMenuStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionProviderClass = global::Imobiliaria.Droid.Resource.Attribute.actionProviderClass;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.actionViewClass = global::Imobiliaria.Droid.Resource.Attribute.actionViewClass;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.activityChooserViewStyle = global::Imobiliaria.Droid.Resource.Attribute.activityChooserViewStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.alertDialogButtonGroupStyle = global::Imobiliaria.Droid.Resource.Attribute.alertDialogButtonGroupStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.alertDialogCenterButtons = global::Imobiliaria.Droid.Resource.Attribute.alertDialogCenterButtons;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.alertDialogStyle = global::Imobiliaria.Droid.Resource.Attribute.alertDialogStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.alertDialogTheme = global::Imobiliaria.Droid.Resource.Attribute.alertDialogTheme;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.allowStacking = global::Imobiliaria.Droid.Resource.Attribute.allowStacking;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.alpha = global::Imobiliaria.Droid.Resource.Attribute.alpha;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.arrowHeadLength = global::Imobiliaria.Droid.Resource.Attribute.arrowHeadLength;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.arrowShaftLength = global::Imobiliaria.Droid.Resource.Attribute.arrowShaftLength;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.autoCompleteTextViewStyle = global::Imobiliaria.Droid.Resource.Attribute.autoCompleteTextViewStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.background = global::Imobiliaria.Droid.Resource.Attribute.background;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.backgroundSplit = global::Imobiliaria.Droid.Resource.Attribute.backgroundSplit;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.backgroundStacked = global::Imobiliaria.Droid.Resource.Attribute.backgroundStacked;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.backgroundTint = global::Imobiliaria.Droid.Resource.Attribute.backgroundTint;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.backgroundTintMode = global::Imobiliaria.Droid.Resource.Attribute.backgroundTintMode;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.barLength = global::Imobiliaria.Droid.Resource.Attribute.barLength;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.behavior_autoHide = global::Imobiliaria.Droid.Resource.Attribute.behavior_autoHide;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.behavior_hideable = global::Imobiliaria.Droid.Resource.Attribute.behavior_hideable;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.behavior_overlapTop = global::Imobiliaria.Droid.Resource.Attribute.behavior_overlapTop;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.behavior_peekHeight = global::Imobiliaria.Droid.Resource.Attribute.behavior_peekHeight;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.behavior_skipCollapsed = global::Imobiliaria.Droid.Resource.Attribute.behavior_skipCollapsed;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.borderWidth = global::Imobiliaria.Droid.Resource.Attribute.borderWidth;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.borderlessButtonStyle = global::Imobiliaria.Droid.Resource.Attribute.borderlessButtonStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.bottomSheetDialogTheme = global::Imobiliaria.Droid.Resource.Attribute.bottomSheetDialogTheme;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.bottomSheetStyle = global::Imobiliaria.Droid.Resource.Attribute.bottomSheetStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.buttonBarButtonStyle = global::Imobiliaria.Droid.Resource.Attribute.buttonBarButtonStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.buttonBarNegativeButtonStyle = global::Imobiliaria.Droid.Resource.Attribute.buttonBarNegativeButtonStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.buttonBarNeutralButtonStyle = global::Imobiliaria.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.buttonBarPositiveButtonStyle = global::Imobiliaria.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.buttonBarStyle = global::Imobiliaria.Droid.Resource.Attribute.buttonBarStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.buttonGravity = global::Imobiliaria.Droid.Resource.Attribute.buttonGravity;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.buttonPanelSideLayout = global::Imobiliaria.Droid.Resource.Attribute.buttonPanelSideLayout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.buttonSize = global::Imobiliaria.Droid.Resource.Attribute.buttonSize;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.buttonStyle = global::Imobiliaria.Droid.Resource.Attribute.buttonStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.buttonStyleSmall = global::Imobiliaria.Droid.Resource.Attribute.buttonStyleSmall;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.buttonTint = global::Imobiliaria.Droid.Resource.Attribute.buttonTint;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.buttonTintMode = global::Imobiliaria.Droid.Resource.Attribute.buttonTintMode;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.cardBackgroundColor = global::Imobiliaria.Droid.Resource.Attribute.cardBackgroundColor;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.cardCornerRadius = global::Imobiliaria.Droid.Resource.Attribute.cardCornerRadius;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.cardElevation = global::Imobiliaria.Droid.Resource.Attribute.cardElevation;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.cardMaxElevation = global::Imobiliaria.Droid.Resource.Attribute.cardMaxElevation;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.cardPreventCornerOverlap = global::Imobiliaria.Droid.Resource.Attribute.cardPreventCornerOverlap;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.cardUseCompatPadding = global::Imobiliaria.Droid.Resource.Attribute.cardUseCompatPadding;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.checkboxStyle = global::Imobiliaria.Droid.Resource.Attribute.checkboxStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.checkedTextViewStyle = global::Imobiliaria.Droid.Resource.Attribute.checkedTextViewStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.circleCrop = global::Imobiliaria.Droid.Resource.Attribute.circleCrop;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.closeIcon = global::Imobiliaria.Droid.Resource.Attribute.closeIcon;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.closeItemLayout = global::Imobiliaria.Droid.Resource.Attribute.closeItemLayout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.collapseContentDescription = global::Imobiliaria.Droid.Resource.Attribute.collapseContentDescription;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.collapseIcon = global::Imobiliaria.Droid.Resource.Attribute.collapseIcon;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.collapsedTitleGravity = global::Imobiliaria.Droid.Resource.Attribute.collapsedTitleGravity;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.collapsedTitleTextAppearance = global::Imobiliaria.Droid.Resource.Attribute.collapsedTitleTextAppearance;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.color = global::Imobiliaria.Droid.Resource.Attribute.color;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.colorAccent = global::Imobiliaria.Droid.Resource.Attribute.colorAccent;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.colorBackgroundFloating = global::Imobiliaria.Droid.Resource.Attribute.colorBackgroundFloating;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.colorButtonNormal = global::Imobiliaria.Droid.Resource.Attribute.colorButtonNormal;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.colorControlActivated = global::Imobiliaria.Droid.Resource.Attribute.colorControlActivated;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.colorControlHighlight = global::Imobiliaria.Droid.Resource.Attribute.colorControlHighlight;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.colorControlNormal = global::Imobiliaria.Droid.Resource.Attribute.colorControlNormal;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.colorPrimary = global::Imobiliaria.Droid.Resource.Attribute.colorPrimary;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.colorPrimaryDark = global::Imobiliaria.Droid.Resource.Attribute.colorPrimaryDark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.colorScheme = global::Imobiliaria.Droid.Resource.Attribute.colorScheme;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.colorSwitchThumbNormal = global::Imobiliaria.Droid.Resource.Attribute.colorSwitchThumbNormal;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.commitIcon = global::Imobiliaria.Droid.Resource.Attribute.commitIcon;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.contentInsetEnd = global::Imobiliaria.Droid.Resource.Attribute.contentInsetEnd;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.contentInsetEndWithActions = global::Imobiliaria.Droid.Resource.Attribute.contentInsetEndWithActions;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.contentInsetLeft = global::Imobiliaria.Droid.Resource.Attribute.contentInsetLeft;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.contentInsetRight = global::Imobiliaria.Droid.Resource.Attribute.contentInsetRight;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.contentInsetStart = global::Imobiliaria.Droid.Resource.Attribute.contentInsetStart;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.contentInsetStartWithNavigation = global::Imobiliaria.Droid.Resource.Attribute.contentInsetStartWithNavigation;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.contentPadding = global::Imobiliaria.Droid.Resource.Attribute.contentPadding;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.contentPaddingBottom = global::Imobiliaria.Droid.Resource.Attribute.contentPaddingBottom;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.contentPaddingLeft = global::Imobiliaria.Droid.Resource.Attribute.contentPaddingLeft;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.contentPaddingRight = global::Imobiliaria.Droid.Resource.Attribute.contentPaddingRight;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.contentPaddingTop = global::Imobiliaria.Droid.Resource.Attribute.contentPaddingTop;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.contentScrim = global::Imobiliaria.Droid.Resource.Attribute.contentScrim;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.controlBackground = global::Imobiliaria.Droid.Resource.Attribute.controlBackground;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.counterEnabled = global::Imobiliaria.Droid.Resource.Attribute.counterEnabled;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.counterMaxLength = global::Imobiliaria.Droid.Resource.Attribute.counterMaxLength;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.counterOverflowTextAppearance = global::Imobiliaria.Droid.Resource.Attribute.counterOverflowTextAppearance;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.counterTextAppearance = global::Imobiliaria.Droid.Resource.Attribute.counterTextAppearance;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.customNavigationLayout = global::Imobiliaria.Droid.Resource.Attribute.customNavigationLayout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.defaultQueryHint = global::Imobiliaria.Droid.Resource.Attribute.defaultQueryHint;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.dialogPreferredPadding = global::Imobiliaria.Droid.Resource.Attribute.dialogPreferredPadding;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.dialogTheme = global::Imobiliaria.Droid.Resource.Attribute.dialogTheme;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.displayOptions = global::Imobiliaria.Droid.Resource.Attribute.displayOptions;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.divider = global::Imobiliaria.Droid.Resource.Attribute.divider;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.dividerHorizontal = global::Imobiliaria.Droid.Resource.Attribute.dividerHorizontal;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.dividerPadding = global::Imobiliaria.Droid.Resource.Attribute.dividerPadding;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.dividerVertical = global::Imobiliaria.Droid.Resource.Attribute.dividerVertical;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.drawableSize = global::Imobiliaria.Droid.Resource.Attribute.drawableSize;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.drawerArrowStyle = global::Imobiliaria.Droid.Resource.Attribute.drawerArrowStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.dropDownListViewStyle = global::Imobiliaria.Droid.Resource.Attribute.dropDownListViewStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.dropdownListPreferredItemHeight = global::Imobiliaria.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.editTextBackground = global::Imobiliaria.Droid.Resource.Attribute.editTextBackground;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.editTextColor = global::Imobiliaria.Droid.Resource.Attribute.editTextColor;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.editTextStyle = global::Imobiliaria.Droid.Resource.Attribute.editTextStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.elevation = global::Imobiliaria.Droid.Resource.Attribute.elevation;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.errorEnabled = global::Imobiliaria.Droid.Resource.Attribute.errorEnabled;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.errorTextAppearance = global::Imobiliaria.Droid.Resource.Attribute.errorTextAppearance;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable = global::Imobiliaria.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.expanded = global::Imobiliaria.Droid.Resource.Attribute.expanded;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.expandedTitleGravity = global::Imobiliaria.Droid.Resource.Attribute.expandedTitleGravity;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.expandedTitleMargin = global::Imobiliaria.Droid.Resource.Attribute.expandedTitleMargin;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.expandedTitleMarginBottom = global::Imobiliaria.Droid.Resource.Attribute.expandedTitleMarginBottom;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.expandedTitleMarginEnd = global::Imobiliaria.Droid.Resource.Attribute.expandedTitleMarginEnd;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.expandedTitleMarginStart = global::Imobiliaria.Droid.Resource.Attribute.expandedTitleMarginStart;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.expandedTitleMarginTop = global::Imobiliaria.Droid.Resource.Attribute.expandedTitleMarginTop;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.expandedTitleTextAppearance = global::Imobiliaria.Droid.Resource.Attribute.expandedTitleTextAppearance;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.externalRouteEnabledDrawable = global::Imobiliaria.Droid.Resource.Attribute.externalRouteEnabledDrawable;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.fabSize = global::Imobiliaria.Droid.Resource.Attribute.fabSize;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.foregroundInsidePadding = global::Imobiliaria.Droid.Resource.Attribute.foregroundInsidePadding;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.gapBetweenBars = global::Imobiliaria.Droid.Resource.Attribute.gapBetweenBars;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.goIcon = global::Imobiliaria.Droid.Resource.Attribute.goIcon;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.headerLayout = global::Imobiliaria.Droid.Resource.Attribute.headerLayout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.height = global::Imobiliaria.Droid.Resource.Attribute.height;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.hideOnContentScroll = global::Imobiliaria.Droid.Resource.Attribute.hideOnContentScroll;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.hintAnimationEnabled = global::Imobiliaria.Droid.Resource.Attribute.hintAnimationEnabled;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.hintEnabled = global::Imobiliaria.Droid.Resource.Attribute.hintEnabled;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.hintTextAppearance = global::Imobiliaria.Droid.Resource.Attribute.hintTextAppearance;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.homeAsUpIndicator = global::Imobiliaria.Droid.Resource.Attribute.homeAsUpIndicator;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.homeLayout = global::Imobiliaria.Droid.Resource.Attribute.homeLayout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.icon = global::Imobiliaria.Droid.Resource.Attribute.icon;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.iconifiedByDefault = global::Imobiliaria.Droid.Resource.Attribute.iconifiedByDefault;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.imageAspectRatio = global::Imobiliaria.Droid.Resource.Attribute.imageAspectRatio;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.imageAspectRatioAdjust = global::Imobiliaria.Droid.Resource.Attribute.imageAspectRatioAdjust;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.imageButtonStyle = global::Imobiliaria.Droid.Resource.Attribute.imageButtonStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.indeterminateProgressStyle = global::Imobiliaria.Droid.Resource.Attribute.indeterminateProgressStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.initialActivityCount = global::Imobiliaria.Droid.Resource.Attribute.initialActivityCount;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.insetForeground = global::Imobiliaria.Droid.Resource.Attribute.insetForeground;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.isLightTheme = global::Imobiliaria.Droid.Resource.Attribute.isLightTheme;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.itemBackground = global::Imobiliaria.Droid.Resource.Attribute.itemBackground;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.itemIconTint = global::Imobiliaria.Droid.Resource.Attribute.itemIconTint;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.itemPadding = global::Imobiliaria.Droid.Resource.Attribute.itemPadding;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.itemTextAppearance = global::Imobiliaria.Droid.Resource.Attribute.itemTextAppearance;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.itemTextColor = global::Imobiliaria.Droid.Resource.Attribute.itemTextColor;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.keylines = global::Imobiliaria.Droid.Resource.Attribute.keylines;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.layout = global::Imobiliaria.Droid.Resource.Attribute.layout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.layoutManager = global::Imobiliaria.Droid.Resource.Attribute.layoutManager;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.layout_anchor = global::Imobiliaria.Droid.Resource.Attribute.layout_anchor;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.layout_anchorGravity = global::Imobiliaria.Droid.Resource.Attribute.layout_anchorGravity;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.layout_behavior = global::Imobiliaria.Droid.Resource.Attribute.layout_behavior;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.layout_collapseMode = global::Imobiliaria.Droid.Resource.Attribute.layout_collapseMode;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.layout_collapseParallaxMultiplier = global::Imobiliaria.Droid.Resource.Attribute.layout_collapseParallaxMultiplier;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.layout_dodgeInsetEdges = global::Imobiliaria.Droid.Resource.Attribute.layout_dodgeInsetEdges;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.layout_insetEdge = global::Imobiliaria.Droid.Resource.Attribute.layout_insetEdge;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.layout_keyline = global::Imobiliaria.Droid.Resource.Attribute.layout_keyline;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.layout_scrollFlags = global::Imobiliaria.Droid.Resource.Attribute.layout_scrollFlags;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.layout_scrollInterpolator = global::Imobiliaria.Droid.Resource.Attribute.layout_scrollInterpolator;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.listChoiceBackgroundIndicator = global::Imobiliaria.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.listDividerAlertDialog = global::Imobiliaria.Droid.Resource.Attribute.listDividerAlertDialog;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.listItemLayout = global::Imobiliaria.Droid.Resource.Attribute.listItemLayout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.listLayout = global::Imobiliaria.Droid.Resource.Attribute.listLayout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.listMenuViewStyle = global::Imobiliaria.Droid.Resource.Attribute.listMenuViewStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.listPopupWindowStyle = global::Imobiliaria.Droid.Resource.Attribute.listPopupWindowStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.listPreferredItemHeight = global::Imobiliaria.Droid.Resource.Attribute.listPreferredItemHeight;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.listPreferredItemHeightLarge = global::Imobiliaria.Droid.Resource.Attribute.listPreferredItemHeightLarge;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.listPreferredItemHeightSmall = global::Imobiliaria.Droid.Resource.Attribute.listPreferredItemHeightSmall;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.listPreferredItemPaddingLeft = global::Imobiliaria.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.listPreferredItemPaddingRight = global::Imobiliaria.Droid.Resource.Attribute.listPreferredItemPaddingRight;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.logo = global::Imobiliaria.Droid.Resource.Attribute.logo;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.logoDescription = global::Imobiliaria.Droid.Resource.Attribute.logoDescription;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.maxActionInlineWidth = global::Imobiliaria.Droid.Resource.Attribute.maxActionInlineWidth;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.maxButtonHeight = global::Imobiliaria.Droid.Resource.Attribute.maxButtonHeight;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.measureWithLargestChild = global::Imobiliaria.Droid.Resource.Attribute.measureWithLargestChild;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.mediaRouteAudioTrackDrawable = global::Imobiliaria.Droid.Resource.Attribute.mediaRouteAudioTrackDrawable;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.mediaRouteButtonStyle = global::Imobiliaria.Droid.Resource.Attribute.mediaRouteButtonStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.mediaRouteCloseDrawable = global::Imobiliaria.Droid.Resource.Attribute.mediaRouteCloseDrawable;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.mediaRouteControlPanelThemeOverlay = global::Imobiliaria.Droid.Resource.Attribute.mediaRouteControlPanelThemeOverlay;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.mediaRouteDefaultIconDrawable = global::Imobiliaria.Droid.Resource.Attribute.mediaRouteDefaultIconDrawable;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.mediaRoutePauseDrawable = global::Imobiliaria.Droid.Resource.Attribute.mediaRoutePauseDrawable;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.mediaRoutePlayDrawable = global::Imobiliaria.Droid.Resource.Attribute.mediaRoutePlayDrawable;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.mediaRouteSpeakerGroupIconDrawable = global::Imobiliaria.Droid.Resource.Attribute.mediaRouteSpeakerGroupIconDrawable;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.mediaRouteSpeakerIconDrawable = global::Imobiliaria.Droid.Resource.Attribute.mediaRouteSpeakerIconDrawable;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.mediaRouteTheme = global::Imobiliaria.Droid.Resource.Attribute.mediaRouteTheme;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.mediaRouteTvIconDrawable = global::Imobiliaria.Droid.Resource.Attribute.mediaRouteTvIconDrawable;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.menu = global::Imobiliaria.Droid.Resource.Attribute.menu;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.multiChoiceItemLayout = global::Imobiliaria.Droid.Resource.Attribute.multiChoiceItemLayout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.navigationContentDescription = global::Imobiliaria.Droid.Resource.Attribute.navigationContentDescription;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.navigationIcon = global::Imobiliaria.Droid.Resource.Attribute.navigationIcon;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.navigationMode = global::Imobiliaria.Droid.Resource.Attribute.navigationMode;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.overlapAnchor = global::Imobiliaria.Droid.Resource.Attribute.overlapAnchor;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.paddingBottomNoButtons = global::Imobiliaria.Droid.Resource.Attribute.paddingBottomNoButtons;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.paddingEnd = global::Imobiliaria.Droid.Resource.Attribute.paddingEnd;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.paddingStart = global::Imobiliaria.Droid.Resource.Attribute.paddingStart;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.paddingTopNoTitle = global::Imobiliaria.Droid.Resource.Attribute.paddingTopNoTitle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.panelBackground = global::Imobiliaria.Droid.Resource.Attribute.panelBackground;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.panelMenuListTheme = global::Imobiliaria.Droid.Resource.Attribute.panelMenuListTheme;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.panelMenuListWidth = global::Imobiliaria.Droid.Resource.Attribute.panelMenuListWidth;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.passwordToggleContentDescription = global::Imobiliaria.Droid.Resource.Attribute.passwordToggleContentDescription;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.passwordToggleDrawable = global::Imobiliaria.Droid.Resource.Attribute.passwordToggleDrawable;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.passwordToggleEnabled = global::Imobiliaria.Droid.Resource.Attribute.passwordToggleEnabled;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.passwordToggleTint = global::Imobiliaria.Droid.Resource.Attribute.passwordToggleTint;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.passwordToggleTintMode = global::Imobiliaria.Droid.Resource.Attribute.passwordToggleTintMode;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.popupMenuStyle = global::Imobiliaria.Droid.Resource.Attribute.popupMenuStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.popupTheme = global::Imobiliaria.Droid.Resource.Attribute.popupTheme;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.popupWindowStyle = global::Imobiliaria.Droid.Resource.Attribute.popupWindowStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.preserveIconSpacing = global::Imobiliaria.Droid.Resource.Attribute.preserveIconSpacing;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.pressedTranslationZ = global::Imobiliaria.Droid.Resource.Attribute.pressedTranslationZ;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.progressBarPadding = global::Imobiliaria.Droid.Resource.Attribute.progressBarPadding;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.progressBarStyle = global::Imobiliaria.Droid.Resource.Attribute.progressBarStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.queryBackground = global::Imobiliaria.Droid.Resource.Attribute.queryBackground;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.queryHint = global::Imobiliaria.Droid.Resource.Attribute.queryHint;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.radioButtonStyle = global::Imobiliaria.Droid.Resource.Attribute.radioButtonStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.ratingBarStyle = global::Imobiliaria.Droid.Resource.Attribute.ratingBarStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.ratingBarStyleIndicator = global::Imobiliaria.Droid.Resource.Attribute.ratingBarStyleIndicator;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.ratingBarStyleSmall = global::Imobiliaria.Droid.Resource.Attribute.ratingBarStyleSmall;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.reverseLayout = global::Imobiliaria.Droid.Resource.Attribute.reverseLayout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.rippleColor = global::Imobiliaria.Droid.Resource.Attribute.rippleColor;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.scopeUris = global::Imobiliaria.Droid.Resource.Attribute.scopeUris;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.scrimAnimationDuration = global::Imobiliaria.Droid.Resource.Attribute.scrimAnimationDuration;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.scrimVisibleHeightTrigger = global::Imobiliaria.Droid.Resource.Attribute.scrimVisibleHeightTrigger;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.searchHintIcon = global::Imobiliaria.Droid.Resource.Attribute.searchHintIcon;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.searchIcon = global::Imobiliaria.Droid.Resource.Attribute.searchIcon;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.searchViewStyle = global::Imobiliaria.Droid.Resource.Attribute.searchViewStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.seekBarStyle = global::Imobiliaria.Droid.Resource.Attribute.seekBarStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.selectableItemBackground = global::Imobiliaria.Droid.Resource.Attribute.selectableItemBackground;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.selectableItemBackgroundBorderless = global::Imobiliaria.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.showAsAction = global::Imobiliaria.Droid.Resource.Attribute.showAsAction;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.showDividers = global::Imobiliaria.Droid.Resource.Attribute.showDividers;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.showText = global::Imobiliaria.Droid.Resource.Attribute.showText;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.showTitle = global::Imobiliaria.Droid.Resource.Attribute.showTitle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.singleChoiceItemLayout = global::Imobiliaria.Droid.Resource.Attribute.singleChoiceItemLayout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.spanCount = global::Imobiliaria.Droid.Resource.Attribute.spanCount;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.spinBars = global::Imobiliaria.Droid.Resource.Attribute.spinBars;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.spinnerDropDownItemStyle = global::Imobiliaria.Droid.Resource.Attribute.spinnerDropDownItemStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.spinnerStyle = global::Imobiliaria.Droid.Resource.Attribute.spinnerStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.splitTrack = global::Imobiliaria.Droid.Resource.Attribute.splitTrack;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.srcCompat = global::Imobiliaria.Droid.Resource.Attribute.srcCompat;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.stackFromEnd = global::Imobiliaria.Droid.Resource.Attribute.stackFromEnd;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.state_above_anchor = global::Imobiliaria.Droid.Resource.Attribute.state_above_anchor;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.state_collapsed = global::Imobiliaria.Droid.Resource.Attribute.state_collapsed;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.state_collapsible = global::Imobiliaria.Droid.Resource.Attribute.state_collapsible;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.statusBarBackground = global::Imobiliaria.Droid.Resource.Attribute.statusBarBackground;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.statusBarScrim = global::Imobiliaria.Droid.Resource.Attribute.statusBarScrim;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.subMenuArrow = global::Imobiliaria.Droid.Resource.Attribute.subMenuArrow;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.submitBackground = global::Imobiliaria.Droid.Resource.Attribute.submitBackground;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.subtitle = global::Imobiliaria.Droid.Resource.Attribute.subtitle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.subtitleTextAppearance = global::Imobiliaria.Droid.Resource.Attribute.subtitleTextAppearance;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.subtitleTextColor = global::Imobiliaria.Droid.Resource.Attribute.subtitleTextColor;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.subtitleTextStyle = global::Imobiliaria.Droid.Resource.Attribute.subtitleTextStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.suggestionRowLayout = global::Imobiliaria.Droid.Resource.Attribute.suggestionRowLayout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.switchMinWidth = global::Imobiliaria.Droid.Resource.Attribute.switchMinWidth;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.switchPadding = global::Imobiliaria.Droid.Resource.Attribute.switchPadding;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.switchStyle = global::Imobiliaria.Droid.Resource.Attribute.switchStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.switchTextAppearance = global::Imobiliaria.Droid.Resource.Attribute.switchTextAppearance;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.tabBackground = global::Imobiliaria.Droid.Resource.Attribute.tabBackground;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.tabContentStart = global::Imobiliaria.Droid.Resource.Attribute.tabContentStart;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.tabGravity = global::Imobiliaria.Droid.Resource.Attribute.tabGravity;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.tabIndicatorColor = global::Imobiliaria.Droid.Resource.Attribute.tabIndicatorColor;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.tabIndicatorHeight = global::Imobiliaria.Droid.Resource.Attribute.tabIndicatorHeight;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.tabMaxWidth = global::Imobiliaria.Droid.Resource.Attribute.tabMaxWidth;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.tabMinWidth = global::Imobiliaria.Droid.Resource.Attribute.tabMinWidth;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.tabMode = global::Imobiliaria.Droid.Resource.Attribute.tabMode;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.tabPadding = global::Imobiliaria.Droid.Resource.Attribute.tabPadding;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.tabPaddingBottom = global::Imobiliaria.Droid.Resource.Attribute.tabPaddingBottom;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.tabPaddingEnd = global::Imobiliaria.Droid.Resource.Attribute.tabPaddingEnd;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.tabPaddingStart = global::Imobiliaria.Droid.Resource.Attribute.tabPaddingStart;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.tabPaddingTop = global::Imobiliaria.Droid.Resource.Attribute.tabPaddingTop;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.tabSelectedTextColor = global::Imobiliaria.Droid.Resource.Attribute.tabSelectedTextColor;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.tabTextAppearance = global::Imobiliaria.Droid.Resource.Attribute.tabTextAppearance;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.tabTextColor = global::Imobiliaria.Droid.Resource.Attribute.tabTextColor;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.textAllCaps = global::Imobiliaria.Droid.Resource.Attribute.textAllCaps;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.textAppearanceLargePopupMenu = global::Imobiliaria.Droid.Resource.Attribute.textAppearanceLargePopupMenu;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.textAppearanceListItem = global::Imobiliaria.Droid.Resource.Attribute.textAppearanceListItem;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.textAppearanceListItemSmall = global::Imobiliaria.Droid.Resource.Attribute.textAppearanceListItemSmall;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.textAppearancePopupMenuHeader = global::Imobiliaria.Droid.Resource.Attribute.textAppearancePopupMenuHeader;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle = global::Imobiliaria.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.textAppearanceSearchResultTitle = global::Imobiliaria.Droid.Resource.Attribute.textAppearanceSearchResultTitle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.textAppearanceSmallPopupMenu = global::Imobiliaria.Droid.Resource.Attribute.textAppearanceSmallPopupMenu;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.textColorAlertDialogListItem = global::Imobiliaria.Droid.Resource.Attribute.textColorAlertDialogListItem;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.textColorError = global::Imobiliaria.Droid.Resource.Attribute.textColorError;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.textColorSearchUrl = global::Imobiliaria.Droid.Resource.Attribute.textColorSearchUrl;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.theme = global::Imobiliaria.Droid.Resource.Attribute.theme;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.thickness = global::Imobiliaria.Droid.Resource.Attribute.thickness;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.thumbTextPadding = global::Imobiliaria.Droid.Resource.Attribute.thumbTextPadding;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.thumbTint = global::Imobiliaria.Droid.Resource.Attribute.thumbTint;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.thumbTintMode = global::Imobiliaria.Droid.Resource.Attribute.thumbTintMode;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.tickMark = global::Imobiliaria.Droid.Resource.Attribute.tickMark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.tickMarkTint = global::Imobiliaria.Droid.Resource.Attribute.tickMarkTint;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.tickMarkTintMode = global::Imobiliaria.Droid.Resource.Attribute.tickMarkTintMode;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.title = global::Imobiliaria.Droid.Resource.Attribute.title;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.titleEnabled = global::Imobiliaria.Droid.Resource.Attribute.titleEnabled;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.titleMargin = global::Imobiliaria.Droid.Resource.Attribute.titleMargin;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.titleMarginBottom = global::Imobiliaria.Droid.Resource.Attribute.titleMarginBottom;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.titleMarginEnd = global::Imobiliaria.Droid.Resource.Attribute.titleMarginEnd;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.titleMarginStart = global::Imobiliaria.Droid.Resource.Attribute.titleMarginStart;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.titleMarginTop = global::Imobiliaria.Droid.Resource.Attribute.titleMarginTop;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.titleMargins = global::Imobiliaria.Droid.Resource.Attribute.titleMargins;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.titleTextAppearance = global::Imobiliaria.Droid.Resource.Attribute.titleTextAppearance;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.titleTextColor = global::Imobiliaria.Droid.Resource.Attribute.titleTextColor;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.titleTextStyle = global::Imobiliaria.Droid.Resource.Attribute.titleTextStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.toolbarId = global::Imobiliaria.Droid.Resource.Attribute.toolbarId;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.toolbarNavigationButtonStyle = global::Imobiliaria.Droid.Resource.Attribute.toolbarNavigationButtonStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.toolbarStyle = global::Imobiliaria.Droid.Resource.Attribute.toolbarStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.track = global::Imobiliaria.Droid.Resource.Attribute.track;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.trackTint = global::Imobiliaria.Droid.Resource.Attribute.trackTint;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.trackTintMode = global::Imobiliaria.Droid.Resource.Attribute.trackTintMode;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.useCompatPadding = global::Imobiliaria.Droid.Resource.Attribute.useCompatPadding;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.voiceIcon = global::Imobiliaria.Droid.Resource.Attribute.voiceIcon;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.windowActionBar = global::Imobiliaria.Droid.Resource.Attribute.windowActionBar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.windowActionBarOverlay = global::Imobiliaria.Droid.Resource.Attribute.windowActionBarOverlay;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.windowActionModeOverlay = global::Imobiliaria.Droid.Resource.Attribute.windowActionModeOverlay;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.windowFixedHeightMajor = global::Imobiliaria.Droid.Resource.Attribute.windowFixedHeightMajor;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.windowFixedHeightMinor = global::Imobiliaria.Droid.Resource.Attribute.windowFixedHeightMinor;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.windowFixedWidthMajor = global::Imobiliaria.Droid.Resource.Attribute.windowFixedWidthMajor;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.windowFixedWidthMinor = global::Imobiliaria.Droid.Resource.Attribute.windowFixedWidthMinor;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.windowMinWidthMajor = global::Imobiliaria.Droid.Resource.Attribute.windowMinWidthMajor;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.windowMinWidthMinor = global::Imobiliaria.Droid.Resource.Attribute.windowMinWidthMinor;
+			global::Xamarians.GoogleLogin.Droid.Resource.Attribute.windowNoTitle = global::Imobiliaria.Droid.Resource.Attribute.windowNoTitle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Boolean.abc_action_bar_embed_tabs = global::Imobiliaria.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::Xamarians.GoogleLogin.Droid.Resource.Boolean.abc_allow_stacked_button_bar = global::Imobiliaria.Droid.Resource.Boolean.abc_allow_stacked_button_bar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::Imobiliaria.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
+			global::Xamarians.GoogleLogin.Droid.Resource.Boolean.abc_config_closeDialogWhenTouchOutside = global::Imobiliaria.Droid.Resource.Boolean.abc_config_closeDialogWhenTouchOutside;
+			global::Xamarians.GoogleLogin.Droid.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent = global::Imobiliaria.Droid.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark = global::Imobiliaria.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_background_cache_hint_selector_material_light = global::Imobiliaria.Droid.Resource.Color.abc_background_cache_hint_selector_material_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_btn_colored_borderless_text_material = global::Imobiliaria.Droid.Resource.Color.abc_btn_colored_borderless_text_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_btn_colored_text_material = global::Imobiliaria.Droid.Resource.Color.abc_btn_colored_text_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_color_highlight_material = global::Imobiliaria.Droid.Resource.Color.abc_color_highlight_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_hint_foreground_material_dark = global::Imobiliaria.Droid.Resource.Color.abc_hint_foreground_material_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_hint_foreground_material_light = global::Imobiliaria.Droid.Resource.Color.abc_hint_foreground_material_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_input_method_navigation_guard = global::Imobiliaria.Droid.Resource.Color.abc_input_method_navigation_guard;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_primary_text_disable_only_material_dark = global::Imobiliaria.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_primary_text_disable_only_material_light = global::Imobiliaria.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_primary_text_material_dark = global::Imobiliaria.Droid.Resource.Color.abc_primary_text_material_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_primary_text_material_light = global::Imobiliaria.Droid.Resource.Color.abc_primary_text_material_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_search_url_text = global::Imobiliaria.Droid.Resource.Color.abc_search_url_text;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_search_url_text_normal = global::Imobiliaria.Droid.Resource.Color.abc_search_url_text_normal;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_search_url_text_pressed = global::Imobiliaria.Droid.Resource.Color.abc_search_url_text_pressed;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_search_url_text_selected = global::Imobiliaria.Droid.Resource.Color.abc_search_url_text_selected;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_secondary_text_material_dark = global::Imobiliaria.Droid.Resource.Color.abc_secondary_text_material_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_secondary_text_material_light = global::Imobiliaria.Droid.Resource.Color.abc_secondary_text_material_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_tint_btn_checkable = global::Imobiliaria.Droid.Resource.Color.abc_tint_btn_checkable;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_tint_default = global::Imobiliaria.Droid.Resource.Color.abc_tint_default;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_tint_edittext = global::Imobiliaria.Droid.Resource.Color.abc_tint_edittext;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_tint_seek_thumb = global::Imobiliaria.Droid.Resource.Color.abc_tint_seek_thumb;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_tint_spinner = global::Imobiliaria.Droid.Resource.Color.abc_tint_spinner;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.abc_tint_switch_track = global::Imobiliaria.Droid.Resource.Color.abc_tint_switch_track;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.accent_material_dark = global::Imobiliaria.Droid.Resource.Color.accent_material_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.accent_material_light = global::Imobiliaria.Droid.Resource.Color.accent_material_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.background_floating_material_dark = global::Imobiliaria.Droid.Resource.Color.background_floating_material_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.background_floating_material_light = global::Imobiliaria.Droid.Resource.Color.background_floating_material_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.background_material_dark = global::Imobiliaria.Droid.Resource.Color.background_material_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.background_material_light = global::Imobiliaria.Droid.Resource.Color.background_material_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.bright_foreground_disabled_material_dark = global::Imobiliaria.Droid.Resource.Color.bright_foreground_disabled_material_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.bright_foreground_disabled_material_light = global::Imobiliaria.Droid.Resource.Color.bright_foreground_disabled_material_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.bright_foreground_inverse_material_dark = global::Imobiliaria.Droid.Resource.Color.bright_foreground_inverse_material_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.bright_foreground_inverse_material_light = global::Imobiliaria.Droid.Resource.Color.bright_foreground_inverse_material_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.bright_foreground_material_dark = global::Imobiliaria.Droid.Resource.Color.bright_foreground_material_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.bright_foreground_material_light = global::Imobiliaria.Droid.Resource.Color.bright_foreground_material_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.button_material_dark = global::Imobiliaria.Droid.Resource.Color.button_material_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.button_material_light = global::Imobiliaria.Droid.Resource.Color.button_material_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.cardview_dark_background = global::Imobiliaria.Droid.Resource.Color.cardview_dark_background;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.cardview_light_background = global::Imobiliaria.Droid.Resource.Color.cardview_light_background;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.cardview_shadow_end_color = global::Imobiliaria.Droid.Resource.Color.cardview_shadow_end_color;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.cardview_shadow_start_color = global::Imobiliaria.Droid.Resource.Color.cardview_shadow_start_color;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.common_google_signin_btn_text_dark = global::Imobiliaria.Droid.Resource.Color.common_google_signin_btn_text_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.common_google_signin_btn_text_dark_default = global::Imobiliaria.Droid.Resource.Color.common_google_signin_btn_text_dark_default;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.common_google_signin_btn_text_dark_disabled = global::Imobiliaria.Droid.Resource.Color.common_google_signin_btn_text_dark_disabled;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.common_google_signin_btn_text_dark_focused = global::Imobiliaria.Droid.Resource.Color.common_google_signin_btn_text_dark_focused;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.common_google_signin_btn_text_dark_pressed = global::Imobiliaria.Droid.Resource.Color.common_google_signin_btn_text_dark_pressed;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.common_google_signin_btn_text_light = global::Imobiliaria.Droid.Resource.Color.common_google_signin_btn_text_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.common_google_signin_btn_text_light_default = global::Imobiliaria.Droid.Resource.Color.common_google_signin_btn_text_light_default;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.common_google_signin_btn_text_light_disabled = global::Imobiliaria.Droid.Resource.Color.common_google_signin_btn_text_light_disabled;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.common_google_signin_btn_text_light_focused = global::Imobiliaria.Droid.Resource.Color.common_google_signin_btn_text_light_focused;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.common_google_signin_btn_text_light_pressed = global::Imobiliaria.Droid.Resource.Color.common_google_signin_btn_text_light_pressed;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.common_google_signin_btn_tint = global::Imobiliaria.Droid.Resource.Color.common_google_signin_btn_tint;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.design_bottom_navigation_shadow_color = global::Imobiliaria.Droid.Resource.Color.design_bottom_navigation_shadow_color;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.design_error = global::Imobiliaria.Droid.Resource.Color.design_error;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.design_fab_shadow_end_color = global::Imobiliaria.Droid.Resource.Color.design_fab_shadow_end_color;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.design_fab_shadow_mid_color = global::Imobiliaria.Droid.Resource.Color.design_fab_shadow_mid_color;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.design_fab_shadow_start_color = global::Imobiliaria.Droid.Resource.Color.design_fab_shadow_start_color;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.design_fab_stroke_end_inner_color = global::Imobiliaria.Droid.Resource.Color.design_fab_stroke_end_inner_color;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.design_fab_stroke_end_outer_color = global::Imobiliaria.Droid.Resource.Color.design_fab_stroke_end_outer_color;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.design_fab_stroke_top_inner_color = global::Imobiliaria.Droid.Resource.Color.design_fab_stroke_top_inner_color;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.design_fab_stroke_top_outer_color = global::Imobiliaria.Droid.Resource.Color.design_fab_stroke_top_outer_color;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.design_snackbar_background_color = global::Imobiliaria.Droid.Resource.Color.design_snackbar_background_color;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.design_tint_password_toggle = global::Imobiliaria.Droid.Resource.Color.design_tint_password_toggle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.dim_foreground_disabled_material_dark = global::Imobiliaria.Droid.Resource.Color.dim_foreground_disabled_material_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.dim_foreground_disabled_material_light = global::Imobiliaria.Droid.Resource.Color.dim_foreground_disabled_material_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.dim_foreground_material_dark = global::Imobiliaria.Droid.Resource.Color.dim_foreground_material_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.dim_foreground_material_light = global::Imobiliaria.Droid.Resource.Color.dim_foreground_material_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.foreground_material_dark = global::Imobiliaria.Droid.Resource.Color.foreground_material_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.foreground_material_light = global::Imobiliaria.Droid.Resource.Color.foreground_material_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.highlighted_text_material_dark = global::Imobiliaria.Droid.Resource.Color.highlighted_text_material_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.highlighted_text_material_light = global::Imobiliaria.Droid.Resource.Color.highlighted_text_material_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.material_blue_grey_800 = global::Imobiliaria.Droid.Resource.Color.material_blue_grey_800;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.material_blue_grey_900 = global::Imobiliaria.Droid.Resource.Color.material_blue_grey_900;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.material_blue_grey_950 = global::Imobiliaria.Droid.Resource.Color.material_blue_grey_950;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.material_deep_teal_200 = global::Imobiliaria.Droid.Resource.Color.material_deep_teal_200;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.material_deep_teal_500 = global::Imobiliaria.Droid.Resource.Color.material_deep_teal_500;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.material_grey_100 = global::Imobiliaria.Droid.Resource.Color.material_grey_100;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.material_grey_300 = global::Imobiliaria.Droid.Resource.Color.material_grey_300;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.material_grey_50 = global::Imobiliaria.Droid.Resource.Color.material_grey_50;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.material_grey_600 = global::Imobiliaria.Droid.Resource.Color.material_grey_600;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.material_grey_800 = global::Imobiliaria.Droid.Resource.Color.material_grey_800;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.material_grey_850 = global::Imobiliaria.Droid.Resource.Color.material_grey_850;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.material_grey_900 = global::Imobiliaria.Droid.Resource.Color.material_grey_900;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.notification_action_color_filter = global::Imobiliaria.Droid.Resource.Color.notification_action_color_filter;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.notification_icon_bg_color = global::Imobiliaria.Droid.Resource.Color.notification_icon_bg_color;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.notification_material_background_media_default_color = global::Imobiliaria.Droid.Resource.Color.notification_material_background_media_default_color;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.primary_dark_material_dark = global::Imobiliaria.Droid.Resource.Color.primary_dark_material_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.primary_dark_material_light = global::Imobiliaria.Droid.Resource.Color.primary_dark_material_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.primary_material_dark = global::Imobiliaria.Droid.Resource.Color.primary_material_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.primary_material_light = global::Imobiliaria.Droid.Resource.Color.primary_material_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.primary_text_default_material_dark = global::Imobiliaria.Droid.Resource.Color.primary_text_default_material_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.primary_text_default_material_light = global::Imobiliaria.Droid.Resource.Color.primary_text_default_material_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.primary_text_disabled_material_dark = global::Imobiliaria.Droid.Resource.Color.primary_text_disabled_material_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.primary_text_disabled_material_light = global::Imobiliaria.Droid.Resource.Color.primary_text_disabled_material_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.ripple_material_dark = global::Imobiliaria.Droid.Resource.Color.ripple_material_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.ripple_material_light = global::Imobiliaria.Droid.Resource.Color.ripple_material_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.secondary_text_default_material_dark = global::Imobiliaria.Droid.Resource.Color.secondary_text_default_material_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.secondary_text_default_material_light = global::Imobiliaria.Droid.Resource.Color.secondary_text_default_material_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.secondary_text_disabled_material_dark = global::Imobiliaria.Droid.Resource.Color.secondary_text_disabled_material_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.secondary_text_disabled_material_light = global::Imobiliaria.Droid.Resource.Color.secondary_text_disabled_material_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.switch_thumb_disabled_material_dark = global::Imobiliaria.Droid.Resource.Color.switch_thumb_disabled_material_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.switch_thumb_disabled_material_light = global::Imobiliaria.Droid.Resource.Color.switch_thumb_disabled_material_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.switch_thumb_material_dark = global::Imobiliaria.Droid.Resource.Color.switch_thumb_material_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.switch_thumb_material_light = global::Imobiliaria.Droid.Resource.Color.switch_thumb_material_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.switch_thumb_normal_material_dark = global::Imobiliaria.Droid.Resource.Color.switch_thumb_normal_material_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Color.switch_thumb_normal_material_light = global::Imobiliaria.Droid.Resource.Color.switch_thumb_normal_material_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_action_bar_content_inset_material = global::Imobiliaria.Droid.Resource.Dimension.abc_action_bar_content_inset_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_action_bar_content_inset_with_nav = global::Imobiliaria.Droid.Resource.Dimension.abc_action_bar_content_inset_with_nav;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_action_bar_default_height_material = global::Imobiliaria.Droid.Resource.Dimension.abc_action_bar_default_height_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material = global::Imobiliaria.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material = global::Imobiliaria.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_action_bar_elevation_material = global::Imobiliaria.Droid.Resource.Dimension.abc_action_bar_elevation_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::Imobiliaria.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::Imobiliaria.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::Imobiliaria.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_action_bar_progress_bar_size = global::Imobiliaria.Droid.Resource.Dimension.abc_action_bar_progress_bar_size;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_action_bar_stacked_max_height = global::Imobiliaria.Droid.Resource.Dimension.abc_action_bar_stacked_max_height;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::Imobiliaria.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::Imobiliaria.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::Imobiliaria.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_action_button_min_height_material = global::Imobiliaria.Droid.Resource.Dimension.abc_action_button_min_height_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_action_button_min_width_material = global::Imobiliaria.Droid.Resource.Dimension.abc_action_button_min_width_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material = global::Imobiliaria.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height = global::Imobiliaria.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_button_inset_horizontal_material = global::Imobiliaria.Droid.Resource.Dimension.abc_button_inset_horizontal_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_button_inset_vertical_material = global::Imobiliaria.Droid.Resource.Dimension.abc_button_inset_vertical_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_button_padding_horizontal_material = global::Imobiliaria.Droid.Resource.Dimension.abc_button_padding_horizontal_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_button_padding_vertical_material = global::Imobiliaria.Droid.Resource.Dimension.abc_button_padding_vertical_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_cascading_menus_min_smallest_width = global::Imobiliaria.Droid.Resource.Dimension.abc_cascading_menus_min_smallest_width;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_config_prefDialogWidth = global::Imobiliaria.Droid.Resource.Dimension.abc_config_prefDialogWidth;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_control_corner_material = global::Imobiliaria.Droid.Resource.Dimension.abc_control_corner_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_control_inset_material = global::Imobiliaria.Droid.Resource.Dimension.abc_control_inset_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_control_padding_material = global::Imobiliaria.Droid.Resource.Dimension.abc_control_padding_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_dialog_fixed_height_major = global::Imobiliaria.Droid.Resource.Dimension.abc_dialog_fixed_height_major;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_dialog_fixed_height_minor = global::Imobiliaria.Droid.Resource.Dimension.abc_dialog_fixed_height_minor;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_dialog_fixed_width_major = global::Imobiliaria.Droid.Resource.Dimension.abc_dialog_fixed_width_major;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_dialog_fixed_width_minor = global::Imobiliaria.Droid.Resource.Dimension.abc_dialog_fixed_width_minor;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons = global::Imobiliaria.Droid.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_dialog_list_padding_top_no_title = global::Imobiliaria.Droid.Resource.Dimension.abc_dialog_list_padding_top_no_title;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_dialog_min_width_major = global::Imobiliaria.Droid.Resource.Dimension.abc_dialog_min_width_major;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_dialog_min_width_minor = global::Imobiliaria.Droid.Resource.Dimension.abc_dialog_min_width_minor;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_dialog_padding_material = global::Imobiliaria.Droid.Resource.Dimension.abc_dialog_padding_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_dialog_padding_top_material = global::Imobiliaria.Droid.Resource.Dimension.abc_dialog_padding_top_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_dialog_title_divider_material = global::Imobiliaria.Droid.Resource.Dimension.abc_dialog_title_divider_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_disabled_alpha_material_dark = global::Imobiliaria.Droid.Resource.Dimension.abc_disabled_alpha_material_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_disabled_alpha_material_light = global::Imobiliaria.Droid.Resource.Dimension.abc_disabled_alpha_material_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_dropdownitem_icon_width = global::Imobiliaria.Droid.Resource.Dimension.abc_dropdownitem_icon_width;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left = global::Imobiliaria.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right = global::Imobiliaria.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material = global::Imobiliaria.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::Imobiliaria.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_edit_text_inset_top_material = global::Imobiliaria.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_floating_window_z = global::Imobiliaria.Droid.Resource.Dimension.abc_floating_window_z;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material = global::Imobiliaria.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_panel_menu_list_width = global::Imobiliaria.Droid.Resource.Dimension.abc_panel_menu_list_width;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_progress_bar_height_material = global::Imobiliaria.Droid.Resource.Dimension.abc_progress_bar_height_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_search_view_preferred_height = global::Imobiliaria.Droid.Resource.Dimension.abc_search_view_preferred_height;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_search_view_preferred_width = global::Imobiliaria.Droid.Resource.Dimension.abc_search_view_preferred_width;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_seekbar_track_background_height_material = global::Imobiliaria.Droid.Resource.Dimension.abc_seekbar_track_background_height_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material = global::Imobiliaria.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_select_dialog_padding_start_material = global::Imobiliaria.Droid.Resource.Dimension.abc_select_dialog_padding_start_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_switch_padding = global::Imobiliaria.Droid.Resource.Dimension.abc_switch_padding;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_text_size_body_1_material = global::Imobiliaria.Droid.Resource.Dimension.abc_text_size_body_1_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_text_size_body_2_material = global::Imobiliaria.Droid.Resource.Dimension.abc_text_size_body_2_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_text_size_button_material = global::Imobiliaria.Droid.Resource.Dimension.abc_text_size_button_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_text_size_caption_material = global::Imobiliaria.Droid.Resource.Dimension.abc_text_size_caption_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_text_size_display_1_material = global::Imobiliaria.Droid.Resource.Dimension.abc_text_size_display_1_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_text_size_display_2_material = global::Imobiliaria.Droid.Resource.Dimension.abc_text_size_display_2_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_text_size_display_3_material = global::Imobiliaria.Droid.Resource.Dimension.abc_text_size_display_3_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_text_size_display_4_material = global::Imobiliaria.Droid.Resource.Dimension.abc_text_size_display_4_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_text_size_headline_material = global::Imobiliaria.Droid.Resource.Dimension.abc_text_size_headline_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_text_size_large_material = global::Imobiliaria.Droid.Resource.Dimension.abc_text_size_large_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_text_size_medium_material = global::Imobiliaria.Droid.Resource.Dimension.abc_text_size_medium_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_text_size_menu_header_material = global::Imobiliaria.Droid.Resource.Dimension.abc_text_size_menu_header_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_text_size_menu_material = global::Imobiliaria.Droid.Resource.Dimension.abc_text_size_menu_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_text_size_small_material = global::Imobiliaria.Droid.Resource.Dimension.abc_text_size_small_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_text_size_subhead_material = global::Imobiliaria.Droid.Resource.Dimension.abc_text_size_subhead_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::Imobiliaria.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_text_size_title_material = global::Imobiliaria.Droid.Resource.Dimension.abc_text_size_title_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.abc_text_size_title_material_toolbar = global::Imobiliaria.Droid.Resource.Dimension.abc_text_size_title_material_toolbar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.cardview_compat_inset_shadow = global::Imobiliaria.Droid.Resource.Dimension.cardview_compat_inset_shadow;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.cardview_default_elevation = global::Imobiliaria.Droid.Resource.Dimension.cardview_default_elevation;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.cardview_default_radius = global::Imobiliaria.Droid.Resource.Dimension.cardview_default_radius;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_appbar_elevation = global::Imobiliaria.Droid.Resource.Dimension.design_appbar_elevation;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_bottom_navigation_active_item_max_width = global::Imobiliaria.Droid.Resource.Dimension.design_bottom_navigation_active_item_max_width;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_bottom_navigation_active_text_size = global::Imobiliaria.Droid.Resource.Dimension.design_bottom_navigation_active_text_size;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_bottom_navigation_elevation = global::Imobiliaria.Droid.Resource.Dimension.design_bottom_navigation_elevation;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_bottom_navigation_height = global::Imobiliaria.Droid.Resource.Dimension.design_bottom_navigation_height;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_bottom_navigation_item_max_width = global::Imobiliaria.Droid.Resource.Dimension.design_bottom_navigation_item_max_width;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_bottom_navigation_item_min_width = global::Imobiliaria.Droid.Resource.Dimension.design_bottom_navigation_item_min_width;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_bottom_navigation_margin = global::Imobiliaria.Droid.Resource.Dimension.design_bottom_navigation_margin;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_bottom_navigation_shadow_height = global::Imobiliaria.Droid.Resource.Dimension.design_bottom_navigation_shadow_height;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_bottom_navigation_text_size = global::Imobiliaria.Droid.Resource.Dimension.design_bottom_navigation_text_size;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_bottom_sheet_modal_elevation = global::Imobiliaria.Droid.Resource.Dimension.design_bottom_sheet_modal_elevation;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_bottom_sheet_peek_height_min = global::Imobiliaria.Droid.Resource.Dimension.design_bottom_sheet_peek_height_min;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_fab_border_width = global::Imobiliaria.Droid.Resource.Dimension.design_fab_border_width;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_fab_elevation = global::Imobiliaria.Droid.Resource.Dimension.design_fab_elevation;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_fab_image_size = global::Imobiliaria.Droid.Resource.Dimension.design_fab_image_size;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_fab_size_mini = global::Imobiliaria.Droid.Resource.Dimension.design_fab_size_mini;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_fab_size_normal = global::Imobiliaria.Droid.Resource.Dimension.design_fab_size_normal;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_fab_translation_z_pressed = global::Imobiliaria.Droid.Resource.Dimension.design_fab_translation_z_pressed;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_navigation_elevation = global::Imobiliaria.Droid.Resource.Dimension.design_navigation_elevation;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_navigation_icon_padding = global::Imobiliaria.Droid.Resource.Dimension.design_navigation_icon_padding;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_navigation_icon_size = global::Imobiliaria.Droid.Resource.Dimension.design_navigation_icon_size;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_navigation_max_width = global::Imobiliaria.Droid.Resource.Dimension.design_navigation_max_width;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_navigation_padding_bottom = global::Imobiliaria.Droid.Resource.Dimension.design_navigation_padding_bottom;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_navigation_separator_vertical_padding = global::Imobiliaria.Droid.Resource.Dimension.design_navigation_separator_vertical_padding;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_snackbar_action_inline_max_width = global::Imobiliaria.Droid.Resource.Dimension.design_snackbar_action_inline_max_width;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_snackbar_background_corner_radius = global::Imobiliaria.Droid.Resource.Dimension.design_snackbar_background_corner_radius;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_snackbar_elevation = global::Imobiliaria.Droid.Resource.Dimension.design_snackbar_elevation;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_snackbar_extra_spacing_horizontal = global::Imobiliaria.Droid.Resource.Dimension.design_snackbar_extra_spacing_horizontal;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_snackbar_max_width = global::Imobiliaria.Droid.Resource.Dimension.design_snackbar_max_width;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_snackbar_min_width = global::Imobiliaria.Droid.Resource.Dimension.design_snackbar_min_width;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_snackbar_padding_horizontal = global::Imobiliaria.Droid.Resource.Dimension.design_snackbar_padding_horizontal;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_snackbar_padding_vertical = global::Imobiliaria.Droid.Resource.Dimension.design_snackbar_padding_vertical;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_snackbar_padding_vertical_2lines = global::Imobiliaria.Droid.Resource.Dimension.design_snackbar_padding_vertical_2lines;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_snackbar_text_size = global::Imobiliaria.Droid.Resource.Dimension.design_snackbar_text_size;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_tab_max_width = global::Imobiliaria.Droid.Resource.Dimension.design_tab_max_width;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_tab_scrollable_min_width = global::Imobiliaria.Droid.Resource.Dimension.design_tab_scrollable_min_width;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_tab_text_size = global::Imobiliaria.Droid.Resource.Dimension.design_tab_text_size;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.design_tab_text_size_2line = global::Imobiliaria.Droid.Resource.Dimension.design_tab_text_size_2line;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.disabled_alpha_material_dark = global::Imobiliaria.Droid.Resource.Dimension.disabled_alpha_material_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.disabled_alpha_material_light = global::Imobiliaria.Droid.Resource.Dimension.disabled_alpha_material_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.highlight_alpha_material_colored = global::Imobiliaria.Droid.Resource.Dimension.highlight_alpha_material_colored;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.highlight_alpha_material_dark = global::Imobiliaria.Droid.Resource.Dimension.highlight_alpha_material_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.highlight_alpha_material_light = global::Imobiliaria.Droid.Resource.Dimension.highlight_alpha_material_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.hint_alpha_material_dark = global::Imobiliaria.Droid.Resource.Dimension.hint_alpha_material_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.hint_alpha_material_light = global::Imobiliaria.Droid.Resource.Dimension.hint_alpha_material_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.hint_pressed_alpha_material_dark = global::Imobiliaria.Droid.Resource.Dimension.hint_pressed_alpha_material_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.hint_pressed_alpha_material_light = global::Imobiliaria.Droid.Resource.Dimension.hint_pressed_alpha_material_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::Imobiliaria.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::Imobiliaria.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::Imobiliaria.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.mr_controller_volume_group_list_item_height = global::Imobiliaria.Droid.Resource.Dimension.mr_controller_volume_group_list_item_height;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.mr_controller_volume_group_list_item_icon_size = global::Imobiliaria.Droid.Resource.Dimension.mr_controller_volume_group_list_item_icon_size;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.mr_controller_volume_group_list_max_height = global::Imobiliaria.Droid.Resource.Dimension.mr_controller_volume_group_list_max_height;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.mr_controller_volume_group_list_padding_top = global::Imobiliaria.Droid.Resource.Dimension.mr_controller_volume_group_list_padding_top;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.mr_dialog_fixed_width_major = global::Imobiliaria.Droid.Resource.Dimension.mr_dialog_fixed_width_major;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.mr_dialog_fixed_width_minor = global::Imobiliaria.Droid.Resource.Dimension.mr_dialog_fixed_width_minor;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.notification_action_icon_size = global::Imobiliaria.Droid.Resource.Dimension.notification_action_icon_size;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.notification_action_text_size = global::Imobiliaria.Droid.Resource.Dimension.notification_action_text_size;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.notification_big_circle_margin = global::Imobiliaria.Droid.Resource.Dimension.notification_big_circle_margin;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.notification_content_margin_start = global::Imobiliaria.Droid.Resource.Dimension.notification_content_margin_start;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.notification_large_icon_height = global::Imobiliaria.Droid.Resource.Dimension.notification_large_icon_height;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.notification_large_icon_width = global::Imobiliaria.Droid.Resource.Dimension.notification_large_icon_width;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.notification_main_column_padding_top = global::Imobiliaria.Droid.Resource.Dimension.notification_main_column_padding_top;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.notification_media_narrow_margin = global::Imobiliaria.Droid.Resource.Dimension.notification_media_narrow_margin;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.notification_right_icon_size = global::Imobiliaria.Droid.Resource.Dimension.notification_right_icon_size;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.notification_right_side_padding_top = global::Imobiliaria.Droid.Resource.Dimension.notification_right_side_padding_top;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.notification_small_icon_background_padding = global::Imobiliaria.Droid.Resource.Dimension.notification_small_icon_background_padding;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.notification_small_icon_size_as_large = global::Imobiliaria.Droid.Resource.Dimension.notification_small_icon_size_as_large;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.notification_subtext_size = global::Imobiliaria.Droid.Resource.Dimension.notification_subtext_size;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.notification_top_pad = global::Imobiliaria.Droid.Resource.Dimension.notification_top_pad;
+			global::Xamarians.GoogleLogin.Droid.Resource.Dimension.notification_top_pad_large_text = global::Imobiliaria.Droid.Resource.Dimension.notification_top_pad_large_text;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::Imobiliaria.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_action_bar_item_background_material = global::Imobiliaria.Droid.Resource.Drawable.abc_action_bar_item_background_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_btn_borderless_material = global::Imobiliaria.Droid.Resource.Drawable.abc_btn_borderless_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_btn_check_material = global::Imobiliaria.Droid.Resource.Drawable.abc_btn_check_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::Imobiliaria.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::Imobiliaria.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_btn_colored_material = global::Imobiliaria.Droid.Resource.Drawable.abc_btn_colored_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_btn_default_mtrl_shape = global::Imobiliaria.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_btn_radio_material = global::Imobiliaria.Droid.Resource.Drawable.abc_btn_radio_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::Imobiliaria.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::Imobiliaria.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::Imobiliaria.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::Imobiliaria.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_cab_background_internal_bg = global::Imobiliaria.Droid.Resource.Drawable.abc_cab_background_internal_bg;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_cab_background_top_material = global::Imobiliaria.Droid.Resource.Drawable.abc_cab_background_top_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::Imobiliaria.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_control_background_material = global::Imobiliaria.Droid.Resource.Drawable.abc_control_background_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_dialog_material_background = global::Imobiliaria.Droid.Resource.Drawable.abc_dialog_material_background;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_edit_text_material = global::Imobiliaria.Droid.Resource.Drawable.abc_edit_text_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ic_ab_back_material = global::Imobiliaria.Droid.Resource.Drawable.abc_ic_ab_back_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp = global::Imobiliaria.Droid.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ic_clear_material = global::Imobiliaria.Droid.Resource.Drawable.abc_ic_clear_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::Imobiliaria.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ic_go_search_api_material = global::Imobiliaria.Droid.Resource.Drawable.abc_ic_go_search_api_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::Imobiliaria.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::Imobiliaria.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ic_menu_overflow_material = global::Imobiliaria.Droid.Resource.Drawable.abc_ic_menu_overflow_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::Imobiliaria.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::Imobiliaria.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::Imobiliaria.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ic_search_api_material = global::Imobiliaria.Droid.Resource.Drawable.abc_ic_search_api_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ic_star_black_16dp = global::Imobiliaria.Droid.Resource.Drawable.abc_ic_star_black_16dp;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ic_star_black_36dp = global::Imobiliaria.Droid.Resource.Drawable.abc_ic_star_black_36dp;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ic_star_black_48dp = global::Imobiliaria.Droid.Resource.Drawable.abc_ic_star_black_48dp;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ic_star_half_black_16dp = global::Imobiliaria.Droid.Resource.Drawable.abc_ic_star_half_black_16dp;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ic_star_half_black_36dp = global::Imobiliaria.Droid.Resource.Drawable.abc_ic_star_half_black_36dp;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ic_star_half_black_48dp = global::Imobiliaria.Droid.Resource.Drawable.abc_ic_star_half_black_48dp;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ic_voice_search_api_material = global::Imobiliaria.Droid.Resource.Drawable.abc_ic_voice_search_api_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_item_background_holo_dark = global::Imobiliaria.Droid.Resource.Drawable.abc_item_background_holo_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_item_background_holo_light = global::Imobiliaria.Droid.Resource.Drawable.abc_item_background_holo_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha = global::Imobiliaria.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_list_focused_holo = global::Imobiliaria.Droid.Resource.Drawable.abc_list_focused_holo;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_list_longpressed_holo = global::Imobiliaria.Droid.Resource.Drawable.abc_list_longpressed_holo;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_list_pressed_holo_dark = global::Imobiliaria.Droid.Resource.Drawable.abc_list_pressed_holo_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_list_pressed_holo_light = global::Imobiliaria.Droid.Resource.Drawable.abc_list_pressed_holo_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::Imobiliaria.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::Imobiliaria.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::Imobiliaria.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light = global::Imobiliaria.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_list_selector_holo_dark = global::Imobiliaria.Droid.Resource.Drawable.abc_list_selector_holo_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_list_selector_holo_light = global::Imobiliaria.Droid.Resource.Drawable.abc_list_selector_holo_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::Imobiliaria.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_popup_background_mtrl_mult = global::Imobiliaria.Droid.Resource.Drawable.abc_popup_background_mtrl_mult;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ratingbar_indicator_material = global::Imobiliaria.Droid.Resource.Drawable.abc_ratingbar_indicator_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ratingbar_material = global::Imobiliaria.Droid.Resource.Drawable.abc_ratingbar_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_ratingbar_small_material = global::Imobiliaria.Droid.Resource.Drawable.abc_ratingbar_small_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::Imobiliaria.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::Imobiliaria.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::Imobiliaria.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::Imobiliaria.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::Imobiliaria.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_seekbar_thumb_material = global::Imobiliaria.Droid.Resource.Drawable.abc_seekbar_thumb_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_seekbar_tick_mark_material = global::Imobiliaria.Droid.Resource.Drawable.abc_seekbar_tick_mark_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_seekbar_track_material = global::Imobiliaria.Droid.Resource.Drawable.abc_seekbar_track_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::Imobiliaria.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_spinner_textfield_background_material = global::Imobiliaria.Droid.Resource.Drawable.abc_spinner_textfield_background_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_switch_thumb_material = global::Imobiliaria.Droid.Resource.Drawable.abc_switch_thumb_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha = global::Imobiliaria.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_tab_indicator_material = global::Imobiliaria.Droid.Resource.Drawable.abc_tab_indicator_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::Imobiliaria.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_text_cursor_material = global::Imobiliaria.Droid.Resource.Drawable.abc_text_cursor_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark = global::Imobiliaria.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_light = global::Imobiliaria.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark = global::Imobiliaria.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light = global::Imobiliaria.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark = global::Imobiliaria.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_light = global::Imobiliaria.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::Imobiliaria.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::Imobiliaria.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::Imobiliaria.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::Imobiliaria.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_textfield_search_material = global::Imobiliaria.Droid.Resource.Drawable.abc_textfield_search_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.abc_vector_test = global::Imobiliaria.Droid.Resource.Drawable.abc_vector_test;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.avd_hide_password = global::Imobiliaria.Droid.Resource.Drawable.avd_hide_password;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.avd_hide_password_1 = global::Imobiliaria.Droid.Resource.Drawable.avd_hide_password_1;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.avd_hide_password_2 = global::Imobiliaria.Droid.Resource.Drawable.avd_hide_password_2;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.avd_hide_password_3 = global::Imobiliaria.Droid.Resource.Drawable.avd_hide_password_3;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.avd_show_password = global::Imobiliaria.Droid.Resource.Drawable.avd_show_password;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.avd_show_password_1 = global::Imobiliaria.Droid.Resource.Drawable.avd_show_password_1;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.avd_show_password_2 = global::Imobiliaria.Droid.Resource.Drawable.avd_show_password_2;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.avd_show_password_3 = global::Imobiliaria.Droid.Resource.Drawable.avd_show_password_3;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.common_full_open_on_phone = global::Imobiliaria.Droid.Resource.Drawable.common_full_open_on_phone;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.common_google_signin_btn_icon_dark = global::Imobiliaria.Droid.Resource.Drawable.common_google_signin_btn_icon_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.common_google_signin_btn_icon_dark_focused = global::Imobiliaria.Droid.Resource.Drawable.common_google_signin_btn_icon_dark_focused;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.common_google_signin_btn_icon_dark_normal = global::Imobiliaria.Droid.Resource.Drawable.common_google_signin_btn_icon_dark_normal;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.common_google_signin_btn_icon_dark_normal_background = global::Imobiliaria.Droid.Resource.Drawable.common_google_signin_btn_icon_dark_normal_background;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.common_google_signin_btn_icon_disabled = global::Imobiliaria.Droid.Resource.Drawable.common_google_signin_btn_icon_disabled;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.common_google_signin_btn_icon_light = global::Imobiliaria.Droid.Resource.Drawable.common_google_signin_btn_icon_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.common_google_signin_btn_icon_light_focused = global::Imobiliaria.Droid.Resource.Drawable.common_google_signin_btn_icon_light_focused;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.common_google_signin_btn_icon_light_normal = global::Imobiliaria.Droid.Resource.Drawable.common_google_signin_btn_icon_light_normal;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.common_google_signin_btn_icon_light_normal_background = global::Imobiliaria.Droid.Resource.Drawable.common_google_signin_btn_icon_light_normal_background;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.common_google_signin_btn_text_dark = global::Imobiliaria.Droid.Resource.Drawable.common_google_signin_btn_text_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.common_google_signin_btn_text_dark_focused = global::Imobiliaria.Droid.Resource.Drawable.common_google_signin_btn_text_dark_focused;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.common_google_signin_btn_text_dark_normal = global::Imobiliaria.Droid.Resource.Drawable.common_google_signin_btn_text_dark_normal;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.common_google_signin_btn_text_dark_normal_background = global::Imobiliaria.Droid.Resource.Drawable.common_google_signin_btn_text_dark_normal_background;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.common_google_signin_btn_text_disabled = global::Imobiliaria.Droid.Resource.Drawable.common_google_signin_btn_text_disabled;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.common_google_signin_btn_text_light = global::Imobiliaria.Droid.Resource.Drawable.common_google_signin_btn_text_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.common_google_signin_btn_text_light_focused = global::Imobiliaria.Droid.Resource.Drawable.common_google_signin_btn_text_light_focused;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.common_google_signin_btn_text_light_normal = global::Imobiliaria.Droid.Resource.Drawable.common_google_signin_btn_text_light_normal;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.common_google_signin_btn_text_light_normal_background = global::Imobiliaria.Droid.Resource.Drawable.common_google_signin_btn_text_light_normal_background;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.design_bottom_navigation_item_background = global::Imobiliaria.Droid.Resource.Drawable.design_bottom_navigation_item_background;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.design_fab_background = global::Imobiliaria.Droid.Resource.Drawable.design_fab_background;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.design_ic_visibility = global::Imobiliaria.Droid.Resource.Drawable.design_ic_visibility;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.design_ic_visibility_off = global::Imobiliaria.Droid.Resource.Drawable.design_ic_visibility_off;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.design_password_eye = global::Imobiliaria.Droid.Resource.Drawable.design_password_eye;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.design_snackbar_background = global::Imobiliaria.Droid.Resource.Drawable.design_snackbar_background;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.googleg_disabled_color_18 = global::Imobiliaria.Droid.Resource.Drawable.googleg_disabled_color_18;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.googleg_standard_color_18 = global::Imobiliaria.Droid.Resource.Drawable.googleg_standard_color_18;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_audiotrack_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_audiotrack_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_audiotrack_light = global::Imobiliaria.Droid.Resource.Drawable.ic_audiotrack_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_dialog_close_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_dialog_close_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_dialog_close_light = global::Imobiliaria.Droid.Resource.Drawable.ic_dialog_close_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_collapse_00 = global::Imobiliaria.Droid.Resource.Drawable.ic_group_collapse_00;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_collapse_01 = global::Imobiliaria.Droid.Resource.Drawable.ic_group_collapse_01;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_collapse_02 = global::Imobiliaria.Droid.Resource.Drawable.ic_group_collapse_02;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_collapse_03 = global::Imobiliaria.Droid.Resource.Drawable.ic_group_collapse_03;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_collapse_04 = global::Imobiliaria.Droid.Resource.Drawable.ic_group_collapse_04;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_collapse_05 = global::Imobiliaria.Droid.Resource.Drawable.ic_group_collapse_05;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_collapse_06 = global::Imobiliaria.Droid.Resource.Drawable.ic_group_collapse_06;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_collapse_07 = global::Imobiliaria.Droid.Resource.Drawable.ic_group_collapse_07;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_collapse_08 = global::Imobiliaria.Droid.Resource.Drawable.ic_group_collapse_08;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_collapse_09 = global::Imobiliaria.Droid.Resource.Drawable.ic_group_collapse_09;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_collapse_10 = global::Imobiliaria.Droid.Resource.Drawable.ic_group_collapse_10;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_collapse_11 = global::Imobiliaria.Droid.Resource.Drawable.ic_group_collapse_11;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_collapse_12 = global::Imobiliaria.Droid.Resource.Drawable.ic_group_collapse_12;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_collapse_13 = global::Imobiliaria.Droid.Resource.Drawable.ic_group_collapse_13;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_collapse_14 = global::Imobiliaria.Droid.Resource.Drawable.ic_group_collapse_14;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_collapse_15 = global::Imobiliaria.Droid.Resource.Drawable.ic_group_collapse_15;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_expand_00 = global::Imobiliaria.Droid.Resource.Drawable.ic_group_expand_00;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_expand_01 = global::Imobiliaria.Droid.Resource.Drawable.ic_group_expand_01;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_expand_02 = global::Imobiliaria.Droid.Resource.Drawable.ic_group_expand_02;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_expand_03 = global::Imobiliaria.Droid.Resource.Drawable.ic_group_expand_03;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_expand_04 = global::Imobiliaria.Droid.Resource.Drawable.ic_group_expand_04;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_expand_05 = global::Imobiliaria.Droid.Resource.Drawable.ic_group_expand_05;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_expand_06 = global::Imobiliaria.Droid.Resource.Drawable.ic_group_expand_06;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_expand_07 = global::Imobiliaria.Droid.Resource.Drawable.ic_group_expand_07;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_expand_08 = global::Imobiliaria.Droid.Resource.Drawable.ic_group_expand_08;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_expand_09 = global::Imobiliaria.Droid.Resource.Drawable.ic_group_expand_09;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_expand_10 = global::Imobiliaria.Droid.Resource.Drawable.ic_group_expand_10;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_expand_11 = global::Imobiliaria.Droid.Resource.Drawable.ic_group_expand_11;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_expand_12 = global::Imobiliaria.Droid.Resource.Drawable.ic_group_expand_12;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_expand_13 = global::Imobiliaria.Droid.Resource.Drawable.ic_group_expand_13;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_expand_14 = global::Imobiliaria.Droid.Resource.Drawable.ic_group_expand_14;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_group_expand_15 = global::Imobiliaria.Droid.Resource.Drawable.ic_group_expand_15;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_media_pause_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_media_pause_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_media_pause_light = global::Imobiliaria.Droid.Resource.Drawable.ic_media_pause_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_media_play_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_media_play_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_media_play_light = global::Imobiliaria.Droid.Resource.Drawable.ic_media_play_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_00_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_00_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_00_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_00_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_01_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_01_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_01_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_01_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_02_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_02_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_02_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_02_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_03_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_03_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_03_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_03_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_04_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_04_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_04_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_04_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_05_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_05_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_05_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_05_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_06_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_06_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_06_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_06_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_07_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_07_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_07_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_07_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_08_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_08_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_08_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_08_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_09_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_09_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_09_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_09_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_10_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_10_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_10_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_10_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_11_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_11_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_11_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_11_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_12_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_12_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_12_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_12_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_13_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_13_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_13_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_13_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_14_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_14_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_14_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_14_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_15_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_15_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_15_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_15_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_16_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_16_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_16_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_16_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_17_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_17_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_17_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_17_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_18_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_18_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_18_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_18_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_19_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_19_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_19_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_19_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_20_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_20_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_20_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_20_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_21_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_21_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_21_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_21_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_22_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_22_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connected_22_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connected_22_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_00_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_00_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_00_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_00_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_01_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_01_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_01_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_01_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_02_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_02_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_02_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_02_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_03_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_03_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_03_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_03_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_04_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_04_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_04_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_04_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_05_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_05_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_05_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_05_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_06_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_06_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_06_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_06_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_07_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_07_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_07_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_07_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_08_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_08_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_08_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_08_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_09_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_09_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_09_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_09_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_10_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_10_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_10_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_10_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_11_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_11_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_11_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_11_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_12_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_12_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_12_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_12_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_13_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_13_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_13_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_13_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_14_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_14_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_14_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_14_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_15_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_15_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_15_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_15_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_16_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_16_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_16_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_16_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_17_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_17_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_17_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_17_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_18_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_18_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_18_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_18_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_19_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_19_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_19_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_19_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_20_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_20_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_20_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_20_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_21_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_21_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_21_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_21_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_22_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_22_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_connecting_22_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_connecting_22_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_disabled_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_disabled_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_disabled_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_disabled_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_disconnected_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_disconnected_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_disconnected_light = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_disconnected_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_mr_button_grey = global::Imobiliaria.Droid.Resource.Drawable.ic_mr_button_grey;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_plusone_medium_off_client = global::Imobiliaria.Droid.Resource.Drawable.ic_plusone_medium_off_client;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_plusone_small_off_client = global::Imobiliaria.Droid.Resource.Drawable.ic_plusone_small_off_client;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_plusone_standard_off_client = global::Imobiliaria.Droid.Resource.Drawable.ic_plusone_standard_off_client;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_plusone_tall_off_client = global::Imobiliaria.Droid.Resource.Drawable.ic_plusone_tall_off_client;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_vol_type_speaker_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_vol_type_speaker_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_vol_type_speaker_group_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_vol_type_speaker_group_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_vol_type_speaker_group_light = global::Imobiliaria.Droid.Resource.Drawable.ic_vol_type_speaker_group_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_vol_type_speaker_light = global::Imobiliaria.Droid.Resource.Drawable.ic_vol_type_speaker_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_vol_type_tv_dark = global::Imobiliaria.Droid.Resource.Drawable.ic_vol_type_tv_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.ic_vol_type_tv_light = global::Imobiliaria.Droid.Resource.Drawable.ic_vol_type_tv_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.mr_button_connected_dark = global::Imobiliaria.Droid.Resource.Drawable.mr_button_connected_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.mr_button_connected_light = global::Imobiliaria.Droid.Resource.Drawable.mr_button_connected_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.mr_button_connecting_dark = global::Imobiliaria.Droid.Resource.Drawable.mr_button_connecting_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.mr_button_connecting_light = global::Imobiliaria.Droid.Resource.Drawable.mr_button_connecting_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.mr_button_dark = global::Imobiliaria.Droid.Resource.Drawable.mr_button_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.mr_button_light = global::Imobiliaria.Droid.Resource.Drawable.mr_button_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.mr_dialog_close_dark = global::Imobiliaria.Droid.Resource.Drawable.mr_dialog_close_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.mr_dialog_close_light = global::Imobiliaria.Droid.Resource.Drawable.mr_dialog_close_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.mr_dialog_material_background_dark = global::Imobiliaria.Droid.Resource.Drawable.mr_dialog_material_background_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.mr_dialog_material_background_light = global::Imobiliaria.Droid.Resource.Drawable.mr_dialog_material_background_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.mr_group_collapse = global::Imobiliaria.Droid.Resource.Drawable.mr_group_collapse;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.mr_group_expand = global::Imobiliaria.Droid.Resource.Drawable.mr_group_expand;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.mr_media_pause_dark = global::Imobiliaria.Droid.Resource.Drawable.mr_media_pause_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.mr_media_pause_light = global::Imobiliaria.Droid.Resource.Drawable.mr_media_pause_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.mr_media_play_dark = global::Imobiliaria.Droid.Resource.Drawable.mr_media_play_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.mr_media_play_light = global::Imobiliaria.Droid.Resource.Drawable.mr_media_play_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.mr_vol_type_audiotrack_dark = global::Imobiliaria.Droid.Resource.Drawable.mr_vol_type_audiotrack_dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.mr_vol_type_audiotrack_light = global::Imobiliaria.Droid.Resource.Drawable.mr_vol_type_audiotrack_light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.navigation_empty_icon = global::Imobiliaria.Droid.Resource.Drawable.navigation_empty_icon;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.notification_action_background = global::Imobiliaria.Droid.Resource.Drawable.notification_action_background;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.notification_bg = global::Imobiliaria.Droid.Resource.Drawable.notification_bg;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.notification_bg_low = global::Imobiliaria.Droid.Resource.Drawable.notification_bg_low;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.notification_bg_low_normal = global::Imobiliaria.Droid.Resource.Drawable.notification_bg_low_normal;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.notification_bg_low_pressed = global::Imobiliaria.Droid.Resource.Drawable.notification_bg_low_pressed;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.notification_bg_normal = global::Imobiliaria.Droid.Resource.Drawable.notification_bg_normal;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.notification_bg_normal_pressed = global::Imobiliaria.Droid.Resource.Drawable.notification_bg_normal_pressed;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.notification_icon_background = global::Imobiliaria.Droid.Resource.Drawable.notification_icon_background;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.notification_template_icon_bg = global::Imobiliaria.Droid.Resource.Drawable.notification_template_icon_bg;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.notification_template_icon_low_bg = global::Imobiliaria.Droid.Resource.Drawable.notification_template_icon_low_bg;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.notification_tile_bg = global::Imobiliaria.Droid.Resource.Drawable.notification_tile_bg;
+			global::Xamarians.GoogleLogin.Droid.Resource.Drawable.notify_panel_notification_icon_bg = global::Imobiliaria.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.action0 = global::Imobiliaria.Droid.Resource.Id.action0;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.action_bar = global::Imobiliaria.Droid.Resource.Id.action_bar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.action_bar_activity_content = global::Imobiliaria.Droid.Resource.Id.action_bar_activity_content;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.action_bar_container = global::Imobiliaria.Droid.Resource.Id.action_bar_container;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.action_bar_root = global::Imobiliaria.Droid.Resource.Id.action_bar_root;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.action_bar_spinner = global::Imobiliaria.Droid.Resource.Id.action_bar_spinner;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.action_bar_subtitle = global::Imobiliaria.Droid.Resource.Id.action_bar_subtitle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.action_bar_title = global::Imobiliaria.Droid.Resource.Id.action_bar_title;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.action_container = global::Imobiliaria.Droid.Resource.Id.action_container;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.action_context_bar = global::Imobiliaria.Droid.Resource.Id.action_context_bar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.action_divider = global::Imobiliaria.Droid.Resource.Id.action_divider;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.action_image = global::Imobiliaria.Droid.Resource.Id.action_image;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.action_menu_divider = global::Imobiliaria.Droid.Resource.Id.action_menu_divider;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.action_menu_presenter = global::Imobiliaria.Droid.Resource.Id.action_menu_presenter;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.action_mode_bar = global::Imobiliaria.Droid.Resource.Id.action_mode_bar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.action_mode_bar_stub = global::Imobiliaria.Droid.Resource.Id.action_mode_bar_stub;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.action_mode_close_button = global::Imobiliaria.Droid.Resource.Id.action_mode_close_button;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.action_text = global::Imobiliaria.Droid.Resource.Id.action_text;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.actions = global::Imobiliaria.Droid.Resource.Id.actions;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.activity_chooser_view_content = global::Imobiliaria.Droid.Resource.Id.activity_chooser_view_content;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.add = global::Imobiliaria.Droid.Resource.Id.add;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.adjust_height = global::Imobiliaria.Droid.Resource.Id.adjust_height;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.adjust_width = global::Imobiliaria.Droid.Resource.Id.adjust_width;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.alertTitle = global::Imobiliaria.Droid.Resource.Id.alertTitle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.all = global::Imobiliaria.Droid.Resource.Id.all;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.always = global::Imobiliaria.Droid.Resource.Id.always;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.auto = global::Imobiliaria.Droid.Resource.Id.auto;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.beginning = global::Imobiliaria.Droid.Resource.Id.beginning;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.bottom = global::Imobiliaria.Droid.Resource.Id.bottom;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.buttonPanel = global::Imobiliaria.Droid.Resource.Id.buttonPanel;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.cancel_action = global::Imobiliaria.Droid.Resource.Id.cancel_action;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.center = global::Imobiliaria.Droid.Resource.Id.center;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.center_horizontal = global::Imobiliaria.Droid.Resource.Id.center_horizontal;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.center_vertical = global::Imobiliaria.Droid.Resource.Id.center_vertical;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.checkbox = global::Imobiliaria.Droid.Resource.Id.checkbox;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.chronometer = global::Imobiliaria.Droid.Resource.Id.chronometer;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.clip_horizontal = global::Imobiliaria.Droid.Resource.Id.clip_horizontal;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.clip_vertical = global::Imobiliaria.Droid.Resource.Id.clip_vertical;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.collapseActionView = global::Imobiliaria.Droid.Resource.Id.collapseActionView;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.contentPanel = global::Imobiliaria.Droid.Resource.Id.contentPanel;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.custom = global::Imobiliaria.Droid.Resource.Id.custom;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.customPanel = global::Imobiliaria.Droid.Resource.Id.customPanel;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.dark = global::Imobiliaria.Droid.Resource.Id.dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.decor_content_parent = global::Imobiliaria.Droid.Resource.Id.decor_content_parent;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.default_activity_button = global::Imobiliaria.Droid.Resource.Id.default_activity_button;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.design_bottom_sheet = global::Imobiliaria.Droid.Resource.Id.design_bottom_sheet;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.design_menu_item_action_area = global::Imobiliaria.Droid.Resource.Id.design_menu_item_action_area;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.design_menu_item_action_area_stub = global::Imobiliaria.Droid.Resource.Id.design_menu_item_action_area_stub;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.design_menu_item_text = global::Imobiliaria.Droid.Resource.Id.design_menu_item_text;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.design_navigation_view = global::Imobiliaria.Droid.Resource.Id.design_navigation_view;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.disableHome = global::Imobiliaria.Droid.Resource.Id.disableHome;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.edit_query = global::Imobiliaria.Droid.Resource.Id.edit_query;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.end = global::Imobiliaria.Droid.Resource.Id.end;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.end_padder = global::Imobiliaria.Droid.Resource.Id.end_padder;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.enterAlways = global::Imobiliaria.Droid.Resource.Id.enterAlways;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.enterAlwaysCollapsed = global::Imobiliaria.Droid.Resource.Id.enterAlwaysCollapsed;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.exitUntilCollapsed = global::Imobiliaria.Droid.Resource.Id.exitUntilCollapsed;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.expand_activities_button = global::Imobiliaria.Droid.Resource.Id.expand_activities_button;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.expanded_menu = global::Imobiliaria.Droid.Resource.Id.expanded_menu;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.fill = global::Imobiliaria.Droid.Resource.Id.fill;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.fill_horizontal = global::Imobiliaria.Droid.Resource.Id.fill_horizontal;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.fill_vertical = global::Imobiliaria.Droid.Resource.Id.fill_vertical;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.@fixed = global::Imobiliaria.Droid.Resource.Id.@fixed;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.home = global::Imobiliaria.Droid.Resource.Id.home;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.homeAsUp = global::Imobiliaria.Droid.Resource.Id.homeAsUp;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.icon = global::Imobiliaria.Droid.Resource.Id.icon;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.icon_group = global::Imobiliaria.Droid.Resource.Id.icon_group;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.icon_only = global::Imobiliaria.Droid.Resource.Id.icon_only;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.ifRoom = global::Imobiliaria.Droid.Resource.Id.ifRoom;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.image = global::Imobiliaria.Droid.Resource.Id.image;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.info = global::Imobiliaria.Droid.Resource.Id.info;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.item_touch_helper_previous_elevation = global::Imobiliaria.Droid.Resource.Id.item_touch_helper_previous_elevation;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.largeLabel = global::Imobiliaria.Droid.Resource.Id.largeLabel;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.left = global::Imobiliaria.Droid.Resource.Id.left;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.light = global::Imobiliaria.Droid.Resource.Id.light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.line1 = global::Imobiliaria.Droid.Resource.Id.line1;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.line3 = global::Imobiliaria.Droid.Resource.Id.line3;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.listMode = global::Imobiliaria.Droid.Resource.Id.listMode;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.list_item = global::Imobiliaria.Droid.Resource.Id.list_item;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.masked = global::Imobiliaria.Droid.Resource.Id.masked;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.media_actions = global::Imobiliaria.Droid.Resource.Id.media_actions;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.middle = global::Imobiliaria.Droid.Resource.Id.middle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.mini = global::Imobiliaria.Droid.Resource.Id.mini;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_art = global::Imobiliaria.Droid.Resource.Id.mr_art;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_chooser_list = global::Imobiliaria.Droid.Resource.Id.mr_chooser_list;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_chooser_route_desc = global::Imobiliaria.Droid.Resource.Id.mr_chooser_route_desc;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_chooser_route_icon = global::Imobiliaria.Droid.Resource.Id.mr_chooser_route_icon;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_chooser_route_name = global::Imobiliaria.Droid.Resource.Id.mr_chooser_route_name;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_chooser_title = global::Imobiliaria.Droid.Resource.Id.mr_chooser_title;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_close = global::Imobiliaria.Droid.Resource.Id.mr_close;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_control_divider = global::Imobiliaria.Droid.Resource.Id.mr_control_divider;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_control_subtitle = global::Imobiliaria.Droid.Resource.Id.mr_control_subtitle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_control_title = global::Imobiliaria.Droid.Resource.Id.mr_control_title;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_control_title_container = global::Imobiliaria.Droid.Resource.Id.mr_control_title_container;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_custom_control = global::Imobiliaria.Droid.Resource.Id.mr_custom_control;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_default_control = global::Imobiliaria.Droid.Resource.Id.mr_default_control;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_dialog_area = global::Imobiliaria.Droid.Resource.Id.mr_dialog_area;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_expandable_area = global::Imobiliaria.Droid.Resource.Id.mr_expandable_area;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_group_expand_collapse = global::Imobiliaria.Droid.Resource.Id.mr_group_expand_collapse;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_media_main_control = global::Imobiliaria.Droid.Resource.Id.mr_media_main_control;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_name = global::Imobiliaria.Droid.Resource.Id.mr_name;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_playback_control = global::Imobiliaria.Droid.Resource.Id.mr_playback_control;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_title_bar = global::Imobiliaria.Droid.Resource.Id.mr_title_bar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_volume_control = global::Imobiliaria.Droid.Resource.Id.mr_volume_control;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_volume_group_list = global::Imobiliaria.Droid.Resource.Id.mr_volume_group_list;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_volume_item_icon = global::Imobiliaria.Droid.Resource.Id.mr_volume_item_icon;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.mr_volume_slider = global::Imobiliaria.Droid.Resource.Id.mr_volume_slider;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.multiply = global::Imobiliaria.Droid.Resource.Id.multiply;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.navigation_header_container = global::Imobiliaria.Droid.Resource.Id.navigation_header_container;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.never = global::Imobiliaria.Droid.Resource.Id.never;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.none = global::Imobiliaria.Droid.Resource.Id.none;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.normal = global::Imobiliaria.Droid.Resource.Id.normal;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.notification_background = global::Imobiliaria.Droid.Resource.Id.notification_background;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.notification_main_column = global::Imobiliaria.Droid.Resource.Id.notification_main_column;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.notification_main_column_container = global::Imobiliaria.Droid.Resource.Id.notification_main_column_container;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.parallax = global::Imobiliaria.Droid.Resource.Id.parallax;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.parentPanel = global::Imobiliaria.Droid.Resource.Id.parentPanel;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.pin = global::Imobiliaria.Droid.Resource.Id.pin;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.progress_circular = global::Imobiliaria.Droid.Resource.Id.progress_circular;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.progress_horizontal = global::Imobiliaria.Droid.Resource.Id.progress_horizontal;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.radio = global::Imobiliaria.Droid.Resource.Id.radio;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.right = global::Imobiliaria.Droid.Resource.Id.right;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.right_icon = global::Imobiliaria.Droid.Resource.Id.right_icon;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.right_side = global::Imobiliaria.Droid.Resource.Id.right_side;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.screen = global::Imobiliaria.Droid.Resource.Id.screen;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.scroll = global::Imobiliaria.Droid.Resource.Id.scroll;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.scrollIndicatorDown = global::Imobiliaria.Droid.Resource.Id.scrollIndicatorDown;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.scrollIndicatorUp = global::Imobiliaria.Droid.Resource.Id.scrollIndicatorUp;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.scrollView = global::Imobiliaria.Droid.Resource.Id.scrollView;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.scrollable = global::Imobiliaria.Droid.Resource.Id.scrollable;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.search_badge = global::Imobiliaria.Droid.Resource.Id.search_badge;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.search_bar = global::Imobiliaria.Droid.Resource.Id.search_bar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.search_button = global::Imobiliaria.Droid.Resource.Id.search_button;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.search_close_btn = global::Imobiliaria.Droid.Resource.Id.search_close_btn;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.search_edit_frame = global::Imobiliaria.Droid.Resource.Id.search_edit_frame;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.search_go_btn = global::Imobiliaria.Droid.Resource.Id.search_go_btn;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.search_mag_icon = global::Imobiliaria.Droid.Resource.Id.search_mag_icon;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.search_plate = global::Imobiliaria.Droid.Resource.Id.search_plate;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.search_src_text = global::Imobiliaria.Droid.Resource.Id.search_src_text;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.search_voice_btn = global::Imobiliaria.Droid.Resource.Id.search_voice_btn;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.select_dialog_listview = global::Imobiliaria.Droid.Resource.Id.select_dialog_listview;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.shortcut = global::Imobiliaria.Droid.Resource.Id.shortcut;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.showCustom = global::Imobiliaria.Droid.Resource.Id.showCustom;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.showHome = global::Imobiliaria.Droid.Resource.Id.showHome;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.showTitle = global::Imobiliaria.Droid.Resource.Id.showTitle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.smallLabel = global::Imobiliaria.Droid.Resource.Id.smallLabel;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.snackbar_action = global::Imobiliaria.Droid.Resource.Id.snackbar_action;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.snackbar_text = global::Imobiliaria.Droid.Resource.Id.snackbar_text;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.snap = global::Imobiliaria.Droid.Resource.Id.snap;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.spacer = global::Imobiliaria.Droid.Resource.Id.spacer;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.split_action_bar = global::Imobiliaria.Droid.Resource.Id.split_action_bar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.src_atop = global::Imobiliaria.Droid.Resource.Id.src_atop;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.src_in = global::Imobiliaria.Droid.Resource.Id.src_in;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.src_over = global::Imobiliaria.Droid.Resource.Id.src_over;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.standard = global::Imobiliaria.Droid.Resource.Id.standard;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.start = global::Imobiliaria.Droid.Resource.Id.start;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.status_bar_latest_event_content = global::Imobiliaria.Droid.Resource.Id.status_bar_latest_event_content;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.submenuarrow = global::Imobiliaria.Droid.Resource.Id.submenuarrow;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.submit_area = global::Imobiliaria.Droid.Resource.Id.submit_area;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.tabMode = global::Imobiliaria.Droid.Resource.Id.tabMode;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.text = global::Imobiliaria.Droid.Resource.Id.text;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.text2 = global::Imobiliaria.Droid.Resource.Id.text2;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.textSpacerNoButtons = global::Imobiliaria.Droid.Resource.Id.textSpacerNoButtons;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.textSpacerNoTitle = global::Imobiliaria.Droid.Resource.Id.textSpacerNoTitle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.text_input_password_toggle = global::Imobiliaria.Droid.Resource.Id.text_input_password_toggle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.textinput_counter = global::Imobiliaria.Droid.Resource.Id.textinput_counter;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.textinput_error = global::Imobiliaria.Droid.Resource.Id.textinput_error;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.time = global::Imobiliaria.Droid.Resource.Id.time;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.title = global::Imobiliaria.Droid.Resource.Id.title;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.titleDividerNoCustom = global::Imobiliaria.Droid.Resource.Id.titleDividerNoCustom;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.title_template = global::Imobiliaria.Droid.Resource.Id.title_template;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.top = global::Imobiliaria.Droid.Resource.Id.top;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.topPanel = global::Imobiliaria.Droid.Resource.Id.topPanel;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.touch_outside = global::Imobiliaria.Droid.Resource.Id.touch_outside;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.transition_current_scene = global::Imobiliaria.Droid.Resource.Id.transition_current_scene;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.transition_scene_layoutid_cache = global::Imobiliaria.Droid.Resource.Id.transition_scene_layoutid_cache;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.up = global::Imobiliaria.Droid.Resource.Id.up;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.useLogo = global::Imobiliaria.Droid.Resource.Id.useLogo;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.view_offset_helper = global::Imobiliaria.Droid.Resource.Id.view_offset_helper;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.visible = global::Imobiliaria.Droid.Resource.Id.visible;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.volume_item_container = global::Imobiliaria.Droid.Resource.Id.volume_item_container;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.wide = global::Imobiliaria.Droid.Resource.Id.wide;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.withText = global::Imobiliaria.Droid.Resource.Id.withText;
+			global::Xamarians.GoogleLogin.Droid.Resource.Id.wrap_content = global::Imobiliaria.Droid.Resource.Id.wrap_content;
+			global::Xamarians.GoogleLogin.Droid.Resource.Integer.abc_config_activityDefaultDur = global::Imobiliaria.Droid.Resource.Integer.abc_config_activityDefaultDur;
+			global::Xamarians.GoogleLogin.Droid.Resource.Integer.abc_config_activityShortDur = global::Imobiliaria.Droid.Resource.Integer.abc_config_activityShortDur;
+			global::Xamarians.GoogleLogin.Droid.Resource.Integer.app_bar_elevation_anim_duration = global::Imobiliaria.Droid.Resource.Integer.app_bar_elevation_anim_duration;
+			global::Xamarians.GoogleLogin.Droid.Resource.Integer.bottom_sheet_slide_duration = global::Imobiliaria.Droid.Resource.Integer.bottom_sheet_slide_duration;
+			global::Xamarians.GoogleLogin.Droid.Resource.Integer.cancel_button_image_alpha = global::Imobiliaria.Droid.Resource.Integer.cancel_button_image_alpha;
+			global::Xamarians.GoogleLogin.Droid.Resource.Integer.design_snackbar_text_max_lines = global::Imobiliaria.Droid.Resource.Integer.design_snackbar_text_max_lines;
+			global::Xamarians.GoogleLogin.Droid.Resource.Integer.google_play_services_version = global::Imobiliaria.Droid.Resource.Integer.google_play_services_version;
+			global::Xamarians.GoogleLogin.Droid.Resource.Integer.hide_password_duration = global::Imobiliaria.Droid.Resource.Integer.hide_password_duration;
+			global::Xamarians.GoogleLogin.Droid.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms = global::Imobiliaria.Droid.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms;
+			global::Xamarians.GoogleLogin.Droid.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms = global::Imobiliaria.Droid.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms;
+			global::Xamarians.GoogleLogin.Droid.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms = global::Imobiliaria.Droid.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms;
+			global::Xamarians.GoogleLogin.Droid.Resource.Integer.show_password_duration = global::Imobiliaria.Droid.Resource.Integer.show_password_duration;
+			global::Xamarians.GoogleLogin.Droid.Resource.Integer.status_bar_notification_info_maxnum = global::Imobiliaria.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::Xamarians.GoogleLogin.Droid.Resource.Interpolator.mr_fast_out_slow_in = global::Imobiliaria.Droid.Resource.Interpolator.mr_fast_out_slow_in;
+			global::Xamarians.GoogleLogin.Droid.Resource.Interpolator.mr_linear_out_slow_in = global::Imobiliaria.Droid.Resource.Interpolator.mr_linear_out_slow_in;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_action_bar_title_item = global::Imobiliaria.Droid.Resource.Layout.abc_action_bar_title_item;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_action_bar_up_container = global::Imobiliaria.Droid.Resource.Layout.abc_action_bar_up_container;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_action_menu_item_layout = global::Imobiliaria.Droid.Resource.Layout.abc_action_menu_item_layout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_action_menu_layout = global::Imobiliaria.Droid.Resource.Layout.abc_action_menu_layout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_action_mode_bar = global::Imobiliaria.Droid.Resource.Layout.abc_action_mode_bar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_action_mode_close_item_material = global::Imobiliaria.Droid.Resource.Layout.abc_action_mode_close_item_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_activity_chooser_view = global::Imobiliaria.Droid.Resource.Layout.abc_activity_chooser_view;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_activity_chooser_view_list_item = global::Imobiliaria.Droid.Resource.Layout.abc_activity_chooser_view_list_item;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_alert_dialog_button_bar_material = global::Imobiliaria.Droid.Resource.Layout.abc_alert_dialog_button_bar_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_alert_dialog_material = global::Imobiliaria.Droid.Resource.Layout.abc_alert_dialog_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_alert_dialog_title_material = global::Imobiliaria.Droid.Resource.Layout.abc_alert_dialog_title_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_dialog_title_material = global::Imobiliaria.Droid.Resource.Layout.abc_dialog_title_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_expanded_menu_layout = global::Imobiliaria.Droid.Resource.Layout.abc_expanded_menu_layout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_list_menu_item_checkbox = global::Imobiliaria.Droid.Resource.Layout.abc_list_menu_item_checkbox;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_list_menu_item_icon = global::Imobiliaria.Droid.Resource.Layout.abc_list_menu_item_icon;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_list_menu_item_layout = global::Imobiliaria.Droid.Resource.Layout.abc_list_menu_item_layout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_list_menu_item_radio = global::Imobiliaria.Droid.Resource.Layout.abc_list_menu_item_radio;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_popup_menu_header_item_layout = global::Imobiliaria.Droid.Resource.Layout.abc_popup_menu_header_item_layout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_popup_menu_item_layout = global::Imobiliaria.Droid.Resource.Layout.abc_popup_menu_item_layout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_screen_content_include = global::Imobiliaria.Droid.Resource.Layout.abc_screen_content_include;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_screen_simple = global::Imobiliaria.Droid.Resource.Layout.abc_screen_simple;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode = global::Imobiliaria.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_screen_toolbar = global::Imobiliaria.Droid.Resource.Layout.abc_screen_toolbar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line = global::Imobiliaria.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_search_view = global::Imobiliaria.Droid.Resource.Layout.abc_search_view;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.abc_select_dialog_material = global::Imobiliaria.Droid.Resource.Layout.abc_select_dialog_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.design_bottom_navigation_item = global::Imobiliaria.Droid.Resource.Layout.design_bottom_navigation_item;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.design_bottom_sheet_dialog = global::Imobiliaria.Droid.Resource.Layout.design_bottom_sheet_dialog;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.design_layout_snackbar = global::Imobiliaria.Droid.Resource.Layout.design_layout_snackbar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.design_layout_snackbar_include = global::Imobiliaria.Droid.Resource.Layout.design_layout_snackbar_include;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.design_layout_tab_icon = global::Imobiliaria.Droid.Resource.Layout.design_layout_tab_icon;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.design_layout_tab_text = global::Imobiliaria.Droid.Resource.Layout.design_layout_tab_text;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.design_menu_item_action_area = global::Imobiliaria.Droid.Resource.Layout.design_menu_item_action_area;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.design_navigation_item = global::Imobiliaria.Droid.Resource.Layout.design_navigation_item;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.design_navigation_item_header = global::Imobiliaria.Droid.Resource.Layout.design_navigation_item_header;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.design_navigation_item_separator = global::Imobiliaria.Droid.Resource.Layout.design_navigation_item_separator;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.design_navigation_item_subheader = global::Imobiliaria.Droid.Resource.Layout.design_navigation_item_subheader;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.design_navigation_menu = global::Imobiliaria.Droid.Resource.Layout.design_navigation_menu;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.design_navigation_menu_item = global::Imobiliaria.Droid.Resource.Layout.design_navigation_menu_item;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.design_text_input_password_icon = global::Imobiliaria.Droid.Resource.Layout.design_text_input_password_icon;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.mr_chooser_dialog = global::Imobiliaria.Droid.Resource.Layout.mr_chooser_dialog;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.mr_chooser_list_item = global::Imobiliaria.Droid.Resource.Layout.mr_chooser_list_item;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.mr_controller_material_dialog_b = global::Imobiliaria.Droid.Resource.Layout.mr_controller_material_dialog_b;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.mr_controller_volume_item = global::Imobiliaria.Droid.Resource.Layout.mr_controller_volume_item;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.mr_playback_control = global::Imobiliaria.Droid.Resource.Layout.mr_playback_control;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.mr_volume_control = global::Imobiliaria.Droid.Resource.Layout.mr_volume_control;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.notification_action = global::Imobiliaria.Droid.Resource.Layout.notification_action;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.notification_action_tombstone = global::Imobiliaria.Droid.Resource.Layout.notification_action_tombstone;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.notification_media_action = global::Imobiliaria.Droid.Resource.Layout.notification_media_action;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.notification_media_cancel_action = global::Imobiliaria.Droid.Resource.Layout.notification_media_cancel_action;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.notification_template_big_media = global::Imobiliaria.Droid.Resource.Layout.notification_template_big_media;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.notification_template_big_media_custom = global::Imobiliaria.Droid.Resource.Layout.notification_template_big_media_custom;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.notification_template_big_media_narrow = global::Imobiliaria.Droid.Resource.Layout.notification_template_big_media_narrow;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.notification_template_big_media_narrow_custom = global::Imobiliaria.Droid.Resource.Layout.notification_template_big_media_narrow_custom;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.notification_template_custom_big = global::Imobiliaria.Droid.Resource.Layout.notification_template_custom_big;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.notification_template_icon_group = global::Imobiliaria.Droid.Resource.Layout.notification_template_icon_group;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.notification_template_lines_media = global::Imobiliaria.Droid.Resource.Layout.notification_template_lines_media;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.notification_template_media = global::Imobiliaria.Droid.Resource.Layout.notification_template_media;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.notification_template_media_custom = global::Imobiliaria.Droid.Resource.Layout.notification_template_media_custom;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.notification_template_part_chronometer = global::Imobiliaria.Droid.Resource.Layout.notification_template_part_chronometer;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.notification_template_part_time = global::Imobiliaria.Droid.Resource.Layout.notification_template_part_time;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.select_dialog_item_material = global::Imobiliaria.Droid.Resource.Layout.select_dialog_item_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.select_dialog_multichoice_material = global::Imobiliaria.Droid.Resource.Layout.select_dialog_multichoice_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.select_dialog_singlechoice_material = global::Imobiliaria.Droid.Resource.Layout.select_dialog_singlechoice_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.Layout.support_simple_spinner_dropdown_item = global::Imobiliaria.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.ApplicationName = global::Imobiliaria.Droid.Resource.String.ApplicationName;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.Hello = global::Imobiliaria.Droid.Resource.String.Hello;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_action_bar_home_description = global::Imobiliaria.Droid.Resource.String.abc_action_bar_home_description;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_action_bar_up_description = global::Imobiliaria.Droid.Resource.String.abc_action_bar_up_description;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_action_menu_overflow_description = global::Imobiliaria.Droid.Resource.String.abc_action_menu_overflow_description;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_action_mode_done = global::Imobiliaria.Droid.Resource.String.abc_action_mode_done;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_activity_chooser_view_see_all = global::Imobiliaria.Droid.Resource.String.abc_activity_chooser_view_see_all;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_activitychooserview_choose_application = global::Imobiliaria.Droid.Resource.String.abc_activitychooserview_choose_application;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_capital_off = global::Imobiliaria.Droid.Resource.String.abc_capital_off;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_capital_on = global::Imobiliaria.Droid.Resource.String.abc_capital_on;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_font_family_body_1_material = global::Imobiliaria.Droid.Resource.String.abc_font_family_body_1_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_font_family_body_2_material = global::Imobiliaria.Droid.Resource.String.abc_font_family_body_2_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_font_family_button_material = global::Imobiliaria.Droid.Resource.String.abc_font_family_button_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_font_family_caption_material = global::Imobiliaria.Droid.Resource.String.abc_font_family_caption_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_font_family_display_1_material = global::Imobiliaria.Droid.Resource.String.abc_font_family_display_1_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_font_family_display_2_material = global::Imobiliaria.Droid.Resource.String.abc_font_family_display_2_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_font_family_display_3_material = global::Imobiliaria.Droid.Resource.String.abc_font_family_display_3_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_font_family_display_4_material = global::Imobiliaria.Droid.Resource.String.abc_font_family_display_4_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_font_family_headline_material = global::Imobiliaria.Droid.Resource.String.abc_font_family_headline_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_font_family_menu_material = global::Imobiliaria.Droid.Resource.String.abc_font_family_menu_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_font_family_subhead_material = global::Imobiliaria.Droid.Resource.String.abc_font_family_subhead_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_font_family_title_material = global::Imobiliaria.Droid.Resource.String.abc_font_family_title_material;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_search_hint = global::Imobiliaria.Droid.Resource.String.abc_search_hint;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_searchview_description_clear = global::Imobiliaria.Droid.Resource.String.abc_searchview_description_clear;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_searchview_description_query = global::Imobiliaria.Droid.Resource.String.abc_searchview_description_query;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_searchview_description_search = global::Imobiliaria.Droid.Resource.String.abc_searchview_description_search;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_searchview_description_submit = global::Imobiliaria.Droid.Resource.String.abc_searchview_description_submit;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_searchview_description_voice = global::Imobiliaria.Droid.Resource.String.abc_searchview_description_voice;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_shareactionprovider_share_with = global::Imobiliaria.Droid.Resource.String.abc_shareactionprovider_share_with;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_shareactionprovider_share_with_application = global::Imobiliaria.Droid.Resource.String.abc_shareactionprovider_share_with_application;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.abc_toolbar_collapse_description = global::Imobiliaria.Droid.Resource.String.abc_toolbar_collapse_description;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.appbar_scrolling_view_behavior = global::Imobiliaria.Droid.Resource.String.appbar_scrolling_view_behavior;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.bottom_sheet_behavior = global::Imobiliaria.Droid.Resource.String.bottom_sheet_behavior;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.character_counter_pattern = global::Imobiliaria.Droid.Resource.String.character_counter_pattern;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.common_google_play_services_enable_button = global::Imobiliaria.Droid.Resource.String.common_google_play_services_enable_button;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.common_google_play_services_enable_text = global::Imobiliaria.Droid.Resource.String.common_google_play_services_enable_text;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.common_google_play_services_enable_title = global::Imobiliaria.Droid.Resource.String.common_google_play_services_enable_title;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.common_google_play_services_install_button = global::Imobiliaria.Droid.Resource.String.common_google_play_services_install_button;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.common_google_play_services_install_text = global::Imobiliaria.Droid.Resource.String.common_google_play_services_install_text;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.common_google_play_services_install_title = global::Imobiliaria.Droid.Resource.String.common_google_play_services_install_title;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.common_google_play_services_notification_ticker = global::Imobiliaria.Droid.Resource.String.common_google_play_services_notification_ticker;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.common_google_play_services_unknown_issue = global::Imobiliaria.Droid.Resource.String.common_google_play_services_unknown_issue;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.common_google_play_services_unsupported_text = global::Imobiliaria.Droid.Resource.String.common_google_play_services_unsupported_text;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.common_google_play_services_update_button = global::Imobiliaria.Droid.Resource.String.common_google_play_services_update_button;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.common_google_play_services_update_text = global::Imobiliaria.Droid.Resource.String.common_google_play_services_update_text;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.common_google_play_services_update_title = global::Imobiliaria.Droid.Resource.String.common_google_play_services_update_title;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.common_google_play_services_updating_text = global::Imobiliaria.Droid.Resource.String.common_google_play_services_updating_text;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.common_google_play_services_wear_update_text = global::Imobiliaria.Droid.Resource.String.common_google_play_services_wear_update_text;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.common_open_on_phone = global::Imobiliaria.Droid.Resource.String.common_open_on_phone;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.common_signin_button_text = global::Imobiliaria.Droid.Resource.String.common_signin_button_text;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.common_signin_button_text_long = global::Imobiliaria.Droid.Resource.String.common_signin_button_text_long;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.mr_button_content_description = global::Imobiliaria.Droid.Resource.String.mr_button_content_description;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.mr_cast_button_connected = global::Imobiliaria.Droid.Resource.String.mr_cast_button_connected;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.mr_cast_button_connecting = global::Imobiliaria.Droid.Resource.String.mr_cast_button_connecting;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.mr_cast_button_disconnected = global::Imobiliaria.Droid.Resource.String.mr_cast_button_disconnected;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.mr_chooser_searching = global::Imobiliaria.Droid.Resource.String.mr_chooser_searching;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.mr_chooser_title = global::Imobiliaria.Droid.Resource.String.mr_chooser_title;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.mr_controller_album_art = global::Imobiliaria.Droid.Resource.String.mr_controller_album_art;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.mr_controller_casting_screen = global::Imobiliaria.Droid.Resource.String.mr_controller_casting_screen;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.mr_controller_close_description = global::Imobiliaria.Droid.Resource.String.mr_controller_close_description;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.mr_controller_collapse_group = global::Imobiliaria.Droid.Resource.String.mr_controller_collapse_group;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.mr_controller_disconnect = global::Imobiliaria.Droid.Resource.String.mr_controller_disconnect;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.mr_controller_expand_group = global::Imobiliaria.Droid.Resource.String.mr_controller_expand_group;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.mr_controller_no_info_available = global::Imobiliaria.Droid.Resource.String.mr_controller_no_info_available;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.mr_controller_no_media_selected = global::Imobiliaria.Droid.Resource.String.mr_controller_no_media_selected;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.mr_controller_pause = global::Imobiliaria.Droid.Resource.String.mr_controller_pause;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.mr_controller_play = global::Imobiliaria.Droid.Resource.String.mr_controller_play;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.mr_controller_stop = global::Imobiliaria.Droid.Resource.String.mr_controller_stop;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.mr_controller_volume_slider = global::Imobiliaria.Droid.Resource.String.mr_controller_volume_slider;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.mr_system_route_name = global::Imobiliaria.Droid.Resource.String.mr_system_route_name;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.mr_user_route_category_name = global::Imobiliaria.Droid.Resource.String.mr_user_route_category_name;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.password_toggle_content_description = global::Imobiliaria.Droid.Resource.String.password_toggle_content_description;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.path_password_eye = global::Imobiliaria.Droid.Resource.String.path_password_eye;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.path_password_eye_mask_strike_through = global::Imobiliaria.Droid.Resource.String.path_password_eye_mask_strike_through;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.path_password_eye_mask_visible = global::Imobiliaria.Droid.Resource.String.path_password_eye_mask_visible;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.path_password_strike_through = global::Imobiliaria.Droid.Resource.String.path_password_strike_through;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.search_menu_title = global::Imobiliaria.Droid.Resource.String.search_menu_title;
+			global::Xamarians.GoogleLogin.Droid.Resource.String.status_bar_notification_info_overflow = global::Imobiliaria.Droid.Resource.String.status_bar_notification_info_overflow;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.AlertDialog_AppCompat = global::Imobiliaria.Droid.Resource.Style.AlertDialog_AppCompat;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.AlertDialog_AppCompat_Light = global::Imobiliaria.Droid.Resource.Style.AlertDialog_AppCompat_Light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Animation_AppCompat_Dialog = global::Imobiliaria.Droid.Resource.Style.Animation_AppCompat_Dialog;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Animation_AppCompat_DropDownUp = global::Imobiliaria.Droid.Resource.Style.Animation_AppCompat_DropDownUp;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Animation_Design_BottomSheetDialog = global::Imobiliaria.Droid.Resource.Style.Animation_Design_BottomSheetDialog;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_AlertDialog_AppCompat = global::Imobiliaria.Droid.Resource.Style.Base_AlertDialog_AppCompat;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light = global::Imobiliaria.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Animation_AppCompat_Dialog = global::Imobiliaria.Droid.Resource.Style.Base_Animation_AppCompat_Dialog;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::Imobiliaria.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_CardView = global::Imobiliaria.Droid.Resource.Style.Base_CardView;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat = global::Imobiliaria.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::Imobiliaria.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_AppCompat;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::Imobiliaria.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Theme_AppCompat = global::Imobiliaria.Droid.Resource.Style.Base_Theme_AppCompat;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::Imobiliaria.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Theme_AppCompat_Dialog = global::Imobiliaria.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::Imobiliaria.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::Imobiliaria.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::Imobiliaria.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::Imobiliaria.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Theme_AppCompat_Light = global::Imobiliaria.Droid.Resource.Style.Base_Theme_AppCompat_Light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::Imobiliaria.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::Imobiliaria.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::Imobiliaria.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::Imobiliaria.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::Imobiliaria.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::Imobiliaria.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_ThemeOverlay_AppCompat = global::Imobiliaria.Droid.Resource.Style.Base_ThemeOverlay_AppCompat;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::Imobiliaria.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::Imobiliaria.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::Imobiliaria.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::Imobiliaria.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::Imobiliaria.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::Imobiliaria.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_V11_Theme_AppCompat_Dialog = global::Imobiliaria.Droid.Resource.Style.Base_V11_Theme_AppCompat_Dialog;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog = global::Imobiliaria.Droid.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog = global::Imobiliaria.Droid.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView = global::Imobiliaria.Droid.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_V12_Widget_AppCompat_EditText = global::Imobiliaria.Droid.Resource.Style.Base_V12_Widget_AppCompat_EditText;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_V21_Theme_AppCompat = global::Imobiliaria.Droid.Resource.Style.Base_V21_Theme_AppCompat;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::Imobiliaria.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light = global::Imobiliaria.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::Imobiliaria.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::Imobiliaria.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_V22_Theme_AppCompat = global::Imobiliaria.Droid.Resource.Style.Base_V22_Theme_AppCompat;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light = global::Imobiliaria.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_V23_Theme_AppCompat = global::Imobiliaria.Droid.Resource.Style.Base_V23_Theme_AppCompat;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light = global::Imobiliaria.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_V7_Theme_AppCompat = global::Imobiliaria.Droid.Resource.Style.Base_V7_Theme_AppCompat;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::Imobiliaria.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light = global::Imobiliaria.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::Imobiliaria.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::Imobiliaria.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::Imobiliaria.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::Imobiliaria.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_Button = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_Button;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_EditText = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_EditText;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_ListMenuView = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_ListMenuView;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_ListView = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_ListView;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_SearchView = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_SearchView;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_Spinner = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::Imobiliaria.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_Design_AppBarLayout = global::Imobiliaria.Droid.Resource.Style.Base_Widget_Design_AppBarLayout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Base_Widget_Design_TabLayout = global::Imobiliaria.Droid.Resource.Style.Base_Widget_Design_TabLayout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.CardView = global::Imobiliaria.Droid.Resource.Style.CardView;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.CardView_Dark = global::Imobiliaria.Droid.Resource.Style.CardView_Dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.CardView_Light = global::Imobiliaria.Droid.Resource.Style.CardView_Light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Platform_AppCompat = global::Imobiliaria.Droid.Resource.Style.Platform_AppCompat;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Platform_AppCompat_Light = global::Imobiliaria.Droid.Resource.Style.Platform_AppCompat_Light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat = global::Imobiliaria.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::Imobiliaria.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::Imobiliaria.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Platform_V11_AppCompat = global::Imobiliaria.Droid.Resource.Style.Platform_V11_AppCompat;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Platform_V11_AppCompat_Light = global::Imobiliaria.Droid.Resource.Style.Platform_V11_AppCompat_Light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Platform_V14_AppCompat = global::Imobiliaria.Droid.Resource.Style.Platform_V14_AppCompat;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Platform_V14_AppCompat_Light = global::Imobiliaria.Droid.Resource.Style.Platform_V14_AppCompat_Light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Platform_V21_AppCompat = global::Imobiliaria.Droid.Resource.Style.Platform_V21_AppCompat;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Platform_V21_AppCompat_Light = global::Imobiliaria.Droid.Resource.Style.Platform_V21_AppCompat_Light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Platform_V25_AppCompat = global::Imobiliaria.Droid.Resource.Style.Platform_V25_AppCompat;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Platform_V25_AppCompat_Light = global::Imobiliaria.Droid.Resource.Style.Platform_V25_AppCompat_Light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner = global::Imobiliaria.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::Imobiliaria.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::Imobiliaria.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::Imobiliaria.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::Imobiliaria.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::Imobiliaria.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::Imobiliaria.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::Imobiliaria.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::Imobiliaria.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::Imobiliaria.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::Imobiliaria.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::Imobiliaria.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::Imobiliaria.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::Imobiliaria.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::Imobiliaria.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Body1 = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_Body1;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Body2 = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_Body2;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Button = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_Button;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Caption = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_Caption;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Display1 = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_Display1;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Display2 = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_Display2;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Display3 = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_Display3;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Display4 = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_Display4;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Headline = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_Headline;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Inverse = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_Inverse;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Large = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_Large;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Medium = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_Medium;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Menu = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_Menu;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Small = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_Small;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Subhead = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_Subhead;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Title = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_Title;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::Imobiliaria.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded = global::Imobiliaria.Droid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_Design_Counter = global::Imobiliaria.Droid.Resource.Style.TextAppearance_Design_Counter;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_Design_Counter_Overflow = global::Imobiliaria.Droid.Resource.Style.TextAppearance_Design_Counter_Overflow;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_Design_Error = global::Imobiliaria.Droid.Resource.Style.TextAppearance_Design_Error;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_Design_Hint = global::Imobiliaria.Droid.Resource.Style.TextAppearance_Design_Hint;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message = global::Imobiliaria.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_Design_Tab = global::Imobiliaria.Droid.Resource.Style.TextAppearance_Design_Tab;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_MediaRouter_PrimaryText = global::Imobiliaria.Droid.Resource.Style.TextAppearance_MediaRouter_PrimaryText;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_MediaRouter_SecondaryText = global::Imobiliaria.Droid.Resource.Style.TextAppearance_MediaRouter_SecondaryText;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_MediaRouter_Title = global::Imobiliaria.Droid.Resource.Style.TextAppearance_MediaRouter_Title;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::Imobiliaria.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::Imobiliaria.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::Imobiliaria.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_AppCompat = global::Imobiliaria.Droid.Resource.Style.Theme_AppCompat;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_AppCompat_CompactMenu = global::Imobiliaria.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_AppCompat_DayNight = global::Imobiliaria.Droid.Resource.Style.Theme_AppCompat_DayNight;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::Imobiliaria.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::Imobiliaria.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::Imobiliaria.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::Imobiliaria.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::Imobiliaria.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::Imobiliaria.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_AppCompat_Dialog = global::Imobiliaria.Droid.Resource.Style.Theme_AppCompat_Dialog;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert = global::Imobiliaria.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::Imobiliaria.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::Imobiliaria.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_AppCompat_Light = global::Imobiliaria.Droid.Resource.Style.Theme_AppCompat_Light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::Imobiliaria.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_AppCompat_Light_Dialog = global::Imobiliaria.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::Imobiliaria.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::Imobiliaria.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::Imobiliaria.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::Imobiliaria.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_AppCompat_NoActionBar = global::Imobiliaria.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_Design = global::Imobiliaria.Droid.Resource.Style.Theme_Design;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_Design_BottomSheetDialog = global::Imobiliaria.Droid.Resource.Style.Theme_Design_BottomSheetDialog;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_Design_Light = global::Imobiliaria.Droid.Resource.Style.Theme_Design_Light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog = global::Imobiliaria.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_Design_Light_NoActionBar = global::Imobiliaria.Droid.Resource.Style.Theme_Design_Light_NoActionBar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_Design_NoActionBar = global::Imobiliaria.Droid.Resource.Style.Theme_Design_NoActionBar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_MediaRouter = global::Imobiliaria.Droid.Resource.Style.Theme_MediaRouter;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_MediaRouter_Light = global::Imobiliaria.Droid.Resource.Style.Theme_MediaRouter_Light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel = global::Imobiliaria.Droid.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Theme_MediaRouter_LightControlPanel = global::Imobiliaria.Droid.Resource.Style.Theme_MediaRouter_LightControlPanel;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.ThemeOverlay_AppCompat = global::Imobiliaria.Droid.Resource.Style.ThemeOverlay_AppCompat;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::Imobiliaria.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark = global::Imobiliaria.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::Imobiliaria.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::Imobiliaria.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::Imobiliaria.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.ThemeOverlay_AppCompat_Light = global::Imobiliaria.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.ThemeOverlay_MediaRouter_Dark = global::Imobiliaria.Droid.Resource.Style.ThemeOverlay_MediaRouter_Dark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.ThemeOverlay_MediaRouter_Light = global::Imobiliaria.Droid.Resource.Style.ThemeOverlay_MediaRouter_Light;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_ActionBar = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_ActionBar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_ActionButton = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_ActionButton;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_ActionMode = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_ActionMode;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Button = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_Button;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Button_Borderless = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_Button_Borderless;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Button_Colored = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_Button_Colored;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Button_Small = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_Button_Small;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_ButtonBar = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_EditText = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_EditText;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_ImageButton = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_ImageButton;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Light_SearchView = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_Light_SearchView;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_ListMenuView = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_ListMenuView;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_ListView = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_ListView;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_ListView_Menu = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_ListView_Menu;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_PopupMenu = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_PopupMenu;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_PopupWindow = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_PopupWindow;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_ProgressBar = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_ProgressBar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_RatingBar = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_RatingBar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_SearchView = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_SearchView;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_SeekBar = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_SeekBar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_SeekBar_Discrete = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_SeekBar_Discrete;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Spinner = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_Spinner;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Toolbar = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_Toolbar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::Imobiliaria.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_Design_AppBarLayout = global::Imobiliaria.Droid.Resource.Style.Widget_Design_AppBarLayout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_Design_BottomNavigationView = global::Imobiliaria.Droid.Resource.Style.Widget_Design_BottomNavigationView;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_Design_BottomSheet_Modal = global::Imobiliaria.Droid.Resource.Style.Widget_Design_BottomSheet_Modal;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_Design_CollapsingToolbar = global::Imobiliaria.Droid.Resource.Style.Widget_Design_CollapsingToolbar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_Design_CoordinatorLayout = global::Imobiliaria.Droid.Resource.Style.Widget_Design_CoordinatorLayout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_Design_FloatingActionButton = global::Imobiliaria.Droid.Resource.Style.Widget_Design_FloatingActionButton;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_Design_NavigationView = global::Imobiliaria.Droid.Resource.Style.Widget_Design_NavigationView;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::Imobiliaria.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_Design_Snackbar = global::Imobiliaria.Droid.Resource.Style.Widget_Design_Snackbar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_Design_TabLayout = global::Imobiliaria.Droid.Resource.Style.Widget_Design_TabLayout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_Design_TextInputLayout = global::Imobiliaria.Droid.Resource.Style.Widget_Design_TextInputLayout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton = global::Imobiliaria.Droid.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton;
+			global::Xamarians.GoogleLogin.Droid.Resource.Style.Widget_MediaRouter_MediaRouteButton = global::Imobiliaria.Droid.Resource.Style.Widget_MediaRouter_MediaRouteButton;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar = global::Imobiliaria.Droid.Resource.Styleable.ActionBar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_background = global::Imobiliaria.Droid.Resource.Styleable.ActionBar_background;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_backgroundSplit = global::Imobiliaria.Droid.Resource.Styleable.ActionBar_backgroundSplit;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_backgroundStacked = global::Imobiliaria.Droid.Resource.Styleable.ActionBar_backgroundStacked;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_contentInsetEnd = global::Imobiliaria.Droid.Resource.Styleable.ActionBar_contentInsetEnd;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_contentInsetEndWithActions = global::Imobiliaria.Droid.Resource.Styleable.ActionBar_contentInsetEndWithActions;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_contentInsetLeft = global::Imobiliaria.Droid.Resource.Styleable.ActionBar_contentInsetLeft;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_contentInsetRight = global::Imobiliaria.Droid.Resource.Styleable.ActionBar_contentInsetRight;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_contentInsetStart = global::Imobiliaria.Droid.Resource.Styleable.ActionBar_contentInsetStart;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_contentInsetStartWithNavigation = global::Imobiliaria.Droid.Resource.Styleable.ActionBar_contentInsetStartWithNavigation;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_customNavigationLayout = global::Imobiliaria.Droid.Resource.Styleable.ActionBar_customNavigationLayout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_displayOptions = global::Imobiliaria.Droid.Resource.Styleable.ActionBar_displayOptions;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_divider = global::Imobiliaria.Droid.Resource.Styleable.ActionBar_divider;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_elevation = global::Imobiliaria.Droid.Resource.Styleable.ActionBar_elevation;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_height = global::Imobiliaria.Droid.Resource.Styleable.ActionBar_height;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_hideOnContentScroll = global::Imobiliaria.Droid.Resource.Styleable.ActionBar_hideOnContentScroll;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator = global::Imobiliaria.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_homeLayout = global::Imobiliaria.Droid.Resource.Styleable.ActionBar_homeLayout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_icon = global::Imobiliaria.Droid.Resource.Styleable.ActionBar_icon;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::Imobiliaria.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_itemPadding = global::Imobiliaria.Droid.Resource.Styleable.ActionBar_itemPadding;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_logo = global::Imobiliaria.Droid.Resource.Styleable.ActionBar_logo;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_navigationMode = global::Imobiliaria.Droid.Resource.Styleable.ActionBar_navigationMode;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_popupTheme = global::Imobiliaria.Droid.Resource.Styleable.ActionBar_popupTheme;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_progressBarPadding = global::Imobiliaria.Droid.Resource.Styleable.ActionBar_progressBarPadding;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_progressBarStyle = global::Imobiliaria.Droid.Resource.Styleable.ActionBar_progressBarStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_subtitle = global::Imobiliaria.Droid.Resource.Styleable.ActionBar_subtitle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_subtitleTextStyle = global::Imobiliaria.Droid.Resource.Styleable.ActionBar_subtitleTextStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_title = global::Imobiliaria.Droid.Resource.Styleable.ActionBar_title;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBar_titleTextStyle = global::Imobiliaria.Droid.Resource.Styleable.ActionBar_titleTextStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBarLayout = global::Imobiliaria.Droid.Resource.Styleable.ActionBarLayout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::Imobiliaria.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionMenuItemView = global::Imobiliaria.Droid.Resource.Styleable.ActionMenuItemView;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth = global::Imobiliaria.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionMenuView = global::Imobiliaria.Droid.Resource.Styleable.ActionMenuView;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionMode = global::Imobiliaria.Droid.Resource.Styleable.ActionMode;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionMode_background = global::Imobiliaria.Droid.Resource.Styleable.ActionMode_background;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionMode_backgroundSplit = global::Imobiliaria.Droid.Resource.Styleable.ActionMode_backgroundSplit;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionMode_closeItemLayout = global::Imobiliaria.Droid.Resource.Styleable.ActionMode_closeItemLayout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionMode_height = global::Imobiliaria.Droid.Resource.Styleable.ActionMode_height;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionMode_subtitleTextStyle = global::Imobiliaria.Droid.Resource.Styleable.ActionMode_subtitleTextStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActionMode_titleTextStyle = global::Imobiliaria.Droid.Resource.Styleable.ActionMode_titleTextStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActivityChooserView = global::Imobiliaria.Droid.Resource.Styleable.ActivityChooserView;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::Imobiliaria.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount = global::Imobiliaria.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AlertDialog = global::Imobiliaria.Droid.Resource.Styleable.AlertDialog;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AlertDialog_android_layout = global::Imobiliaria.Droid.Resource.Styleable.AlertDialog_android_layout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::Imobiliaria.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AlertDialog_listItemLayout = global::Imobiliaria.Droid.Resource.Styleable.AlertDialog_listItemLayout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AlertDialog_listLayout = global::Imobiliaria.Droid.Resource.Styleable.AlertDialog_listLayout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::Imobiliaria.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AlertDialog_showTitle = global::Imobiliaria.Droid.Resource.Styleable.AlertDialog_showTitle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::Imobiliaria.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppBarLayout = global::Imobiliaria.Droid.Resource.Styleable.AppBarLayout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppBarLayout_android_background = global::Imobiliaria.Droid.Resource.Styleable.AppBarLayout_android_background;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppBarLayout_elevation = global::Imobiliaria.Droid.Resource.Styleable.AppBarLayout_elevation;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppBarLayout_expanded = global::Imobiliaria.Droid.Resource.Styleable.AppBarLayout_expanded;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppBarLayoutStates = global::Imobiliaria.Droid.Resource.Styleable.AppBarLayoutStates;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsed = global::Imobiliaria.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsed;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsible = global::Imobiliaria.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsible;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppBarLayout_Layout = global::Imobiliaria.Droid.Resource.Styleable.AppBarLayout_Layout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags = global::Imobiliaria.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator = global::Imobiliaria.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatImageView = global::Imobiliaria.Droid.Resource.Styleable.AppCompatImageView;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatImageView_android_src = global::Imobiliaria.Droid.Resource.Styleable.AppCompatImageView_android_src;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatImageView_srcCompat = global::Imobiliaria.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatSeekBar = global::Imobiliaria.Droid.Resource.Styleable.AppCompatSeekBar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatSeekBar_android_thumb = global::Imobiliaria.Droid.Resource.Styleable.AppCompatSeekBar_android_thumb;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatSeekBar_tickMark = global::Imobiliaria.Droid.Resource.Styleable.AppCompatSeekBar_tickMark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTint = global::Imobiliaria.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTint;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode = global::Imobiliaria.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTextHelper = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTextHelper;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableBottom = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableBottom;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableEnd = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableEnd;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableLeft = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableLeft;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableRight = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableRight;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableStart = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableStart;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableTop = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableTop;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTextHelper_android_textAppearance = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTextHelper_android_textAppearance;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTextView = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTextView;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTextView_textAllCaps = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionBarSize = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_actionBarSize;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_buttonStyle = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_buttonStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_colorAccent = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_colorAccent;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_colorBackgroundFloating = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_colorBackgroundFloating;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_colorPrimary = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_colorPrimary;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_controlBackground = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_controlBackground;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_dialogTheme = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_dialogTheme;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_dividerVertical = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_dividerVertical;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_editTextBackground = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_editTextBackground;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_editTextColor = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_editTextColor;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_editTextStyle = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_editTextStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_panelBackground = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_switchStyle = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_switchStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_windowActionBar = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_windowActionBar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle = global::Imobiliaria.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.BottomNavigationView = global::Imobiliaria.Droid.Resource.Styleable.BottomNavigationView;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.BottomNavigationView_elevation = global::Imobiliaria.Droid.Resource.Styleable.BottomNavigationView_elevation;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.BottomNavigationView_itemBackground = global::Imobiliaria.Droid.Resource.Styleable.BottomNavigationView_itemBackground;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.BottomNavigationView_itemIconTint = global::Imobiliaria.Droid.Resource.Styleable.BottomNavigationView_itemIconTint;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.BottomNavigationView_itemTextColor = global::Imobiliaria.Droid.Resource.Styleable.BottomNavigationView_itemTextColor;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.BottomNavigationView_menu = global::Imobiliaria.Droid.Resource.Styleable.BottomNavigationView_menu;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.BottomSheetBehavior_Layout = global::Imobiliaria.Droid.Resource.Styleable.BottomSheetBehavior_Layout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable = global::Imobiliaria.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight = global::Imobiliaria.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed = global::Imobiliaria.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ButtonBarLayout = global::Imobiliaria.Droid.Resource.Styleable.ButtonBarLayout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ButtonBarLayout_allowStacking = global::Imobiliaria.Droid.Resource.Styleable.ButtonBarLayout_allowStacking;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CardView = global::Imobiliaria.Droid.Resource.Styleable.CardView;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CardView_android_minHeight = global::Imobiliaria.Droid.Resource.Styleable.CardView_android_minHeight;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CardView_android_minWidth = global::Imobiliaria.Droid.Resource.Styleable.CardView_android_minWidth;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CardView_cardBackgroundColor = global::Imobiliaria.Droid.Resource.Styleable.CardView_cardBackgroundColor;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CardView_cardCornerRadius = global::Imobiliaria.Droid.Resource.Styleable.CardView_cardCornerRadius;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CardView_cardElevation = global::Imobiliaria.Droid.Resource.Styleable.CardView_cardElevation;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CardView_cardMaxElevation = global::Imobiliaria.Droid.Resource.Styleable.CardView_cardMaxElevation;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CardView_cardPreventCornerOverlap = global::Imobiliaria.Droid.Resource.Styleable.CardView_cardPreventCornerOverlap;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CardView_cardUseCompatPadding = global::Imobiliaria.Droid.Resource.Styleable.CardView_cardUseCompatPadding;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CardView_contentPadding = global::Imobiliaria.Droid.Resource.Styleable.CardView_contentPadding;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CardView_contentPaddingBottom = global::Imobiliaria.Droid.Resource.Styleable.CardView_contentPaddingBottom;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CardView_contentPaddingLeft = global::Imobiliaria.Droid.Resource.Styleable.CardView_contentPaddingLeft;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CardView_contentPaddingRight = global::Imobiliaria.Droid.Resource.Styleable.CardView_contentPaddingRight;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CardView_contentPaddingTop = global::Imobiliaria.Droid.Resource.Styleable.CardView_contentPaddingTop;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CollapsingToolbarLayout = global::Imobiliaria.Droid.Resource.Styleable.CollapsingToolbarLayout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::Imobiliaria.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::Imobiliaria.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CollapsingToolbarLayout_contentScrim = global::Imobiliaria.Droid.Resource.Styleable.CollapsingToolbarLayout_contentScrim;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity = global::Imobiliaria.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin = global::Imobiliaria.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom = global::Imobiliaria.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd = global::Imobiliaria.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::Imobiliaria.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::Imobiliaria.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::Imobiliaria.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration = global::Imobiliaria.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger = global::Imobiliaria.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::Imobiliaria.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CollapsingToolbarLayout_title = global::Imobiliaria.Droid.Resource.Styleable.CollapsingToolbarLayout_title;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::Imobiliaria.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::Imobiliaria.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout = global::Imobiliaria.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode = global::Imobiliaria.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = global::Imobiliaria.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ColorStateListItem = global::Imobiliaria.Droid.Resource.Styleable.ColorStateListItem;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ColorStateListItem_alpha = global::Imobiliaria.Droid.Resource.Styleable.ColorStateListItem_alpha;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ColorStateListItem_android_alpha = global::Imobiliaria.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ColorStateListItem_android_color = global::Imobiliaria.Droid.Resource.Styleable.ColorStateListItem_android_color;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CompoundButton = global::Imobiliaria.Droid.Resource.Styleable.CompoundButton;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CompoundButton_android_button = global::Imobiliaria.Droid.Resource.Styleable.CompoundButton_android_button;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CompoundButton_buttonTint = global::Imobiliaria.Droid.Resource.Styleable.CompoundButton_buttonTint;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CompoundButton_buttonTintMode = global::Imobiliaria.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CoordinatorLayout = global::Imobiliaria.Droid.Resource.Styleable.CoordinatorLayout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CoordinatorLayout_keylines = global::Imobiliaria.Droid.Resource.Styleable.CoordinatorLayout_keylines;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::Imobiliaria.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CoordinatorLayout_Layout = global::Imobiliaria.Droid.Resource.Styleable.CoordinatorLayout_Layout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::Imobiliaria.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::Imobiliaria.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity = global::Imobiliaria.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior = global::Imobiliaria.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::Imobiliaria.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::Imobiliaria.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::Imobiliaria.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.DesignTheme = global::Imobiliaria.Droid.Resource.Styleable.DesignTheme;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::Imobiliaria.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle = global::Imobiliaria.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.DesignTheme_textColorError = global::Imobiliaria.Droid.Resource.Styleable.DesignTheme_textColorError;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.DrawerArrowToggle = global::Imobiliaria.Droid.Resource.Styleable.DrawerArrowToggle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::Imobiliaria.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::Imobiliaria.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.DrawerArrowToggle_barLength = global::Imobiliaria.Droid.Resource.Styleable.DrawerArrowToggle_barLength;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.DrawerArrowToggle_color = global::Imobiliaria.Droid.Resource.Styleable.DrawerArrowToggle_color;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize = global::Imobiliaria.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::Imobiliaria.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.DrawerArrowToggle_spinBars = global::Imobiliaria.Droid.Resource.Styleable.DrawerArrowToggle_spinBars;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.DrawerArrowToggle_thickness = global::Imobiliaria.Droid.Resource.Styleable.DrawerArrowToggle_thickness;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.FloatingActionButton = global::Imobiliaria.Droid.Resource.Styleable.FloatingActionButton;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.FloatingActionButton_backgroundTint = global::Imobiliaria.Droid.Resource.Styleable.FloatingActionButton_backgroundTint;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::Imobiliaria.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.FloatingActionButton_borderWidth = global::Imobiliaria.Droid.Resource.Styleable.FloatingActionButton_borderWidth;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.FloatingActionButton_elevation = global::Imobiliaria.Droid.Resource.Styleable.FloatingActionButton_elevation;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.FloatingActionButton_fabSize = global::Imobiliaria.Droid.Resource.Styleable.FloatingActionButton_fabSize;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ = global::Imobiliaria.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.FloatingActionButton_rippleColor = global::Imobiliaria.Droid.Resource.Styleable.FloatingActionButton_rippleColor;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding = global::Imobiliaria.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout = global::Imobiliaria.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide = global::Imobiliaria.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ForegroundLinearLayout = global::Imobiliaria.Droid.Resource.Styleable.ForegroundLinearLayout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::Imobiliaria.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::Imobiliaria.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::Imobiliaria.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.LinearLayoutCompat = global::Imobiliaria.Droid.Resource.Styleable.LinearLayoutCompat;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::Imobiliaria.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::Imobiliaria.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity = global::Imobiliaria.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation = global::Imobiliaria.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::Imobiliaria.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.LinearLayoutCompat_divider = global::Imobiliaria.Droid.Resource.Styleable.LinearLayoutCompat_divider;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::Imobiliaria.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::Imobiliaria.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.LinearLayoutCompat_showDividers = global::Imobiliaria.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.LinearLayoutCompat_Layout = global::Imobiliaria.Droid.Resource.Styleable.LinearLayoutCompat_Layout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::Imobiliaria.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::Imobiliaria.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::Imobiliaria.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::Imobiliaria.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ListPopupWindow = global::Imobiliaria.Droid.Resource.Styleable.ListPopupWindow;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::Imobiliaria.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::Imobiliaria.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.LoadingImageView = global::Imobiliaria.Droid.Resource.Styleable.LoadingImageView;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.LoadingImageView_circleCrop = global::Imobiliaria.Droid.Resource.Styleable.LoadingImageView_circleCrop;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.LoadingImageView_imageAspectRatio = global::Imobiliaria.Droid.Resource.Styleable.LoadingImageView_imageAspectRatio;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.LoadingImageView_imageAspectRatioAdjust = global::Imobiliaria.Droid.Resource.Styleable.LoadingImageView_imageAspectRatioAdjust;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MediaRouteButton = global::Imobiliaria.Droid.Resource.Styleable.MediaRouteButton;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MediaRouteButton_android_minHeight = global::Imobiliaria.Droid.Resource.Styleable.MediaRouteButton_android_minHeight;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MediaRouteButton_android_minWidth = global::Imobiliaria.Droid.Resource.Styleable.MediaRouteButton_android_minWidth;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable = global::Imobiliaria.Droid.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuGroup = global::Imobiliaria.Droid.Resource.Styleable.MenuGroup;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior = global::Imobiliaria.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuGroup_android_enabled = global::Imobiliaria.Droid.Resource.Styleable.MenuGroup_android_enabled;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuGroup_android_id = global::Imobiliaria.Droid.Resource.Styleable.MenuGroup_android_id;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuGroup_android_menuCategory = global::Imobiliaria.Droid.Resource.Styleable.MenuGroup_android_menuCategory;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuGroup_android_orderInCategory = global::Imobiliaria.Droid.Resource.Styleable.MenuGroup_android_orderInCategory;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuGroup_android_visible = global::Imobiliaria.Droid.Resource.Styleable.MenuGroup_android_visible;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuItem = global::Imobiliaria.Droid.Resource.Styleable.MenuItem;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuItem_actionLayout = global::Imobiliaria.Droid.Resource.Styleable.MenuItem_actionLayout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuItem_actionProviderClass = global::Imobiliaria.Droid.Resource.Styleable.MenuItem_actionProviderClass;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuItem_actionViewClass = global::Imobiliaria.Droid.Resource.Styleable.MenuItem_actionViewClass;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::Imobiliaria.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuItem_android_checkable = global::Imobiliaria.Droid.Resource.Styleable.MenuItem_android_checkable;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuItem_android_checked = global::Imobiliaria.Droid.Resource.Styleable.MenuItem_android_checked;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuItem_android_enabled = global::Imobiliaria.Droid.Resource.Styleable.MenuItem_android_enabled;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuItem_android_icon = global::Imobiliaria.Droid.Resource.Styleable.MenuItem_android_icon;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuItem_android_id = global::Imobiliaria.Droid.Resource.Styleable.MenuItem_android_id;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuItem_android_menuCategory = global::Imobiliaria.Droid.Resource.Styleable.MenuItem_android_menuCategory;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuItem_android_numericShortcut = global::Imobiliaria.Droid.Resource.Styleable.MenuItem_android_numericShortcut;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuItem_android_onClick = global::Imobiliaria.Droid.Resource.Styleable.MenuItem_android_onClick;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuItem_android_orderInCategory = global::Imobiliaria.Droid.Resource.Styleable.MenuItem_android_orderInCategory;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuItem_android_title = global::Imobiliaria.Droid.Resource.Styleable.MenuItem_android_title;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuItem_android_titleCondensed = global::Imobiliaria.Droid.Resource.Styleable.MenuItem_android_titleCondensed;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuItem_android_visible = global::Imobiliaria.Droid.Resource.Styleable.MenuItem_android_visible;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuItem_showAsAction = global::Imobiliaria.Droid.Resource.Styleable.MenuItem_showAsAction;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuView = global::Imobiliaria.Droid.Resource.Styleable.MenuView;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuView_android_headerBackground = global::Imobiliaria.Droid.Resource.Styleable.MenuView_android_headerBackground;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuView_android_horizontalDivider = global::Imobiliaria.Droid.Resource.Styleable.MenuView_android_horizontalDivider;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuView_android_itemBackground = global::Imobiliaria.Droid.Resource.Styleable.MenuView_android_itemBackground;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::Imobiliaria.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuView_android_itemTextAppearance = global::Imobiliaria.Droid.Resource.Styleable.MenuView_android_itemTextAppearance;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuView_android_verticalDivider = global::Imobiliaria.Droid.Resource.Styleable.MenuView_android_verticalDivider;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle = global::Imobiliaria.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuView_preserveIconSpacing = global::Imobiliaria.Droid.Resource.Styleable.MenuView_preserveIconSpacing;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.MenuView_subMenuArrow = global::Imobiliaria.Droid.Resource.Styleable.MenuView_subMenuArrow;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.NavigationView = global::Imobiliaria.Droid.Resource.Styleable.NavigationView;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.NavigationView_android_background = global::Imobiliaria.Droid.Resource.Styleable.NavigationView_android_background;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.NavigationView_android_fitsSystemWindows = global::Imobiliaria.Droid.Resource.Styleable.NavigationView_android_fitsSystemWindows;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.NavigationView_android_maxWidth = global::Imobiliaria.Droid.Resource.Styleable.NavigationView_android_maxWidth;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.NavigationView_elevation = global::Imobiliaria.Droid.Resource.Styleable.NavigationView_elevation;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.NavigationView_headerLayout = global::Imobiliaria.Droid.Resource.Styleable.NavigationView_headerLayout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.NavigationView_itemBackground = global::Imobiliaria.Droid.Resource.Styleable.NavigationView_itemBackground;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.NavigationView_itemIconTint = global::Imobiliaria.Droid.Resource.Styleable.NavigationView_itemIconTint;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.NavigationView_itemTextAppearance = global::Imobiliaria.Droid.Resource.Styleable.NavigationView_itemTextAppearance;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.NavigationView_itemTextColor = global::Imobiliaria.Droid.Resource.Styleable.NavigationView_itemTextColor;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.NavigationView_menu = global::Imobiliaria.Droid.Resource.Styleable.NavigationView_menu;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.PopupWindow = global::Imobiliaria.Droid.Resource.Styleable.PopupWindow;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::Imobiliaria.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.PopupWindow_android_popupBackground = global::Imobiliaria.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.PopupWindow_overlapAnchor = global::Imobiliaria.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.PopupWindowBackgroundState = global::Imobiliaria.Droid.Resource.Styleable.PopupWindowBackgroundState;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::Imobiliaria.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.RecycleListView = global::Imobiliaria.Droid.Resource.Styleable.RecycleListView;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::Imobiliaria.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::Imobiliaria.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.RecyclerView = global::Imobiliaria.Droid.Resource.Styleable.RecyclerView;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability = global::Imobiliaria.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.RecyclerView_android_orientation = global::Imobiliaria.Droid.Resource.Styleable.RecyclerView_android_orientation;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.RecyclerView_layoutManager = global::Imobiliaria.Droid.Resource.Styleable.RecyclerView_layoutManager;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.RecyclerView_reverseLayout = global::Imobiliaria.Droid.Resource.Styleable.RecyclerView_reverseLayout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.RecyclerView_spanCount = global::Imobiliaria.Droid.Resource.Styleable.RecyclerView_spanCount;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.RecyclerView_stackFromEnd = global::Imobiliaria.Droid.Resource.Styleable.RecyclerView_stackFromEnd;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ScrimInsetsFrameLayout = global::Imobiliaria.Droid.Resource.Styleable.ScrimInsetsFrameLayout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::Imobiliaria.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ScrollingViewBehavior_Layout = global::Imobiliaria.Droid.Resource.Styleable.ScrollingViewBehavior_Layout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop = global::Imobiliaria.Droid.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SearchView = global::Imobiliaria.Droid.Resource.Styleable.SearchView;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SearchView_android_focusable = global::Imobiliaria.Droid.Resource.Styleable.SearchView_android_focusable;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SearchView_android_imeOptions = global::Imobiliaria.Droid.Resource.Styleable.SearchView_android_imeOptions;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SearchView_android_inputType = global::Imobiliaria.Droid.Resource.Styleable.SearchView_android_inputType;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SearchView_android_maxWidth = global::Imobiliaria.Droid.Resource.Styleable.SearchView_android_maxWidth;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SearchView_closeIcon = global::Imobiliaria.Droid.Resource.Styleable.SearchView_closeIcon;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SearchView_commitIcon = global::Imobiliaria.Droid.Resource.Styleable.SearchView_commitIcon;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SearchView_defaultQueryHint = global::Imobiliaria.Droid.Resource.Styleable.SearchView_defaultQueryHint;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SearchView_goIcon = global::Imobiliaria.Droid.Resource.Styleable.SearchView_goIcon;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SearchView_iconifiedByDefault = global::Imobiliaria.Droid.Resource.Styleable.SearchView_iconifiedByDefault;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SearchView_layout = global::Imobiliaria.Droid.Resource.Styleable.SearchView_layout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SearchView_queryBackground = global::Imobiliaria.Droid.Resource.Styleable.SearchView_queryBackground;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SearchView_queryHint = global::Imobiliaria.Droid.Resource.Styleable.SearchView_queryHint;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SearchView_searchHintIcon = global::Imobiliaria.Droid.Resource.Styleable.SearchView_searchHintIcon;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SearchView_searchIcon = global::Imobiliaria.Droid.Resource.Styleable.SearchView_searchIcon;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SearchView_submitBackground = global::Imobiliaria.Droid.Resource.Styleable.SearchView_submitBackground;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SearchView_suggestionRowLayout = global::Imobiliaria.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SearchView_voiceIcon = global::Imobiliaria.Droid.Resource.Styleable.SearchView_voiceIcon;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SignInButton = global::Imobiliaria.Droid.Resource.Styleable.SignInButton;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SignInButton_buttonSize = global::Imobiliaria.Droid.Resource.Styleable.SignInButton_buttonSize;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SignInButton_colorScheme = global::Imobiliaria.Droid.Resource.Styleable.SignInButton_colorScheme;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SignInButton_scopeUris = global::Imobiliaria.Droid.Resource.Styleable.SignInButton_scopeUris;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SnackbarLayout = global::Imobiliaria.Droid.Resource.Styleable.SnackbarLayout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth = global::Imobiliaria.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SnackbarLayout_elevation = global::Imobiliaria.Droid.Resource.Styleable.SnackbarLayout_elevation;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::Imobiliaria.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Spinner = global::Imobiliaria.Droid.Resource.Styleable.Spinner;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Spinner_android_dropDownWidth = global::Imobiliaria.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Spinner_android_entries = global::Imobiliaria.Droid.Resource.Styleable.Spinner_android_entries;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Spinner_android_popupBackground = global::Imobiliaria.Droid.Resource.Styleable.Spinner_android_popupBackground;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Spinner_android_prompt = global::Imobiliaria.Droid.Resource.Styleable.Spinner_android_prompt;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Spinner_popupTheme = global::Imobiliaria.Droid.Resource.Styleable.Spinner_popupTheme;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SwitchCompat = global::Imobiliaria.Droid.Resource.Styleable.SwitchCompat;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SwitchCompat_android_textOff = global::Imobiliaria.Droid.Resource.Styleable.SwitchCompat_android_textOff;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SwitchCompat_android_textOn = global::Imobiliaria.Droid.Resource.Styleable.SwitchCompat_android_textOn;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SwitchCompat_android_thumb = global::Imobiliaria.Droid.Resource.Styleable.SwitchCompat_android_thumb;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SwitchCompat_showText = global::Imobiliaria.Droid.Resource.Styleable.SwitchCompat_showText;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SwitchCompat_splitTrack = global::Imobiliaria.Droid.Resource.Styleable.SwitchCompat_splitTrack;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SwitchCompat_switchMinWidth = global::Imobiliaria.Droid.Resource.Styleable.SwitchCompat_switchMinWidth;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SwitchCompat_switchPadding = global::Imobiliaria.Droid.Resource.Styleable.SwitchCompat_switchPadding;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance = global::Imobiliaria.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding = global::Imobiliaria.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SwitchCompat_thumbTint = global::Imobiliaria.Droid.Resource.Styleable.SwitchCompat_thumbTint;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SwitchCompat_thumbTintMode = global::Imobiliaria.Droid.Resource.Styleable.SwitchCompat_thumbTintMode;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SwitchCompat_track = global::Imobiliaria.Droid.Resource.Styleable.SwitchCompat_track;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SwitchCompat_trackTint = global::Imobiliaria.Droid.Resource.Styleable.SwitchCompat_trackTint;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.SwitchCompat_trackTintMode = global::Imobiliaria.Droid.Resource.Styleable.SwitchCompat_trackTintMode;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TabItem = global::Imobiliaria.Droid.Resource.Styleable.TabItem;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TabItem_android_icon = global::Imobiliaria.Droid.Resource.Styleable.TabItem_android_icon;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TabItem_android_layout = global::Imobiliaria.Droid.Resource.Styleable.TabItem_android_layout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TabItem_android_text = global::Imobiliaria.Droid.Resource.Styleable.TabItem_android_text;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TabLayout = global::Imobiliaria.Droid.Resource.Styleable.TabLayout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TabLayout_tabBackground = global::Imobiliaria.Droid.Resource.Styleable.TabLayout_tabBackground;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TabLayout_tabContentStart = global::Imobiliaria.Droid.Resource.Styleable.TabLayout_tabContentStart;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TabLayout_tabGravity = global::Imobiliaria.Droid.Resource.Styleable.TabLayout_tabGravity;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TabLayout_tabIndicatorColor = global::Imobiliaria.Droid.Resource.Styleable.TabLayout_tabIndicatorColor;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TabLayout_tabIndicatorHeight = global::Imobiliaria.Droid.Resource.Styleable.TabLayout_tabIndicatorHeight;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TabLayout_tabMaxWidth = global::Imobiliaria.Droid.Resource.Styleable.TabLayout_tabMaxWidth;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TabLayout_tabMinWidth = global::Imobiliaria.Droid.Resource.Styleable.TabLayout_tabMinWidth;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TabLayout_tabMode = global::Imobiliaria.Droid.Resource.Styleable.TabLayout_tabMode;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TabLayout_tabPadding = global::Imobiliaria.Droid.Resource.Styleable.TabLayout_tabPadding;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TabLayout_tabPaddingBottom = global::Imobiliaria.Droid.Resource.Styleable.TabLayout_tabPaddingBottom;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TabLayout_tabPaddingEnd = global::Imobiliaria.Droid.Resource.Styleable.TabLayout_tabPaddingEnd;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TabLayout_tabPaddingStart = global::Imobiliaria.Droid.Resource.Styleable.TabLayout_tabPaddingStart;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TabLayout_tabPaddingTop = global::Imobiliaria.Droid.Resource.Styleable.TabLayout_tabPaddingTop;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TabLayout_tabSelectedTextColor = global::Imobiliaria.Droid.Resource.Styleable.TabLayout_tabSelectedTextColor;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TabLayout_tabTextAppearance = global::Imobiliaria.Droid.Resource.Styleable.TabLayout_tabTextAppearance;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TabLayout_tabTextColor = global::Imobiliaria.Droid.Resource.Styleable.TabLayout_tabTextColor;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextAppearance = global::Imobiliaria.Droid.Resource.Styleable.TextAppearance;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextAppearance_android_shadowColor = global::Imobiliaria.Droid.Resource.Styleable.TextAppearance_android_shadowColor;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextAppearance_android_shadowDx = global::Imobiliaria.Droid.Resource.Styleable.TextAppearance_android_shadowDx;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextAppearance_android_shadowDy = global::Imobiliaria.Droid.Resource.Styleable.TextAppearance_android_shadowDy;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextAppearance_android_shadowRadius = global::Imobiliaria.Droid.Resource.Styleable.TextAppearance_android_shadowRadius;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextAppearance_android_textColor = global::Imobiliaria.Droid.Resource.Styleable.TextAppearance_android_textColor;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextAppearance_android_textColorHint = global::Imobiliaria.Droid.Resource.Styleable.TextAppearance_android_textColorHint;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextAppearance_android_textSize = global::Imobiliaria.Droid.Resource.Styleable.TextAppearance_android_textSize;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextAppearance_android_textStyle = global::Imobiliaria.Droid.Resource.Styleable.TextAppearance_android_textStyle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextAppearance_android_typeface = global::Imobiliaria.Droid.Resource.Styleable.TextAppearance_android_typeface;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextAppearance_textAllCaps = global::Imobiliaria.Droid.Resource.Styleable.TextAppearance_textAllCaps;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextInputLayout = global::Imobiliaria.Droid.Resource.Styleable.TextInputLayout;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextInputLayout_android_hint = global::Imobiliaria.Droid.Resource.Styleable.TextInputLayout_android_hint;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextInputLayout_android_textColorHint = global::Imobiliaria.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextInputLayout_counterEnabled = global::Imobiliaria.Droid.Resource.Styleable.TextInputLayout_counterEnabled;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextInputLayout_counterMaxLength = global::Imobiliaria.Droid.Resource.Styleable.TextInputLayout_counterMaxLength;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance = global::Imobiliaria.Droid.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextInputLayout_counterTextAppearance = global::Imobiliaria.Droid.Resource.Styleable.TextInputLayout_counterTextAppearance;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextInputLayout_errorEnabled = global::Imobiliaria.Droid.Resource.Styleable.TextInputLayout_errorEnabled;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance = global::Imobiliaria.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextInputLayout_hintAnimationEnabled = global::Imobiliaria.Droid.Resource.Styleable.TextInputLayout_hintAnimationEnabled;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextInputLayout_hintEnabled = global::Imobiliaria.Droid.Resource.Styleable.TextInputLayout_hintEnabled;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextInputLayout_hintTextAppearance = global::Imobiliaria.Droid.Resource.Styleable.TextInputLayout_hintTextAppearance;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextInputLayout_passwordToggleContentDescription = global::Imobiliaria.Droid.Resource.Styleable.TextInputLayout_passwordToggleContentDescription;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextInputLayout_passwordToggleDrawable = global::Imobiliaria.Droid.Resource.Styleable.TextInputLayout_passwordToggleDrawable;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextInputLayout_passwordToggleEnabled = global::Imobiliaria.Droid.Resource.Styleable.TextInputLayout_passwordToggleEnabled;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextInputLayout_passwordToggleTint = global::Imobiliaria.Droid.Resource.Styleable.TextInputLayout_passwordToggleTint;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.TextInputLayout_passwordToggleTintMode = global::Imobiliaria.Droid.Resource.Styleable.TextInputLayout_passwordToggleTintMode;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar = global::Imobiliaria.Droid.Resource.Styleable.Toolbar;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_android_gravity = global::Imobiliaria.Droid.Resource.Styleable.Toolbar_android_gravity;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_android_minHeight = global::Imobiliaria.Droid.Resource.Styleable.Toolbar_android_minHeight;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_buttonGravity = global::Imobiliaria.Droid.Resource.Styleable.Toolbar_buttonGravity;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_collapseContentDescription = global::Imobiliaria.Droid.Resource.Styleable.Toolbar_collapseContentDescription;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_collapseIcon = global::Imobiliaria.Droid.Resource.Styleable.Toolbar_collapseIcon;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_contentInsetEnd = global::Imobiliaria.Droid.Resource.Styleable.Toolbar_contentInsetEnd;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_contentInsetEndWithActions = global::Imobiliaria.Droid.Resource.Styleable.Toolbar_contentInsetEndWithActions;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_contentInsetLeft = global::Imobiliaria.Droid.Resource.Styleable.Toolbar_contentInsetLeft;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_contentInsetRight = global::Imobiliaria.Droid.Resource.Styleable.Toolbar_contentInsetRight;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_contentInsetStart = global::Imobiliaria.Droid.Resource.Styleable.Toolbar_contentInsetStart;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_contentInsetStartWithNavigation = global::Imobiliaria.Droid.Resource.Styleable.Toolbar_contentInsetStartWithNavigation;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_logo = global::Imobiliaria.Droid.Resource.Styleable.Toolbar_logo;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_logoDescription = global::Imobiliaria.Droid.Resource.Styleable.Toolbar_logoDescription;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_maxButtonHeight = global::Imobiliaria.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_navigationContentDescription = global::Imobiliaria.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_navigationIcon = global::Imobiliaria.Droid.Resource.Styleable.Toolbar_navigationIcon;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_popupTheme = global::Imobiliaria.Droid.Resource.Styleable.Toolbar_popupTheme;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_subtitle = global::Imobiliaria.Droid.Resource.Styleable.Toolbar_subtitle;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance = global::Imobiliaria.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_subtitleTextColor = global::Imobiliaria.Droid.Resource.Styleable.Toolbar_subtitleTextColor;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_title = global::Imobiliaria.Droid.Resource.Styleable.Toolbar_title;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_titleMargin = global::Imobiliaria.Droid.Resource.Styleable.Toolbar_titleMargin;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_titleMarginBottom = global::Imobiliaria.Droid.Resource.Styleable.Toolbar_titleMarginBottom;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_titleMarginEnd = global::Imobiliaria.Droid.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_titleMarginStart = global::Imobiliaria.Droid.Resource.Styleable.Toolbar_titleMarginStart;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_titleMarginTop = global::Imobiliaria.Droid.Resource.Styleable.Toolbar_titleMarginTop;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_titleMargins = global::Imobiliaria.Droid.Resource.Styleable.Toolbar_titleMargins;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_titleTextAppearance = global::Imobiliaria.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.Toolbar_titleTextColor = global::Imobiliaria.Droid.Resource.Styleable.Toolbar_titleTextColor;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.View = global::Imobiliaria.Droid.Resource.Styleable.View;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.View_android_focusable = global::Imobiliaria.Droid.Resource.Styleable.View_android_focusable;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.View_android_theme = global::Imobiliaria.Droid.Resource.Styleable.View_android_theme;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.View_paddingEnd = global::Imobiliaria.Droid.Resource.Styleable.View_paddingEnd;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.View_paddingStart = global::Imobiliaria.Droid.Resource.Styleable.View_paddingStart;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.View_theme = global::Imobiliaria.Droid.Resource.Styleable.View_theme;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ViewBackgroundHelper = global::Imobiliaria.Droid.Resource.Styleable.ViewBackgroundHelper;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ViewBackgroundHelper_android_background = global::Imobiliaria.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::Imobiliaria.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::Imobiliaria.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ViewStubCompat = global::Imobiliaria.Droid.Resource.Styleable.ViewStubCompat;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ViewStubCompat_android_id = global::Imobiliaria.Droid.Resource.Styleable.ViewStubCompat_android_id;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId = global::Imobiliaria.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
+			global::Xamarians.GoogleLogin.Droid.Resource.Styleable.ViewStubCompat_android_layout = global::Imobiliaria.Droid.Resource.Styleable.ViewStubCompat_android_layout;
 			global::Xamarians.Media.Droid.Resource.Animation.abc_fade_in = global::Imobiliaria.Droid.Resource.Animation.abc_fade_in;
 			global::Xamarians.Media.Droid.Resource.Animation.abc_fade_out = global::Imobiliaria.Droid.Resource.Animation.abc_fade_out;
 			global::Xamarians.Media.Droid.Resource.Animation.abc_grow_fade_in_from_bottom = global::Imobiliaria.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
@@ -18209,428 +20364,446 @@ namespace Imobiliaria.Droid
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f0a0071
-			public const int abc_background_cache_hint_selector_material_dark = 2131361905;
+			// aapt resource value: 0x7f090077
+			public const int abc_background_cache_hint_selector_material_dark = 2131296375;
 			
-			// aapt resource value: 0x7f0a0072
-			public const int abc_background_cache_hint_selector_material_light = 2131361906;
+			// aapt resource value: 0x7f090078
+			public const int abc_background_cache_hint_selector_material_light = 2131296376;
 			
-			// aapt resource value: 0x7f0a0073
-			public const int abc_btn_colored_borderless_text_material = 2131361907;
+			// aapt resource value: 0x7f090079
+			public const int abc_btn_colored_borderless_text_material = 2131296377;
 			
-			// aapt resource value: 0x7f0a0074
-			public const int abc_btn_colored_text_material = 2131361908;
+			// aapt resource value: 0x7f09007a
+			public const int abc_btn_colored_text_material = 2131296378;
 			
-			// aapt resource value: 0x7f0a0075
-			public const int abc_color_highlight_material = 2131361909;
+			// aapt resource value: 0x7f09007b
+			public const int abc_color_highlight_material = 2131296379;
 			
-			// aapt resource value: 0x7f0a0076
-			public const int abc_hint_foreground_material_dark = 2131361910;
+			// aapt resource value: 0x7f09007c
+			public const int abc_hint_foreground_material_dark = 2131296380;
 			
-			// aapt resource value: 0x7f0a0077
-			public const int abc_hint_foreground_material_light = 2131361911;
+			// aapt resource value: 0x7f09007d
+			public const int abc_hint_foreground_material_light = 2131296381;
 			
-			// aapt resource value: 0x7f0a0019
-			public const int abc_input_method_navigation_guard = 2131361817;
+			// aapt resource value: 0x7f09001f
+			public const int abc_input_method_navigation_guard = 2131296287;
 			
-			// aapt resource value: 0x7f0a0078
-			public const int abc_primary_text_disable_only_material_dark = 2131361912;
+			// aapt resource value: 0x7f09007e
+			public const int abc_primary_text_disable_only_material_dark = 2131296382;
 			
-			// aapt resource value: 0x7f0a0079
-			public const int abc_primary_text_disable_only_material_light = 2131361913;
+			// aapt resource value: 0x7f09007f
+			public const int abc_primary_text_disable_only_material_light = 2131296383;
 			
-			// aapt resource value: 0x7f0a007a
-			public const int abc_primary_text_material_dark = 2131361914;
+			// aapt resource value: 0x7f090080
+			public const int abc_primary_text_material_dark = 2131296384;
 			
-			// aapt resource value: 0x7f0a007b
-			public const int abc_primary_text_material_light = 2131361915;
+			// aapt resource value: 0x7f090081
+			public const int abc_primary_text_material_light = 2131296385;
 			
-			// aapt resource value: 0x7f0a007c
-			public const int abc_search_url_text = 2131361916;
+			// aapt resource value: 0x7f090082
+			public const int abc_search_url_text = 2131296386;
 			
-			// aapt resource value: 0x7f0a001a
-			public const int abc_search_url_text_normal = 2131361818;
+			// aapt resource value: 0x7f090020
+			public const int abc_search_url_text_normal = 2131296288;
 			
-			// aapt resource value: 0x7f0a001b
-			public const int abc_search_url_text_pressed = 2131361819;
+			// aapt resource value: 0x7f090021
+			public const int abc_search_url_text_pressed = 2131296289;
 			
-			// aapt resource value: 0x7f0a001c
-			public const int abc_search_url_text_selected = 2131361820;
+			// aapt resource value: 0x7f090022
+			public const int abc_search_url_text_selected = 2131296290;
 			
-			// aapt resource value: 0x7f0a007d
-			public const int abc_secondary_text_material_dark = 2131361917;
+			// aapt resource value: 0x7f090083
+			public const int abc_secondary_text_material_dark = 2131296387;
 			
-			// aapt resource value: 0x7f0a007e
-			public const int abc_secondary_text_material_light = 2131361918;
+			// aapt resource value: 0x7f090084
+			public const int abc_secondary_text_material_light = 2131296388;
 			
-			// aapt resource value: 0x7f0a007f
-			public const int abc_tint_btn_checkable = 2131361919;
+			// aapt resource value: 0x7f090085
+			public const int abc_tint_btn_checkable = 2131296389;
 			
-			// aapt resource value: 0x7f0a0080
-			public const int abc_tint_default = 2131361920;
+			// aapt resource value: 0x7f090086
+			public const int abc_tint_default = 2131296390;
 			
-			// aapt resource value: 0x7f0a0081
-			public const int abc_tint_edittext = 2131361921;
+			// aapt resource value: 0x7f090087
+			public const int abc_tint_edittext = 2131296391;
 			
-			// aapt resource value: 0x7f0a0082
-			public const int abc_tint_seek_thumb = 2131361922;
+			// aapt resource value: 0x7f090088
+			public const int abc_tint_seek_thumb = 2131296392;
 			
-			// aapt resource value: 0x7f0a0083
-			public const int abc_tint_spinner = 2131361923;
+			// aapt resource value: 0x7f090089
+			public const int abc_tint_spinner = 2131296393;
 			
-			// aapt resource value: 0x7f0a0084
-			public const int abc_tint_switch_track = 2131361924;
+			// aapt resource value: 0x7f09008a
+			public const int abc_tint_switch_track = 2131296394;
 			
-			// aapt resource value: 0x7f0a001d
-			public const int accent_material_dark = 2131361821;
+			// aapt resource value: 0x7f090023
+			public const int accent_material_dark = 2131296291;
 			
-			// aapt resource value: 0x7f0a001e
-			public const int accent_material_light = 2131361822;
+			// aapt resource value: 0x7f090024
+			public const int accent_material_light = 2131296292;
 			
-			// aapt resource value: 0x7f0a001f
-			public const int background_floating_material_dark = 2131361823;
+			// aapt resource value: 0x7f090025
+			public const int background_floating_material_dark = 2131296293;
 			
-			// aapt resource value: 0x7f0a0020
-			public const int background_floating_material_light = 2131361824;
+			// aapt resource value: 0x7f090026
+			public const int background_floating_material_light = 2131296294;
 			
-			// aapt resource value: 0x7f0a0021
-			public const int background_material_dark = 2131361825;
+			// aapt resource value: 0x7f090027
+			public const int background_material_dark = 2131296295;
 			
-			// aapt resource value: 0x7f0a0022
-			public const int background_material_light = 2131361826;
+			// aapt resource value: 0x7f090028
+			public const int background_material_light = 2131296296;
 			
-			// aapt resource value: 0x7f0a0023
-			public const int bright_foreground_disabled_material_dark = 2131361827;
+			// aapt resource value: 0x7f090029
+			public const int bright_foreground_disabled_material_dark = 2131296297;
 			
-			// aapt resource value: 0x7f0a0024
-			public const int bright_foreground_disabled_material_light = 2131361828;
+			// aapt resource value: 0x7f09002a
+			public const int bright_foreground_disabled_material_light = 2131296298;
 			
-			// aapt resource value: 0x7f0a0025
-			public const int bright_foreground_inverse_material_dark = 2131361829;
+			// aapt resource value: 0x7f09002b
+			public const int bright_foreground_inverse_material_dark = 2131296299;
 			
-			// aapt resource value: 0x7f0a0026
-			public const int bright_foreground_inverse_material_light = 2131361830;
+			// aapt resource value: 0x7f09002c
+			public const int bright_foreground_inverse_material_light = 2131296300;
 			
-			// aapt resource value: 0x7f0a0027
-			public const int bright_foreground_material_dark = 2131361831;
+			// aapt resource value: 0x7f09002d
+			public const int bright_foreground_material_dark = 2131296301;
 			
-			// aapt resource value: 0x7f0a0028
-			public const int bright_foreground_material_light = 2131361832;
+			// aapt resource value: 0x7f09002e
+			public const int bright_foreground_material_light = 2131296302;
 			
-			// aapt resource value: 0x7f0a0029
-			public const int button_material_dark = 2131361833;
+			// aapt resource value: 0x7f09002f
+			public const int button_material_dark = 2131296303;
 			
-			// aapt resource value: 0x7f0a002a
-			public const int button_material_light = 2131361834;
+			// aapt resource value: 0x7f090030
+			public const int button_material_light = 2131296304;
 			
-			// aapt resource value: 0x7f0a0015
-			public const int cardview_dark_background = 2131361813;
+			// aapt resource value: 0x7f09001b
+			public const int cardview_dark_background = 2131296283;
 			
-			// aapt resource value: 0x7f0a0016
-			public const int cardview_light_background = 2131361814;
+			// aapt resource value: 0x7f09001c
+			public const int cardview_light_background = 2131296284;
 			
-			// aapt resource value: 0x7f0a0017
-			public const int cardview_shadow_end_color = 2131361815;
+			// aapt resource value: 0x7f09001d
+			public const int cardview_shadow_end_color = 2131296285;
 			
-			// aapt resource value: 0x7f0a0018
-			public const int cardview_shadow_start_color = 2131361816;
+			// aapt resource value: 0x7f09001e
+			public const int cardview_shadow_start_color = 2131296286;
 			
-			// aapt resource value: 0x7f0a0070
-			public const int colorAccent = 2131361904;
+			// aapt resource value: 0x7f090076
+			public const int colorAccent = 2131296374;
 			
-			// aapt resource value: 0x7f0a006e
-			public const int colorPrimary = 2131361902;
+			// aapt resource value: 0x7f090074
+			public const int colorPrimary = 2131296372;
 			
-			// aapt resource value: 0x7f0a006f
-			public const int colorPrimaryDark = 2131361903;
+			// aapt resource value: 0x7f090075
+			public const int colorPrimaryDark = 2131296373;
 			
-			// aapt resource value: 0x7f0a0008
-			public const int com_facebook_blue = 2131361800;
+			// aapt resource value: 0x7f09000e
+			public const int com_facebook_blue = 2131296270;
 			
-			// aapt resource value: 0x7f0a0009
-			public const int com_facebook_button_background_color = 2131361801;
+			// aapt resource value: 0x7f09000f
+			public const int com_facebook_button_background_color = 2131296271;
 			
-			// aapt resource value: 0x7f0a000a
-			public const int com_facebook_button_background_color_disabled = 2131361802;
+			// aapt resource value: 0x7f090010
+			public const int com_facebook_button_background_color_disabled = 2131296272;
 			
-			// aapt resource value: 0x7f0a000b
-			public const int com_facebook_button_background_color_pressed = 2131361803;
+			// aapt resource value: 0x7f090011
+			public const int com_facebook_button_background_color_pressed = 2131296273;
 			
-			// aapt resource value: 0x7f0a000c
-			public const int com_facebook_button_like_background_color_selected = 2131361804;
+			// aapt resource value: 0x7f090012
+			public const int com_facebook_button_like_background_color_selected = 2131296274;
 			
-			// aapt resource value: 0x7f0a000d
-			public const int com_facebook_button_login_silver_background_color = 2131361805;
+			// aapt resource value: 0x7f090013
+			public const int com_facebook_button_login_silver_background_color = 2131296275;
 			
-			// aapt resource value: 0x7f0a000e
-			public const int com_facebook_button_login_silver_background_color_pressed = 2131361806;
+			// aapt resource value: 0x7f090014
+			public const int com_facebook_button_login_silver_background_color_pressed = 2131296276;
 			
-			// aapt resource value: 0x7f0a000f
-			public const int com_facebook_button_send_background_color = 2131361807;
+			// aapt resource value: 0x7f090015
+			public const int com_facebook_button_send_background_color = 2131296277;
 			
-			// aapt resource value: 0x7f0a0010
-			public const int com_facebook_button_send_background_color_pressed = 2131361808;
+			// aapt resource value: 0x7f090016
+			public const int com_facebook_button_send_background_color_pressed = 2131296278;
 			
-			// aapt resource value: 0x7f0a0011
-			public const int com_facebook_likeboxcountview_border_color = 2131361809;
+			// aapt resource value: 0x7f090017
+			public const int com_facebook_likeboxcountview_border_color = 2131296279;
 			
-			// aapt resource value: 0x7f0a0012
-			public const int com_facebook_likeboxcountview_text_color = 2131361810;
+			// aapt resource value: 0x7f090018
+			public const int com_facebook_likeboxcountview_text_color = 2131296280;
 			
-			// aapt resource value: 0x7f0a0013
-			public const int com_facebook_likeview_text_color = 2131361811;
+			// aapt resource value: 0x7f090019
+			public const int com_facebook_likeview_text_color = 2131296281;
 			
-			// aapt resource value: 0x7f0a0014
-			public const int com_facebook_share_button_text_color = 2131361812;
+			// aapt resource value: 0x7f09001a
+			public const int com_facebook_share_button_text_color = 2131296282;
 			
-			// aapt resource value: 0x7f0a0085
-			public const int common_google_signin_btn_text_dark = 2131361925;
+			// aapt resource value: 0x7f09008b
+			public const int common_google_signin_btn_text_dark = 2131296395;
 			
-			// aapt resource value: 0x7f0a0000
-			public const int common_google_signin_btn_text_dark_default = 2131361792;
+			// aapt resource value: 0x7f090006
+			public const int common_google_signin_btn_text_dark_default = 2131296262;
 			
-			// aapt resource value: 0x7f0a0001
-			public const int common_google_signin_btn_text_dark_disabled = 2131361793;
+			// aapt resource value: 0x7f090007
+			public const int common_google_signin_btn_text_dark_disabled = 2131296263;
 			
-			// aapt resource value: 0x7f0a0002
-			public const int common_google_signin_btn_text_dark_focused = 2131361794;
+			// aapt resource value: 0x7f090008
+			public const int common_google_signin_btn_text_dark_focused = 2131296264;
 			
-			// aapt resource value: 0x7f0a0003
-			public const int common_google_signin_btn_text_dark_pressed = 2131361795;
+			// aapt resource value: 0x7f090009
+			public const int common_google_signin_btn_text_dark_pressed = 2131296265;
 			
-			// aapt resource value: 0x7f0a0086
-			public const int common_google_signin_btn_text_light = 2131361926;
+			// aapt resource value: 0x7f09008c
+			public const int common_google_signin_btn_text_light = 2131296396;
 			
-			// aapt resource value: 0x7f0a0004
-			public const int common_google_signin_btn_text_light_default = 2131361796;
+			// aapt resource value: 0x7f09000a
+			public const int common_google_signin_btn_text_light_default = 2131296266;
 			
-			// aapt resource value: 0x7f0a0005
-			public const int common_google_signin_btn_text_light_disabled = 2131361797;
+			// aapt resource value: 0x7f09000b
+			public const int common_google_signin_btn_text_light_disabled = 2131296267;
 			
-			// aapt resource value: 0x7f0a0006
-			public const int common_google_signin_btn_text_light_focused = 2131361798;
+			// aapt resource value: 0x7f09000c
+			public const int common_google_signin_btn_text_light_focused = 2131296268;
 			
-			// aapt resource value: 0x7f0a0007
-			public const int common_google_signin_btn_text_light_pressed = 2131361799;
+			// aapt resource value: 0x7f09000d
+			public const int common_google_signin_btn_text_light_pressed = 2131296269;
 			
-			// aapt resource value: 0x7f0a0087
-			public const int common_google_signin_btn_tint = 2131361927;
+			// aapt resource value: 0x7f09008d
+			public const int common_google_signin_btn_tint = 2131296397;
 			
-			// aapt resource value: 0x7f0a006a
-			public const int default_circle_indicator_fill_color = 2131361898;
+			// aapt resource value: 0x7f090070
+			public const int default_circle_indicator_fill_color = 2131296368;
 			
-			// aapt resource value: 0x7f0a006b
-			public const int default_circle_indicator_page_color = 2131361899;
+			// aapt resource value: 0x7f090071
+			public const int default_circle_indicator_page_color = 2131296369;
 			
-			// aapt resource value: 0x7f0a006c
-			public const int default_circle_indicator_stroke_color = 2131361900;
+			// aapt resource value: 0x7f090072
+			public const int default_circle_indicator_stroke_color = 2131296370;
 			
-			// aapt resource value: 0x7f0a0055
-			public const int design_bottom_navigation_shadow_color = 2131361877;
+			// aapt resource value: 0x7f09005b
+			public const int design_bottom_navigation_shadow_color = 2131296347;
 			
-			// aapt resource value: 0x7f0a0088
-			public const int design_error = 2131361928;
+			// aapt resource value: 0x7f09008e
+			public const int design_error = 2131296398;
 			
-			// aapt resource value: 0x7f0a0056
-			public const int design_fab_shadow_end_color = 2131361878;
+			// aapt resource value: 0x7f09005c
+			public const int design_fab_shadow_end_color = 2131296348;
 			
-			// aapt resource value: 0x7f0a0057
-			public const int design_fab_shadow_mid_color = 2131361879;
+			// aapt resource value: 0x7f09005d
+			public const int design_fab_shadow_mid_color = 2131296349;
 			
-			// aapt resource value: 0x7f0a0058
-			public const int design_fab_shadow_start_color = 2131361880;
+			// aapt resource value: 0x7f09005e
+			public const int design_fab_shadow_start_color = 2131296350;
 			
-			// aapt resource value: 0x7f0a0059
-			public const int design_fab_stroke_end_inner_color = 2131361881;
+			// aapt resource value: 0x7f09005f
+			public const int design_fab_stroke_end_inner_color = 2131296351;
 			
-			// aapt resource value: 0x7f0a005a
-			public const int design_fab_stroke_end_outer_color = 2131361882;
+			// aapt resource value: 0x7f090060
+			public const int design_fab_stroke_end_outer_color = 2131296352;
 			
-			// aapt resource value: 0x7f0a005b
-			public const int design_fab_stroke_top_inner_color = 2131361883;
+			// aapt resource value: 0x7f090061
+			public const int design_fab_stroke_top_inner_color = 2131296353;
 			
-			// aapt resource value: 0x7f0a005c
-			public const int design_fab_stroke_top_outer_color = 2131361884;
+			// aapt resource value: 0x7f090062
+			public const int design_fab_stroke_top_outer_color = 2131296354;
 			
-			// aapt resource value: 0x7f0a005d
-			public const int design_snackbar_background_color = 2131361885;
+			// aapt resource value: 0x7f090063
+			public const int design_snackbar_background_color = 2131296355;
 			
-			// aapt resource value: 0x7f0a0089
-			public const int design_tint_password_toggle = 2131361929;
+			// aapt resource value: 0x7f09008f
+			public const int design_tint_password_toggle = 2131296399;
 			
-			// aapt resource value: 0x7f0a002b
-			public const int dim_foreground_disabled_material_dark = 2131361835;
+			// aapt resource value: 0x7f090031
+			public const int dim_foreground_disabled_material_dark = 2131296305;
 			
-			// aapt resource value: 0x7f0a002c
-			public const int dim_foreground_disabled_material_light = 2131361836;
+			// aapt resource value: 0x7f090032
+			public const int dim_foreground_disabled_material_light = 2131296306;
 			
-			// aapt resource value: 0x7f0a002d
-			public const int dim_foreground_material_dark = 2131361837;
+			// aapt resource value: 0x7f090033
+			public const int dim_foreground_material_dark = 2131296307;
 			
-			// aapt resource value: 0x7f0a002e
-			public const int dim_foreground_material_light = 2131361838;
+			// aapt resource value: 0x7f090034
+			public const int dim_foreground_material_light = 2131296308;
 			
-			// aapt resource value: 0x7f0a002f
-			public const int error_color_material = 2131361839;
+			// aapt resource value: 0x7f090035
+			public const int error_color_material = 2131296309;
 			
-			// aapt resource value: 0x7f0a0030
-			public const int foreground_material_dark = 2131361840;
+			// aapt resource value: 0x7f090036
+			public const int foreground_material_dark = 2131296310;
 			
-			// aapt resource value: 0x7f0a0031
-			public const int foreground_material_light = 2131361841;
+			// aapt resource value: 0x7f090037
+			public const int foreground_material_light = 2131296311;
 			
-			// aapt resource value: 0x7f0a0032
-			public const int highlighted_text_material_dark = 2131361842;
+			// aapt resource value: 0x7f090038
+			public const int highlighted_text_material_dark = 2131296312;
 			
-			// aapt resource value: 0x7f0a0033
-			public const int highlighted_text_material_light = 2131361843;
+			// aapt resource value: 0x7f090039
+			public const int highlighted_text_material_light = 2131296313;
 			
-			// aapt resource value: 0x7f0a006d
-			public const int launcher_background = 2131361901;
+			// aapt resource value: 0x7f090073
+			public const int launcher_background = 2131296371;
 			
-			// aapt resource value: 0x7f0a0034
-			public const int material_blue_grey_800 = 2131361844;
+			// aapt resource value: 0x7f09003a
+			public const int material_blue_grey_800 = 2131296314;
 			
-			// aapt resource value: 0x7f0a0035
-			public const int material_blue_grey_900 = 2131361845;
+			// aapt resource value: 0x7f09003b
+			public const int material_blue_grey_900 = 2131296315;
 			
-			// aapt resource value: 0x7f0a0036
-			public const int material_blue_grey_950 = 2131361846;
+			// aapt resource value: 0x7f09003c
+			public const int material_blue_grey_950 = 2131296316;
 			
-			// aapt resource value: 0x7f0a0037
-			public const int material_deep_teal_200 = 2131361847;
+			// aapt resource value: 0x7f09003d
+			public const int material_deep_teal_200 = 2131296317;
 			
-			// aapt resource value: 0x7f0a0038
-			public const int material_deep_teal_500 = 2131361848;
+			// aapt resource value: 0x7f09003e
+			public const int material_deep_teal_500 = 2131296318;
 			
-			// aapt resource value: 0x7f0a0039
-			public const int material_grey_100 = 2131361849;
+			// aapt resource value: 0x7f09003f
+			public const int material_grey_100 = 2131296319;
 			
-			// aapt resource value: 0x7f0a003a
-			public const int material_grey_300 = 2131361850;
+			// aapt resource value: 0x7f090040
+			public const int material_grey_300 = 2131296320;
 			
-			// aapt resource value: 0x7f0a003b
-			public const int material_grey_50 = 2131361851;
+			// aapt resource value: 0x7f090041
+			public const int material_grey_50 = 2131296321;
 			
-			// aapt resource value: 0x7f0a003c
-			public const int material_grey_600 = 2131361852;
+			// aapt resource value: 0x7f090042
+			public const int material_grey_600 = 2131296322;
 			
-			// aapt resource value: 0x7f0a003d
-			public const int material_grey_800 = 2131361853;
+			// aapt resource value: 0x7f090043
+			public const int material_grey_800 = 2131296323;
 			
-			// aapt resource value: 0x7f0a003e
-			public const int material_grey_850 = 2131361854;
+			// aapt resource value: 0x7f090044
+			public const int material_grey_850 = 2131296324;
 			
-			// aapt resource value: 0x7f0a003f
-			public const int material_grey_900 = 2131361855;
+			// aapt resource value: 0x7f090045
+			public const int material_grey_900 = 2131296325;
 			
-			// aapt resource value: 0x7f0a0060
-			public const int normal = 2131361888;
+			// aapt resource value: 0x7f090066
+			public const int normal = 2131296358;
 			
-			// aapt resource value: 0x7f0a005e
-			public const int notification_action_color_filter = 2131361886;
+			// aapt resource value: 0x7f090064
+			public const int notification_action_color_filter = 2131296356;
 			
-			// aapt resource value: 0x7f0a005f
-			public const int notification_icon_bg_color = 2131361887;
+			// aapt resource value: 0x7f090065
+			public const int notification_icon_bg_color = 2131296357;
 			
-			// aapt resource value: 0x7f0a0054
-			public const int notification_material_background_media_default_color = 2131361876;
+			// aapt resource value: 0x7f09005a
+			public const int notification_material_background_media_default_color = 2131296346;
 			
-			// aapt resource value: 0x7f0a0040
-			public const int primary_dark_material_dark = 2131361856;
+			// aapt resource value: 0x7f090000
+			public const int place_autocomplete_prediction_primary_text = 2131296256;
 			
-			// aapt resource value: 0x7f0a0041
-			public const int primary_dark_material_light = 2131361857;
+			// aapt resource value: 0x7f090001
+			public const int place_autocomplete_prediction_primary_text_highlight = 2131296257;
 			
-			// aapt resource value: 0x7f0a0042
-			public const int primary_material_dark = 2131361858;
+			// aapt resource value: 0x7f090002
+			public const int place_autocomplete_prediction_secondary_text = 2131296258;
 			
-			// aapt resource value: 0x7f0a0043
-			public const int primary_material_light = 2131361859;
+			// aapt resource value: 0x7f090003
+			public const int place_autocomplete_search_hint = 2131296259;
 			
-			// aapt resource value: 0x7f0a0044
-			public const int primary_text_default_material_dark = 2131361860;
+			// aapt resource value: 0x7f090004
+			public const int place_autocomplete_search_text = 2131296260;
 			
-			// aapt resource value: 0x7f0a0045
-			public const int primary_text_default_material_light = 2131361861;
+			// aapt resource value: 0x7f090005
+			public const int place_autocomplete_separator = 2131296261;
 			
-			// aapt resource value: 0x7f0a0046
-			public const int primary_text_disabled_material_dark = 2131361862;
+			// aapt resource value: 0x7f090046
+			public const int primary_dark_material_dark = 2131296326;
 			
-			// aapt resource value: 0x7f0a0047
-			public const int primary_text_disabled_material_light = 2131361863;
+			// aapt resource value: 0x7f090047
+			public const int primary_dark_material_light = 2131296327;
 			
-			// aapt resource value: 0x7f0a0048
-			public const int ripple_material_dark = 2131361864;
+			// aapt resource value: 0x7f090048
+			public const int primary_material_dark = 2131296328;
 			
-			// aapt resource value: 0x7f0a0049
-			public const int ripple_material_light = 2131361865;
+			// aapt resource value: 0x7f090049
+			public const int primary_material_light = 2131296329;
 			
-			// aapt resource value: 0x7f0a004a
-			public const int secondary_text_default_material_dark = 2131361866;
+			// aapt resource value: 0x7f09004a
+			public const int primary_text_default_material_dark = 2131296330;
 			
-			// aapt resource value: 0x7f0a004b
-			public const int secondary_text_default_material_light = 2131361867;
+			// aapt resource value: 0x7f09004b
+			public const int primary_text_default_material_light = 2131296331;
 			
-			// aapt resource value: 0x7f0a004c
-			public const int secondary_text_disabled_material_dark = 2131361868;
+			// aapt resource value: 0x7f09004c
+			public const int primary_text_disabled_material_dark = 2131296332;
 			
-			// aapt resource value: 0x7f0a004d
-			public const int secondary_text_disabled_material_light = 2131361869;
+			// aapt resource value: 0x7f09004d
+			public const int primary_text_disabled_material_light = 2131296333;
 			
-			// aapt resource value: 0x7f0a008a
-			public const int segmented_control_text = 2131361930;
+			// aapt resource value: 0x7f09004e
+			public const int ripple_material_dark = 2131296334;
 			
-			// aapt resource value: 0x7f0a0061
-			public const int selected = 2131361889;
+			// aapt resource value: 0x7f09004f
+			public const int ripple_material_light = 2131296335;
 			
-			// aapt resource value: 0x7f0a004e
-			public const int switch_thumb_disabled_material_dark = 2131361870;
+			// aapt resource value: 0x7f090050
+			public const int secondary_text_default_material_dark = 2131296336;
 			
-			// aapt resource value: 0x7f0a004f
-			public const int switch_thumb_disabled_material_light = 2131361871;
+			// aapt resource value: 0x7f090051
+			public const int secondary_text_default_material_light = 2131296337;
 			
-			// aapt resource value: 0x7f0a008b
-			public const int switch_thumb_material_dark = 2131361931;
+			// aapt resource value: 0x7f090052
+			public const int secondary_text_disabled_material_dark = 2131296338;
 			
-			// aapt resource value: 0x7f0a008c
-			public const int switch_thumb_material_light = 2131361932;
+			// aapt resource value: 0x7f090053
+			public const int secondary_text_disabled_material_light = 2131296339;
 			
-			// aapt resource value: 0x7f0a0050
-			public const int switch_thumb_normal_material_dark = 2131361872;
+			// aapt resource value: 0x7f090090
+			public const int segmented_control_text = 2131296400;
 			
-			// aapt resource value: 0x7f0a0051
-			public const int switch_thumb_normal_material_light = 2131361873;
+			// aapt resource value: 0x7f090067
+			public const int selected = 2131296359;
 			
-			// aapt resource value: 0x7f0a0052
-			public const int tooltip_background_dark = 2131361874;
+			// aapt resource value: 0x7f090054
+			public const int switch_thumb_disabled_material_dark = 2131296340;
 			
-			// aapt resource value: 0x7f0a0053
-			public const int tooltip_background_light = 2131361875;
+			// aapt resource value: 0x7f090055
+			public const int switch_thumb_disabled_material_light = 2131296341;
 			
-			// aapt resource value: 0x7f0a0062
-			public const int vpi__background_holo_dark = 2131361890;
+			// aapt resource value: 0x7f090091
+			public const int switch_thumb_material_dark = 2131296401;
 			
-			// aapt resource value: 0x7f0a0063
-			public const int vpi__background_holo_light = 2131361891;
+			// aapt resource value: 0x7f090092
+			public const int switch_thumb_material_light = 2131296402;
 			
-			// aapt resource value: 0x7f0a0066
-			public const int vpi__bright_foreground_disabled_holo_dark = 2131361894;
+			// aapt resource value: 0x7f090056
+			public const int switch_thumb_normal_material_dark = 2131296342;
 			
-			// aapt resource value: 0x7f0a0067
-			public const int vpi__bright_foreground_disabled_holo_light = 2131361895;
+			// aapt resource value: 0x7f090057
+			public const int switch_thumb_normal_material_light = 2131296343;
 			
-			// aapt resource value: 0x7f0a0064
-			public const int vpi__bright_foreground_holo_dark = 2131361892;
+			// aapt resource value: 0x7f090058
+			public const int tooltip_background_dark = 2131296344;
 			
-			// aapt resource value: 0x7f0a0065
-			public const int vpi__bright_foreground_holo_light = 2131361893;
+			// aapt resource value: 0x7f090059
+			public const int tooltip_background_light = 2131296345;
 			
-			// aapt resource value: 0x7f0a0068
-			public const int vpi__bright_foreground_inverse_holo_dark = 2131361896;
+			// aapt resource value: 0x7f090068
+			public const int vpi__background_holo_dark = 2131296360;
 			
-			// aapt resource value: 0x7f0a0069
-			public const int vpi__bright_foreground_inverse_holo_light = 2131361897;
+			// aapt resource value: 0x7f090069
+			public const int vpi__background_holo_light = 2131296361;
+			
+			// aapt resource value: 0x7f09006c
+			public const int vpi__bright_foreground_disabled_holo_dark = 2131296364;
+			
+			// aapt resource value: 0x7f09006d
+			public const int vpi__bright_foreground_disabled_holo_light = 2131296365;
+			
+			// aapt resource value: 0x7f09006a
+			public const int vpi__bright_foreground_holo_dark = 2131296362;
+			
+			// aapt resource value: 0x7f09006b
+			public const int vpi__bright_foreground_holo_light = 2131296363;
+			
+			// aapt resource value: 0x7f09006e
+			public const int vpi__bright_foreground_inverse_holo_dark = 2131296366;
+			
+			// aapt resource value: 0x7f09006f
+			public const int vpi__bright_foreground_inverse_holo_light = 2131296367;
 			
 			static Color()
 			{
@@ -18645,560 +20818,590 @@ namespace Imobiliaria.Droid
 		public partial class Dimension
 		{
 			
-			// aapt resource value: 0x7f0b002e
-			public const int abc_action_bar_content_inset_material = 2131427374;
+			// aapt resource value: 0x7f0a0038
+			public const int abc_action_bar_content_inset_material = 2131361848;
 			
-			// aapt resource value: 0x7f0b002f
-			public const int abc_action_bar_content_inset_with_nav = 2131427375;
+			// aapt resource value: 0x7f0a0039
+			public const int abc_action_bar_content_inset_with_nav = 2131361849;
 			
-			// aapt resource value: 0x7f0b0023
-			public const int abc_action_bar_default_height_material = 2131427363;
+			// aapt resource value: 0x7f0a002d
+			public const int abc_action_bar_default_height_material = 2131361837;
 			
-			// aapt resource value: 0x7f0b0030
-			public const int abc_action_bar_default_padding_end_material = 2131427376;
+			// aapt resource value: 0x7f0a003a
+			public const int abc_action_bar_default_padding_end_material = 2131361850;
 			
-			// aapt resource value: 0x7f0b0031
-			public const int abc_action_bar_default_padding_start_material = 2131427377;
+			// aapt resource value: 0x7f0a003b
+			public const int abc_action_bar_default_padding_start_material = 2131361851;
 			
-			// aapt resource value: 0x7f0b0033
-			public const int abc_action_bar_elevation_material = 2131427379;
+			// aapt resource value: 0x7f0a003d
+			public const int abc_action_bar_elevation_material = 2131361853;
 			
-			// aapt resource value: 0x7f0b0034
-			public const int abc_action_bar_icon_vertical_padding_material = 2131427380;
+			// aapt resource value: 0x7f0a003e
+			public const int abc_action_bar_icon_vertical_padding_material = 2131361854;
 			
-			// aapt resource value: 0x7f0b0035
-			public const int abc_action_bar_overflow_padding_end_material = 2131427381;
+			// aapt resource value: 0x7f0a003f
+			public const int abc_action_bar_overflow_padding_end_material = 2131361855;
 			
-			// aapt resource value: 0x7f0b0036
-			public const int abc_action_bar_overflow_padding_start_material = 2131427382;
+			// aapt resource value: 0x7f0a0040
+			public const int abc_action_bar_overflow_padding_start_material = 2131361856;
 			
-			// aapt resource value: 0x7f0b0024
-			public const int abc_action_bar_progress_bar_size = 2131427364;
+			// aapt resource value: 0x7f0a002e
+			public const int abc_action_bar_progress_bar_size = 2131361838;
 			
-			// aapt resource value: 0x7f0b0037
-			public const int abc_action_bar_stacked_max_height = 2131427383;
+			// aapt resource value: 0x7f0a0041
+			public const int abc_action_bar_stacked_max_height = 2131361857;
 			
-			// aapt resource value: 0x7f0b0038
-			public const int abc_action_bar_stacked_tab_max_width = 2131427384;
+			// aapt resource value: 0x7f0a0042
+			public const int abc_action_bar_stacked_tab_max_width = 2131361858;
 			
-			// aapt resource value: 0x7f0b0039
-			public const int abc_action_bar_subtitle_bottom_margin_material = 2131427385;
+			// aapt resource value: 0x7f0a0043
+			public const int abc_action_bar_subtitle_bottom_margin_material = 2131361859;
 			
-			// aapt resource value: 0x7f0b003a
-			public const int abc_action_bar_subtitle_top_margin_material = 2131427386;
+			// aapt resource value: 0x7f0a0044
+			public const int abc_action_bar_subtitle_top_margin_material = 2131361860;
 			
-			// aapt resource value: 0x7f0b003b
-			public const int abc_action_button_min_height_material = 2131427387;
+			// aapt resource value: 0x7f0a0045
+			public const int abc_action_button_min_height_material = 2131361861;
 			
-			// aapt resource value: 0x7f0b003c
-			public const int abc_action_button_min_width_material = 2131427388;
+			// aapt resource value: 0x7f0a0046
+			public const int abc_action_button_min_width_material = 2131361862;
 			
-			// aapt resource value: 0x7f0b003d
-			public const int abc_action_button_min_width_overflow_material = 2131427389;
+			// aapt resource value: 0x7f0a0047
+			public const int abc_action_button_min_width_overflow_material = 2131361863;
 			
-			// aapt resource value: 0x7f0b0022
-			public const int abc_alert_dialog_button_bar_height = 2131427362;
+			// aapt resource value: 0x7f0a002c
+			public const int abc_alert_dialog_button_bar_height = 2131361836;
 			
-			// aapt resource value: 0x7f0b003e
-			public const int abc_button_inset_horizontal_material = 2131427390;
+			// aapt resource value: 0x7f0a0048
+			public const int abc_button_inset_horizontal_material = 2131361864;
 			
-			// aapt resource value: 0x7f0b003f
-			public const int abc_button_inset_vertical_material = 2131427391;
+			// aapt resource value: 0x7f0a0049
+			public const int abc_button_inset_vertical_material = 2131361865;
 			
-			// aapt resource value: 0x7f0b0040
-			public const int abc_button_padding_horizontal_material = 2131427392;
+			// aapt resource value: 0x7f0a004a
+			public const int abc_button_padding_horizontal_material = 2131361866;
 			
-			// aapt resource value: 0x7f0b0041
-			public const int abc_button_padding_vertical_material = 2131427393;
+			// aapt resource value: 0x7f0a004b
+			public const int abc_button_padding_vertical_material = 2131361867;
 			
-			// aapt resource value: 0x7f0b0042
-			public const int abc_cascading_menus_min_smallest_width = 2131427394;
+			// aapt resource value: 0x7f0a004c
+			public const int abc_cascading_menus_min_smallest_width = 2131361868;
 			
-			// aapt resource value: 0x7f0b0027
-			public const int abc_config_prefDialogWidth = 2131427367;
+			// aapt resource value: 0x7f0a0031
+			public const int abc_config_prefDialogWidth = 2131361841;
 			
-			// aapt resource value: 0x7f0b0043
-			public const int abc_control_corner_material = 2131427395;
+			// aapt resource value: 0x7f0a004d
+			public const int abc_control_corner_material = 2131361869;
 			
-			// aapt resource value: 0x7f0b0044
-			public const int abc_control_inset_material = 2131427396;
+			// aapt resource value: 0x7f0a004e
+			public const int abc_control_inset_material = 2131361870;
 			
-			// aapt resource value: 0x7f0b0045
-			public const int abc_control_padding_material = 2131427397;
+			// aapt resource value: 0x7f0a004f
+			public const int abc_control_padding_material = 2131361871;
 			
-			// aapt resource value: 0x7f0b0028
-			public const int abc_dialog_fixed_height_major = 2131427368;
+			// aapt resource value: 0x7f0a0032
+			public const int abc_dialog_fixed_height_major = 2131361842;
 			
-			// aapt resource value: 0x7f0b0029
-			public const int abc_dialog_fixed_height_minor = 2131427369;
+			// aapt resource value: 0x7f0a0033
+			public const int abc_dialog_fixed_height_minor = 2131361843;
 			
-			// aapt resource value: 0x7f0b002a
-			public const int abc_dialog_fixed_width_major = 2131427370;
+			// aapt resource value: 0x7f0a0034
+			public const int abc_dialog_fixed_width_major = 2131361844;
 			
-			// aapt resource value: 0x7f0b002b
-			public const int abc_dialog_fixed_width_minor = 2131427371;
+			// aapt resource value: 0x7f0a0035
+			public const int abc_dialog_fixed_width_minor = 2131361845;
 			
-			// aapt resource value: 0x7f0b0046
-			public const int abc_dialog_list_padding_bottom_no_buttons = 2131427398;
+			// aapt resource value: 0x7f0a0050
+			public const int abc_dialog_list_padding_bottom_no_buttons = 2131361872;
 			
-			// aapt resource value: 0x7f0b0047
-			public const int abc_dialog_list_padding_top_no_title = 2131427399;
+			// aapt resource value: 0x7f0a0051
+			public const int abc_dialog_list_padding_top_no_title = 2131361873;
 			
-			// aapt resource value: 0x7f0b002c
-			public const int abc_dialog_min_width_major = 2131427372;
+			// aapt resource value: 0x7f0a0036
+			public const int abc_dialog_min_width_major = 2131361846;
 			
-			// aapt resource value: 0x7f0b002d
-			public const int abc_dialog_min_width_minor = 2131427373;
+			// aapt resource value: 0x7f0a0037
+			public const int abc_dialog_min_width_minor = 2131361847;
 			
-			// aapt resource value: 0x7f0b0048
-			public const int abc_dialog_padding_material = 2131427400;
+			// aapt resource value: 0x7f0a0052
+			public const int abc_dialog_padding_material = 2131361874;
 			
-			// aapt resource value: 0x7f0b0049
-			public const int abc_dialog_padding_top_material = 2131427401;
+			// aapt resource value: 0x7f0a0053
+			public const int abc_dialog_padding_top_material = 2131361875;
 			
-			// aapt resource value: 0x7f0b004a
-			public const int abc_dialog_title_divider_material = 2131427402;
+			// aapt resource value: 0x7f0a0054
+			public const int abc_dialog_title_divider_material = 2131361876;
 			
-			// aapt resource value: 0x7f0b004b
-			public const int abc_disabled_alpha_material_dark = 2131427403;
+			// aapt resource value: 0x7f0a0055
+			public const int abc_disabled_alpha_material_dark = 2131361877;
 			
-			// aapt resource value: 0x7f0b004c
-			public const int abc_disabled_alpha_material_light = 2131427404;
+			// aapt resource value: 0x7f0a0056
+			public const int abc_disabled_alpha_material_light = 2131361878;
 			
-			// aapt resource value: 0x7f0b004d
-			public const int abc_dropdownitem_icon_width = 2131427405;
+			// aapt resource value: 0x7f0a0057
+			public const int abc_dropdownitem_icon_width = 2131361879;
 			
-			// aapt resource value: 0x7f0b004e
-			public const int abc_dropdownitem_text_padding_left = 2131427406;
+			// aapt resource value: 0x7f0a0058
+			public const int abc_dropdownitem_text_padding_left = 2131361880;
 			
-			// aapt resource value: 0x7f0b004f
-			public const int abc_dropdownitem_text_padding_right = 2131427407;
+			// aapt resource value: 0x7f0a0059
+			public const int abc_dropdownitem_text_padding_right = 2131361881;
 			
-			// aapt resource value: 0x7f0b0050
-			public const int abc_edit_text_inset_bottom_material = 2131427408;
+			// aapt resource value: 0x7f0a005a
+			public const int abc_edit_text_inset_bottom_material = 2131361882;
 			
-			// aapt resource value: 0x7f0b0051
-			public const int abc_edit_text_inset_horizontal_material = 2131427409;
+			// aapt resource value: 0x7f0a005b
+			public const int abc_edit_text_inset_horizontal_material = 2131361883;
 			
-			// aapt resource value: 0x7f0b0052
-			public const int abc_edit_text_inset_top_material = 2131427410;
+			// aapt resource value: 0x7f0a005c
+			public const int abc_edit_text_inset_top_material = 2131361884;
 			
-			// aapt resource value: 0x7f0b0053
-			public const int abc_floating_window_z = 2131427411;
+			// aapt resource value: 0x7f0a005d
+			public const int abc_floating_window_z = 2131361885;
 			
-			// aapt resource value: 0x7f0b0054
-			public const int abc_list_item_padding_horizontal_material = 2131427412;
+			// aapt resource value: 0x7f0a005e
+			public const int abc_list_item_padding_horizontal_material = 2131361886;
 			
-			// aapt resource value: 0x7f0b0055
-			public const int abc_panel_menu_list_width = 2131427413;
+			// aapt resource value: 0x7f0a005f
+			public const int abc_panel_menu_list_width = 2131361887;
 			
-			// aapt resource value: 0x7f0b0056
-			public const int abc_progress_bar_height_material = 2131427414;
+			// aapt resource value: 0x7f0a0060
+			public const int abc_progress_bar_height_material = 2131361888;
 			
-			// aapt resource value: 0x7f0b0057
-			public const int abc_search_view_preferred_height = 2131427415;
+			// aapt resource value: 0x7f0a0061
+			public const int abc_search_view_preferred_height = 2131361889;
 			
-			// aapt resource value: 0x7f0b0058
-			public const int abc_search_view_preferred_width = 2131427416;
+			// aapt resource value: 0x7f0a0062
+			public const int abc_search_view_preferred_width = 2131361890;
 			
-			// aapt resource value: 0x7f0b0059
-			public const int abc_seekbar_track_background_height_material = 2131427417;
+			// aapt resource value: 0x7f0a0063
+			public const int abc_seekbar_track_background_height_material = 2131361891;
 			
-			// aapt resource value: 0x7f0b005a
-			public const int abc_seekbar_track_progress_height_material = 2131427418;
+			// aapt resource value: 0x7f0a0064
+			public const int abc_seekbar_track_progress_height_material = 2131361892;
 			
-			// aapt resource value: 0x7f0b005b
-			public const int abc_select_dialog_padding_start_material = 2131427419;
+			// aapt resource value: 0x7f0a0065
+			public const int abc_select_dialog_padding_start_material = 2131361893;
 			
-			// aapt resource value: 0x7f0b0032
-			public const int abc_switch_padding = 2131427378;
+			// aapt resource value: 0x7f0a003c
+			public const int abc_switch_padding = 2131361852;
 			
-			// aapt resource value: 0x7f0b005c
-			public const int abc_text_size_body_1_material = 2131427420;
+			// aapt resource value: 0x7f0a0066
+			public const int abc_text_size_body_1_material = 2131361894;
 			
-			// aapt resource value: 0x7f0b005d
-			public const int abc_text_size_body_2_material = 2131427421;
+			// aapt resource value: 0x7f0a0067
+			public const int abc_text_size_body_2_material = 2131361895;
 			
-			// aapt resource value: 0x7f0b005e
-			public const int abc_text_size_button_material = 2131427422;
+			// aapt resource value: 0x7f0a0068
+			public const int abc_text_size_button_material = 2131361896;
 			
-			// aapt resource value: 0x7f0b005f
-			public const int abc_text_size_caption_material = 2131427423;
+			// aapt resource value: 0x7f0a0069
+			public const int abc_text_size_caption_material = 2131361897;
 			
-			// aapt resource value: 0x7f0b0060
-			public const int abc_text_size_display_1_material = 2131427424;
+			// aapt resource value: 0x7f0a006a
+			public const int abc_text_size_display_1_material = 2131361898;
 			
-			// aapt resource value: 0x7f0b0061
-			public const int abc_text_size_display_2_material = 2131427425;
+			// aapt resource value: 0x7f0a006b
+			public const int abc_text_size_display_2_material = 2131361899;
 			
-			// aapt resource value: 0x7f0b0062
-			public const int abc_text_size_display_3_material = 2131427426;
+			// aapt resource value: 0x7f0a006c
+			public const int abc_text_size_display_3_material = 2131361900;
 			
-			// aapt resource value: 0x7f0b0063
-			public const int abc_text_size_display_4_material = 2131427427;
+			// aapt resource value: 0x7f0a006d
+			public const int abc_text_size_display_4_material = 2131361901;
 			
-			// aapt resource value: 0x7f0b0064
-			public const int abc_text_size_headline_material = 2131427428;
+			// aapt resource value: 0x7f0a006e
+			public const int abc_text_size_headline_material = 2131361902;
 			
-			// aapt resource value: 0x7f0b0065
-			public const int abc_text_size_large_material = 2131427429;
+			// aapt resource value: 0x7f0a006f
+			public const int abc_text_size_large_material = 2131361903;
 			
-			// aapt resource value: 0x7f0b0066
-			public const int abc_text_size_medium_material = 2131427430;
+			// aapt resource value: 0x7f0a0070
+			public const int abc_text_size_medium_material = 2131361904;
 			
-			// aapt resource value: 0x7f0b0067
-			public const int abc_text_size_menu_header_material = 2131427431;
+			// aapt resource value: 0x7f0a0071
+			public const int abc_text_size_menu_header_material = 2131361905;
 			
-			// aapt resource value: 0x7f0b0068
-			public const int abc_text_size_menu_material = 2131427432;
+			// aapt resource value: 0x7f0a0072
+			public const int abc_text_size_menu_material = 2131361906;
 			
-			// aapt resource value: 0x7f0b0069
-			public const int abc_text_size_small_material = 2131427433;
+			// aapt resource value: 0x7f0a0073
+			public const int abc_text_size_small_material = 2131361907;
 			
-			// aapt resource value: 0x7f0b006a
-			public const int abc_text_size_subhead_material = 2131427434;
+			// aapt resource value: 0x7f0a0074
+			public const int abc_text_size_subhead_material = 2131361908;
 			
-			// aapt resource value: 0x7f0b0025
-			public const int abc_text_size_subtitle_material_toolbar = 2131427365;
+			// aapt resource value: 0x7f0a002f
+			public const int abc_text_size_subtitle_material_toolbar = 2131361839;
 			
-			// aapt resource value: 0x7f0b006b
-			public const int abc_text_size_title_material = 2131427435;
+			// aapt resource value: 0x7f0a0075
+			public const int abc_text_size_title_material = 2131361909;
 			
-			// aapt resource value: 0x7f0b0026
-			public const int abc_text_size_title_material_toolbar = 2131427366;
+			// aapt resource value: 0x7f0a0030
+			public const int abc_text_size_title_material_toolbar = 2131361840;
 			
-			// aapt resource value: 0x7f0b001f
-			public const int cardview_compat_inset_shadow = 2131427359;
+			// aapt resource value: 0x7f0a0029
+			public const int cardview_compat_inset_shadow = 2131361833;
 			
-			// aapt resource value: 0x7f0b0020
-			public const int cardview_default_elevation = 2131427360;
+			// aapt resource value: 0x7f0a002a
+			public const int cardview_default_elevation = 2131361834;
 			
-			// aapt resource value: 0x7f0b0021
-			public const int cardview_default_radius = 2131427361;
+			// aapt resource value: 0x7f0a002b
+			public const int cardview_default_radius = 2131361835;
 			
-			// aapt resource value: 0x7f0b0000
-			public const int com_facebook_likeboxcountview_border_radius = 2131427328;
+			// aapt resource value: 0x7f0a000a
+			public const int com_facebook_likeboxcountview_border_radius = 2131361802;
 			
-			// aapt resource value: 0x7f0b0001
-			public const int com_facebook_likeboxcountview_border_width = 2131427329;
+			// aapt resource value: 0x7f0a000b
+			public const int com_facebook_likeboxcountview_border_width = 2131361803;
 			
-			// aapt resource value: 0x7f0b0002
-			public const int com_facebook_likeboxcountview_caret_height = 2131427330;
+			// aapt resource value: 0x7f0a000c
+			public const int com_facebook_likeboxcountview_caret_height = 2131361804;
 			
-			// aapt resource value: 0x7f0b0003
-			public const int com_facebook_likeboxcountview_caret_width = 2131427331;
+			// aapt resource value: 0x7f0a000d
+			public const int com_facebook_likeboxcountview_caret_width = 2131361805;
 			
-			// aapt resource value: 0x7f0b0004
-			public const int com_facebook_likeboxcountview_text_padding = 2131427332;
+			// aapt resource value: 0x7f0a000e
+			public const int com_facebook_likeboxcountview_text_padding = 2131361806;
 			
-			// aapt resource value: 0x7f0b0005
-			public const int com_facebook_likeboxcountview_text_size = 2131427333;
+			// aapt resource value: 0x7f0a000f
+			public const int com_facebook_likeboxcountview_text_size = 2131361807;
 			
-			// aapt resource value: 0x7f0b0006
-			public const int com_facebook_likeview_edge_padding = 2131427334;
+			// aapt resource value: 0x7f0a0010
+			public const int com_facebook_likeview_edge_padding = 2131361808;
 			
-			// aapt resource value: 0x7f0b0007
-			public const int com_facebook_likeview_internal_padding = 2131427335;
+			// aapt resource value: 0x7f0a0011
+			public const int com_facebook_likeview_internal_padding = 2131361809;
 			
-			// aapt resource value: 0x7f0b0008
-			public const int com_facebook_likeview_text_size = 2131427336;
+			// aapt resource value: 0x7f0a0012
+			public const int com_facebook_likeview_text_size = 2131361810;
 			
-			// aapt resource value: 0x7f0b0009
-			public const int com_facebook_profilepictureview_preset_size_large = 2131427337;
+			// aapt resource value: 0x7f0a0013
+			public const int com_facebook_profilepictureview_preset_size_large = 2131361811;
 			
-			// aapt resource value: 0x7f0b000a
-			public const int com_facebook_profilepictureview_preset_size_normal = 2131427338;
+			// aapt resource value: 0x7f0a0014
+			public const int com_facebook_profilepictureview_preset_size_normal = 2131361812;
 			
-			// aapt resource value: 0x7f0b000b
-			public const int com_facebook_profilepictureview_preset_size_small = 2131427339;
+			// aapt resource value: 0x7f0a0015
+			public const int com_facebook_profilepictureview_preset_size_small = 2131361813;
 			
-			// aapt resource value: 0x7f0b000c
-			public const int com_facebook_share_button_compound_drawable_padding = 2131427340;
+			// aapt resource value: 0x7f0a0016
+			public const int com_facebook_share_button_compound_drawable_padding = 2131361814;
 			
-			// aapt resource value: 0x7f0b000d
-			public const int com_facebook_share_button_padding_bottom = 2131427341;
+			// aapt resource value: 0x7f0a0017
+			public const int com_facebook_share_button_padding_bottom = 2131361815;
 			
-			// aapt resource value: 0x7f0b000e
-			public const int com_facebook_share_button_padding_left = 2131427342;
+			// aapt resource value: 0x7f0a0018
+			public const int com_facebook_share_button_padding_left = 2131361816;
 			
-			// aapt resource value: 0x7f0b000f
-			public const int com_facebook_share_button_padding_right = 2131427343;
+			// aapt resource value: 0x7f0a0019
+			public const int com_facebook_share_button_padding_right = 2131361817;
 			
-			// aapt resource value: 0x7f0b0010
-			public const int com_facebook_share_button_padding_top = 2131427344;
+			// aapt resource value: 0x7f0a001a
+			public const int com_facebook_share_button_padding_top = 2131361818;
 			
-			// aapt resource value: 0x7f0b0011
-			public const int com_facebook_share_button_text_size = 2131427345;
+			// aapt resource value: 0x7f0a001b
+			public const int com_facebook_share_button_text_size = 2131361819;
 			
-			// aapt resource value: 0x7f0b0012
-			public const int com_facebook_tooltip_horizontal_padding = 2131427346;
+			// aapt resource value: 0x7f0a001c
+			public const int com_facebook_tooltip_horizontal_padding = 2131361820;
 			
-			// aapt resource value: 0x7f0b00a7
-			public const int compat_button_inset_horizontal_material = 2131427495;
+			// aapt resource value: 0x7f0a00b1
+			public const int compat_button_inset_horizontal_material = 2131361969;
 			
-			// aapt resource value: 0x7f0b00a8
-			public const int compat_button_inset_vertical_material = 2131427496;
+			// aapt resource value: 0x7f0a00b2
+			public const int compat_button_inset_vertical_material = 2131361970;
 			
-			// aapt resource value: 0x7f0b00a9
-			public const int compat_button_padding_horizontal_material = 2131427497;
+			// aapt resource value: 0x7f0a00b3
+			public const int compat_button_padding_horizontal_material = 2131361971;
 			
-			// aapt resource value: 0x7f0b00aa
-			public const int compat_button_padding_vertical_material = 2131427498;
+			// aapt resource value: 0x7f0a00b4
+			public const int compat_button_padding_vertical_material = 2131361972;
 			
-			// aapt resource value: 0x7f0b00ab
-			public const int compat_control_corner_material = 2131427499;
+			// aapt resource value: 0x7f0a00b5
+			public const int compat_control_corner_material = 2131361973;
 			
-			// aapt resource value: 0x7f0b00b7
-			public const int default_circle_indicator_radius = 2131427511;
+			// aapt resource value: 0x7f0a00c1
+			public const int default_circle_indicator_radius = 2131361985;
 			
-			// aapt resource value: 0x7f0b00b8
-			public const int default_circle_indicator_stroke_width = 2131427512;
+			// aapt resource value: 0x7f0a00c2
+			public const int default_circle_indicator_stroke_width = 2131361986;
 			
-			// aapt resource value: 0x7f0b0085
-			public const int design_appbar_elevation = 2131427461;
+			// aapt resource value: 0x7f0a008f
+			public const int design_appbar_elevation = 2131361935;
 			
-			// aapt resource value: 0x7f0b0086
-			public const int design_bottom_navigation_active_item_max_width = 2131427462;
+			// aapt resource value: 0x7f0a0090
+			public const int design_bottom_navigation_active_item_max_width = 2131361936;
 			
-			// aapt resource value: 0x7f0b0087
-			public const int design_bottom_navigation_active_text_size = 2131427463;
+			// aapt resource value: 0x7f0a0091
+			public const int design_bottom_navigation_active_text_size = 2131361937;
 			
-			// aapt resource value: 0x7f0b0088
-			public const int design_bottom_navigation_elevation = 2131427464;
+			// aapt resource value: 0x7f0a0092
+			public const int design_bottom_navigation_elevation = 2131361938;
 			
-			// aapt resource value: 0x7f0b0089
-			public const int design_bottom_navigation_height = 2131427465;
+			// aapt resource value: 0x7f0a0093
+			public const int design_bottom_navigation_height = 2131361939;
 			
-			// aapt resource value: 0x7f0b008a
-			public const int design_bottom_navigation_item_max_width = 2131427466;
+			// aapt resource value: 0x7f0a0094
+			public const int design_bottom_navigation_item_max_width = 2131361940;
 			
-			// aapt resource value: 0x7f0b008b
-			public const int design_bottom_navigation_item_min_width = 2131427467;
+			// aapt resource value: 0x7f0a0095
+			public const int design_bottom_navigation_item_min_width = 2131361941;
 			
-			// aapt resource value: 0x7f0b008c
-			public const int design_bottom_navigation_margin = 2131427468;
+			// aapt resource value: 0x7f0a0096
+			public const int design_bottom_navigation_margin = 2131361942;
 			
-			// aapt resource value: 0x7f0b008d
-			public const int design_bottom_navigation_shadow_height = 2131427469;
+			// aapt resource value: 0x7f0a0097
+			public const int design_bottom_navigation_shadow_height = 2131361943;
 			
-			// aapt resource value: 0x7f0b008e
-			public const int design_bottom_navigation_text_size = 2131427470;
+			// aapt resource value: 0x7f0a0098
+			public const int design_bottom_navigation_text_size = 2131361944;
 			
-			// aapt resource value: 0x7f0b008f
-			public const int design_bottom_sheet_modal_elevation = 2131427471;
+			// aapt resource value: 0x7f0a0099
+			public const int design_bottom_sheet_modal_elevation = 2131361945;
 			
-			// aapt resource value: 0x7f0b0090
-			public const int design_bottom_sheet_peek_height_min = 2131427472;
+			// aapt resource value: 0x7f0a009a
+			public const int design_bottom_sheet_peek_height_min = 2131361946;
 			
-			// aapt resource value: 0x7f0b0091
-			public const int design_fab_border_width = 2131427473;
+			// aapt resource value: 0x7f0a009b
+			public const int design_fab_border_width = 2131361947;
 			
-			// aapt resource value: 0x7f0b0092
-			public const int design_fab_elevation = 2131427474;
+			// aapt resource value: 0x7f0a009c
+			public const int design_fab_elevation = 2131361948;
 			
-			// aapt resource value: 0x7f0b0093
-			public const int design_fab_image_size = 2131427475;
+			// aapt resource value: 0x7f0a009d
+			public const int design_fab_image_size = 2131361949;
 			
-			// aapt resource value: 0x7f0b0094
-			public const int design_fab_size_mini = 2131427476;
+			// aapt resource value: 0x7f0a009e
+			public const int design_fab_size_mini = 2131361950;
 			
-			// aapt resource value: 0x7f0b0095
-			public const int design_fab_size_normal = 2131427477;
+			// aapt resource value: 0x7f0a009f
+			public const int design_fab_size_normal = 2131361951;
 			
-			// aapt resource value: 0x7f0b0096
-			public const int design_fab_translation_z_pressed = 2131427478;
+			// aapt resource value: 0x7f0a00a0
+			public const int design_fab_translation_z_pressed = 2131361952;
 			
-			// aapt resource value: 0x7f0b0097
-			public const int design_navigation_elevation = 2131427479;
+			// aapt resource value: 0x7f0a00a1
+			public const int design_navigation_elevation = 2131361953;
 			
-			// aapt resource value: 0x7f0b0098
-			public const int design_navigation_icon_padding = 2131427480;
+			// aapt resource value: 0x7f0a00a2
+			public const int design_navigation_icon_padding = 2131361954;
 			
-			// aapt resource value: 0x7f0b0099
-			public const int design_navigation_icon_size = 2131427481;
+			// aapt resource value: 0x7f0a00a3
+			public const int design_navigation_icon_size = 2131361955;
 			
-			// aapt resource value: 0x7f0b007d
-			public const int design_navigation_max_width = 2131427453;
+			// aapt resource value: 0x7f0a0087
+			public const int design_navigation_max_width = 2131361927;
 			
-			// aapt resource value: 0x7f0b009a
-			public const int design_navigation_padding_bottom = 2131427482;
+			// aapt resource value: 0x7f0a00a4
+			public const int design_navigation_padding_bottom = 2131361956;
 			
-			// aapt resource value: 0x7f0b009b
-			public const int design_navigation_separator_vertical_padding = 2131427483;
+			// aapt resource value: 0x7f0a00a5
+			public const int design_navigation_separator_vertical_padding = 2131361957;
 			
-			// aapt resource value: 0x7f0b007e
-			public const int design_snackbar_action_inline_max_width = 2131427454;
+			// aapt resource value: 0x7f0a0088
+			public const int design_snackbar_action_inline_max_width = 2131361928;
 			
-			// aapt resource value: 0x7f0b007f
-			public const int design_snackbar_background_corner_radius = 2131427455;
+			// aapt resource value: 0x7f0a0089
+			public const int design_snackbar_background_corner_radius = 2131361929;
 			
-			// aapt resource value: 0x7f0b009c
-			public const int design_snackbar_elevation = 2131427484;
+			// aapt resource value: 0x7f0a00a6
+			public const int design_snackbar_elevation = 2131361958;
 			
-			// aapt resource value: 0x7f0b0080
-			public const int design_snackbar_extra_spacing_horizontal = 2131427456;
+			// aapt resource value: 0x7f0a008a
+			public const int design_snackbar_extra_spacing_horizontal = 2131361930;
 			
-			// aapt resource value: 0x7f0b0081
-			public const int design_snackbar_max_width = 2131427457;
+			// aapt resource value: 0x7f0a008b
+			public const int design_snackbar_max_width = 2131361931;
 			
-			// aapt resource value: 0x7f0b0082
-			public const int design_snackbar_min_width = 2131427458;
+			// aapt resource value: 0x7f0a008c
+			public const int design_snackbar_min_width = 2131361932;
 			
-			// aapt resource value: 0x7f0b009d
-			public const int design_snackbar_padding_horizontal = 2131427485;
+			// aapt resource value: 0x7f0a00a7
+			public const int design_snackbar_padding_horizontal = 2131361959;
 			
-			// aapt resource value: 0x7f0b009e
-			public const int design_snackbar_padding_vertical = 2131427486;
+			// aapt resource value: 0x7f0a00a8
+			public const int design_snackbar_padding_vertical = 2131361960;
 			
-			// aapt resource value: 0x7f0b0083
-			public const int design_snackbar_padding_vertical_2lines = 2131427459;
+			// aapt resource value: 0x7f0a008d
+			public const int design_snackbar_padding_vertical_2lines = 2131361933;
 			
-			// aapt resource value: 0x7f0b009f
-			public const int design_snackbar_text_size = 2131427487;
+			// aapt resource value: 0x7f0a00a9
+			public const int design_snackbar_text_size = 2131361961;
 			
-			// aapt resource value: 0x7f0b00a0
-			public const int design_tab_max_width = 2131427488;
+			// aapt resource value: 0x7f0a00aa
+			public const int design_tab_max_width = 2131361962;
 			
-			// aapt resource value: 0x7f0b0084
-			public const int design_tab_scrollable_min_width = 2131427460;
+			// aapt resource value: 0x7f0a008e
+			public const int design_tab_scrollable_min_width = 2131361934;
 			
-			// aapt resource value: 0x7f0b00a1
-			public const int design_tab_text_size = 2131427489;
+			// aapt resource value: 0x7f0a00ab
+			public const int design_tab_text_size = 2131361963;
 			
-			// aapt resource value: 0x7f0b00a2
-			public const int design_tab_text_size_2line = 2131427490;
+			// aapt resource value: 0x7f0a00ac
+			public const int design_tab_text_size_2line = 2131361964;
 			
-			// aapt resource value: 0x7f0b006c
-			public const int disabled_alpha_material_dark = 2131427436;
+			// aapt resource value: 0x7f0a0076
+			public const int disabled_alpha_material_dark = 2131361910;
 			
-			// aapt resource value: 0x7f0b006d
-			public const int disabled_alpha_material_light = 2131427437;
+			// aapt resource value: 0x7f0a0077
+			public const int disabled_alpha_material_light = 2131361911;
 			
-			// aapt resource value: 0x7f0b0013
-			public const int fastscroll_default_thickness = 2131427347;
+			// aapt resource value: 0x7f0a001d
+			public const int fastscroll_default_thickness = 2131361821;
 			
-			// aapt resource value: 0x7f0b0014
-			public const int fastscroll_margin = 2131427348;
+			// aapt resource value: 0x7f0a001e
+			public const int fastscroll_margin = 2131361822;
 			
-			// aapt resource value: 0x7f0b0015
-			public const int fastscroll_minimum_range = 2131427349;
+			// aapt resource value: 0x7f0a001f
+			public const int fastscroll_minimum_range = 2131361823;
 			
-			// aapt resource value: 0x7f0b006e
-			public const int highlight_alpha_material_colored = 2131427438;
+			// aapt resource value: 0x7f0a0078
+			public const int highlight_alpha_material_colored = 2131361912;
 			
-			// aapt resource value: 0x7f0b006f
-			public const int highlight_alpha_material_dark = 2131427439;
+			// aapt resource value: 0x7f0a0079
+			public const int highlight_alpha_material_dark = 2131361913;
 			
-			// aapt resource value: 0x7f0b0070
-			public const int highlight_alpha_material_light = 2131427440;
+			// aapt resource value: 0x7f0a007a
+			public const int highlight_alpha_material_light = 2131361914;
 			
-			// aapt resource value: 0x7f0b0071
-			public const int hint_alpha_material_dark = 2131427441;
+			// aapt resource value: 0x7f0a007b
+			public const int hint_alpha_material_dark = 2131361915;
 			
-			// aapt resource value: 0x7f0b0072
-			public const int hint_alpha_material_light = 2131427442;
+			// aapt resource value: 0x7f0a007c
+			public const int hint_alpha_material_light = 2131361916;
 			
-			// aapt resource value: 0x7f0b0073
-			public const int hint_pressed_alpha_material_dark = 2131427443;
+			// aapt resource value: 0x7f0a007d
+			public const int hint_pressed_alpha_material_dark = 2131361917;
 			
-			// aapt resource value: 0x7f0b0074
-			public const int hint_pressed_alpha_material_light = 2131427444;
+			// aapt resource value: 0x7f0a007e
+			public const int hint_pressed_alpha_material_light = 2131361918;
 			
-			// aapt resource value: 0x7f0b0016
-			public const int item_touch_helper_max_drag_scroll_per_frame = 2131427350;
+			// aapt resource value: 0x7f0a0020
+			public const int item_touch_helper_max_drag_scroll_per_frame = 2131361824;
 			
-			// aapt resource value: 0x7f0b0017
-			public const int item_touch_helper_swipe_escape_max_velocity = 2131427351;
+			// aapt resource value: 0x7f0a0021
+			public const int item_touch_helper_swipe_escape_max_velocity = 2131361825;
 			
-			// aapt resource value: 0x7f0b0018
-			public const int item_touch_helper_swipe_escape_velocity = 2131427352;
+			// aapt resource value: 0x7f0a0022
+			public const int item_touch_helper_swipe_escape_velocity = 2131361826;
 			
-			// aapt resource value: 0x7f0b0019
-			public const int mr_controller_volume_group_list_item_height = 2131427353;
+			// aapt resource value: 0x7f0a0023
+			public const int mr_controller_volume_group_list_item_height = 2131361827;
 			
-			// aapt resource value: 0x7f0b001a
-			public const int mr_controller_volume_group_list_item_icon_size = 2131427354;
+			// aapt resource value: 0x7f0a0024
+			public const int mr_controller_volume_group_list_item_icon_size = 2131361828;
 			
-			// aapt resource value: 0x7f0b001b
-			public const int mr_controller_volume_group_list_max_height = 2131427355;
+			// aapt resource value: 0x7f0a0025
+			public const int mr_controller_volume_group_list_max_height = 2131361829;
 			
-			// aapt resource value: 0x7f0b001e
-			public const int mr_controller_volume_group_list_padding_top = 2131427358;
+			// aapt resource value: 0x7f0a0028
+			public const int mr_controller_volume_group_list_padding_top = 2131361832;
 			
-			// aapt resource value: 0x7f0b001c
-			public const int mr_dialog_fixed_width_major = 2131427356;
+			// aapt resource value: 0x7f0a0026
+			public const int mr_dialog_fixed_width_major = 2131361830;
 			
-			// aapt resource value: 0x7f0b001d
-			public const int mr_dialog_fixed_width_minor = 2131427357;
+			// aapt resource value: 0x7f0a0027
+			public const int mr_dialog_fixed_width_minor = 2131361831;
 			
-			// aapt resource value: 0x7f0b00ac
-			public const int notification_action_icon_size = 2131427500;
+			// aapt resource value: 0x7f0a00b6
+			public const int notification_action_icon_size = 2131361974;
 			
-			// aapt resource value: 0x7f0b00ad
-			public const int notification_action_text_size = 2131427501;
+			// aapt resource value: 0x7f0a00b7
+			public const int notification_action_text_size = 2131361975;
 			
-			// aapt resource value: 0x7f0b00ae
-			public const int notification_big_circle_margin = 2131427502;
+			// aapt resource value: 0x7f0a00b8
+			public const int notification_big_circle_margin = 2131361976;
 			
-			// aapt resource value: 0x7f0b00a4
-			public const int notification_content_margin_start = 2131427492;
+			// aapt resource value: 0x7f0a00ae
+			public const int notification_content_margin_start = 2131361966;
 			
-			// aapt resource value: 0x7f0b00af
-			public const int notification_large_icon_height = 2131427503;
+			// aapt resource value: 0x7f0a00b9
+			public const int notification_large_icon_height = 2131361977;
 			
-			// aapt resource value: 0x7f0b00b0
-			public const int notification_large_icon_width = 2131427504;
+			// aapt resource value: 0x7f0a00ba
+			public const int notification_large_icon_width = 2131361978;
 			
-			// aapt resource value: 0x7f0b00a5
-			public const int notification_main_column_padding_top = 2131427493;
+			// aapt resource value: 0x7f0a00af
+			public const int notification_main_column_padding_top = 2131361967;
 			
-			// aapt resource value: 0x7f0b00a6
-			public const int notification_media_narrow_margin = 2131427494;
+			// aapt resource value: 0x7f0a00b0
+			public const int notification_media_narrow_margin = 2131361968;
 			
-			// aapt resource value: 0x7f0b00b1
-			public const int notification_right_icon_size = 2131427505;
+			// aapt resource value: 0x7f0a00bb
+			public const int notification_right_icon_size = 2131361979;
 			
-			// aapt resource value: 0x7f0b00a3
-			public const int notification_right_side_padding_top = 2131427491;
+			// aapt resource value: 0x7f0a00ad
+			public const int notification_right_side_padding_top = 2131361965;
 			
-			// aapt resource value: 0x7f0b00b2
-			public const int notification_small_icon_background_padding = 2131427506;
+			// aapt resource value: 0x7f0a00bc
+			public const int notification_small_icon_background_padding = 2131361980;
 			
-			// aapt resource value: 0x7f0b00b3
-			public const int notification_small_icon_size_as_large = 2131427507;
+			// aapt resource value: 0x7f0a00bd
+			public const int notification_small_icon_size_as_large = 2131361981;
 			
-			// aapt resource value: 0x7f0b00b4
-			public const int notification_subtext_size = 2131427508;
+			// aapt resource value: 0x7f0a00be
+			public const int notification_subtext_size = 2131361982;
 			
-			// aapt resource value: 0x7f0b00b5
-			public const int notification_top_pad = 2131427509;
+			// aapt resource value: 0x7f0a00bf
+			public const int notification_top_pad = 2131361983;
 			
-			// aapt resource value: 0x7f0b00b6
-			public const int notification_top_pad_large_text = 2131427510;
+			// aapt resource value: 0x7f0a00c0
+			public const int notification_top_pad_large_text = 2131361984;
 			
-			// aapt resource value: 0x7f0b0075
-			public const int tooltip_corner_radius = 2131427445;
+			// aapt resource value: 0x7f0a0000
+			public const int place_autocomplete_button_padding = 2131361792;
 			
-			// aapt resource value: 0x7f0b0076
-			public const int tooltip_horizontal_padding = 2131427446;
+			// aapt resource value: 0x7f0a0001
+			public const int place_autocomplete_powered_by_google_height = 2131361793;
 			
-			// aapt resource value: 0x7f0b0077
-			public const int tooltip_margin = 2131427447;
+			// aapt resource value: 0x7f0a0002
+			public const int place_autocomplete_powered_by_google_start = 2131361794;
 			
-			// aapt resource value: 0x7f0b0078
-			public const int tooltip_precise_anchor_extra_offset = 2131427448;
+			// aapt resource value: 0x7f0a0003
+			public const int place_autocomplete_prediction_height = 2131361795;
 			
-			// aapt resource value: 0x7f0b0079
-			public const int tooltip_precise_anchor_threshold = 2131427449;
+			// aapt resource value: 0x7f0a0004
+			public const int place_autocomplete_prediction_horizontal_margin = 2131361796;
 			
-			// aapt resource value: 0x7f0b007a
-			public const int tooltip_vertical_padding = 2131427450;
+			// aapt resource value: 0x7f0a0005
+			public const int place_autocomplete_prediction_primary_text = 2131361797;
 			
-			// aapt resource value: 0x7f0b007b
-			public const int tooltip_y_offset_non_touch = 2131427451;
+			// aapt resource value: 0x7f0a0006
+			public const int place_autocomplete_prediction_secondary_text = 2131361798;
 			
-			// aapt resource value: 0x7f0b007c
-			public const int tooltip_y_offset_touch = 2131427452;
+			// aapt resource value: 0x7f0a0007
+			public const int place_autocomplete_progress_horizontal_margin = 2131361799;
+			
+			// aapt resource value: 0x7f0a0008
+			public const int place_autocomplete_progress_size = 2131361800;
+			
+			// aapt resource value: 0x7f0a0009
+			public const int place_autocomplete_separator_start = 2131361801;
+			
+			// aapt resource value: 0x7f0a007f
+			public const int tooltip_corner_radius = 2131361919;
+			
+			// aapt resource value: 0x7f0a0080
+			public const int tooltip_horizontal_padding = 2131361920;
+			
+			// aapt resource value: 0x7f0a0081
+			public const int tooltip_margin = 2131361921;
+			
+			// aapt resource value: 0x7f0a0082
+			public const int tooltip_precise_anchor_extra_offset = 2131361922;
+			
+			// aapt resource value: 0x7f0a0083
+			public const int tooltip_precise_anchor_threshold = 2131361923;
+			
+			// aapt resource value: 0x7f0a0084
+			public const int tooltip_vertical_padding = 2131361924;
+			
+			// aapt resource value: 0x7f0a0085
+			public const int tooltip_y_offset_non_touch = 2131361925;
+			
+			// aapt resource value: 0x7f0a0086
+			public const int tooltip_y_offset_touch = 2131361926;
 			
 			static Dimension()
 			{
@@ -19465,26 +21668,26 @@ namespace Imobiliaria.Droid
 			// aapt resource value: 0x7f020053
 			public const int avd_hide_password = 2130837587;
 			
-			// aapt resource value: 0x7f020179
-			public const int avd_hide_password_1 = 2130837881;
+			// aapt resource value: 0x7f020181
+			public const int avd_hide_password_1 = 2130837889;
 			
-			// aapt resource value: 0x7f02017a
-			public const int avd_hide_password_2 = 2130837882;
+			// aapt resource value: 0x7f020182
+			public const int avd_hide_password_2 = 2130837890;
 			
-			// aapt resource value: 0x7f02017b
-			public const int avd_hide_password_3 = 2130837883;
+			// aapt resource value: 0x7f020183
+			public const int avd_hide_password_3 = 2130837891;
 			
 			// aapt resource value: 0x7f020054
 			public const int avd_show_password = 2130837588;
 			
-			// aapt resource value: 0x7f02017c
-			public const int avd_show_password_1 = 2130837884;
+			// aapt resource value: 0x7f020184
+			public const int avd_show_password_1 = 2130837892;
 			
-			// aapt resource value: 0x7f02017d
-			public const int avd_show_password_2 = 2130837885;
+			// aapt resource value: 0x7f020185
+			public const int avd_show_password_2 = 2130837893;
 			
-			// aapt resource value: 0x7f02017e
-			public const int avd_show_password_3 = 2130837886;
+			// aapt resource value: 0x7f020186
+			public const int avd_show_password_3 = 2130837894;
 			
 			// aapt resource value: 0x7f020055
 			public const int com_facebook_button_background = 2130837589;
@@ -20162,205 +22365,229 @@ namespace Imobiliaria.Droid
 			public const int ic_mr_button_grey = 2130837813;
 			
 			// aapt resource value: 0x7f020136
-			public const int ic_vol_type_speaker_dark = 2130837814;
+			public const int ic_plusone_medium_off_client = 2130837814;
 			
 			// aapt resource value: 0x7f020137
-			public const int ic_vol_type_speaker_group_dark = 2130837815;
+			public const int ic_plusone_small_off_client = 2130837815;
 			
 			// aapt resource value: 0x7f020138
-			public const int ic_vol_type_speaker_group_light = 2130837816;
+			public const int ic_plusone_standard_off_client = 2130837816;
 			
 			// aapt resource value: 0x7f020139
-			public const int ic_vol_type_speaker_light = 2130837817;
+			public const int ic_plusone_tall_off_client = 2130837817;
 			
 			// aapt resource value: 0x7f02013a
-			public const int ic_vol_type_tv_dark = 2130837818;
+			public const int ic_vol_type_speaker_dark = 2130837818;
 			
 			// aapt resource value: 0x7f02013b
-			public const int ic_vol_type_tv_light = 2130837819;
+			public const int ic_vol_type_speaker_group_dark = 2130837819;
 			
 			// aapt resource value: 0x7f02013c
-			public const int icon = 2130837820;
+			public const int ic_vol_type_speaker_group_light = 2130837820;
 			
 			// aapt resource value: 0x7f02013d
-			public const int iconl = 2130837821;
+			public const int ic_vol_type_speaker_light = 2130837821;
 			
 			// aapt resource value: 0x7f02013e
-			public const int instagram = 2130837822;
+			public const int ic_vol_type_tv_dark = 2130837822;
 			
 			// aapt resource value: 0x7f02013f
-			public const int @lock = 2130837823;
+			public const int ic_vol_type_tv_light = 2130837823;
 			
 			// aapt resource value: 0x7f020140
-			public const int menu = 2130837824;
+			public const int icon = 2130837824;
 			
 			// aapt resource value: 0x7f020141
-			public const int messenger_bubble_large_blue = 2130837825;
+			public const int iconl = 2130837825;
 			
 			// aapt resource value: 0x7f020142
-			public const int messenger_bubble_large_white = 2130837826;
+			public const int instagram = 2130837826;
 			
 			// aapt resource value: 0x7f020143
-			public const int messenger_bubble_small_blue = 2130837827;
+			public const int @lock = 2130837827;
 			
 			// aapt resource value: 0x7f020144
-			public const int messenger_bubble_small_white = 2130837828;
+			public const int menu = 2130837828;
 			
 			// aapt resource value: 0x7f020145
-			public const int messenger_button_blue_bg_round = 2130837829;
+			public const int messenger_bubble_large_blue = 2130837829;
 			
 			// aapt resource value: 0x7f020146
-			public const int messenger_button_blue_bg_selector = 2130837830;
+			public const int messenger_bubble_large_white = 2130837830;
 			
 			// aapt resource value: 0x7f020147
-			public const int messenger_button_send_round_shadow = 2130837831;
+			public const int messenger_bubble_small_blue = 2130837831;
 			
 			// aapt resource value: 0x7f020148
-			public const int messenger_button_white_bg_round = 2130837832;
+			public const int messenger_bubble_small_white = 2130837832;
 			
 			// aapt resource value: 0x7f020149
-			public const int messenger_button_white_bg_selector = 2130837833;
+			public const int messenger_button_blue_bg_round = 2130837833;
 			
 			// aapt resource value: 0x7f02014a
-			public const int mr_button_connected_dark = 2130837834;
+			public const int messenger_button_blue_bg_selector = 2130837834;
 			
 			// aapt resource value: 0x7f02014b
-			public const int mr_button_connected_light = 2130837835;
+			public const int messenger_button_send_round_shadow = 2130837835;
 			
 			// aapt resource value: 0x7f02014c
-			public const int mr_button_connecting_dark = 2130837836;
+			public const int messenger_button_white_bg_round = 2130837836;
 			
 			// aapt resource value: 0x7f02014d
-			public const int mr_button_connecting_light = 2130837837;
+			public const int messenger_button_white_bg_selector = 2130837837;
 			
 			// aapt resource value: 0x7f02014e
-			public const int mr_button_dark = 2130837838;
+			public const int mr_button_connected_dark = 2130837838;
 			
 			// aapt resource value: 0x7f02014f
-			public const int mr_button_light = 2130837839;
+			public const int mr_button_connected_light = 2130837839;
 			
 			// aapt resource value: 0x7f020150
-			public const int mr_dialog_close_dark = 2130837840;
+			public const int mr_button_connecting_dark = 2130837840;
 			
 			// aapt resource value: 0x7f020151
-			public const int mr_dialog_close_light = 2130837841;
+			public const int mr_button_connecting_light = 2130837841;
 			
 			// aapt resource value: 0x7f020152
-			public const int mr_dialog_material_background_dark = 2130837842;
+			public const int mr_button_dark = 2130837842;
 			
 			// aapt resource value: 0x7f020153
-			public const int mr_dialog_material_background_light = 2130837843;
+			public const int mr_button_light = 2130837843;
 			
 			// aapt resource value: 0x7f020154
-			public const int mr_group_collapse = 2130837844;
+			public const int mr_dialog_close_dark = 2130837844;
 			
 			// aapt resource value: 0x7f020155
-			public const int mr_group_expand = 2130837845;
+			public const int mr_dialog_close_light = 2130837845;
 			
 			// aapt resource value: 0x7f020156
-			public const int mr_media_pause_dark = 2130837846;
+			public const int mr_dialog_material_background_dark = 2130837846;
 			
 			// aapt resource value: 0x7f020157
-			public const int mr_media_pause_light = 2130837847;
+			public const int mr_dialog_material_background_light = 2130837847;
 			
 			// aapt resource value: 0x7f020158
-			public const int mr_media_play_dark = 2130837848;
+			public const int mr_group_collapse = 2130837848;
 			
 			// aapt resource value: 0x7f020159
-			public const int mr_media_play_light = 2130837849;
+			public const int mr_group_expand = 2130837849;
 			
 			// aapt resource value: 0x7f02015a
-			public const int mr_media_stop_dark = 2130837850;
+			public const int mr_media_pause_dark = 2130837850;
 			
 			// aapt resource value: 0x7f02015b
-			public const int mr_media_stop_light = 2130837851;
+			public const int mr_media_pause_light = 2130837851;
 			
 			// aapt resource value: 0x7f02015c
-			public const int mr_vol_type_audiotrack_dark = 2130837852;
+			public const int mr_media_play_dark = 2130837852;
 			
 			// aapt resource value: 0x7f02015d
-			public const int mr_vol_type_audiotrack_light = 2130837853;
+			public const int mr_media_play_light = 2130837853;
 			
 			// aapt resource value: 0x7f02015e
-			public const int navigation_empty_icon = 2130837854;
+			public const int mr_media_stop_dark = 2130837854;
 			
 			// aapt resource value: 0x7f02015f
-			public const int Next = 2130837855;
+			public const int mr_media_stop_light = 2130837855;
 			
 			// aapt resource value: 0x7f020160
-			public const int notification_action_background = 2130837856;
+			public const int mr_vol_type_audiotrack_dark = 2130837856;
 			
 			// aapt resource value: 0x7f020161
-			public const int notification_bg = 2130837857;
+			public const int mr_vol_type_audiotrack_light = 2130837857;
 			
 			// aapt resource value: 0x7f020162
-			public const int notification_bg_low = 2130837858;
+			public const int navigation_empty_icon = 2130837858;
 			
 			// aapt resource value: 0x7f020163
-			public const int notification_bg_low_normal = 2130837859;
+			public const int Next = 2130837859;
 			
 			// aapt resource value: 0x7f020164
-			public const int notification_bg_low_pressed = 2130837860;
+			public const int notification_action_background = 2130837860;
 			
 			// aapt resource value: 0x7f020165
-			public const int notification_bg_normal = 2130837861;
+			public const int notification_bg = 2130837861;
 			
 			// aapt resource value: 0x7f020166
-			public const int notification_bg_normal_pressed = 2130837862;
+			public const int notification_bg_low = 2130837862;
 			
 			// aapt resource value: 0x7f020167
-			public const int notification_icon_background = 2130837863;
-			
-			// aapt resource value: 0x7f020177
-			public const int notification_template_icon_bg = 2130837879;
-			
-			// aapt resource value: 0x7f020178
-			public const int notification_template_icon_low_bg = 2130837880;
+			public const int notification_bg_low_normal = 2130837863;
 			
 			// aapt resource value: 0x7f020168
-			public const int notification_tile_bg = 2130837864;
+			public const int notification_bg_low_pressed = 2130837864;
 			
 			// aapt resource value: 0x7f020169
-			public const int notify_panel_notification_icon_bg = 2130837865;
+			public const int notification_bg_normal = 2130837865;
 			
 			// aapt resource value: 0x7f02016a
-			public const int ponto = 2130837866;
+			public const int notification_bg_normal_pressed = 2130837866;
 			
 			// aapt resource value: 0x7f02016b
-			public const int Prev = 2130837867;
+			public const int notification_icon_background = 2130837867;
+			
+			// aapt resource value: 0x7f02017f
+			public const int notification_template_icon_bg = 2130837887;
+			
+			// aapt resource value: 0x7f020180
+			public const int notification_template_icon_low_bg = 2130837888;
 			
 			// aapt resource value: 0x7f02016c
-			public const int segmented_control_background = 2130837868;
+			public const int notification_tile_bg = 2130837868;
 			
 			// aapt resource value: 0x7f02016d
-			public const int segmented_control_first_background = 2130837869;
+			public const int notify_panel_notification_icon_bg = 2130837869;
 			
 			// aapt resource value: 0x7f02016e
-			public const int segmented_control_last_background = 2130837870;
+			public const int places_ic_clear = 2130837870;
 			
 			// aapt resource value: 0x7f02016f
-			public const int seta = 2130837871;
+			public const int places_ic_search = 2130837871;
 			
 			// aapt resource value: 0x7f020170
-			public const int star = 2130837872;
+			public const int ponto = 2130837872;
 			
 			// aapt resource value: 0x7f020171
-			public const int tooltip_frame_dark = 2130837873;
+			public const int powered_by_google_dark = 2130837873;
 			
 			// aapt resource value: 0x7f020172
-			public const int tooltip_frame_light = 2130837874;
+			public const int powered_by_google_light = 2130837874;
 			
 			// aapt resource value: 0x7f020173
-			public const int Up = 2130837875;
+			public const int Prev = 2130837875;
 			
 			// aapt resource value: 0x7f020174
-			public const int whatsapp = 2130837876;
+			public const int segmented_control_background = 2130837876;
 			
 			// aapt resource value: 0x7f020175
-			public const int xamarin_logo = 2130837877;
+			public const int segmented_control_first_background = 2130837877;
 			
 			// aapt resource value: 0x7f020176
-			public const int youtube = 2130837878;
+			public const int segmented_control_last_background = 2130837878;
+			
+			// aapt resource value: 0x7f020177
+			public const int seta = 2130837879;
+			
+			// aapt resource value: 0x7f020178
+			public const int star = 2130837880;
+			
+			// aapt resource value: 0x7f020179
+			public const int tooltip_frame_dark = 2130837881;
+			
+			// aapt resource value: 0x7f02017a
+			public const int tooltip_frame_light = 2130837882;
+			
+			// aapt resource value: 0x7f02017b
+			public const int Up = 2130837883;
+			
+			// aapt resource value: 0x7f02017c
+			public const int whatsapp = 2130837884;
+			
+			// aapt resource value: 0x7f02017d
+			public const int xamarin_logo = 2130837885;
+			
+			// aapt resource value: 0x7f02017e
+			public const int youtube = 2130837886;
 			
 			static Drawable()
 			{
@@ -20393,8 +22620,8 @@ namespace Imobiliaria.Droid
 			// aapt resource value: 0x7f0d0052
 			public const int SYM = 2131558482;
 			
-			// aapt resource value: 0x7f0d00f0
-			public const int SegControl = 2131558640;
+			// aapt resource value: 0x7f0d00f8
+			public const int SegControl = 2131558648;
 			
 			// aapt resource value: 0x7f0d00e0
 			public const int action0 = 2131558624;
@@ -20714,26 +22941,26 @@ namespace Imobiliaria.Droid
 			// aapt resource value: 0x7f0d0078
 			public const int list_item = 2131558520;
 			
-			// aapt resource value: 0x7f0d00f1
-			public const int main_appbar = 2131558641;
-			
-			// aapt resource value: 0x7f0d00f4
-			public const int main_scrollview = 2131558644;
-			
-			// aapt resource value: 0x7f0d00f3
-			public const int main_tablayout = 2131558643;
-			
-			// aapt resource value: 0x7f0d00f2
-			public const int main_toolbar = 2131558642;
+			// aapt resource value: 0x7f0d00f9
+			public const int main_appbar = 2131558649;
 			
 			// aapt resource value: 0x7f0d00fc
-			public const int masked = 2131558652;
+			public const int main_scrollview = 2131558652;
+			
+			// aapt resource value: 0x7f0d00fb
+			public const int main_tablayout = 2131558651;
+			
+			// aapt resource value: 0x7f0d00fa
+			public const int main_toolbar = 2131558650;
+			
+			// aapt resource value: 0x7f0d0104
+			public const int masked = 2131558660;
 			
 			// aapt resource value: 0x7f0d00e3
 			public const int media_actions = 2131558627;
 			
-			// aapt resource value: 0x7f0d00fa
-			public const int message = 2131558650;
+			// aapt resource value: 0x7f0d0102
+			public const int message = 2131558658;
 			
 			// aapt resource value: 0x7f0d00c2
 			public const int messenger_send_button = 2131558594;
@@ -20873,6 +23100,30 @@ namespace Imobiliaria.Droid
 			// aapt resource value: 0x7f0d0062
 			public const int pin = 2131558498;
 			
+			// aapt resource value: 0x7f0d00f2
+			public const int place_autocomplete_clear_button = 2131558642;
+			
+			// aapt resource value: 0x7f0d00f4
+			public const int place_autocomplete_powered_by_google = 2131558644;
+			
+			// aapt resource value: 0x7f0d00f6
+			public const int place_autocomplete_prediction_primary_text = 2131558646;
+			
+			// aapt resource value: 0x7f0d00f7
+			public const int place_autocomplete_prediction_secondary_text = 2131558647;
+			
+			// aapt resource value: 0x7f0d00f5
+			public const int place_autocomplete_progress = 2131558645;
+			
+			// aapt resource value: 0x7f0d00f0
+			public const int place_autocomplete_search_button = 2131558640;
+			
+			// aapt resource value: 0x7f0d00f1
+			public const int place_autocomplete_search_input = 2131558641;
+			
+			// aapt resource value: 0x7f0d00f3
+			public const int place_autocomplete_separator = 2131558643;
+			
 			// aapt resource value: 0x7f0d00bd
 			public const int prev = 2131558589;
 			
@@ -20960,17 +23211,17 @@ namespace Imobiliaria.Droid
 			// aapt resource value: 0x7f0d00a1
 			public const int select_dialog_listview = 2131558561;
 			
+			// aapt resource value: 0x7f0d0105
+			public const int shape_id = 2131558661;
+			
 			// aapt resource value: 0x7f0d00fd
-			public const int shape_id = 2131558653;
+			public const int shellcontent_appbar = 2131558653;
 			
-			// aapt resource value: 0x7f0d00f5
-			public const int shellcontent_appbar = 2131558645;
+			// aapt resource value: 0x7f0d00ff
+			public const int shellcontent_scrollview = 2131558655;
 			
-			// aapt resource value: 0x7f0d00f7
-			public const int shellcontent_scrollview = 2131558647;
-			
-			// aapt resource value: 0x7f0d00f6
-			public const int shellcontent_toolbar = 2131558646;
+			// aapt resource value: 0x7f0d00fe
+			public const int shellcontent_toolbar = 2131558654;
 			
 			// aapt resource value: 0x7f0d008b
 			public const int shortcut = 2131558539;
@@ -20984,8 +23235,8 @@ namespace Imobiliaria.Droid
 			// aapt resource value: 0x7f0d0040
 			public const int showTitle = 2131558464;
 			
-			// aapt resource value: 0x7f0d00f8
-			public const int sliding_tabs = 2131558648;
+			// aapt resource value: 0x7f0d0100
+			public const int sliding_tabs = 2131558656;
 			
 			// aapt resource value: 0x7f0d0039
 			public const int small = 2131558457;
@@ -21074,8 +23325,8 @@ namespace Imobiliaria.Droid
 			// aapt resource value: 0x7f0d0086
 			public const int title_template = 2131558534;
 			
-			// aapt resource value: 0x7f0d00f9
-			public const int toolbar = 2131558649;
+			// aapt resource value: 0x7f0d0101
+			public const int toolbar = 2131558657;
 			
 			// aapt resource value: 0x7f0d0031
 			public const int top = 2131558449;
@@ -21119,8 +23370,8 @@ namespace Imobiliaria.Droid
 			// aapt resource value: 0x7f0d0016
 			public const int view_offset_helper = 2131558422;
 			
-			// aapt resource value: 0x7f0d00fb
-			public const int visible = 2131558651;
+			// aapt resource value: 0x7f0d0103
+			public const int visible = 2131558659;
 			
 			// aapt resource value: 0x7f0d00d5
 			public const int volume_item_container = 2131558613;
@@ -21150,50 +23401,50 @@ namespace Imobiliaria.Droid
 		public partial class Integer
 		{
 			
-			// aapt resource value: 0x7f090004
-			public const int abc_config_activityDefaultDur = 2131296260;
+			// aapt resource value: 0x7f0b0004
+			public const int abc_config_activityDefaultDur = 2131427332;
 			
-			// aapt resource value: 0x7f090005
-			public const int abc_config_activityShortDur = 2131296261;
+			// aapt resource value: 0x7f0b0005
+			public const int abc_config_activityShortDur = 2131427333;
 			
-			// aapt resource value: 0x7f090009
-			public const int app_bar_elevation_anim_duration = 2131296265;
+			// aapt resource value: 0x7f0b0009
+			public const int app_bar_elevation_anim_duration = 2131427337;
 			
-			// aapt resource value: 0x7f09000a
-			public const int bottom_sheet_slide_duration = 2131296266;
+			// aapt resource value: 0x7f0b000a
+			public const int bottom_sheet_slide_duration = 2131427338;
 			
-			// aapt resource value: 0x7f090006
-			public const int cancel_button_image_alpha = 2131296262;
+			// aapt resource value: 0x7f0b0006
+			public const int cancel_button_image_alpha = 2131427334;
 			
-			// aapt resource value: 0x7f090007
-			public const int config_tooltipAnimTime = 2131296263;
+			// aapt resource value: 0x7f0b0007
+			public const int config_tooltipAnimTime = 2131427335;
 			
-			// aapt resource value: 0x7f09000e
-			public const int default_circle_indicator_orientation = 2131296270;
+			// aapt resource value: 0x7f0b000e
+			public const int default_circle_indicator_orientation = 2131427342;
 			
-			// aapt resource value: 0x7f090008
-			public const int design_snackbar_text_max_lines = 2131296264;
+			// aapt resource value: 0x7f0b0008
+			public const int design_snackbar_text_max_lines = 2131427336;
 			
-			// aapt resource value: 0x7f090000
-			public const int google_play_services_version = 2131296256;
+			// aapt resource value: 0x7f0b0000
+			public const int google_play_services_version = 2131427328;
 			
-			// aapt resource value: 0x7f09000b
-			public const int hide_password_duration = 2131296267;
+			// aapt resource value: 0x7f0b000b
+			public const int hide_password_duration = 2131427339;
 			
-			// aapt resource value: 0x7f090001
-			public const int mr_controller_volume_group_list_animation_duration_ms = 2131296257;
+			// aapt resource value: 0x7f0b0001
+			public const int mr_controller_volume_group_list_animation_duration_ms = 2131427329;
 			
-			// aapt resource value: 0x7f090002
-			public const int mr_controller_volume_group_list_fade_in_duration_ms = 2131296258;
+			// aapt resource value: 0x7f0b0002
+			public const int mr_controller_volume_group_list_fade_in_duration_ms = 2131427330;
 			
-			// aapt resource value: 0x7f090003
-			public const int mr_controller_volume_group_list_fade_out_duration_ms = 2131296259;
+			// aapt resource value: 0x7f0b0003
+			public const int mr_controller_volume_group_list_fade_out_duration_ms = 2131427331;
 			
-			// aapt resource value: 0x7f09000c
-			public const int show_password_duration = 2131296268;
+			// aapt resource value: 0x7f0b000c
+			public const int show_password_duration = 2131427340;
 			
-			// aapt resource value: 0x7f09000d
-			public const int status_bar_notification_info_maxnum = 2131296269;
+			// aapt resource value: 0x7f0b000d
+			public const int status_bar_notification_info_maxnum = 2131427341;
 			
 			static Integer()
 			{
@@ -21450,40 +23701,52 @@ namespace Imobiliaria.Droid
 			public const int notification_template_part_time = 2130968649;
 			
 			// aapt resource value: 0x7f04004a
-			public const int RadioButton = 2130968650;
+			public const int place_autocomplete_fragment = 2130968650;
 			
 			// aapt resource value: 0x7f04004b
-			public const int RadioGroup = 2130968651;
+			public const int place_autocomplete_item_powered_by_google = 2130968651;
 			
 			// aapt resource value: 0x7f04004c
-			public const int RootLayout = 2130968652;
+			public const int place_autocomplete_item_prediction = 2130968652;
 			
 			// aapt resource value: 0x7f04004d
-			public const int select_dialog_item_material = 2130968653;
+			public const int place_autocomplete_progress = 2130968653;
 			
 			// aapt resource value: 0x7f04004e
-			public const int select_dialog_multichoice_material = 2130968654;
+			public const int RadioButton = 2130968654;
 			
 			// aapt resource value: 0x7f04004f
-			public const int select_dialog_singlechoice_material = 2130968655;
+			public const int RadioGroup = 2130968655;
 			
 			// aapt resource value: 0x7f040050
-			public const int ShellContent = 2130968656;
+			public const int RootLayout = 2130968656;
 			
 			// aapt resource value: 0x7f040051
-			public const int support_simple_spinner_dropdown_item = 2130968657;
+			public const int select_dialog_item_material = 2130968657;
 			
 			// aapt resource value: 0x7f040052
-			public const int Tabbar = 2130968658;
+			public const int select_dialog_multichoice_material = 2130968658;
 			
 			// aapt resource value: 0x7f040053
-			public const int Toolbar = 2130968659;
+			public const int select_dialog_singlechoice_material = 2130968659;
 			
 			// aapt resource value: 0x7f040054
-			public const int tooltip = 2130968660;
+			public const int ShellContent = 2130968660;
 			
 			// aapt resource value: 0x7f040055
-			public const int vertical_viewpager = 2130968661;
+			public const int support_simple_spinner_dropdown_item = 2130968661;
+			
+			// aapt resource value: 0x7f040056
+			public const int Tabbar = 2130968662;
+			
+			// aapt resource value: 0x7f040057
+			public const int Toolbar = 2130968663;
+			
+			// aapt resource value: 0x7f040058
+			public const int tooltip = 2130968664;
+			
+			// aapt resource value: 0x7f040059
+			public const int vertical_viewpager = 2130968665;
 			
 			static Layout()
 			{
@@ -21529,203 +23792,203 @@ namespace Imobiliaria.Droid
 			// aapt resource value: 0x7f080000
 			public const int Hello = 2131230720;
 			
-			// aapt resource value: 0x7f08003d
-			public const int abc_action_bar_home_description = 2131230781;
-			
-			// aapt resource value: 0x7f08003e
-			public const int abc_action_bar_up_description = 2131230782;
-			
-			// aapt resource value: 0x7f08003f
-			public const int abc_action_menu_overflow_description = 2131230783;
-			
-			// aapt resource value: 0x7f080040
-			public const int abc_action_mode_done = 2131230784;
-			
-			// aapt resource value: 0x7f080041
-			public const int abc_activity_chooser_view_see_all = 2131230785;
-			
-			// aapt resource value: 0x7f080042
-			public const int abc_activitychooserview_choose_application = 2131230786;
-			
 			// aapt resource value: 0x7f080043
-			public const int abc_capital_off = 2131230787;
+			public const int abc_action_bar_home_description = 2131230787;
 			
 			// aapt resource value: 0x7f080044
-			public const int abc_capital_on = 2131230788;
-			
-			// aapt resource value: 0x7f08004f
-			public const int abc_font_family_body_1_material = 2131230799;
-			
-			// aapt resource value: 0x7f080050
-			public const int abc_font_family_body_2_material = 2131230800;
-			
-			// aapt resource value: 0x7f080051
-			public const int abc_font_family_button_material = 2131230801;
-			
-			// aapt resource value: 0x7f080052
-			public const int abc_font_family_caption_material = 2131230802;
-			
-			// aapt resource value: 0x7f080053
-			public const int abc_font_family_display_1_material = 2131230803;
-			
-			// aapt resource value: 0x7f080054
-			public const int abc_font_family_display_2_material = 2131230804;
-			
-			// aapt resource value: 0x7f080055
-			public const int abc_font_family_display_3_material = 2131230805;
-			
-			// aapt resource value: 0x7f080056
-			public const int abc_font_family_display_4_material = 2131230806;
-			
-			// aapt resource value: 0x7f080057
-			public const int abc_font_family_headline_material = 2131230807;
-			
-			// aapt resource value: 0x7f080058
-			public const int abc_font_family_menu_material = 2131230808;
-			
-			// aapt resource value: 0x7f080059
-			public const int abc_font_family_subhead_material = 2131230809;
-			
-			// aapt resource value: 0x7f08005a
-			public const int abc_font_family_title_material = 2131230810;
+			public const int abc_action_bar_up_description = 2131230788;
 			
 			// aapt resource value: 0x7f080045
-			public const int abc_search_hint = 2131230789;
+			public const int abc_action_menu_overflow_description = 2131230789;
 			
 			// aapt resource value: 0x7f080046
-			public const int abc_searchview_description_clear = 2131230790;
+			public const int abc_action_mode_done = 2131230790;
 			
 			// aapt resource value: 0x7f080047
-			public const int abc_searchview_description_query = 2131230791;
+			public const int abc_activity_chooser_view_see_all = 2131230791;
 			
 			// aapt resource value: 0x7f080048
-			public const int abc_searchview_description_search = 2131230792;
+			public const int abc_activitychooserview_choose_application = 2131230792;
 			
 			// aapt resource value: 0x7f080049
-			public const int abc_searchview_description_submit = 2131230793;
+			public const int abc_capital_off = 2131230793;
 			
 			// aapt resource value: 0x7f08004a
-			public const int abc_searchview_description_voice = 2131230794;
+			public const int abc_capital_on = 2131230794;
+			
+			// aapt resource value: 0x7f080055
+			public const int abc_font_family_body_1_material = 2131230805;
+			
+			// aapt resource value: 0x7f080056
+			public const int abc_font_family_body_2_material = 2131230806;
+			
+			// aapt resource value: 0x7f080057
+			public const int abc_font_family_button_material = 2131230807;
+			
+			// aapt resource value: 0x7f080058
+			public const int abc_font_family_caption_material = 2131230808;
+			
+			// aapt resource value: 0x7f080059
+			public const int abc_font_family_display_1_material = 2131230809;
+			
+			// aapt resource value: 0x7f08005a
+			public const int abc_font_family_display_2_material = 2131230810;
+			
+			// aapt resource value: 0x7f08005b
+			public const int abc_font_family_display_3_material = 2131230811;
+			
+			// aapt resource value: 0x7f08005c
+			public const int abc_font_family_display_4_material = 2131230812;
+			
+			// aapt resource value: 0x7f08005d
+			public const int abc_font_family_headline_material = 2131230813;
+			
+			// aapt resource value: 0x7f08005e
+			public const int abc_font_family_menu_material = 2131230814;
+			
+			// aapt resource value: 0x7f08005f
+			public const int abc_font_family_subhead_material = 2131230815;
+			
+			// aapt resource value: 0x7f080060
+			public const int abc_font_family_title_material = 2131230816;
 			
 			// aapt resource value: 0x7f08004b
-			public const int abc_shareactionprovider_share_with = 2131230795;
+			public const int abc_search_hint = 2131230795;
 			
 			// aapt resource value: 0x7f08004c
-			public const int abc_shareactionprovider_share_with_application = 2131230796;
+			public const int abc_searchview_description_clear = 2131230796;
 			
 			// aapt resource value: 0x7f08004d
-			public const int abc_toolbar_collapse_description = 2131230797;
+			public const int abc_searchview_description_query = 2131230797;
+			
+			// aapt resource value: 0x7f08004e
+			public const int abc_searchview_description_search = 2131230798;
+			
+			// aapt resource value: 0x7f08004f
+			public const int abc_searchview_description_submit = 2131230799;
+			
+			// aapt resource value: 0x7f080050
+			public const int abc_searchview_description_voice = 2131230800;
+			
+			// aapt resource value: 0x7f080051
+			public const int abc_shareactionprovider_share_with = 2131230801;
+			
+			// aapt resource value: 0x7f080052
+			public const int abc_shareactionprovider_share_with_application = 2131230802;
+			
+			// aapt resource value: 0x7f080053
+			public const int abc_toolbar_collapse_description = 2131230803;
 			
 			// aapt resource value: 0x7f080002
 			public const int app_name = 2131230722;
 			
-			// aapt resource value: 0x7f08005b
-			public const int appbar_scrolling_view_behavior = 2131230811;
+			// aapt resource value: 0x7f080061
+			public const int appbar_scrolling_view_behavior = 2131230817;
 			
-			// aapt resource value: 0x7f08005c
-			public const int bottom_sheet_behavior = 2131230812;
+			// aapt resource value: 0x7f080062
+			public const int bottom_sheet_behavior = 2131230818;
 			
-			// aapt resource value: 0x7f08005d
-			public const int character_counter_pattern = 2131230813;
-			
-			// aapt resource value: 0x7f080016
-			public const int com_facebook_image_download_unknown_error = 2131230742;
-			
-			// aapt resource value: 0x7f080017
-			public const int com_facebook_internet_permission_error_message = 2131230743;
-			
-			// aapt resource value: 0x7f080018
-			public const int com_facebook_internet_permission_error_title = 2131230744;
-			
-			// aapt resource value: 0x7f080019
-			public const int com_facebook_like_button_liked = 2131230745;
-			
-			// aapt resource value: 0x7f08001a
-			public const int com_facebook_like_button_not_liked = 2131230746;
-			
-			// aapt resource value: 0x7f08001b
-			public const int com_facebook_loading = 2131230747;
+			// aapt resource value: 0x7f080063
+			public const int character_counter_pattern = 2131230819;
 			
 			// aapt resource value: 0x7f08001c
-			public const int com_facebook_loginview_cancel_action = 2131230748;
+			public const int com_facebook_image_download_unknown_error = 2131230748;
 			
 			// aapt resource value: 0x7f08001d
-			public const int com_facebook_loginview_log_in_button = 2131230749;
+			public const int com_facebook_internet_permission_error_message = 2131230749;
 			
 			// aapt resource value: 0x7f08001e
-			public const int com_facebook_loginview_log_in_button_long = 2131230750;
+			public const int com_facebook_internet_permission_error_title = 2131230750;
 			
 			// aapt resource value: 0x7f08001f
-			public const int com_facebook_loginview_log_out_action = 2131230751;
+			public const int com_facebook_like_button_liked = 2131230751;
 			
 			// aapt resource value: 0x7f080020
-			public const int com_facebook_loginview_log_out_button = 2131230752;
+			public const int com_facebook_like_button_not_liked = 2131230752;
 			
 			// aapt resource value: 0x7f080021
-			public const int com_facebook_loginview_logged_in_as = 2131230753;
+			public const int com_facebook_loading = 2131230753;
 			
 			// aapt resource value: 0x7f080022
-			public const int com_facebook_loginview_logged_in_using_facebook = 2131230754;
+			public const int com_facebook_loginview_cancel_action = 2131230754;
 			
 			// aapt resource value: 0x7f080023
-			public const int com_facebook_send_button_text = 2131230755;
+			public const int com_facebook_loginview_log_in_button = 2131230755;
 			
 			// aapt resource value: 0x7f080024
-			public const int com_facebook_share_button_text = 2131230756;
+			public const int com_facebook_loginview_log_in_button_long = 2131230756;
 			
 			// aapt resource value: 0x7f080025
-			public const int com_facebook_tooltip_default = 2131230757;
+			public const int com_facebook_loginview_log_out_action = 2131230757;
 			
-			// aapt resource value: 0x7f080006
-			public const int common_google_play_services_enable_button = 2131230726;
+			// aapt resource value: 0x7f080026
+			public const int com_facebook_loginview_log_out_button = 2131230758;
 			
-			// aapt resource value: 0x7f080007
-			public const int common_google_play_services_enable_text = 2131230727;
+			// aapt resource value: 0x7f080027
+			public const int com_facebook_loginview_logged_in_as = 2131230759;
 			
-			// aapt resource value: 0x7f080008
-			public const int common_google_play_services_enable_title = 2131230728;
+			// aapt resource value: 0x7f080028
+			public const int com_facebook_loginview_logged_in_using_facebook = 2131230760;
 			
-			// aapt resource value: 0x7f080009
-			public const int common_google_play_services_install_button = 2131230729;
+			// aapt resource value: 0x7f080029
+			public const int com_facebook_send_button_text = 2131230761;
 			
-			// aapt resource value: 0x7f08000a
-			public const int common_google_play_services_install_text = 2131230730;
+			// aapt resource value: 0x7f08002a
+			public const int com_facebook_share_button_text = 2131230762;
 			
-			// aapt resource value: 0x7f08000b
-			public const int common_google_play_services_install_title = 2131230731;
+			// aapt resource value: 0x7f08002b
+			public const int com_facebook_tooltip_default = 2131230763;
 			
 			// aapt resource value: 0x7f08000c
-			public const int common_google_play_services_notification_ticker = 2131230732;
-			
-			// aapt resource value: 0x7f080005
-			public const int common_google_play_services_unknown_issue = 2131230725;
+			public const int common_google_play_services_enable_button = 2131230732;
 			
 			// aapt resource value: 0x7f08000d
-			public const int common_google_play_services_unsupported_text = 2131230733;
+			public const int common_google_play_services_enable_text = 2131230733;
 			
 			// aapt resource value: 0x7f08000e
-			public const int common_google_play_services_update_button = 2131230734;
+			public const int common_google_play_services_enable_title = 2131230734;
 			
 			// aapt resource value: 0x7f08000f
-			public const int common_google_play_services_update_text = 2131230735;
+			public const int common_google_play_services_install_button = 2131230735;
 			
 			// aapt resource value: 0x7f080010
-			public const int common_google_play_services_update_title = 2131230736;
+			public const int common_google_play_services_install_text = 2131230736;
 			
 			// aapt resource value: 0x7f080011
-			public const int common_google_play_services_updating_text = 2131230737;
+			public const int common_google_play_services_install_title = 2131230737;
 			
 			// aapt resource value: 0x7f080012
-			public const int common_google_play_services_wear_update_text = 2131230738;
+			public const int common_google_play_services_notification_ticker = 2131230738;
+			
+			// aapt resource value: 0x7f08000b
+			public const int common_google_play_services_unknown_issue = 2131230731;
 			
 			// aapt resource value: 0x7f080013
-			public const int common_open_on_phone = 2131230739;
+			public const int common_google_play_services_unsupported_text = 2131230739;
 			
 			// aapt resource value: 0x7f080014
-			public const int common_signin_button_text = 2131230740;
+			public const int common_google_play_services_update_button = 2131230740;
 			
 			// aapt resource value: 0x7f080015
-			public const int common_signin_button_text_long = 2131230741;
+			public const int common_google_play_services_update_text = 2131230741;
+			
+			// aapt resource value: 0x7f080016
+			public const int common_google_play_services_update_title = 2131230742;
+			
+			// aapt resource value: 0x7f080017
+			public const int common_google_play_services_updating_text = 2131230743;
+			
+			// aapt resource value: 0x7f080018
+			public const int common_google_play_services_wear_update_text = 2131230744;
+			
+			// aapt resource value: 0x7f080019
+			public const int common_open_on_phone = 2131230745;
+			
+			// aapt resource value: 0x7f08001a
+			public const int common_signin_button_text = 2131230746;
+			
+			// aapt resource value: 0x7f08001b
+			public const int common_signin_button_text_long = 2131230747;
 			
 			// aapt resource value: 0x7f080004
 			public const int demo_max_label = 2131230724;
@@ -21733,98 +23996,116 @@ namespace Imobiliaria.Droid
 			// aapt resource value: 0x7f080003
 			public const int demo_min_label = 2131230723;
 			
-			// aapt resource value: 0x7f080064
-			public const int library_name = 2131230820;
+			// aapt resource value: 0x7f08000a
+			public const int gcm_fallback_notification_channel_label = 2131230730;
 			
-			// aapt resource value: 0x7f080026
-			public const int messenger_send_button_text = 2131230758;
-			
-			// aapt resource value: 0x7f080028
-			public const int mr_button_content_description = 2131230760;
-			
-			// aapt resource value: 0x7f080029
-			public const int mr_cast_button_connected = 2131230761;
-			
-			// aapt resource value: 0x7f08002a
-			public const int mr_cast_button_connecting = 2131230762;
-			
-			// aapt resource value: 0x7f08002b
-			public const int mr_cast_button_disconnected = 2131230763;
+			// aapt resource value: 0x7f08006a
+			public const int library_name = 2131230826;
 			
 			// aapt resource value: 0x7f08002c
-			public const int mr_chooser_searching = 2131230764;
-			
-			// aapt resource value: 0x7f08002d
-			public const int mr_chooser_title = 2131230765;
+			public const int messenger_send_button_text = 2131230764;
 			
 			// aapt resource value: 0x7f08002e
-			public const int mr_controller_album_art = 2131230766;
+			public const int mr_button_content_description = 2131230766;
 			
 			// aapt resource value: 0x7f08002f
-			public const int mr_controller_casting_screen = 2131230767;
+			public const int mr_cast_button_connected = 2131230767;
 			
 			// aapt resource value: 0x7f080030
-			public const int mr_controller_close_description = 2131230768;
+			public const int mr_cast_button_connecting = 2131230768;
 			
 			// aapt resource value: 0x7f080031
-			public const int mr_controller_collapse_group = 2131230769;
+			public const int mr_cast_button_disconnected = 2131230769;
 			
 			// aapt resource value: 0x7f080032
-			public const int mr_controller_disconnect = 2131230770;
+			public const int mr_chooser_searching = 2131230770;
 			
 			// aapt resource value: 0x7f080033
-			public const int mr_controller_expand_group = 2131230771;
+			public const int mr_chooser_title = 2131230771;
 			
 			// aapt resource value: 0x7f080034
-			public const int mr_controller_no_info_available = 2131230772;
+			public const int mr_controller_album_art = 2131230772;
 			
 			// aapt resource value: 0x7f080035
-			public const int mr_controller_no_media_selected = 2131230773;
+			public const int mr_controller_casting_screen = 2131230773;
 			
 			// aapt resource value: 0x7f080036
-			public const int mr_controller_pause = 2131230774;
+			public const int mr_controller_close_description = 2131230774;
 			
 			// aapt resource value: 0x7f080037
-			public const int mr_controller_play = 2131230775;
+			public const int mr_controller_collapse_group = 2131230775;
 			
 			// aapt resource value: 0x7f080038
-			public const int mr_controller_stop = 2131230776;
+			public const int mr_controller_disconnect = 2131230776;
 			
 			// aapt resource value: 0x7f080039
-			public const int mr_controller_stop_casting = 2131230777;
+			public const int mr_controller_expand_group = 2131230777;
 			
 			// aapt resource value: 0x7f08003a
-			public const int mr_controller_volume_slider = 2131230778;
+			public const int mr_controller_no_info_available = 2131230778;
 			
 			// aapt resource value: 0x7f08003b
-			public const int mr_system_route_name = 2131230779;
+			public const int mr_controller_no_media_selected = 2131230779;
 			
 			// aapt resource value: 0x7f08003c
-			public const int mr_user_route_category_name = 2131230780;
+			public const int mr_controller_pause = 2131230780;
 			
-			// aapt resource value: 0x7f08005e
-			public const int password_toggle_content_description = 2131230814;
+			// aapt resource value: 0x7f08003d
+			public const int mr_controller_play = 2131230781;
 			
-			// aapt resource value: 0x7f08005f
-			public const int path_password_eye = 2131230815;
+			// aapt resource value: 0x7f08003e
+			public const int mr_controller_stop = 2131230782;
 			
-			// aapt resource value: 0x7f080060
-			public const int path_password_eye_mask_strike_through = 2131230816;
+			// aapt resource value: 0x7f08003f
+			public const int mr_controller_stop_casting = 2131230783;
 			
-			// aapt resource value: 0x7f080061
-			public const int path_password_eye_mask_visible = 2131230817;
+			// aapt resource value: 0x7f080040
+			public const int mr_controller_volume_slider = 2131230784;
 			
-			// aapt resource value: 0x7f080062
-			public const int path_password_strike_through = 2131230818;
+			// aapt resource value: 0x7f080041
+			public const int mr_system_route_name = 2131230785;
 			
-			// aapt resource value: 0x7f08004e
-			public const int search_menu_title = 2131230798;
+			// aapt resource value: 0x7f080042
+			public const int mr_user_route_category_name = 2131230786;
 			
-			// aapt resource value: 0x7f080063
-			public const int status_bar_notification_info_overflow = 2131230819;
+			// aapt resource value: 0x7f080064
+			public const int password_toggle_content_description = 2131230820;
 			
-			// aapt resource value: 0x7f080027
-			public const int title_activity_webview = 2131230759;
+			// aapt resource value: 0x7f080065
+			public const int path_password_eye = 2131230821;
+			
+			// aapt resource value: 0x7f080066
+			public const int path_password_eye_mask_strike_through = 2131230822;
+			
+			// aapt resource value: 0x7f080067
+			public const int path_password_eye_mask_visible = 2131230823;
+			
+			// aapt resource value: 0x7f080068
+			public const int path_password_strike_through = 2131230824;
+			
+			// aapt resource value: 0x7f080008
+			public const int place_autocomplete_clear_button = 2131230728;
+			
+			// aapt resource value: 0x7f080009
+			public const int place_autocomplete_search_hint = 2131230729;
+			
+			// aapt resource value: 0x7f080054
+			public const int search_menu_title = 2131230804;
+			
+			// aapt resource value: 0x7f080069
+			public const int status_bar_notification_info_overflow = 2131230825;
+			
+			// aapt resource value: 0x7f080005
+			public const int tagmanager_preview_dialog_button = 2131230725;
+			
+			// aapt resource value: 0x7f080006
+			public const int tagmanager_preview_dialog_message = 2131230726;
+			
+			// aapt resource value: 0x7f080007
+			public const int tagmanager_preview_dialog_title = 2131230727;
+			
+			// aapt resource value: 0x7f08002d
+			public const int title_activity_webview = 2131230765;
 			
 			static String()
 			{

@@ -25,7 +25,7 @@ namespace Imobiliaria.Droid
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
             Plugin.InputKit.Platforms.Droid.Config.Init(this, savedInstanceState);
-            Xamarians.FacebookLogin.Droid.DS.FacebookLogin.Init("456228191618171");
+          
             Xamarin.Auth.Presenters.XamarinAndroid.AuthenticationConfiguration.Init(this, savedInstanceState);
             Plugin.Iconize.Iconize.With(new Plugin.Iconize.Fonts.FontAwesomeBrandsModule())
                                   .With(new Plugin.Iconize.Fonts.FontAwesomeRegularModule())
@@ -39,7 +39,8 @@ namespace Imobiliaria.Droid
             Xamarin.FormsGoogleMaps.Init(this, savedInstanceState);
             CustomTabsConfiguration.CustomTabsClosingMessage = null;
             Forms.Init(this, savedInstanceState);
-           
+            Xamarians.Media.Droid.MediaServiceAndroid.Initialize();
+            Xamarians.FacebookLogin.Droid.DS.FacebookLogin.Init("456228191618171");
 
             if ((ContextCompat.CheckSelfPermission(this, Manifest.Permission.AccessCoarseLocation) != Permission.Granted)
                  || (ContextCompat.CheckSelfPermission(this, Manifest.Permission.AccessFineLocation) != Permission.Granted)

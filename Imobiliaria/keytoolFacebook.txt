@@ -1,0 +1,2 @@
+keytool -exportcert -alias androiddebugkey -keystore "C:\Users\AnaLu\AppData\Local\Xamarin\Mono for Android\Keystore\imobiliaria\imobiliaria.keystore" | openssl sha1 -binary | openssl base64
+      

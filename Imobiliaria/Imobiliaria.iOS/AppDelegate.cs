@@ -30,7 +30,7 @@ namespace Imobiliaria.iOS
 
             global::Xamarin.Auth.Presenters.XamarinIOS.AuthenticationConfiguration.Init();
             SegmentedControlRenderer.Init();
-         
+            Xamarians.GoogleLogin.iOS.DS.GoogleLogin.Init();
             Xamarin.FormsGoogleMaps.Init("AIzaSyCgA1ifQK-1Kn4EsTTyU8hGrKn1jQM9bus");
             Plugin.Iconize.Iconize.With(new Plugin.Iconize.Fonts.FontAwesomeBrandsModule())
                                   .With(new Plugin.Iconize.Fonts.FontAwesomeRegularModule())
