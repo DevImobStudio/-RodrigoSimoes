@@ -222,7 +222,7 @@ namespace Imobiliaria.Views
                 Usuario user = new Usuario();
                 user.name = result.Name;
                 user.nome = "facebook";
-               // user.imagem = result..picture;
+                //user.imagem = result;
                 user.id = result.UserId;
                 user.email = result.Email;
 
@@ -261,11 +261,34 @@ namespace Imobiliaria.Views
             var result = await DependencyService.Get<IFacebookLogin>().SignOut();
             if (result.Status == Xamarians.FacebookLogin.Platforms.FBStatus.Success)
             {
-                await DisplayAlert("Success", result.Message, "Ok");
+                CrossToastPopUp.Current.ShowToastMessage(result.Message, Plugin.Toast.Abstractions.ToastLength.Long);
+                Sistema.USUARIO = null;
+                Login.IsVisible = true;
+                Logout.IsVisible = false;
+                this.Bind();
+
             }
             else
             {
-                await DisplayAlert("Error", result.Message, "Ok");
+                CrossToastPopUp.Current.ShowToastMessage(result.Message, Plugin.Toast.Abstractions.ToastLength.Long);
+            }
+        }
+
+        private async void GoSignOutClicked()
+        {
+            var result = await DependencyService.Get<IGoogleLogin>().SignOut();
+            if (result.IsSuccess)
+            {
+                CrossToastPopUp.Current.ShowToastMessage(result.Message, Plugin.Toast.Abstractions.ToastLength.Long);
+                Sistema.USUARIO = null;
+                Login.IsVisible = true;
+                Logout.IsVisible = false;
+                this.Bind();
+
+            }
+            else
+            {
+                CrossToastPopUp.Current.ShowToastMessage(result.Message, Plugin.Toast.Abstractions.ToastLength.Long);
             }
         }
 
@@ -275,27 +298,41 @@ namespace Imobiliaria.Views
             var result = await DependencyService.Get<IGoogleLogin>().SignIn();
             if (result.IsSuccess)
             {
-                //imgProfile.Source = result.Image;
-                var name = result.Name;
-                await DisplayAlert("", "Account Name -" + name, "Ok");
+                Usuario user = new Usuario();
+                user.name = result.Name;
+                user.nome = "google";
+                user.imagem = result.Image;
+                user.id = result.UserId;
+                user.email = result.Email;
+
+                await Sistema.DATABASE.database.QueryAsync<Usuario>("UPDATE Usuario set logado = 0");
+                user.logado = true;
+                Usuario userCadastrados = await Sistema.DATABASE.database.Table<Usuario>().Where(p => p.id == user.id).FirstOrDefaultAsync();
+
+                if (userCadastrados == null)
+                {
+                    await Sistema.DATABASE.database.InsertAsync(user);
+                }
+                else
+                {
+                    userCadastrados.logado = true;
+                    userCadastrados.name = user.name;
+                    userCadastrados.email = user.email;
+                    userCadastrados.imagem = user.imagem;
+
+                    await Sistema.DATABASE.database.UpdateAsync(userCadastrados);
+                }
+
+                Sistema.USUARIO = user;
+                Services.Sistema.TABBEDPAGE.trocarPagina();
+
             }
-        }
+          
+       }
 
 
-        private async void FbImageShareClicked(object sender, EventArgs e)
-        {
-            DependencyService.Get<IFacebookLogin>().ShareImageOnFacebook("Hi, This is demo text", "image-filePath");
-        }
 
-        private void FbTextShareClicked(object sender, EventArgs e)
-        {
-            DependencyService.Get<IFacebookLogin>().ShareTextOnFacebook("Hi, This is a demo text");
-        }
-
-        private void FbLinkShareClicked(object sender, EventArgs e)
-        {
-            DependencyService.Get<IFacebookLogin>().ShareLinkOnFacebook("your Link", "Hi, this is demo text", "http://www.google.com");
-        }
+       
 
         protected async override void OnAppearing()
         {
@@ -325,11 +362,12 @@ namespace Imobiliaria.Views
             {
                 FbSignOutClicked();
             }
+            else
+            {
+                GoSignOutClicked();
+            }
 
-            Sistema.USUARIO = null;
-            Login.IsVisible = true;
-            Logout.IsVisible = false;
-            this.Bind();
+           
         }
     }
     }

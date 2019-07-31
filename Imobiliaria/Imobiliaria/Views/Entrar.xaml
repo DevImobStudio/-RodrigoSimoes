@@ -164,7 +164,7 @@
                         VerticalOptions="Center" 
                         HorizontalOptions="Center" />
                     </Grid>
-                    <Button Clicked="Sair_Clicked" x:Name="Sair" TextColor="Transparent" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0"  BackgroundColor="Transparent"/>
+                    <Button Clicked="Sair_Clicked" TextColor="Transparent" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0"  BackgroundColor="Transparent"/>
                 </Grid>
             </StackLayout>
         </StackLayout>
