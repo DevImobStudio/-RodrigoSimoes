@@ -64,6 +64,8 @@ namespace Imobiliaria.Views
         public void Bind()
         {
             InitializeComponent();
+            menuSuperior.Bind();
+
         }
 
 

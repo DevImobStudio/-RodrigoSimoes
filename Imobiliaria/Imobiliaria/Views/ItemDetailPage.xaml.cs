@@ -7,6 +7,7 @@ using Imobiliaria.Models;
 using Imobiliaria.ViewModels;
 using Imobiliaria.Services;
 using Plugin.Toast;
+using Rg.Plugins.Popup.Extensions;
 
 namespace Imobiliaria.Views
 {
@@ -106,7 +107,20 @@ namespace Imobiliaria.Views
 
         private async void EnvioMaterial_Clicked(object sender, EventArgs e)
         {
-             this.inicio.CarregarPaginaEnvioMaterial(this.ImovelDetail.Imovel);
+            if (this.favoritos != null)
+            {
+             
+                this.favoritos.CarregarPaginaEnvioMaterial(this.ImovelDetail.Imovel);
+            }
+            else
+            {
+               
+                this.inicio.CarregarPaginaEnvioMaterial(this.ImovelDetail.Imovel);
+            }
+                
+
+           
+             
 
         }
 

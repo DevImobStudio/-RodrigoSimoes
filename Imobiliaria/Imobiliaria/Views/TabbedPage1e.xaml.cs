@@ -62,6 +62,7 @@ namespace Imobiliaria.Views
             {
                 case 0:
                     this.Inicio.carregarPaginaInicial();
+                    this.Inicio.viewModel.LoadItemsCommand.Execute(null);
                     break;
                 case 1:
                     Sistema.USUARIO = await Services.Sistema.DATABASE.database.Table<Models.Usuario>().Where(p => p.logado).FirstOrDefaultAsync();
@@ -81,7 +82,7 @@ namespace Imobiliaria.Views
                     break;
                 case 3:
                     this.Entrar.Bind();
-                    this.Inicio.viewModel.LoadItemsCommand.Execute(null);
+                  //  this.Inicio.viewModel.LoadItemsCommand.Execute(null);
                     break;
             }
         }
@@ -105,6 +106,7 @@ namespace Imobiliaria.Views
                 case 0:
                     Sistema.TABBEDPAGE.CurrentPage = Sistema.TABBEDPAGE.Inicio;
                     this.Inicio.carregarPaginaInicial();
+                    this.Inicio.viewModel.LoadItemsCommand.Execute(null);
                     break;
                 case 1:
                     if (Sistema.USUARIO == null)
@@ -131,7 +133,7 @@ namespace Imobiliaria.Views
                 case 3:
                     this.Entrar.Bind();
                     Sistema.TABBEDPAGE.CurrentPage = Sistema.TABBEDPAGE.Entrar;
-                    this.Inicio.viewModel.LoadItemsCommand.Execute(null);
+                   // this.Inicio.viewModel.LoadItemsCommand.Execute(null);
                     break;
             }
         }

@@ -25,18 +25,23 @@
                         <ViewCell >
                             <StackLayout Padding="2" Margin="0,0,6,2" BackgroundColor="{StaticResource colorClara}" >
                                 <Grid BackgroundColor="{StaticResource colorTelas}">
+
+
+
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="0.4*" />
                                         <ColumnDefinition Width="0.6*"/>
                                     </Grid.ColumnDefinitions>
 
 
+
                                     <Image 
                                 Source="{Binding imagem}" 
-                                Aspect="AspectFill" 
+                                Aspect="AspectFit" 
                                 Grid.Column="0" 
-                                WidthRequest="40"
                                 HeightRequest="40"
+                                WidthRequest="40"
+                               
                                 />
                                     <Grid Grid.Column="1"
                                         Grid.Row="0">
@@ -50,33 +55,33 @@
                                             <RowDefinition Height="auto"/>
                                         </Grid.RowDefinitions>
                                         <Label
-                                                Grid.Row="0"
-                                                FontAttributes="Bold"
-                                                Text="{Binding titulo}" 
-                                                FontSize="Small"
-                                                TextColor="{StaticResource colorPrimary}"/>
+                                    Grid.Row="0"
+                                    FontAttributes="Bold"
+                                    Text="{Binding titulo}" 
+                                    FontSize="Small"
+                                    TextColor="{StaticResource colorPrimary}"/>
                                         <Label 
-                                                FontAttributes="Bold"
-                                                Grid.Row="1"
-                                                Text="{Binding enfase }" 
-                                                FontSize="Micro"
-                                                TextColor="{StaticResource colorPrimary}"/>
+                                    FontAttributes="Bold"
+                                    Grid.Row="1"
+                                    Text="{Binding enfase }" 
+                                    FontSize="Micro"
+                                    TextColor="{StaticResource colorPrimary}"/>
                                         <Label 
-                                                Grid.Row="2"
-                                                Text="{Binding descricao}" 
-                                                FontSize="Micro"
-                                                TextColor="{StaticResource colorPrimary}"/>
+                                    Grid.Row="2"
+                                    Text="{Binding descricao}" 
+                                    FontSize="Micro"
+                                    TextColor="{StaticResource colorPrimary}"/>
 
                                         <Label
                                                
-                                                Grid.Row="3"
-                                                Text="{Binding preco ,Mode=TwoWay} " 
-                                                FontSize="Small"
-                                                FontAttributes="Bold"
-                                                TextColor="{StaticResource colorPrimary}"  
-                                                VerticalOptions="End"
-                                                HorizontalOptions="CenterAndExpand"/>
+                                    Grid.Row="3"
+                                    Text="{Binding preco} " 
+                                     HorizontalTextAlignment="Center"           
+                                    FontSize="Small"
+                                    FontAttributes="Bold"
+                                    TextColor="{StaticResource colorPrimary}" />
                                     </Grid>
+
 
                                     <Grid.GestureRecognizers >
                                         <TapGestureRecognizer
@@ -89,6 +94,8 @@
 
 
                                     </Grid.GestureRecognizers>
+
+
 
 
                                 </Grid>

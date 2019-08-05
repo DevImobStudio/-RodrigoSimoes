@@ -5,6 +5,7 @@ using Plugin.Toast;
 using SlideOverKit;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -48,8 +49,8 @@ namespace Imobiliaria.Views
                     favoritos = await Services.Sistema.DATABASE.database.Table<Models.Favoritos>().Where(p => p.idUsuario == Sistema.USUARIO.cod).ToListAsync();
                 }
 
-                
-                    List<Models.Imovel> imovels = await Services.Sistema.RESTAPI.getAsync<List<Models.Imovel>>("");
+
+                   List<Imovel>  imovels = Sistema.TABBEDPAGE.Inicio.viewModel.LstImoveis;
                     List<Models.Imovel> imovelsFavoritos = new List<Models.Imovel>();
 
                     foreach (var i in favoritos)
@@ -123,6 +124,7 @@ namespace Imobiliaria.Views
         public void Bind()
         {
             LoadFavoritos();
+            menuSuperior.Bind();
         }
 
 
@@ -173,6 +175,17 @@ namespace Imobiliaria.Views
                     CrossToastPopUp.Current.ShowToastMessage("Imovel " + objeto.titulo + " não encontrado nos seus favoritos", Plugin.Toast.Abstractions.ToastLength.Long);
                 }
             }
+        }
+
+
+        public void CarregarPaginaEnvioMaterial(Imovel imovel)
+        {
+
+            pagina.Children.Clear();
+
+            pagina.Children.Add(new EnvioMaterial(imovel));
+
+
         }
 
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)

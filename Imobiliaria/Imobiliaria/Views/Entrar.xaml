@@ -3,7 +3,6 @@
     xmlns:slideoverkit="clr-namespace:SlideOverKit;assembly=SlideOverKit"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:customcontrols="clr-namespace:Imobiliaria.Views"
     xmlns:iconize="clr-namespace:Plugin.Iconize;assembly=Plugin.Iconize"
     x:Class="Imobiliaria.Views.Entrar"
     Title="Entrar"
@@ -121,7 +120,6 @@
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
-
                     <Image  x:Name="Image" Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" WidthRequest="200" HeightRequest="200"/>
                     <Label 
                         Grid.Column="1" 

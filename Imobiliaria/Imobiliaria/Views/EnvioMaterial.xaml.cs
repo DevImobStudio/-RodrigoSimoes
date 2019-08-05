@@ -1,6 +1,7 @@
 ﻿using Imobiliaria.Models;
 using Imobiliaria.Services;
 using Plugin.Toast;
+using Rg.Plugins.Popup.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,7 +26,7 @@ namespace Imobiliaria.Views
             if (Services.Sistema.USUARIO != null)
             {
                 this.imovel = imovel;
-                this.Nome.Text = Services.Sistema.USUARIO.nome;
+                this.Nome.Text = Services.Sistema.USUARIO.name;
                 this.Email.Text = Services.Sistema.USUARIO.email;
                 this.Whatsapp.Text = Services.Sistema.USUARIO.whatsapp;
             }
@@ -68,6 +69,8 @@ namespace Imobiliaria.Views
                 if (respContent.Contains("200"))
                 {
                     CrossToastPopUp.Current.ShowToastMessage("Dados enviados com sucesso!");
+                  
+                    await Navigation.PushPopupAsync(new ModalObrigada(this));
                     Sistema.TABBEDPAGE.CurrentPage = Sistema.TABBEDPAGE.Inicio;
                 }
                 else
@@ -79,7 +82,8 @@ namespace Imobiliaria.Views
             {
                 CrossToastPopUp.Current.ShowToastMessage("Erro ao enviar dados, tente novamente");
             }
-               
+            
+
         }
        
     }
