@@ -149,6 +149,7 @@ namespace Imobiliaria
                             page.ForceLayout();
                             if (page.Inicio != null)
                             {
+                                page.Inicio.Bind();
                                 page.Inicio.setarCor();
                                 page.Inicio.ForceLayout();
                             }

@@ -91,6 +91,8 @@
         <Label 
             Grid.Column="1" 
             Grid.Row="2" 
+           
+            x:Name="whatsapp"
             VerticalOptions="Center"
             FontSize="Medium"
             TextColor="{StaticResource colorPrimary}"
@@ -117,6 +119,7 @@
         <Label 
             Grid.Column="1" 
             Grid.Row="3" 
+             x:Name="telefone"
             VerticalOptions="Center"
             FontSize="Medium"
             TextColor="{StaticResource colorPrimary}"

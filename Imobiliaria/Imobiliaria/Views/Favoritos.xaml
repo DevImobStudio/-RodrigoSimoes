@@ -10,11 +10,11 @@
     <ContentPage.Content>
         <StackLayout x:Name="pagina">
             <ListView x:Name="ItemsListView"
-            ItemsSource="{Binding Imovel}"
+            ItemsSource="{Binding FavoritosLista}"
             VerticalOptions="FillAndExpand"
             HasUnevenRows="true"
             SeparatorVisibility="None"
-            RefreshCommand="{Binding LoadItemsCommand}"
+            RefreshCommand="{Binding LoadItemsCommandFavoritos}"
             IsPullToRefreshEnabled="true"
             IsRefreshing="{Binding IsBusy, Mode=OneWay}"
             CachingStrategy="RecycleElement"

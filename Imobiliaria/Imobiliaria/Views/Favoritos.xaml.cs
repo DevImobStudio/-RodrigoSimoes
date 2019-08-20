@@ -28,52 +28,60 @@ namespace Imobiliaria.Views
             // LoadFavoritos();
             menuSuperior = new MenuSuperior();
             this.SlideMenu = menuSuperior;
+            
 
 
         }
         private async void LoadFavoritos()
         {
-            if  (pagina.Children.Count > 1)
+            if  (pagina.Children.Count >= 1)
             {
                 pagina.Children.Clear();
                 InitializeComponent();
+               
             }
 
             pagina.Children[0].IsVisible = true;
-
+          
             try
-                {
-                List<Models.Favoritos> favoritos = new List<Models.Favoritos>();
-                if (Sistema.USUARIO != null)
-                {
-                    favoritos = await Services.Sistema.DATABASE.database.Table<Models.Favoritos>().Where(p => p.idUsuario == Sistema.USUARIO.cod).ToListAsync();
-                }
+            {
+                Sistema.TABBEDPAGE.Inicio.viewModel.LoadItemsCommandFavoritos.Execute(null);
+                /* {
+                 List<Models.Favoritos> favoritos = new List<Models.Favoritos>();
+                 if (Sistema.USUARIO != null)
+                 {
+                     favoritos = await Services.Sistema.DATABASE.database.Table<Models.Favoritos>().Where(p => p.idUsuario == Sistema.USUARIO.cod).ToListAsync();
+                 }
 
 
-                   List<Imovel>  imovels = Sistema.TABBEDPAGE.Inicio.viewModel.LstImoveis;
-                    List<Models.Imovel> imovelsFavoritos = new List<Models.Imovel>();
+                    List<Imovel>  imovels = Sistema.TABBEDPAGE.Inicio.viewModel.LstImoveis;
+                     List<Models.Imovel> imovelsFavoritos = new List<Models.Imovel>();
 
-                    foreach (var i in favoritos)
-                    {
-                        Models.Imovel imovel = imovels.Where(p => p.id == i.idImovel).FirstOrDefault();
-                        if (imovel != null)
-                        {
-                            imovelsFavoritos.Add(imovel);
-                        }
-                        else
-                        {
-                            imovelsFavoritos.Add(new Models.Imovel()
-                            {
-                                id = i.idImovel,
-                                titulo = "Indisponível"
-                            });
-                        }
+                     foreach (var i in favoritos)
+                     {
+                         Models.Imovel imovel = imovels.Where(p => p.id == i.idImovel).FirstOrDefault();
+                         if (imovel != null)
+                         {
+                             imovelsFavoritos.Add(imovel);
+                         }
+                         else
+                         {
+                             imovelsFavoritos.Add(new Models.Imovel()
+                             {
+                                 id = i.idImovel,
+                                 titulo = "Indisponível"
+                             });
+                         }
 
-                    }
-                    ItemsListView.ItemsSource = imovelsFavoritos;
-                    BindingContext = imovelsFavoritos;
+                     }
 
-                    if (imovelsFavoritos.Count < 1)
+                     ItemsListView.ItemsSource = imovelsFavoritos;
+                     BindingContext = imovelsFavoritos;
+             */
+
+                //  ItemsListView.ItemsSource = Sistema.TABBEDPAGE.Inicio.viewModel.Favoritos;
+                BindingContext = Sistema.TABBEDPAGE.Inicio.viewModel;
+            if ( await Services.Sistema.DATABASE.database.Table<Models.Favoritos>().Where(p => p.idUsuario == Sistema.USUARIO.cod).CountAsync() < 1)
                     {
                         var LayoutVazio = new StackLayout();
                         var lblListaVazia = new Label
@@ -103,7 +111,7 @@ namespace Imobiliaria.Views
 
             LoadFavoritos();
 
-
+            Sistema.TABBEDPAGE.Inicio.viewModel.LoadItemsCommandFavoritos.Execute(null);
 
         }
 
@@ -121,10 +129,17 @@ namespace Imobiliaria.Views
 
         }
 
+        private void ItemsListView_Refreshing(object sender, EventArgs e)
+        {
+            BindingContext = Sistema.TABBEDPAGE.Inicio.viewModel;
+        }
+
         public void Bind()
         {
             LoadFavoritos();
             menuSuperior.Bind();
+            Sistema.TABBEDPAGE.Inicio.viewModel.LoadItemsCommandFavoritos.Execute(null);
+            BindingContext = Sistema.TABBEDPAGE.Inicio.viewModel;
         }
 
 

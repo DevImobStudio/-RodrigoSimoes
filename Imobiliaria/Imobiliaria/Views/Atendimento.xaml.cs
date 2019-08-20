@@ -17,16 +17,19 @@ namespace Imobiliaria.Views
 	public partial class Atendimento :MenuContainerPage
     {
         Geocoder coder { get; set; }
+        public MenuSuperior menuSuperior { get; set; }
         public Atendimento ()
 		{
 			InitializeComponent ();
             coder = new Geocoder();
-            this.SlideMenu = Services.Sistema.menuSuperior;
+            menuSuperior = Services.Sistema.menuSuperior;
+            this.SlideMenu = menuSuperior;
             Bind();
         }
 
         public async void Bind()
         {
+            this.menuSuperior.Bind();
             if (Services.Sistema.CONFIG != null)
             {
 

@@ -9,9 +9,6 @@
     Icon="lock.png">
     <ContentPage.Content >
         <StackLayout Margin="20">
-
-         
-
             <StackLayout x:Name="Login" >
                 
             <Grid ColumnSpacing="0">

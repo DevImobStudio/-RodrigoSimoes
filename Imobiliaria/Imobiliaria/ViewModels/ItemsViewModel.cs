@@ -20,9 +20,11 @@ namespace Imobiliaria.ViewModels
     {
         public ObservableCollection<Imovel> Imovels { get; set; }
         public ObservableCollection<Pin> Pins { get; set; }
-       // public Xamarin.Forms.GoogleMaps.Map Mapa { get; set; }
+        public ObservableCollection<Imovel> FavoritosLista { get; set; }
+        // public Xamarin.Forms.GoogleMaps.Map Mapa { get; set; }
         public Command LoadItemsCommand { get; set; }
         public Command LoadItemsCommandBusca { get; set; }
+        public Command LoadItemsCommandFavoritos { get; set; }
         public List<Imovel> LstImoveis { get; set; }
      //   List<Pin> LstPins { get; set; }
         public List<Models.Favoritos> favoritos { get; set; }
@@ -33,12 +35,58 @@ namespace Imobiliaria.ViewModels
             LstImoveis = new List<Imovel>();
             Imovels = new ObservableCollection<Imovel>(LstImoveis);
             favoritos = new List<Models.Favoritos>();
+            FavoritosLista = new ObservableCollection<Imovel>();
             mPesquisa = new Models.MPesquisa();
             Title = "Imovéis";
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
             LoadItemsCommandBusca = new Command(async () => await ExecuteLoadItemsBuscaCommand());
+            LoadItemsCommandFavoritos = new Command(async () => await ExecuteLoadItemsCommandFavoritos());
         }
 
+        async Task ExecuteLoadItemsCommandFavoritos()
+        {
+            if (IsBusy)
+                return;
+            IsBusy = true;
+
+            try
+            {
+                FavoritosLista.Clear();
+                Sistema.USUARIO = await Services.Sistema.DATABASE.database.Table<Models.Usuario>().Where(p => p.logado).FirstOrDefaultAsync();
+                if (Sistema.USUARIO != null)
+                {
+                    favoritos = await Services.Sistema.DATABASE.database.Table<Models.Favoritos>().Where(p => p.idUsuario == Sistema.USUARIO.cod).ToListAsync();
+                }
+
+                foreach (var i in favoritos)
+                {
+                    Models.Imovel imovel = Imovels.Where(p => p.id == i.idImovel).FirstOrDefault();
+                    if (imovel != null)
+                    {
+                        FavoritosLista.Add(imovel);
+                    }
+                    else
+                    {
+                        FavoritosLista.Add(new Models.Imovel()
+                        {
+                            id = i.idImovel,
+                            titulo = "Indisponível"
+                        });
+                    }
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
+            }
+            finally
+            {
+                IsBusy = false;
+
+            }
+        }
 
 
         async Task ExecuteLoadItemsCommand()

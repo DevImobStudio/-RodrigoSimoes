@@ -44,6 +44,11 @@ namespace Imobiliaria.Views
                 InitializeComponent();
                 this.BindingContext = Services.Sistema.CONFIG;
                 this.ForceLayout();
+
+                this.telefone.Text = Services.Sistema.CONFIG.telefone;
+                this.whatsapp.Text = Services.Sistema.CONFIG.whatsapp;
+
+                this.ForceLayout();
             }
         }
 
