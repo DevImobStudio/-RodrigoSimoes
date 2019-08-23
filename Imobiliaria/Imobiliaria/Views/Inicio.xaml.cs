@@ -64,6 +64,9 @@ namespace Imobiliaria.Views
         public void Bind()
         {
             InitializeComponent();
+            Consulta.IsVisible = false;
+            Consulta.IsVisible = true;
+
             menuSuperior.Bind();
 
         }
@@ -142,6 +145,7 @@ namespace Imobiliaria.Views
 
         public void carregarPaginaInicial()
         {
+            Consulta.IsVisible = true;
             Maps.IsVisible = true;
             ListaImoveis.IsVisible = true;
             CarregarPagina();
@@ -182,7 +186,9 @@ namespace Imobiliaria.Views
             this.ImovelDetail.LoadItemsCommand.Execute(null);
             View v = pagina.Children[0];
             pagina.Children[0].IsVisible = false;
-            this.paginaStack.Children.Add(new ItemDetailPage(this, this.ImovelDetail));
+            Consulta.IsVisible = false;
+       //     this.paginaStack.Children.Add(new ItemDetailPage(this, this.ImovelDetail));
+            pagina.Children.Add(new ItemDetailPage(this, this.ImovelDetail));
 
 
         }
@@ -190,9 +196,12 @@ namespace Imobiliaria.Views
         {
 
             pagina.Children.Clear();
+            Consulta.IsVisible = true;
+            Consulta.ForceLayout();
             Maps.IsVisible = true;
             ListaImoveis.IsVisible = true;
             ListaImoveis.IsVisible = true;
+           
             if (PageSelected.SelectedSegment == 0)
             {
                 
@@ -203,6 +212,7 @@ namespace Imobiliaria.Views
             else
             {
                 pagina.Children.Add(ListaImoveis);
+                ListaImoveis.ForceLayout();
                 viewModel.LoadItemsCommand.Execute(null);
             }
 

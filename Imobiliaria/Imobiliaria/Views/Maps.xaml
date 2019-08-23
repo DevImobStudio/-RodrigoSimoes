@@ -50,7 +50,7 @@
 
         <StackLayout  Grid.Column="0"  VerticalOptions="EndAndExpand"  Grid.Row="1" HeightRequest="220" MinimumHeightRequest="220"  >
 
-            <card:CarouselView
+            <card:CoverFlowView
              
                 Grid.RowSpan="2" 
                 Grid.ColumnSpan="3" 
@@ -150,7 +150,7 @@
                 </DataTemplate>
                 </card:CarouselView.ItemTemplate>
        
-            </card:CarouselView>
+            </card:CoverFlowView>
     
         </StackLayout>
 

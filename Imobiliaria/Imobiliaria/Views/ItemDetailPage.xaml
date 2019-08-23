@@ -9,7 +9,7 @@
     <ScrollView  Padding="0" >
 
         <StackLayout   VerticalOptions="StartAndExpand" BackgroundColor="{StaticResource colorTelas}">
-                <ActivityIndicator Grid.Row="0" IsEnabled="True" IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}" HorizontalOptions="Center" VerticalOptions="Center" />
+                <!--  <ActivityIndicator Grid.Row="0" IsEnabled="True" IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}" HorizontalOptions="Center" VerticalOptions="Center" />-->
 
                 <Label 
                     TextColor="{StaticResource colorPrimary}"
@@ -34,7 +34,7 @@
 
                     </Grid.ColumnDefinitions>
                     
-             <card:CarouselView
+             <card:CoverFlowView
              
                 Grid.RowSpan="2" 
                 Grid.ColumnSpan="3" 
@@ -43,9 +43,6 @@
                 AreAnimationsEnabled="True"
                 IsViewCacheEnabled="True"
                 IsAutoNavigatingAimationEnabled="True"
-                IsPanSwipeEnabled="True"
-                
-             
                 ItemsSource="{Binding Imagens ,Mode=OneWay}" 
                 VerticalOptions="FillAndExpand"
                
@@ -74,7 +71,7 @@
                 </DataTemplate>
                 </card:CarouselView.ItemTemplate>
        
-            </card:CarouselView>
+            </card:CoverFlowView>
 
               <!--      <controls:CarouselViewControl 
                         Grid.RowSpan="2" 

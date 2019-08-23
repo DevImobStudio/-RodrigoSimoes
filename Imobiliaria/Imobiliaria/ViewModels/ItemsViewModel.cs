@@ -79,7 +79,7 @@ namespace Imobiliaria.ViewModels
             }
             catch (Exception ex)
             {
-                Debug.WriteLine(ex);
+                IsBusy = false;
             }
             finally
             {
@@ -100,7 +100,11 @@ namespace Imobiliaria.ViewModels
             {
                
                 Imovels.Clear();
-                LstImoveis =  await Services.Sistema.RESTAPI.getAsync<List<Imovel>>("");
+                if (LstImoveis.Count < 1)
+                {
+                    LstImoveis = await Services.Sistema.RESTAPI.getAsync<List<Imovel>>("");
+                }
+               
                 Sistema.USUARIO = await Services.Sistema.DATABASE.database.Table<Models.Usuario>().Where(p => p.logado).FirstOrDefaultAsync();
                 favoritos.Clear();
                 if (Sistema.USUARIO != null)
@@ -123,17 +127,21 @@ namespace Imobiliaria.ViewModels
                             i.favorito = "White";
                         }
                     }
-                    Location loc = new Location();
-                    var a = await coder.GetPositionsForAddressAsync(i.logradouro + "," + i.bairro + "," + i.cidade + "-" + i.uf + "," + i.cep);
-                    if (a.Any())
+                    if(i.position != null)
                     {
-                        loc.Latitude = a.ElementAt(0).Latitude;
-                        loc.Longitude = a.ElementAt(0).Longitude;
-                        i.localizacao = loc;
-                        i.position = new Position(a.ElementAt(0).Latitude, a.ElementAt(0).Longitude);
-                        i.icon = BitmapDescriptorFactory.FromView(new ViewPin());
-                        i.uriImage = new UriImageSource { CachingEnabled = false, Uri = new Uri(i.imagem) };
+                        Location loc = new Location();
+                        var a = await coder.GetPositionsForAddressAsync(i.logradouro + "," + i.bairro + "," + i.cidade + "-" + i.uf + "," + i.cep);
+                        if (a.Any())
+                        {
+                            loc.Latitude = a.ElementAt(0).Latitude;
+                            loc.Longitude = a.ElementAt(0).Longitude;
+                            i.localizacao = loc;
+                            i.position = new Position(a.ElementAt(0).Latitude, a.ElementAt(0).Longitude);
+                            i.icon = BitmapDescriptorFactory.FromView(new ViewPin());
+                            i.uriImage = new UriImageSource { CachingEnabled = false, Uri = new Uri(i.imagem) };
+                        }
                     }
+                   
 
                   
                     Imovels.Add(i);

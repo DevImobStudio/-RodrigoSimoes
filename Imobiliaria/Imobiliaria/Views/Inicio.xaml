@@ -13,7 +13,7 @@
 
     <ContentPage.Content>
        
-        <StackLayout Margin="0" >
+        <StackLayout Margin="0"  >
             <StackLayout VerticalOptions="Start" BackgroundColor="{StaticResource colorSecundaria}" x:Name="Consulta">
                 <Grid>
                     <Grid.ColumnDefinitions >
@@ -36,7 +36,13 @@
                     </Grid>
 
 
-                    <fee:SegmentedControl  Grid.Row="0"  x:Name="PageSelected"     DisabledColor="{StaticResource colorPrimary}" SelectedTextColor="{StaticResource colorClara}" ValueChanged="SegControl_ValueChanged" TintColor="{StaticResource colorPrimary}" SelectedSegment="0"  Grid.Column="1" Margin="0,10" >
+                    <fee:SegmentedControl  Grid.Row="0"  x:Name="PageSelected"    
+                                           DisabledColor="{StaticResource colorPrimary}"
+                                           SelectedTextColor="{StaticResource colorClara}" 
+                                           ValueChanged="SegControl_ValueChanged" 
+                                           TintColor="{StaticResource colorPrimary}" 
+                                           SelectedSegment="0"  
+                                           Grid.Column="1" Margin="0,6" >
                         <fee:SegmentedControl.Children  >
                             <fee:SegmentedControlOption Text="Mapa"   />
                             <fee:SegmentedControlOption Text="Lista" />

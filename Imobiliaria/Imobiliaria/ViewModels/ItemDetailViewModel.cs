@@ -63,7 +63,7 @@ namespace Imobiliaria.ViewModels
             }
             catch (Exception ex)
             {
-                Debug.WriteLine(ex);
+                IsBusy = false;
             }
             finally
             {
