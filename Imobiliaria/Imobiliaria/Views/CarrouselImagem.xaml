@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:card="clr-namespace:PanCardView;assembly=PanCardView"
+             xmlns:controls="clr-namespace:PanCardView.Controls;assembly=PanCardView"
+             xmlns:proc="clr-namespace:PanCardView.Processors;assembly=PanCardView"
+             xmlns:pinch="clr-namespace:Xamarin.Forms.PinchZoomImage;assembly=Xamarin.Forms.PinchZoomImage"
+             x:Class="Imobiliaria.Views.CarrouselImagem"
+             BackgroundColor="{StaticResource colorPrimary}"
+             
+
+             >
+    <ContentPage.Content  >
+        <card:CoverFlowView
+                x:Name="caroussel" 
+                IsUserInteractionEnabled="True"
+                AreAnimationsEnabled="True"
+                IsViewCacheEnabled="True"
+                ItemsSource="{Binding Imagens ,Mode=OneTime}" 
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand" 
+           
+
+               >
+
+            <card:CarouselView.ItemTemplate>
+
+                <DataTemplate >
+
+                    <Grid RowSpacing="0" BackgroundColor="{StaticResource colorPrimaryTransparente}" ColumnSpacing="0" >
+                        <Grid.RowDefinitions >
+                            <RowDefinition Height="*" ></RowDefinition>
+                        </Grid.RowDefinitions>
+
+                        <pinch:PinchZoom>
+                            <pinch:PinchZoom.Content>
+                                <Image 
+                            Source="{Binding .}" 
+                            Grid.Row="0"
+                            Aspect="AspectFit"
+                            x:Name="Imagem"
+                                
+                                >
+
+                        </Image>
+
+                            </pinch:PinchZoom.Content>
+                        </pinch:PinchZoom>
+                        <ActivityIndicator BindingContext="{x:Reference Imagem}" IsRunning="{Binding IsLoading}" />
+
+                    </Grid>
+
+
+                </DataTemplate>
+            </card:CarouselView.ItemTemplate>
+            <controls:LeftArrowControl/>
+            <controls:RightArrowControl/>
+            <controls:IndicatorsControl/>
+
+        </card:CoverFlowView>
+        <!-- <Grid >
+                <card:CoverFlowView
+                x:Name="caroussel" 
+                IsUserInteractionEnabled="True"
+                AreAnimationsEnabled="True"
+                IsViewCacheEnabled="True"
+                IsAutoNavigatingAimationEnabled="True"
+                ItemsSource="{Binding Imagens ,Mode=OneWay}" 
+                VerticalOptions="FillAndExpand"
+                Rotation="90"
+                HorizontalOptions="FillAndExpand" 
+                BackgroundColor="{StaticResource colorPrimary}"
+               >
+
+                    <card:CarouselView.ItemTemplate>
+                        <DataTemplate >
+
+                            <Image
+                            BackgroundColor="{StaticResource colorPrimary}"
+                            Source="{Binding .}" 
+                            x:Name="Imagem"
+                            Aspect="AspectFill" 
+
+                            />
+
+
+                        </DataTemplate>
+                    </card:CarouselView.ItemTemplate>
+
+                </card:CoverFlowView>
+
+            </Grid>
+            -->
+         
+    </ContentPage.Content>
+</ContentPage>

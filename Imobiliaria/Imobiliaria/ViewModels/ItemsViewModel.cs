@@ -60,7 +60,7 @@ namespace Imobiliaria.ViewModels
 
                 foreach (var i in favoritos)
                 {
-                    Models.Imovel imovel = Imovels.Where(p => p.id == i.idImovel).FirstOrDefault();
+                    Models.Imovel imovel = LstImoveis.Where(p => p.id == i.idImovel).FirstOrDefault();
                     if (imovel != null)
                     {
                         FavoritosLista.Add(imovel);
@@ -138,7 +138,7 @@ namespace Imobiliaria.ViewModels
                             i.localizacao = loc;
                             i.position = new Position(a.ElementAt(0).Latitude, a.ElementAt(0).Longitude);
                             i.icon = BitmapDescriptorFactory.FromView(new ViewPin());
-                            i.uriImage = new UriImageSource { CachingEnabled = false, Uri = new Uri(i.imagem) };
+                            i.uriImage = new UriImageSource { CachingEnabled = true, Uri = new Uri(i.imagem), CacheValidity = new TimeSpan(5, 0, 0, 0) };
                         }
                     }
                    
@@ -150,7 +150,7 @@ namespace Imobiliaria.ViewModels
             }
             catch (Exception ex)
             {
-                Debug.WriteLine(ex);
+                IsBusy = false;
             }
             finally
             {
@@ -204,7 +204,7 @@ namespace Imobiliaria.ViewModels
                 {
                     if (mPesquisa.busca != "")
                     {
-                        FiltroImoveis = FiltroImoveis.Where(p => (p.descricao.Contains(mPesquisa.busca)) || (p.titulo.Contains(mPesquisa.busca))).ToList();
+                        FiltroImoveis = FiltroImoveis.Where(p => (p.descricao.ToUpper().Contains(mPesquisa.busca.ToUpper())) || (p.titulo.ToUpper().Contains(mPesquisa.busca.ToUpper()))).ToList();
                     }
 
                 }
@@ -228,6 +228,7 @@ namespace Imobiliaria.ViewModels
 
                 foreach (var i in FiltroImoveis)
                 {
+                    i.uriImage = new UriImageSource { CachingEnabled = true, Uri = new Uri(i.imagem) , CacheValidity = new TimeSpan(5, 0, 0, 0) };
                     Imovels.Add(i);
                 }
                 if (Imovels.Count <=0)
@@ -237,7 +238,7 @@ namespace Imobiliaria.ViewModels
             }
             catch (Exception ex)
             {
-                Debug.WriteLine(ex);
+                IsBusy = false;
                 foreach (var i in LstImoveis)
                 {
                     Imovels.Add(i);

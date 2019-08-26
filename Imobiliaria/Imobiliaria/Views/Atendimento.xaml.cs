@@ -22,14 +22,13 @@ namespace Imobiliaria.Views
 		{
 			InitializeComponent ();
             coder = new Geocoder();
-            menuSuperior = Services.Sistema.menuSuperior;
-            this.SlideMenu = menuSuperior;
+            this.SlideMenu = Services.Sistema.menuSuperior;
             Bind();
         }
 
         public async void Bind()
         {
-            this.menuSuperior.Bind();
+
             if (Services.Sistema.CONFIG != null)
             {
 
@@ -40,7 +39,6 @@ namespace Imobiliaria.Views
                     }
 
                
-                InitializeComponent();
 
                 Mapa.MoveToRegion(MapSpan.FromCenterAndRadius(Services.Sistema.CONFIG.position,
                                       Distance.FromMiles(0.5)));

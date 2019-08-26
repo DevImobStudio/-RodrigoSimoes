@@ -32,8 +32,8 @@ namespace Imobiliaria.Views
             InitializeComponent();
             this.viewModel = viewModel;
              //viewModel = new ItemsViewModel();
-             menuSuperior = Services.Sistema.menuSuperior;
-            this.SlideMenu = menuSuperior;
+         //    menuSuperior = Services.Sistema.menuSuperior;
+            this.SlideMenu = Services.Sistema.menuSuperior;
             paginaStack = pagina;
             Maps = new Maps(this);
             ListaImoveis = new ListaImoveis(this);
@@ -63,11 +63,11 @@ namespace Imobiliaria.Views
 
         public void Bind()
         {
-            InitializeComponent();
+           
             Consulta.IsVisible = false;
             Consulta.IsVisible = true;
 
-            menuSuperior.Bind();
+         //   menuSuperior.Bind();
 
         }
 

@@ -33,11 +33,13 @@
                             <Image 
                                 Source="{Binding imagem}" 
                                 Aspect="AspectFit" 
+                                x:Name="Imagem"
                                 Grid.Column="0" 
                                 HeightRequest="40"
                                 WidthRequest="40"
                                
                                 />
+                            <ActivityIndicator   Grid.Column="0"  BindingContext="{x:Reference Imagem}" IsRunning="{Binding IsLoading}" />
                             <Grid Grid.Column="1"
                                         Grid.Row="0">
                                 <Grid.ColumnDefinitions>

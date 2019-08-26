@@ -47,7 +47,7 @@ namespace Imobiliaria.ViewModels
                 Imagens.Clear();
 
                 Imagens.Add(Imovel.imagem);
-            //    Imovel = await Services.Sistema.RESTAPI.getAsync<Imovel>("content/" + Imovel.id);
+
                 lstImagens = await Services.Sistema.RESTAPI.getAsync<List<string>>("content/itens/"+Imovel.id);
                 if (lstImagens.Count > 0)
                 {
@@ -58,7 +58,13 @@ namespace Imobiliaria.ViewModels
                         Imagens.Add(i);
                     }
                 }
-              
+                List<Imovel> p  = await Services.Sistema.RESTAPI.getAsync<List<Imovel>>("content/" + Imovel.id);
+                if (p.Count > 0)
+                {
+                    Imovel = p[0];
+                    Imagens.Add("https://www.youtube.com/watch?v=" + p[0].video);
+                }
+                
 
             }
             catch (Exception ex)

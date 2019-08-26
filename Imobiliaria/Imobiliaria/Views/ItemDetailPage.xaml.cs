@@ -8,6 +8,7 @@ using Imobiliaria.ViewModels;
 using Imobiliaria.Services;
 using Plugin.Toast;
 using Rg.Plugins.Popup.Extensions;
+using Xamarin.Forms.PlatformConfiguration;
 
 namespace Imobiliaria.Views
 {
@@ -127,6 +128,30 @@ namespace Imobiliaria.Views
         private void Map_Clicked(object sender, EventArgs e)
         {
            Navigation.PushAsync(new DetalheMaps(this.ImovelDetail.Imovel));
+        }
+
+        private void CarrouselImagem_Clicked(object sender, EventArgs e)
+        {
+            Page p = new CarrouselImagem(this.ImovelDetail);
+           
+            Navigation.PushModalAsync(new CarrouselImagem(this.ImovelDetail));
+        }
+
+        private void Caroussel_ItemSwiped(PanCardView.CardsView view, PanCardView.EventArgs.ItemSwipedEventArgs args)
+        {
+            if (this.ImovelDetail.Imovel.video != null)
+            {
+                if (this.ImovelDetail.Imovel.video != "")
+                {
+                  //  VideoC.isVisible = true;
+                   // ImagemC.isVisible = false;
+                }
+            }
+            else
+            {
+                //VideoC.isVisible = false;
+                //ImagemC.isVisible = true;
+            }
         }
 
 

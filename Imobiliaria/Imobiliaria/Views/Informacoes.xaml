@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:iconize="clr-namespace:Plugin.Iconize;assembly=Plugin.Iconize"
+            x:Class="Imobiliaria.Views.Informacoes">
+    <NavigationPage.TitleView >
+        <StackLayout Orientation="Horizontal" VerticalOptions="Start" HorizontalOptions="Center">
+
+            <Image HorizontalOptions="Center" x:Name="logotipo"  />
+        </StackLayout>
+
+    </NavigationPage.TitleView>
+    <!--Pages can be added as references or inline-->
+    <ContentPage Title="INSTITUCIONAL">
+        <ScrollView Margin="20">
+            <StackLayout>
+                <Grid BackgroundColor="{StaticResource colorTelas}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="9*"/>
+                    </Grid.ColumnDefinitions>
+                    <iconize:IconLabel 
+                        Grid.Column="0"
+                        Text="fas-landmark"
+                        FontSize="Large"
+                        TextColor="{StaticResource colorPrimary}"/>
+                    <Label 
+                         Grid.Column="1"
+                        Text="INSTITUCIONAL"
+                        FontSize="Medium"
+                        TextColor="{StaticResource colorPrimary}"
+                        VerticalOptions="CenterAndExpand" 
+                        HorizontalOptions="CenterAndExpand" />
+                </Grid>
+
+                <Label 
+                    Text="{Binding institucional}"
+                    FontSize="Medium"
+                    TextColor="{StaticResource colorPrimary}"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+
+               
+            </StackLayout>
+
+        </ScrollView>
+    </ContentPage>
+    <ContentPage Title="POLÍTICA" >
+        <ScrollView Margin="20">
+            <StackLayout>
+               
+
+                <Grid BackgroundColor="{StaticResource colorTelas}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="9*"/>
+                    </Grid.ColumnDefinitions>
+                    <iconize:IconLabel 
+                        Grid.Column="0"
+                        Text="fas-lock"
+                        FontSize="Large"
+                        TextColor="{StaticResource colorPrimary}"/>
+                    <Label 
+                         Grid.Column="1"
+                        Text="POLÍTICA DE PRIVACIDADE"
+                        FontSize="Medium"
+                        TextColor="{StaticResource colorPrimary}"
+                        VerticalOptions="CenterAndExpand" 
+                        HorizontalOptions="CenterAndExpand" />
+                </Grid>
+                <Label 
+                    Text="{Binding politicadeprivacidade}"
+                    FontSize="Medium"
+                    TextColor="{StaticResource colorPrimary}"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+
+               
+            </StackLayout>
+
+        </ScrollView>
+    </ContentPage>
+    <ContentPage Title="TERMOS" >
+        <ScrollView Margin="20">
+            <StackLayout>
+                
+
+                <Grid BackgroundColor="{StaticResource colorTelas}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="9*"/>
+                    </Grid.ColumnDefinitions>
+                    <iconize:IconLabel 
+                        Grid.Column="0"
+                        Text="fas-bookmark"
+                        FontSize="Large"
+                        TextColor="{StaticResource colorPrimary}"/>
+                    <Label 
+                         Grid.Column="1"
+                        Text="TERMOS DE USO"
+                        FontSize="Medium"
+                        TextColor="{StaticResource colorPrimary}"
+                        VerticalOptions="CenterAndExpand" 
+                        HorizontalOptions="CenterAndExpand" />
+                </Grid>
+                <Label 
+                    Text="{Binding termosdeuso}"
+                    FontSize="Medium"
+                    TextColor="{StaticResource colorPrimary}"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+
+        </ScrollView>
+    </ContentPage>
+</TabbedPage>
+

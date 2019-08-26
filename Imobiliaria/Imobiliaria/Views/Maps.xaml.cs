@@ -59,7 +59,7 @@ namespace Imobiliaria.Views
                                        new Position(this.Inicio.viewModel.Imovels[0].localizacao.Latitude, this.Inicio.viewModel.Imovels[0].localizacao.Longitude),
                                        Distance.FromMiles(0.5)));
             }
-            this.ForceLayout();
+          //  this.ForceLayout();
 
         }
 
@@ -151,11 +151,15 @@ namespace Imobiliaria.Views
            
      //       Mapa.ItemsSource = this.Inicio.viewModel.Imovels;
      //       BindingContext = this.Inicio.viewModel;
-         //   caroussel.ItemsSource = this.Inicio.viewModel.Imovels;
+            caroussel.ItemsSource = this.Inicio.viewModel.Imovels;
             if (this.Inicio.viewModel.Imovels.Count > 0)
             {
                 caroussel.SelectedIndex = 0;
+                Mapa.MoveToRegion(MapSpan.FromCenterAndRadius(
+                                       new Position(this.Inicio.viewModel.Imovels[0].localizacao.Latitude, this.Inicio.viewModel.Imovels[0].localizacao.Longitude),
+                                       Distance.FromMiles(0.5)));
             }
+
 
         }
 

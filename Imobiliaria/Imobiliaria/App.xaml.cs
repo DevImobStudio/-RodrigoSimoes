@@ -38,7 +38,7 @@ namespace Imobiliaria
     
                 Services.Sistema.DATABASE = new Services.DataBaseAsync();
                 Dados();
-                InitializeComponent();
+               
 
                 try
                 {
@@ -49,10 +49,10 @@ namespace Imobiliaria
                     MainPage = new Erro("Não foi possível acessar os dados!");
                     return;
                 }
-                   
-            
+                InitializeComponent();
 
-               
+
+
                 // page = new MasterDetailPage1();
                 page = new TabbedPage1();
                 Services.Sistema.TABBEDPAGE = page;
@@ -162,6 +162,7 @@ namespace Imobiliaria
 
 
                 }
+                Services.Sistema.menuSuperior.Bind();
 
             }
             

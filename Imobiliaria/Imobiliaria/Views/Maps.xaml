@@ -59,9 +59,8 @@
                 AreAnimationsEnabled="True"
                 IsViewCacheEnabled="True"
                 ItemAppearing="Caroussel_ItemAppearing"
-                IsAutoNavigatingAimationEnabled="True"
                 
-                ItemsSource="{Binding Imovels ,Mode=OneWay}" 
+                ItemsSource="{Binding Imovels ,Mode=OneTime}" 
                 VerticalOptions="FillAndExpand"
                
                 HorizontalOptions="FillAndExpand" 
@@ -83,8 +82,10 @@
                            
 
                             <Image 
-                                Source="{Binding uriImage}" 
+                                Source="{Binding uriImage} "
                                 Grid.RowSpan="4" Aspect="AspectFit"
+                                x:Name="Imagem"
+                                
                                 >
                                 <Image.GestureRecognizers >
                                     <TapGestureRecognizer
@@ -98,7 +99,7 @@
 
                                 </Image.GestureRecognizers>
                             </Image>
-                          
+                            <ActivityIndicator BindingContext="{x:Reference Imagem}" IsRunning="{Binding IsLoading}" />
                             <BoxView 
      
                                     Grid.Row="1"
@@ -154,9 +155,7 @@
     
         </StackLayout>
 
-          
-        <ActivityIndicator Grid.Row="0" IsEnabled="True" IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}" HorizontalOptions="Center" VerticalOptions="Center" />
-
+    
     </Grid>
    
 

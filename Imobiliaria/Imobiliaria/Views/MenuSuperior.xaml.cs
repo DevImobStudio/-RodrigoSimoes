@@ -41,14 +41,12 @@ namespace Imobiliaria.Views
            
             if (Services.Sistema.CONFIG != null)
             {
-                InitializeComponent();
+               // InitializeComponent();
                 this.BindingContext = Services.Sistema.CONFIG;
-                this.ForceLayout();
 
-                this.telefone.Text = Services.Sistema.CONFIG.telefone;
-                this.whatsapp.Text = Services.Sistema.CONFIG.whatsapp;
+              //  this.telefone.Text = Services.Sistema.CONFIG.telefone;
+              //  this.whatsapp.Text = Services.Sistema.CONFIG.whatsapp;
 
-                this.ForceLayout();
             }
         }
 
@@ -72,7 +70,7 @@ namespace Imobiliaria.Views
 
         private void Institucional_Clicked(object sender, EventArgs e)
         {
-            this.Navigation.PushAsync(new Institucional());
+            this.Navigation.PushAsync(new Informacoes());
         }
 
         private void WhatsApp_Clicked(object sender, EventArgs e)

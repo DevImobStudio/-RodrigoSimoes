@@ -36,6 +36,7 @@
     <PackageReference Include="Xamarin.Forms.GoogleMaps" Version="3.2.0" />
     <PackageReference Include="Xamarin.Forms.InputKit" Version="3.0.11" />
     <PackageReference Include="Xamarin.Forms.OpenWhatsApp" Version="1.0.1" />
+    <PackageReference Include="Xamarin.Forms.PinchZoomImage" Version="1.0.0" />
     <PackageReference Include="Xamarin.Forms.Plugin.CustomToggleButton" Version="1.0.1" />
     <PackageReference Include="Xamarin.Forms.RangeSlider" Version="1.0.1" />  
   </ItemGroup>
@@ -59,6 +60,9 @@
     <EmbeddedResource Update="Views\Atendimento.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Views\CarrouselImagem.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\DetalheMaps.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -72,6 +76,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Favoritos.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Informacoes.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Inicio.xaml">
