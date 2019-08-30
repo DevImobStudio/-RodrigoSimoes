@@ -62,7 +62,11 @@ namespace Imobiliaria.ViewModels
                 if (p.Count > 0)
                 {
                     Imovel = p[0];
-                    Imagens.Add("https://www.youtube.com/watch?v=" + p[0].video);
+                    if (Imovel.video != "")
+                    {
+                        Imagens.Add("http://www.youtube.com/embed/"+ p[0].video+ "?rel=0&autoplay=1");
+                    }
+                   
                 }
                 
 

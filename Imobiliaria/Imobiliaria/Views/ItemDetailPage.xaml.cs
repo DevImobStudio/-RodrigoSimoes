@@ -9,6 +9,7 @@ using Imobiliaria.Services;
 using Plugin.Toast;
 using Rg.Plugins.Popup.Extensions;
 using Xamarin.Forms.PlatformConfiguration;
+using Xam.Forms.VideoPlayer;
 
 namespace Imobiliaria.Views
 {
@@ -31,10 +32,10 @@ namespace Imobiliaria.Views
             {
                 caroussel.ItemsSource = this.ImovelDetail.Imagens;
             }
-            
-            
-        //    CarregarDados();
-           
+          
+
+            //    CarregarDados();
+
         }
 
         public ItemDetailPage(Favoritos favoritos, ItemDetailViewModel ImovelDetail)
@@ -143,6 +144,20 @@ namespace Imobiliaria.Views
             {
                 if (this.ImovelDetail.Imovel.video != "")
                 {
+                    if (view.SelectedItem.ToString().Contains("youtube"))
+                    {
+                        Videc.Source = view.SelectedItem.ToString();
+                        caroussel.IsVisible = false;
+
+
+                        Videc.IsVisible = true;
+                        box1.IsVisible = true;
+                        box2.IsVisible = true;
+
+
+
+
+                    }
                   //  VideoC.isVisible = true;
                    // ImagemC.isVisible = false;
                 }
@@ -152,6 +167,26 @@ namespace Imobiliaria.Views
                 //VideoC.isVisible = false;
                 //ImagemC.isVisible = true;
             }
+        }
+
+        private void SwipeGestureRecognizer_Swiped(object sender, SwipedEventArgs e)
+        {
+            Videc.IsVisible = false;
+            caroussel.IsVisible = true;
+            box1.IsVisible = false;
+            box2.IsVisible = false;
+            caroussel.SelectedIndex = 0;
+            Videc.Reload();
+
+        }
+
+        private void ClickGestureRecognizer_Clicked(object sender, EventArgs e)
+        {
+            Videc.IsVisible = false;
+            caroussel.IsVisible = true;
+
+            caroussel.SelectedIndex = 0;
+            Videc.Reload();
         }
 
 

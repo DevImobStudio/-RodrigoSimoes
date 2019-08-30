@@ -35,7 +35,7 @@ namespace Imobiliaria.iOS
             Plugin.Iconize.Iconize.With(new Plugin.Iconize.Fonts.FontAwesomeBrandsModule())
                                   .With(new Plugin.Iconize.Fonts.FontAwesomeRegularModule())
                                   .With(new Plugin.Iconize.Fonts.FontAwesomeSolidModule());
-
+            Xam.Forms.VideoPlayer.iOS.VideoPlayerRenderer.Init();
             //SlideOverKit.iOS.SlideOverKit.Init();
             CarouselViewRenderer.Init();
             new FreshEssentials.iOS.AdvancedFrameRendereriOS();

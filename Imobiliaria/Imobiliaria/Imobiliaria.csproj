@@ -22,6 +22,7 @@
     <PackageReference Include="SegmentedControl.FormsPlugin" Version="2.0.1" />
     <PackageReference Include="SlideOverKit" Version="2.1.6.2" />
     <PackageReference Include="sqlite-net-pcl" Version="1.5.231" />
+    <PackageReference Include="Xam.Forms.VideoPlayer" Version="1.0.2" />
     <PackageReference Include="Xam.Plugin.Geolocator" Version="4.5.0.6" />
     <PackageReference Include="Xam.Plugin.Iconize" Version="3.4.0.100" />
     <PackageReference Include="Xam.Plugin.Iconize.FontAwesome" Version="3.4.0.100" />

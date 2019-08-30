@@ -4,7 +4,9 @@
              x:Class="Imobiliaria.Views.ItemDetailPage"
              xmlns:iconize="clr-namespace:Plugin.Iconize;assembly=Plugin.Iconize"
              xmlns:controls="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
-             xmlns:card="clr-namespace:PanCardView;assembly=PanCardView">
+             xmlns:card="clr-namespace:PanCardView;assembly=PanCardView"
+             xmlns:video="clr-namespace:Xam.Forms.VideoPlayer;assembly=Xam.Forms.VideoPlayer"
+             xmlns:local="clr-namespace:Imobiliaria.Views">
 
     <StackLayout>
     <ScrollView  Padding="0" >
@@ -62,20 +64,20 @@
                             <RowDefinition Height="1*"></RowDefinition>
                         </Grid.RowDefinitions>
 
-                        <Image 
+                       <Image 
                             Source="{Binding .}" 
                             x:Name="ImagemC"
                             Grid.RowSpan="4"
                             Aspect="AspectFill" />
-                         <ActivityIndicator   
+                                        <ActivityIndicator   
                              Grid.RowSpan="4"  
                              BindingContext="{x:Reference ImagemC}" 
                              IsRunning="{Binding IsLoading}" />
-                        
 
 
 
-                    </Grid>
+
+                                    </Grid>
 
 
                 </DataTemplate>
@@ -83,7 +85,42 @@
        
             </card:CoverFlowView>
 
-              <!--      <controls:CarouselViewControl 
+                        <WebView
+                           Grid.RowSpan="3" 
+                            Grid.ColumnSpan="3"
+                             x:Name="Videc"
+                            IsVisible="False"
+       
+                            Source="{Binding .}" 
+                            HorizontalOptions="FillAndExpand" 
+                            VerticalOptions="FillAndExpand">
+                            <WebView.GestureRecognizers>
+                                <SwipeGestureRecognizer Direction="Left" Swiped="SwipeGestureRecognizer_Swiped"/>
+                                <SwipeGestureRecognizer Direction="Right" Swiped="SwipeGestureRecognizer_Swiped"/>
+                            </WebView.GestureRecognizers>
+                        </WebView>
+                        <BoxView  
+                            Grid.Row="0"
+                             x:Name="box1"
+                            IsVisible="False"
+                            Grid.ColumnSpan="3">
+                            <BoxView.GestureRecognizers>
+                                <SwipeGestureRecognizer Direction="Left" Swiped="SwipeGestureRecognizer_Swiped"/>
+                                <SwipeGestureRecognizer Direction="Right" Swiped="SwipeGestureRecognizer_Swiped"/> 
+                            </BoxView.GestureRecognizers>
+                        </BoxView>
+                        <BoxView  
+                            x:Name="box2"
+                            Grid.Row="2"
+                             IsVisible="False"
+                            Grid.ColumnSpan="3">
+                            <BoxView.GestureRecognizers>
+                                <SwipeGestureRecognizer Direction="Left" Swiped="SwipeGestureRecognizer_Swiped"/>
+                                <SwipeGestureRecognizer Direction="Right" Swiped="SwipeGestureRecognizer_Swiped"/>
+                            </BoxView.GestureRecognizers>
+                        </BoxView>
+
+                        <!--      <controls:CarouselViewControl 
                         Grid.RowSpan="2" 
                         Grid.ColumnSpan="3" 
                         x:Name="caroussel" 

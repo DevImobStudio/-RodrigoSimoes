@@ -31,6 +31,7 @@ namespace Imobiliaria.Droid
                                   .With(new Plugin.Iconize.Fonts.FontAwesomeRegularModule())
                                   .With(new Plugin.Iconize.Fonts.FontAwesomeSolidModule());
             Rg.Plugins.Popup.Popup.Init(this, savedInstanceState);
+            Xam.Forms.VideoPlayer.Android.VideoPlayerRenderer.Init();
             base.OnCreate(savedInstanceState);
 
             CarouselViewRenderer.Init();
