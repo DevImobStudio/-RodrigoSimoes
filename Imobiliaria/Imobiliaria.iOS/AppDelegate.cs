@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using CarouselView.FormsPlugin.iOS;
+using FFImageLoading.Forms.Platform;
 using Foundation;
 using SegmentedControl.FormsPlugin.iOS;
 using UIKit;
@@ -36,6 +37,8 @@ namespace Imobiliaria.iOS
                                   .With(new Plugin.Iconize.Fonts.FontAwesomeRegularModule())
                                   .With(new Plugin.Iconize.Fonts.FontAwesomeSolidModule());
             Xam.Forms.VideoPlayer.iOS.VideoPlayerRenderer.Init();
+            CachedImageRenderer.Init();
+
             //SlideOverKit.iOS.SlideOverKit.Init();
             CarouselViewRenderer.Init();
             new FreshEssentials.iOS.AdvancedFrameRendereriOS();

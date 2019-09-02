@@ -14,6 +14,7 @@ using Xamarin.Facebook;
 using Xamarin.Forms;
 using Xamarin.Facebook.Login;
 using Xamarin.Auth;
+using FFImageLoading.Forms.Platform;
 
 namespace Imobiliaria.Droid
 {
@@ -42,6 +43,9 @@ namespace Imobiliaria.Droid
             Forms.Init(this, savedInstanceState);
             Xamarians.Media.Droid.MediaServiceAndroid.Initialize();
             Xamarians.FacebookLogin.Droid.DS.FacebookLogin.Init("456228191618171");
+            CachedImageRenderer.Init(enableFastRenderer:true);
+
+
 
             if ((ContextCompat.CheckSelfPermission(this, Manifest.Permission.AccessCoarseLocation) != Permission.Granted)
                  || (ContextCompat.CheckSelfPermission(this, Manifest.Permission.AccessFineLocation) != Permission.Granted)

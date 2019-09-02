@@ -59,7 +59,7 @@ namespace Imobiliaria.Views
                                        new Position(this.Inicio.viewModel.Imovels[0].localizacao.Latitude, this.Inicio.viewModel.Imovels[0].localizacao.Longitude),
                                        Distance.FromMiles(0.5)));
             }
-          //  this.ForceLayout();
+            this.ForceLayout();
 
         }
 
@@ -148,7 +148,7 @@ namespace Imobiliaria.Views
 
         public void Bind()
         {
-           
+     //       InitializeComponent();
      //       Mapa.ItemsSource = this.Inicio.viewModel.Imovels;
      //       BindingContext = this.Inicio.viewModel;
             caroussel.ItemsSource = this.Inicio.viewModel.Imovels;
@@ -160,7 +160,7 @@ namespace Imobiliaria.Views
                                        Distance.FromMiles(0.5)));
             }
 
-
+            this.ForceLayout();
         }
 
         private void Caroussel_ItemAppearing(PanCardView.CardsView view, PanCardView.EventArgs.ItemAppearingEventArgs args)

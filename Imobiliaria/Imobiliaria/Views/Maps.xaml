@@ -6,6 +6,7 @@
              xmlns:carouse="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"           
              xmlns:card="clr-namespace:PanCardView;assembly=PanCardView"
              xmlns:maps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              VerticalOptions="FillAndExpand"
             >
     <Grid VerticalOptions="FillAndExpand" RowSpacing="0">
@@ -57,17 +58,15 @@
                 x:Name="caroussel" 
                 IsUserInteractionEnabled="True"
                 AreAnimationsEnabled="True"
-                IsViewCacheEnabled="True"
+                IsViewCacheEnabled="true"
                 ItemAppearing="Caroussel_ItemAppearing"
-                
                 ItemsSource="{Binding Imovels ,Mode=OneTime}" 
                 VerticalOptions="FillAndExpand"
-               
                 HorizontalOptions="FillAndExpand" 
                 
                >
                
-                <card:CarouselView.ItemTemplate>
+                <card:CoverFlowView.ItemTemplate>
                     
                 <DataTemplate >
 
@@ -79,9 +78,27 @@
                                 <RowDefinition Height="auto"></RowDefinition>
                                 <RowDefinition Height="auto"></RowDefinition>
                             </Grid.RowDefinitions>
-                           
 
-                            <Image 
+
+                            <ffimageloading:CachedImage 
+                                Source="{Binding uriImage} "
+                                Grid.RowSpan="4" 
+                                Aspect="AspectFit"
+                                x:Name="Imagem"
+                                CacheDuration="7" >
+                                <ffimageloading:CachedImage.GestureRecognizers >
+                                    <TapGestureRecognizer
+                                        CommandParameter="{Binding . , Mode=OneTime}"
+                                        NumberOfTapsRequired="2" 
+                                        Tapped="TapGestureRecognizer_Tapped"
+
+                                       
+                                        />
+                                </ffimageloading:CachedImage.GestureRecognizers>
+                                </ffimageloading:CachedImage>
+
+                                <!--      </Image>
+                          <Image 
                                 Source="{Binding uriImage} "
                                 Grid.RowSpan="4" Aspect="AspectFit"
                                 x:Name="Imagem"
@@ -98,8 +115,8 @@
                                     
 
                                 </Image.GestureRecognizers>
-                            </Image>
-                            <ActivityIndicator BindingContext="{x:Reference Imagem}" IsRunning="{Binding IsLoading}" />
+                            </Image>-->
+                           <!-- <ActivityIndicator BindingContext="{x:Reference Imagem}" IsRunning="{Binding IsLoading}" />-->
                             <BoxView 
      
                                     Grid.Row="1"
@@ -149,7 +166,7 @@
 
 
                 </DataTemplate>
-                </card:CarouselView.ItemTemplate>
+                </card:CoverFlowView.ItemTemplate>
        
             </card:CoverFlowView>
     
