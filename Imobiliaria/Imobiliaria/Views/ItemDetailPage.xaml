@@ -6,7 +6,10 @@
              xmlns:controls="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
              xmlns:card="clr-namespace:PanCardView;assembly=PanCardView"
              xmlns:video="clr-namespace:Xam.Forms.VideoPlayer;assembly=Xam.Forms.VideoPlayer"
-             xmlns:local="clr-namespace:Imobiliaria.Views">
+             xmlns:local="clr-namespace:Imobiliaria.Views"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             Unfocused="StackLayout_Unfocused"
+             >
 
     <StackLayout>
     <ScrollView  Padding="0" >
@@ -51,6 +54,7 @@
                 VerticalOptions="FillAndExpand"
                 HorizontalOptions="FillAndExpand" 
                 ItemSwiped="Caroussel_ItemSwiped"
+                 ItemAppearing="Caroussel_ItemAppearing"
                 
                >
 
@@ -64,18 +68,23 @@
                             <RowDefinition Height="1*"></RowDefinition>
                         </Grid.RowDefinitions>
 
-                       <Image 
-                            Source="{Binding .}" 
-                            x:Name="ImagemC"
-                            Grid.RowSpan="4"
-                            Aspect="AspectFill" />
+                            <ffimageloading:CachedImage  
+                                Source="{Binding .}" 
+                                x:Name="ImagemC"
+                                Grid.RowSpan="4"
+                                Aspect="AspectFit"  
+                                RelativeLayout.WidthConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                                RelativeLayout.HeightConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Height}"
+
+                                            />
                                         <ActivityIndicator   
                              Grid.RowSpan="4"  
                              BindingContext="{x:Reference ImagemC}" 
-                             IsRunning="{Binding IsLoading}" />
+                             IsRunning="{Binding IsLoading}"
+                                        RelativeLayout.WidthConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                                    RelativeLayout.HeightConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Height}"
 
-
-
+                                            />
 
                                     </Grid>
 

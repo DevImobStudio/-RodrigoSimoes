@@ -23,7 +23,7 @@ namespace Imobiliaria.Views
             Mapa.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(imovel.position.Latitude, imovel.position.Longitude), Distance.FromMiles(0.20)));
             Mapa.IsIndoorEnabled = true;
             Mapa.MapType = MapType.Street;
-
+     
 
             Mapa.Pins.Add(new Pin()
             {

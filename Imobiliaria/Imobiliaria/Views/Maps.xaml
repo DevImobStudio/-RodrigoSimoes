@@ -13,7 +13,7 @@
 
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
-            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         
         <maps:Map
@@ -49,7 +49,7 @@
 
         </maps:Map>
 
-        <StackLayout  Grid.Column="0"  VerticalOptions="EndAndExpand"  Grid.Row="1" HeightRequest="220" MinimumHeightRequest="220"  >
+        <StackLayout  Grid.Column="0"  VerticalOptions="EndAndExpand"  Grid.Row="1"  >
 
             <card:CoverFlowView
              
@@ -85,6 +85,9 @@
                                 Grid.RowSpan="4" 
                                 Aspect="AspectFit"
                                 x:Name="Imagem"
+                                  RelativeLayout.WidthConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                                    RelativeLayout.HeightConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Height}"
+
                                 CacheDuration="7" >
                                 <ffimageloading:CachedImage.GestureRecognizers >
                                     <TapGestureRecognizer

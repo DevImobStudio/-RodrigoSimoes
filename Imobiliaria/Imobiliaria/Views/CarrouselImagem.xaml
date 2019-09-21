@@ -11,7 +11,8 @@
 
              >
     <ContentPage.Content  >
-        <card:CoverFlowView
+        <StackLayout VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+            <card:CoverFlowView
                 x:Name="caroussel" 
                 IsUserInteractionEnabled="True"
                 AreAnimationsEnabled="True"
@@ -19,46 +20,92 @@
                 ItemsSource="{Binding Imagens ,Mode=OneTime}" 
                 VerticalOptions="FillAndExpand"
                 HorizontalOptions="FillAndExpand" 
-           
-
+               ItemAppearing="Caroussel_ItemAppearing"
                >
 
-            <card:CarouselView.ItemTemplate>
+                <card:CarouselView.ItemTemplate>
 
-                <DataTemplate >
+                    <DataTemplate >
 
-                    <Grid RowSpacing="0" BackgroundColor="{StaticResource colorPrimaryTransparente}" ColumnSpacing="0" >
-                        <Grid.RowDefinitions >
-                            <RowDefinition Height="*" ></RowDefinition>
-                        </Grid.RowDefinitions>
+                        <Grid RowSpacing="0" BackgroundColor="{StaticResource colorPrimaryTransparente}" ColumnSpacing="0" >
+                            <Grid.RowDefinitions >
+                                <RowDefinition Height="*" ></RowDefinition>
+                            </Grid.RowDefinitions>
 
-                        <pinch:PinchZoom>
-                            <pinch:PinchZoom.Content>
-                                <Image 
+                            <pinch:PinchZoom>
+                                <pinch:PinchZoom.Content>
+
+                                    <Image 
                             Source="{Binding .}" 
                             Grid.Row="0"
                             Aspect="AspectFit"
                             x:Name="Imagem"
-                                
-                                >
+                                 RelativeLayout.WidthConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                                    RelativeLayout.HeightConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Height}">
+                              
 
-                        </Image>
+                                    </Image>
 
-                            </pinch:PinchZoom.Content>
-                        </pinch:PinchZoom>
-                        <ActivityIndicator BindingContext="{x:Reference Imagem}" IsRunning="{Binding IsLoading}" />
+                                </pinch:PinchZoom.Content>
+                            </pinch:PinchZoom>
+                            <ActivityIndicator BindingContext="{x:Reference Imagem}" IsRunning="{Binding IsLoading}" />
 
-                    </Grid>
+                        </Grid>
 
 
-                </DataTemplate>
-            </card:CarouselView.ItemTemplate>
-            <controls:LeftArrowControl/>
-            <controls:RightArrowControl/>
-            <controls:IndicatorsControl/>
+                    </DataTemplate>
+                </card:CarouselView.ItemTemplate>
+            </card:CoverFlowView>
 
-        </card:CoverFlowView>
-        <!-- <Grid >
+            <StackLayout    
+                x:Name="StackVideo" 
+                IsVisible="False"                  
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand">
+                <Grid   HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"  >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    
+                    <WebView
+
+                        x:Name="Videc"
+                        IsVisible="False"
+                        Grid.RowSpan="3"
+                        Grid.Row="0"
+                        Source="{Binding .}" 
+                        HorizontalOptions="FillAndExpand" 
+                        VerticalOptions="FillAndExpand">
+            <WebView.GestureRecognizers>
+                <SwipeGestureRecognizer Direction="Left" Swiped="SwipeGestureRecognizer_Swiped"/>
+                <SwipeGestureRecognizer Direction="Right" Swiped="SwipeGestureRecognizer_Swiped"/>
+            </WebView.GestureRecognizers>
+        </WebView>
+        <BoxView  
+                     Grid.Row="0"
+                      x:Name="box1"
+                     IsVisible="False">
+            <BoxView.GestureRecognizers>
+                <SwipeGestureRecognizer Direction="Left" Swiped="SwipeGestureRecognizer_Swiped"/>
+                <SwipeGestureRecognizer Direction="Right" Swiped="SwipeGestureRecognizer_Swiped"/>
+            </BoxView.GestureRecognizers>
+        </BoxView>
+        <BoxView  
+                     x:Name="box2"
+                     Grid.Row="2"
+                      IsVisible="False">
+            <BoxView.GestureRecognizers>
+                <SwipeGestureRecognizer Direction="Left" Swiped="SwipeGestureRecognizer_Swiped"/>
+                <SwipeGestureRecognizer Direction="Right" Swiped="SwipeGestureRecognizer_Swiped"/>
+            </BoxView.GestureRecognizers>
+        </BoxView>
+                </Grid>
+            </StackLayout>
+
+            <!-- <Grid >
                 <card:CoverFlowView
                 x:Name="caroussel" 
                 IsUserInteractionEnabled="True"
@@ -91,6 +138,6 @@
 
             </Grid>
             -->
-         
+              </StackLayout>
     </ContentPage.Content>
 </ContentPage>

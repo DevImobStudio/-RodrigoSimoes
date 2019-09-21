@@ -46,10 +46,10 @@ namespace Imobiliaria.ViewModels
             {
                 Imagens.Clear();
 
-                Imagens.Add(Imovel.imagem);
+              
 
                 lstImagens = await Services.Sistema.RESTAPI.getAsync<List<string>>("content/itens/"+Imovel.id);
-                if (lstImagens.Count > 0)
+                if (lstImagens.Count > 1)
                 {
                     //Imagens.Clear();
                     foreach (var i in lstImagens)
@@ -58,13 +58,21 @@ namespace Imobiliaria.ViewModels
                         Imagens.Add(i);
                     }
                 }
+                else
+                {
+                    Imagens.Add(Imovel.imagem);
+                }
                 List<Imovel> p  = await Services.Sistema.RESTAPI.getAsync<List<Imovel>>("content/" + Imovel.id);
                 if (p.Count > 0)
                 {
-                    Imovel = p[0];
-                    if (Imovel.video != "")
+                  
+                    if (p[0].video != null)
                     {
-                        Imagens.Add("http://www.youtube.com/embed/"+ p[0].video+ "?rel=0&autoplay=1");
+                        if (p[0].video != "")
+                        {
+                            Imagens.Add("http://www.youtube.com/embed/" + p[0].video + "?rel=0&autoplay=1");
+                            Imovel.video = p[0].video;
+                        }
                     }
                    
                 }

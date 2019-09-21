@@ -19,6 +19,7 @@ namespace Imobiliaria.Views
         ItemDetailViewModel ImovelDetail { get; set; }
         Inicio inicio { get; set; }
         Favoritos favoritos { get; set; }
+        WebView webView { get; set; }
 
         public ItemDetailPage(Inicio inicio , ItemDetailViewModel ImovelDetail)
         {
@@ -28,6 +29,7 @@ namespace Imobiliaria.Views
             this.ImovelDetail = ImovelDetail;
             this.ImovelDetail.LoadItemsCommand.Execute(null);
             BindingContext = this.ImovelDetail;
+            webView = Videc;
             if (this.ImovelDetail.Imagens != null)
             {
                 caroussel.ItemsSource = this.ImovelDetail.Imagens;
@@ -140,7 +142,7 @@ namespace Imobiliaria.Views
 
         private void Caroussel_ItemSwiped(PanCardView.CardsView view, PanCardView.EventArgs.ItemSwipedEventArgs args)
         {
-            if (this.ImovelDetail.Imovel.video != null)
+        /*    if (this.ImovelDetail.Imovel.video != null)
             {
                 if (this.ImovelDetail.Imovel.video != "")
                 {
@@ -166,7 +168,7 @@ namespace Imobiliaria.Views
             {
                 //VideoC.isVisible = false;
                 //ImagemC.isVisible = true;
-            }
+            }*/
         }
 
         private void SwipeGestureRecognizer_Swiped(object sender, SwipedEventArgs e)
@@ -188,6 +190,49 @@ namespace Imobiliaria.Views
             caroussel.SelectedIndex = 0;
             Videc.Reload();
         }
+
+        private void Caroussel_ItemAppearing(PanCardView.CardsView view, PanCardView.EventArgs.ItemAppearingEventArgs args)
+        {
+
+            if (this.ImovelDetail.Imovel.video != null)
+            {
+                if (this.ImovelDetail.Imovel.video != "")
+                {
+                    if (view.SelectedItem.ToString().Contains("youtube"))
+                    {
+                        Videc.Source = view.SelectedItem.ToString();
+                        caroussel.IsVisible = false;
+
+
+                        Videc.IsVisible = true;
+                        box1.IsVisible = true;
+                        box2.IsVisible = true;
+
+
+
+
+                    }
+                    //  VideoC.isVisible = true;
+                    // ImagemC.isVisible = false;
+                }
+            }
+            else
+            {
+                //VideoC.isVisible = false;
+                //ImagemC.isVisible = true;
+            }
+
+        }
+
+        private void StackLayout_Unfocused(object sender, FocusEventArgs e)
+        {
+            Videc.Reload();
+        }
+
+
+
+
+
 
 
         /*  protected async override void OnAppearing()
